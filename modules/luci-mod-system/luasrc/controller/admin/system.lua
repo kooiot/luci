@@ -288,9 +288,22 @@ function action_password()
 		luci.http.status(400, "Bad Request")
 		return
 	end
+	local http = require 'luci.http'
+	local util = require 'luci.util'
+	local sid = http.getcookie("sysauth")
+	if not sid then
+		luci.http.status(400, "Bad Request")
+		return
+	end
+	local sdat = util.ubus("session", "get", {ubus_rpc_session = sid})
+	if not sdat or not sdat.values or not sdat.values.username then
+		luci.http.status(400, "Bad Request")
+		return
+	end
+	local user = sdat.values.username
 
 	luci.http.prepare_content("application/json")
-	luci.http.write_json({ code = luci.sys.user.setpasswd("root", password) })
+	luci.http.write_json({ code = luci.sys.user.setpasswd(user, password) })
 end
 
 function action_sshkeys()

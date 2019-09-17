@@ -407,7 +407,7 @@ function dispatch(request)
 		end
 
 		if type(track.sysauth) == "table" then
-			default_user, allowed_users = nil, track.sysauth
+			default_user, allowed_users = 'admin', track.sysauth
 		else
 			default_user, allowed_users = track.sysauth, { track.sysauth }
 		end
