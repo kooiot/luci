@@ -4,7 +4,7 @@
 include $(TOPDIR)/rules.mk
 
 LUCI_TITLE:=LuCI support for freeioe luci 
-LUCI_DEPENDS:=+luci-base +uhttpd-mod-ubus +freeioe +luci-mod-status
+LUCI_DEPENDS:=+luci-base +luci-mod-status +freeioe
 
 include ../../luci.mk
 
