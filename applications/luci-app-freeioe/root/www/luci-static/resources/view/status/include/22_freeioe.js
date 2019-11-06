@@ -27,11 +27,11 @@ return L.Class.extend({
 		    cloud  = data[1];
 
 		var fields = [
-			_('PSN'),              info.hw_id + ' / ' + info.id,
-			_('Version'),          info.version + ' ( ' + info.skynet_version + ' ) ',
+			_('PSN'),              info.hw_id ? info.hw_id + ' / ' + info.id : null,
+			_('Version'),          info.version ? info.version + ' ( ' + info.skynet_version + ' ) ' : null,
 			_('Firmware Version'), info.firmware_version,
 			_('Cloud Host'),       cloud.host,
-			_('Cloud Status'),     cloud.mqtt.online === 1 ? 'ONLINE' : 'OFFLINE: ' + cloud.mqtt.msg,
+			_('Cloud Status'),     cloud && cloud.mqtt ? cloud.mqtt.online === 1 ? 'ONLINE' : 'OFFLINE: ' + cloud.mqtt.msg : null,
 		];
 
 		var table = E('div', { 'class': 'table' });
