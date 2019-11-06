@@ -28,10 +28,10 @@ return L.Class.extend({
 
 		var fields = [
 			_('SN'),               info.hw_id + ' / ' + info.id,
-			_('Version'),          info.version,
-			_('Skynet Version'),   info.skynet_version,
+			_('Version'),          info.version + ' ( ' + info.skynet_version + ' ) ',
 			_('Firmware Version'), info.firmware_version,
-			_('Beta'),             info.beta,
+			_('Cloud Host'),       cloud.host,
+			_('Cloud Status'),     cloud.mqtt.online === 1 ? 'ONLINE' : 'OFFLINE: ' + cloud.mqtt.msg,
 		];
 
 		var table = E('div', { 'class': 'table' });
