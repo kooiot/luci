@@ -2,12 +2,12 @@
 'require fs';
 'require rpc';
 
-var callSystemBoard = rpc.declare({
+var callFreeioeInfo = rpc.declare({
 	object: 'freeioe',
 	method: 'info'
 });
 
-var callSystemInfo = rpc.declare({
+var callFreeioeCloud = rpc.declare({
 	object: 'freeioe',
 	method: 'cloud'
 });
