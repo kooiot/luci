@@ -32,7 +32,6 @@
 				"/etc/sysupgrade.conf": [ "read" ],
 				"/etc/passwd": [ "read" ],
 				"/etc/group": [ "read" ],
-				"/etc/build_version": [ "read" ],
 				"/proc/filesystems": [ "read" ],
 				"/proc/mtd": [ "read" ],
 				"/proc/partitions": [ "read" ],
@@ -50,7 +49,8 @@
 				"network.rrdns": [ "lookup" ],
 				"network": [ "get_proto_handlers" ],
 				"system": [ "board", "info", "validate_firmware_image" ],
-				"uci": [ "changes", "get" ]
+				"uci": [ "changes", "get" ],
+				"freeioe": [ "info", "cloud", "apps", "data", "start_app", "stop_app" ]
 			},
 			"uci": [ "*" ]
 		},
