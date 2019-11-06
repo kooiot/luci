@@ -13,7 +13,7 @@ var callFreeioeCloud = rpc.declare({
 });
 
 return L.Class.extend({
-	title: _('System'),
+	title: _('FreeIOE'),
 
 	load: function() {
 		return Promise.all([
@@ -27,7 +27,7 @@ return L.Class.extend({
 		    cloud  = data[1];
 
 		var fields = [
-			_('SN'),               info.hw_id + ' / ' + info.id,
+			_('PSN'),              info.hw_id + ' / ' + info.id,
 			_('Version'),          info.version + ' ( ' + info.skynet_version + ' ) ',
 			_('Firmware Version'), info.firmware_version,
 			_('Cloud Host'),       cloud.host,

@@ -4,6 +4,8 @@ dist/
 *.so
 *.swp
 *.po~
+*~
+*.un~
 /docs
 modules/luci-base/src/po2lmo
 modules/luci-base/src/jsmin
