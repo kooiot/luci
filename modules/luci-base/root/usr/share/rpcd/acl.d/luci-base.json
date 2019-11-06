@@ -49,8 +49,7 @@
 				"network.rrdns": [ "lookup" ],
 				"network": [ "get_proto_handlers" ],
 				"system": [ "board", "info", "validate_firmware_image" ],
-				"uci": [ "changes", "get" ],
-				"freeioe": [ "info", "cloud", "apps", "data", "start_app", "stop_app" ]
+				"uci": [ "changes", "get" ]
 			},
 			"uci": [ "*" ]
 		},

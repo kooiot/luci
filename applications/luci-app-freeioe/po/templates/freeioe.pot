@@ -1,0 +1,26 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: applications/luci-app-freeioe/root/www/luci-static/resources/view/status/include/22_freeioe.js:33
+msgid "Cloud Host"
+msgstr ""
+
+#: applications/luci-app-freeioe/root/www/luci-static/resources/view/status/include/22_freeioe.js:34
+msgid "Cloud Status"
+msgstr ""
+
+#: applications/luci-app-freeioe/root/www/luci-static/resources/view/status/include/22_freeioe.js:32
+msgid "Firmware Version"
+msgstr ""
+
+#: applications/luci-app-freeioe/root/www/luci-static/resources/view/status/include/22_freeioe.js:16
+msgid "FreeIOE"
+msgstr ""
+
+#: applications/luci-app-freeioe/root/www/luci-static/resources/view/status/include/22_freeioe.js:30
+msgid "PSN"
+msgstr ""
+
+#: applications/luci-app-freeioe/root/www/luci-static/resources/view/status/include/22_freeioe.js:31
+msgid "Version"
+msgstr ""
