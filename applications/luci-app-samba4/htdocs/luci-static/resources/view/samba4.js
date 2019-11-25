@@ -8,19 +8,22 @@ return L.view.extend({
 		return Promise.all([
 			L.resolveDefault(fs.stat('/sbin/block'), null),
 			L.resolveDefault(fs.stat('/etc/config/fstab'), null),
-			L.resolveDefault(fs.exec("cifsd", ["-h"]), {}).then(function(res) { return L.toArray((res.stderr || '').match(/version : (\S+ \S+)/))[1] }),
+			L.resolveDefault(fs.stat('/usr/sbin/nmbd'), {}),
+			L.resolveDefault(fs.stat('/usr/sbin/samba'), {}),
+			L.resolveDefault(fs.stat('/usr/sbin/winbindd'), {}),
+			L.resolveDefault(fs.exec('/usr/sbin/smbd', ['-V']), null),
 		]);
 	},
 	render: function(stats) {
 		var m, s, o, v;
 		v = '';
+		
+		m = new form.Map('samba4', _('Network Shares'));
 
-		m = new form.Map('cifsd', _('Network Shares'));
-
-		if (stats[2]) {
-			v = 'Version ' + stats[2].trim();
+		if (stats[5] && stats[5].code === 0) {
+			v = stats[5].stdout.trim();
 		}
-		s = m.section(form.TypedSection, 'globals', 'Cifsd ' + v);
+		s = m.section(form.TypedSection, 'samba', 'Samba ' + v);
 		s.anonymous = true;
 
 		s.tab('general',  _('General Settings'));
@@ -33,22 +36,38 @@ return L.view.extend({
 		o.placeholder = 'WORKGROUP';
 
 		o = s.taboption('general', form.Value, 'description', _('Description'));
-		o.placeholder = 'Cifsd on OpenWrt';
+		o.placeholder = 'Samba4 on OpenWrt';
+		
+		s.taboption('general', form.Flag, 'disable_async_io', _('Force synchronous  I/O'),
+			_('On lower-end devices may increase speeds, by forceing synchronous I/O instead of the default asynchronous.'));
 
+		o = s.taboption('general', form.Flag, 'macos', _('Enable macOS compatible shares'),
+			_('Enables Apple\'s AAPL extension globally and adds macOS compatibility options to all shares.'));
+
+		if (stats[2].type === 'file') {
+			s.taboption('general', form.Flag, 'disable_netbios', _('Disable Netbios')) 
+		}
+		if (stats[3].type === 'file') {
+			s.taboption('general', form.Flag, 'disable_ad_dc', _('Disable Active Directory Domain Controller')) 
+		}
+		if (stats[4].type === 'file') {
+			s.taboption('general', form.Flag, 'disable_winbind', _('Disable Winbind')) 
+		}
+		
 		o = s.taboption('template', form.TextValue, '_tmpl',
-			_('Edit the template that is used for generating the cifsd configuration.'),
-			_("This is the content of the file '/etc/cifs/smb.conf.template' from which your cifsd configuration will be generated. \
+			_('Edit the template that is used for generating the samba configuration.'),
+			_("This is the content of the file '/etc/samba/smb.conf.template' from which your samba configuration will be generated. \
 			Values enclosed by pipe symbols ('|') should not be changed. They get their values from the 'General Settings' tab."));
 		o.rows = 20;
 		o.cfgvalue = function(section_id) {
-			return fs.trimmed('/etc/cifs/smb.conf.template');
+			return fs.trimmed('/etc/samba/smb.conf.template');
 		};
 		o.write = function(section_id, formvalue) {
-			return fs.write('/etc/cifs/smb.conf.template', formvalue.trim().replace(/\r\n/g, '\n') + '\n');
+			return fs.write('/etc/samba/smb.conf.template', formvalue.trim().replace(/\r\n/g, '\n') + '\n');
 		};
 
 
-		s = m.section(form.TableSection, 'share', _('Shared Directories'),
+		s = m.section(form.TableSection, 'sambashare', _('Shared Directories'),
 			_('Please add directories to share. Each directory refers to a folder on a mounted device.'));
 		s.anonymous = true;
 		s.addremove = true;
@@ -77,14 +96,17 @@ return L.view.extend({
 		o = s.option(form.Flag, 'guest_ok', _('Allow guests'));
 		o.enabled = 'yes';
 		o.disabled = 'no';
-		o.default = 'yes';
+		o.default = 'Yes';
 
+		o = s.option(form.Flag, 'guest_only', _('Guests only'));
+		o.enabled = 'yes';
+		o.disabled = 'no';
+		o.default = 'no';
+		
 		o = s.option(form.Flag, 'inherit_owner', _('Inherit owner'));
 		o.enabled = 'yes';
 		o.disabled = 'no';
 		o.default = 'no';
-
-		s.option(form.Flag, 'hide_dot_files', _('Hide dot files'));
 
 		o = s.option(form.Value, 'create_mask', _('Create mask'));
 		o.rmempty = true;
@@ -95,6 +117,15 @@ return L.view.extend({
 		o.rmempty = true;
 		o.maxlength = 4;
 		o.placeholder = '0777';
+		
+		o = s.option(form.Value, 'vfs_objects', _('Vfs objects'));
+		o.rmempty = true;
+		
+		s.option(form.Flag, 'timemachine', _('Apple Time-machine share'));
+		
+		o = s.option(form.Value, 'timemachine_maxsize', _('Time-machine size in GB'));
+		o.rmempty = true;
+		o.maxlength = 5;
 
 		return m.render();
 	}
