@@ -4,5 +4,5 @@
 module("luci.controller.freeioe", package.seeall)
 
 function index()
-	entry({"admin", "freeioe"}, view("freeioe/view"), _("FreeIOE"))
+	entry({"admin", "freeioe"}, template("freeioe/jump"), _("FreeIOE"))
 end
