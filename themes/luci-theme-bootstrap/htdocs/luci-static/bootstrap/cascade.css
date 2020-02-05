@@ -1196,7 +1196,6 @@ footer {
 	background: #fff;
 	box-shadow: 0 0 3px #444;
 	padding: 1em 1em .5em 1em;
-	max-height: 2400px;
 	min-width: 270px;
 }
 
@@ -1301,7 +1300,7 @@ body.modal-overlay-active #modal_overlay {
 }
 
 .cbi-input-invalid,
-.cbi-input-invalid.cbi-dropdown,
+.cbi-input-invalid.cbi-dropdown:not(.btn):not(.cbi-button),
 .cbi-input-invalid.cbi-dropdown:not([open]) > ul > li,
 .cbi-value-error input {
 	color: #f00;
@@ -2087,6 +2086,21 @@ div.cbi-value var,
 .td.cbi-value-field var {
 	font-style: italic;
 	color: #0069d6;
+}
+
+div.cbi-value var[data-tooltip],
+.td.cbi-value-field var[data-tooltip],
+div.cbi-value var.cbi-tooltip-container,
+.td.cbi-value-field var.cbi-tooltip-container {
+	cursor: help;
+	border-bottom: 1px dotted #0069d6;
+}
+
+div.cbi-value var.cbi-tooltip-container,
+.td.cbi-value-field var.cbi-tooltip-container .cbi-tooltip {
+	font-style: normal;
+	white-space: normal;
+	color: #444;
 }
 
 #modal_overlay > .modal.uci-dialog,

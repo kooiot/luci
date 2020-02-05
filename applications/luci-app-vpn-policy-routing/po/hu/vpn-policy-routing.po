@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-01-04 12:28+0000\n"
+"PO-Revision-Date: 2020-01-15 02:11+0000\n"
 "Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsvpn-policy-routing/hu/>\n"
@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.10\n"
+"X-Generator: Weblate 3.11-dev\n"
 
 #: applications/luci-app-vpn-policy-routing/luasrc/model/cbi/vpn-policy-routing.lua:46
 msgid "(strict mode)"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: applications/luci-app-vpn-policy-routing/luasrc/model/cbi/vpn-policy-routing.lua:182
 msgid "Advanced Configuration"
-msgstr ""
+msgstr "Speciális beállítások"
 
 #: applications/luci-app-vpn-policy-routing/luasrc/model/cbi/vpn-policy-routing.lua:187
 msgid ""
@@ -52,7 +52,7 @@ msgstr ""
 
 #: applications/luci-app-vpn-policy-routing/luasrc/model/cbi/vpn-policy-routing.lua:145
 msgid "Basic Configuration"
-msgstr ""
+msgstr "Alapszintű beállítások"
 
 #: applications/luci-app-vpn-policy-routing/luasrc/model/cbi/vpn-policy-routing.lua:193
 msgid "Boot Time-out"
@@ -62,7 +62,7 @@ msgstr ""
 msgid "Chain"
 msgstr "Lánc"
 
-#: applications/luci-app-vpn-policy-routing/luasrc/view/vpn-policy-routing/status-gateways.htm:14
+#: applications/luci-app-vpn-policy-routing/luasrc/view/vpn-policy-routing/status-gateways.htm:15
 msgid "Checkmark represents the default gateway. See the"
 msgstr ""
 
@@ -164,7 +164,7 @@ msgstr ""
 
 #: applications/luci-app-vpn-policy-routing/luasrc/model/cbi/vpn-policy-routing.lua:177
 msgid "IPv6 Support"
-msgstr ""
+msgstr "IPv6 támogatás"
 
 #: applications/luci-app-vpn-policy-routing/luasrc/model/cbi/vpn-policy-routing.lua:190
 msgid "Ignored Interfaces"
@@ -229,9 +229,9 @@ msgstr "Protokoll"
 #: applications/luci-app-vpn-policy-routing/luasrc/model/cbi/vpn-policy-routing.lua:184
 #: applications/luci-app-vpn-policy-routing/luasrc/model/cbi/vpn-policy-routing.lua:350
 #: applications/luci-app-vpn-policy-routing/luasrc/model/cbi/vpn-policy-routing.lua:363
-#: applications/luci-app-vpn-policy-routing/luasrc/view/vpn-policy-routing/status-gateways.htm:16
+#: applications/luci-app-vpn-policy-routing/luasrc/view/vpn-policy-routing/status-gateways.htm:17
 msgid "README"
-msgstr ""
+msgstr "README"
 
 #: applications/luci-app-vpn-policy-routing/luasrc/view/vpn-policy-routing/buttons.htm:42
 msgid "Reload"
@@ -419,7 +419,7 @@ msgstr ""
 
 #: applications/luci-app-vpn-policy-routing/luasrc/model/cbi/vpn-policy-routing.lua:150
 msgid "Verbose output"
-msgstr ""
+msgstr "Részletes kimenet"
 
 #: applications/luci-app-vpn-policy-routing/luasrc/model/cbi/vpn-policy-routing.lua:208
 msgid "WAN"
@@ -436,7 +436,7 @@ msgstr ""
 
 #: applications/luci-app-vpn-policy-routing/luasrc/model/cbi/vpn-policy-routing.lua:183
 msgid "WARNING:"
-msgstr ""
+msgstr "FIGYELMEZTETÉS:"
 
 #: applications/luci-app-vpn-policy-routing/luasrc/model/cbi/vpn-policy-routing.lua:236
 msgid "Web UI Configuration"
@@ -456,9 +456,9 @@ msgstr ""
 #: applications/luci-app-vpn-policy-routing/luasrc/model/cbi/vpn-policy-routing.lua:155
 #: applications/luci-app-vpn-policy-routing/luasrc/model/cbi/vpn-policy-routing.lua:350
 #: applications/luci-app-vpn-policy-routing/luasrc/model/cbi/vpn-policy-routing.lua:363
-#: applications/luci-app-vpn-policy-routing/luasrc/view/vpn-policy-routing/status-gateways.htm:16
+#: applications/luci-app-vpn-policy-routing/luasrc/view/vpn-policy-routing/status-gateways.htm:17
 msgid "for details."
-msgstr ""
+msgstr "fájlt a részletekért."
 
 #: applications/luci-app-vpn-policy-routing/luasrc/model/cbi/vpn-policy-routing.lua:38
 msgid "is not installed or not found"
