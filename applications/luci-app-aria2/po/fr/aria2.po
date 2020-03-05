@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-01-11 18:23+0000\n"
-"Last-Translator: Franco Castillo <castillofrancodamian@gmail.com>\n"
+"PO-Revision-Date: 2020-02-25 23:11+0000\n"
+"Last-Translator: Palandre Maxime <maxime.palandre@hotmail.fr>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsaria2/fr/>\n"
 "Language: fr\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.10.1\n"
+"X-Generator: Weblate 4.0-dev\n"
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:296
 msgid "<abbr title=\"Local Peer Discovery\">LPD</abbr> enabled"
@@ -16,7 +16,7 @@ msgstr "Protocole <abbr title=\"Local Peer Discovery\">LPD</abbr> activé"
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:414
 msgid "Additional BT tracker"
-msgstr ""
+msgstr "Traqueur BT additionnel"
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:419
 msgid "Advanced Options"
@@ -28,7 +28,7 @@ msgstr "Tous les proxys"
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:228
 msgid "Append HEADERs to HTTP request header."
-msgstr ""
+msgstr "Ajouter les HEADERs aux entêtes de requêtes HTTP."
 
 #: applications/luci-app-aria2/luasrc/controller/aria2.lua:18
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:35
@@ -120,6 +120,8 @@ msgid ""
 "Disable IPv6. This is useful if you have to use broken DNS and want to avoid "
 "terribly slow AAAA record lookup."
 msgstr ""
+"Désactiver IPv6. Cela est utile si vous utilisez un DNS défaillant et voulez "
+"éviter une résolution des enregistrements AAAA terriblement lente."
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:440
 msgid "Disk cache"
@@ -145,18 +147,20 @@ msgstr "Fichier vide."
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:280
 msgid "Enable IPv4 DHT functionality. It also enables UDP tracker support."
 msgstr ""
+"Activer la fonctionnalité de DHT IPv4. Cela active également le support UDP "
+"du traqueur."
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:290
 msgid "Enable IPv6 DHT functionality."
-msgstr ""
+msgstr "Activer la fonctionnalité de DHT IPv6."
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:298
 msgid "Enable Local Peer Discovery."
-msgstr ""
+msgstr "Activer la découverte des pairs locaux."
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:307
 msgid "Enable Peer Exchange extension."
-msgstr ""
+msgstr "Activer l'extension d'échange de pairs."
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:442
 msgid "Enable disk cache (in bytes), set 0 to disabled."
@@ -202,7 +206,7 @@ msgstr "Faux"
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:447
 msgid "File allocation"
-msgstr ""
+msgstr "Attribution de l'espace pour les fichiers"
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/files.lua:25
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/files.lua:35
@@ -232,11 +236,11 @@ msgstr "Générer aléatoirement"
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:210
 msgid "HTTP accept gzip"
-msgstr ""
+msgstr "HTTP accepte gzip"
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:219
 msgid "HTTP no cache"
-msgstr ""
+msgstr "Pas de cache HTTP"
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:164
 msgid "HTTP/FTP/SFTP Options"
@@ -252,11 +256,11 @@ msgstr "Voici les fichiers utilisés par aria2."
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:278
 msgid "IPv4 <abbr title=\"Distributed Hash Table\">DHT</abbr> enabled"
-msgstr ""
+msgstr "IPv4 <abbr title=\"Distributed Hash Table\">DHT</abbr> activé"
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:288
 msgid "IPv6 <abbr title=\"Distributed Hash Table\">DHT</abbr> enabled"
-msgstr ""
+msgstr "IPv6 <abbr title=\"Distributed Hash Table\">DHT</abbr> activé"
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:421
 msgid "IPv6 disabled"
@@ -305,7 +309,7 @@ msgstr "Laissez vide pour utiliser l'utilisateur par défaut."
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:415
 msgid "List of additional BitTorrent tracker's announce URI."
-msgstr ""
+msgstr "URI de l'annonce de la liste des traqueurs BitTorrent additionnels."
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:488
 msgid ""
@@ -317,7 +321,7 @@ msgstr ""
 
 #: applications/luci-app-aria2/luasrc/view/aria2/log_template.htm:48
 msgid "Loading"
-msgstr ""
+msgstr "Chargement"
 
 #: applications/luci-app-aria2/luasrc/controller/aria2.lua:27
 msgid "Log"
@@ -411,6 +415,8 @@ msgstr "Met en pause le téléchargement après l'ajout."
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:105
 msgid "Pause downloads created as a result of metadata download."
 msgstr ""
+"Mettre en pause les téléchargements créés comme résultats de téléchargement "
+"de métadata."
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:104
 msgid "Pause metadata"
@@ -473,6 +479,8 @@ msgid ""
 "RPC transport will be encrypted by SSL/TLS. The RPC clients must use https "
 "scheme to access the server. For WebSocket client, use wss scheme."
 msgstr ""
+"Le transport RPC sera chiffré par SSL/TLS. Les clients RPX devront utiliser "
+"https pour accéder au serveur. Pour les clients WebSocket, utiliser wss."
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:119
 msgid "RPC username"
@@ -498,15 +506,15 @@ msgstr ""
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:377
 msgid "Request peer speed limit"
-msgstr ""
+msgstr "Demande de limite de vitesse de paire"
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:266
 msgid "Retry wait"
-msgstr ""
+msgstr "Attente avant nouvel essai"
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:61
 msgid "Run daemon as user"
-msgstr ""
+msgstr "Lancer le \"daemon\" comme \"utilisateur\""
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:315
 msgid "Sava metadata"
@@ -526,6 +534,10 @@ msgid ""
 "This option also saves control file in that situations. This may be useful "
 "to save BitTorrent seeding which is recognized as completed state."
 msgstr ""
+"Enregistrer le téléchargement dans un fichier de session même si le "
+"téléchargement est terminé ou supprimé. Cette option enregistre également le "
+"fichier de contrôle dans ces situations. Cela peut être utile pour "
+"enregistrer les partages BitTorrent qui sont reconnus comme terminés."
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:435
 msgid ""
@@ -550,15 +562,15 @@ msgstr ""
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:401
 msgid "Seed ratio"
-msgstr ""
+msgstr "Ratio de partage"
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:408
 msgid "Seed time"
-msgstr ""
+msgstr "Temps de partage"
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:329
 msgid "Seed unverified"
-msgstr ""
+msgstr "Partage non vérifié"
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:211
 msgid ""
