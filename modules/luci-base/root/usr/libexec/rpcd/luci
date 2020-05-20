@@ -8,6 +8,8 @@ local function readfile(path)
 	return s and (s:gsub("^%s+", ""):gsub("%s+$", ""))
 end
 
+local ubus_rpc_session_ = nil
+
 local methods = {
 	getInitList = {
 		args = { name = "name" },
@@ -440,16 +442,9 @@ local methods = {
 		args = { username = "root", password = "password" },
 		call = function(args)
 			local util = require 'luci.util'
-			local http = require 'luci.http'
-			local sid = luci.http.getcookie("sysauth")
-			if not sid then
-				luci.http.status(400, "Bad Request")
-				return
-			end
-			local sdat = luci.util.ubus("session", "get", {ubus_rpc_session = sid})
+			local sdat = luci.util.ubus("session", "get", {ubus_rpc_session = ubus_rpc_session_})
 			if not sdat or not sdat.values or not sdat.values.username then
-				luci.http.status(400, "Bad Request")
-				return
+				return { error = "username not found!" }
 			end
 			local user = sdat.values.username
 			return {
@@ -660,6 +655,7 @@ local function validateArgs(func, uargs)
 		os.exit(1)
 	end
 
+	ubus_rpc_session_ = uargs.ubus_rpc_session
 	uargs.ubus_rpc_session = nil
 
 	local k, v
