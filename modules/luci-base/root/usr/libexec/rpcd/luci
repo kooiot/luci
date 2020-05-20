@@ -439,24 +439,11 @@ local methods = {
 	setPassword = {
 		args = { username = "root", password = "password" },
 		call = function(args)
-			local http = require 'luci.http'
-			local util = require 'luci.util'
-			local sid = http.getcookie("sysauth")
-			if not sid then
-				luci.http.status(400, "Bad Request")
-				return
-			end
-			local sdat = util.ubus("session", "get", {ubus_rpc_session = sid})
-			if not sdat or not sdat.values or not sdat.values.username then
-				luci.http.status(400, "Bad Request")
-				return
-			end
-			local user = sdat.values.username
 			return {
 				result = (os.execute("(echo %s; sleep 1; echo %s) | passwd %s >/dev/null 2>&1" %{
 					luci.util.shellquote(args.password),
 					luci.util.shellquote(args.password),
-					luci.util.shellquote(user)
+					luci.util.shellquote(args.username)
 				}) == 0)
 			}
 		end

@@ -6,6 +6,7 @@
 'require rpc';
 
 var formData = {
+	username: null,
 	password: {
 		pw1: null,
 		pw2: null
@@ -46,6 +47,13 @@ return view.extend({
 		m = new form.JSONMap(formData, _('Router Password'), _('Changes the administrator password for accessing the device'));
 		s = m.section(form.NamedSection, 'password', 'password');
 
+		o = s.option(form.Value, 'username', _('Username'));
+		o.default = 'admin'
+		o.datatype = 'username';
+		o.load = function(section_id) {
+			return 'admin'
+		}
+
 		o = s.option(form.Value, 'pw1', _('Password'));
 		o.password = true;
 		o.validate = this.checkPassword;
@@ -78,7 +86,7 @@ return view.extend({
 				return;
 			}
 
-			return callSetPassword('root', formData.password.pw1).then(function(success) {
+			return callSetPassword(formData.username, formData.password.pw1).then(function(success) {
 				if (success)
 					ui.addNotification(null, E('p', _('The system password has been successfully changed.')), 'info');
 				else

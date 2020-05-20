@@ -884,7 +884,7 @@ function dispatch(request)
 				http.status(403, "Forbidden")
 				http.header("X-LuCI-Login-Required", "yes")
 
-				return tpl.render("sysauth", { duser = "root", fuser = user })
+				return tpl.render("sysauth", { duser = "admin", fuser = user })
 			end
 
 			http.header("Set-Cookie", 'sysauth=%s; path=%s; SameSite=Strict; HttpOnly%s' %{
