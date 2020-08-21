@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-04-19 00:53+0000\n"
-"Last-Translator: EP45 <monadko98@gmail.com>\n"
+"PO-Revision-Date: 2020-08-08 06:14+0000\n"
+"Last-Translator: Youngbin Han <sukso96100@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationssimple-adblock/ko/>\n"
 "Language: ko\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.0.2-dev\n"
+"X-Generator: Weblate 4.2-dev\n"
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:217
 msgid "%s Error: %s"
@@ -65,7 +65,7 @@ msgstr ""
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:335
 msgid "Blocked Domains"
-msgstr ""
+msgstr "차단된 도메인들"
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:345
 msgid "Blocked Hosts URLs"
@@ -85,7 +85,7 @@ msgstr ""
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:228
 msgid "Configuration"
-msgstr ""
+msgstr "설정"
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:232
 msgid "Controls system log and console output verbosity."

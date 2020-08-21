@@ -1,8 +1,14 @@
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2020-08-08 06:14+0000\n"
+"Last-Translator: Youngbin Han <sukso96100@gmail.com>\n"
+"Language-Team: Korean <https://hosted.weblate.org/projects/openwrt/"
+"luciapplicationsttyd/ko/>\n"
 "Language: ko\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.2-dev\n"
 
 #: applications/luci-app-ttyd/htdocs/luci-static/resources/view/ttyd/config.js:56
 msgid "Accept only one client and exit on disconnection"
@@ -10,7 +16,7 @@ msgstr ""
 
 #: applications/luci-app-ttyd/htdocs/luci-static/resources/view/ttyd/config.js:15
 msgid "Add instance"
-msgstr ""
+msgstr "인스턴스 추가"
 
 #: applications/luci-app-ttyd/htdocs/luci-static/resources/view/ttyd/config.js:40
 msgid "Allow URL args"
@@ -92,7 +98,7 @@ msgstr ""
 
 #: applications/luci-app-ttyd/htdocs/luci-static/resources/view/ttyd/config.js:24
 msgid "Interface"
-msgstr ""
+msgstr "인터페이스"
 
 #: applications/luci-app-ttyd/htdocs/luci-static/resources/view/ttyd/config.js:52
 msgid "Max clients"

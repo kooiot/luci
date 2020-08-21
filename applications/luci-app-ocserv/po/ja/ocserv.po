@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-06-13 22:13+0000\n"
+"PO-Revision-Date: 2020-08-08 06:14+0000\n"
 "Last-Translator: Satoru Yoshida <ramat@ram.ne.jp>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsocserv/ja/>\n"
@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.1-dev\n"
+"X-Generator: Weblate 4.2-dev\n"
 
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/main.lua:124
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/user-config.lua:80
@@ -51,7 +51,7 @@ msgstr "データを収集中..."
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/main.lua:132
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/user-config.lua:111
 msgid "DNS servers"
-msgstr ""
+msgstr "DNS サーバー"
 
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/main.lua:60
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/user-config.lua:54
@@ -71,12 +71,12 @@ msgstr "テンプレートの編集"
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/main.lua:80
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/user-config.lua:85
 msgid "Edit the template that is used for generating the ocserv configuration."
-msgstr ""
+msgstr "ocserv 構成の生成に使用されるテンプレートを編集します。"
 
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/main.lua:70
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/user-config.lua:60
 msgid "Enable UDP"
-msgstr ""
+msgstr "UDP を有効にする"
 
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/main.lua:71
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/user-config.lua:61
@@ -88,7 +88,7 @@ msgstr ""
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/main.lua:66
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/main.lua:67
 msgid "Enable compression"
-msgstr ""
+msgstr "圧縮を有効にする"
 
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/main.lua:106
 msgid "Enable proxy arp"
@@ -97,7 +97,7 @@ msgstr ""
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/main.lua:16
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/user-config.lua:16
 msgid "Enable server"
-msgstr ""
+msgstr "サーバーを有効にする"
 
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/main.lua:75
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/user-config.lua:65
@@ -117,7 +117,7 @@ msgstr "一般設定"
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/users.lua:67
 #: applications/luci-app-ocserv/luasrc/view/ocserv_status.htm:52
 msgid "Group"
-msgstr ""
+msgstr "グループ"
 
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/users.lua:65
 msgid "ID"
@@ -272,7 +272,7 @@ msgstr ""
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/users.lua:71
 #: applications/luci-app-ocserv/luasrc/view/ocserv_status.htm:56
 msgid "Time"
-msgstr ""
+msgstr "時刻"
 
 #: applications/luci-app-ocserv/luasrc/view/ocserv_status.htm:51
 msgid "User"
