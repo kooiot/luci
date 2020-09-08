@@ -68,8 +68,18 @@ return view.extend({
 		return m.render();
 	},
 
+	getCookie: function(name)
+	{
+		var results = document.cookie.match ( name + '=(.*?)(;|$)' );
+		if (results) {
+			return unescape(results[1]);
+		}
+		return null;
+	},
+
 	handleSave: function() {
 		var map = document.querySelector('.cbi-map');
+		var username = this.getCookie('sysuser');
 
 		return dom.callClassMethod(map, 'save').then(function() {
 			if (formData.password.pw1 == null || formData.password.pw1.length == 0)
@@ -80,7 +90,7 @@ return view.extend({
 				return;
 			}
 
-			return callSetPassword('root', formData.password.pw1).then(function(success) {
+			return callSetPassword(username, formData.password.pw1).then(function(success) {
 				if (success)
 					ui.addNotification(null, E('p', _('The system password has been successfully changed.')), 'info');
 				else
