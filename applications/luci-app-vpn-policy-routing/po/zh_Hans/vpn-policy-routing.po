@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-02-26 19:55+0000\n"
+"PO-Revision-Date: 2021-03-14 05:18+0000\n"
 "Last-Translator: Eric <spice2wolf@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "openwrt/luciapplicationsvpn-policy-routing/zh_Hans/>\n"
@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.5\n"
+"X-Generator: Weblate 4.5.2-dev\n"
 
 #: applications/luci-app-vpn-policy-routing/luasrc/model/cbi/vpn-policy-routing.lua:62
 msgid "%s (disabled)"
@@ -27,7 +27,9 @@ msgid ""
 "%sWARNING:%s Please make sure to check the %sREADME%s before changing "
 "anything in this section! Change any of the settings below with extreme "
 "caution!%s"
-msgstr "％s警告：％s在更改本节任何内容之前，请确保检查％sREADME％s！请非常谨慎地更改以下任何设置！％s"
+msgstr ""
+"％s警告：％s在更改本节任何内容之前，请确保检查％sREADME％s！请非常谨慎地更改"
+"以下任何设置！％s"
 
 #: applications/luci-app-vpn-policy-routing/luasrc/model/cbi/vpn-policy-routing.lua:259
 msgid "Add IGNORE Target"
@@ -269,6 +271,10 @@ msgstr "有关详细信息，请参见％sREADME％s。"
 #: applications/luci-app-vpn-policy-routing/luasrc/model/cbi/vpn-policy-routing.lua:213
 msgid "Select Append for -A and Insert for -I."
 msgstr "选择-A追加，-I插入。"
+
+#: applications/luci-app-vpn-policy-routing/luasrc/model/cbi/vpn-policy-routing.lua:153
+msgid "Service Control"
+msgstr "服务控制"
 
 #: applications/luci-app-vpn-policy-routing/luasrc/model/cbi/vpn-policy-routing.lua:143
 msgid "Service Errors"
