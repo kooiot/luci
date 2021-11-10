@@ -79,7 +79,8 @@ return network.registerProtocol('modemmanager', {
 	renderFormOptions: function(s) {
 		var dev = this.getL3Device() || this.getDevice(), o;
 
-		o = s.taboption('general', form.ListValue, 'device', _('Modem device'));
+		o = s.taboption('general', form.ListValue, '_modem_device', _('Modem device'));
+		o.ucioption = 'device';
 		o.rmempty = false;
 		o.load = function(section_id) {
 			return getModemList().then(L.bind(function(devices) {
@@ -120,11 +121,8 @@ return network.registerProtocol('modemmanager', {
 		o = s.taboption('advanced', form.Value, 'mtu', _('Override MTU'));
 		o.placeholder = dev ? (dev.getMTU() || '1500') : '1500';
 		o.datatype    = 'max(9200)';
-		
+
 		o = s.taboption('general', form.Value, 'signalrate', _('Signal Refresh Rate'), _("In seconds"));
 		o.datatype = 'uinteger';
-		
-		s.taboption('general', form.Value, 'metric', _('Gateway metric'));
-
 	}
 });

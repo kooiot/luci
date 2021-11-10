@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-11-27 20:38+0000\n"
-"Last-Translator: Marcin Net <marcin.net@linux.pl>\n"
+"PO-Revision-Date: 2021-07-22 13:50+0000\n"
+"Last-Translator: Matthaiks <kitynska@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsmwan3/pl/>\n"
 "Language: pl\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.4-dev\n"
+"X-Generator: Weblate 4.7.2-dev\n"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interfaceconfig.lua:176
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interfaceconfig.lua:192
@@ -42,8 +42,9 @@ msgstr "%d minut"
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interfaceconfig.lua:165
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interfaceconfig.lua:181
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interfaceconfig.lua:201
+#, fuzzy
 msgid "%d second"
-msgstr "%d sekund"
+msgstr "%d sekunda"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interfaceconfig.lua:153
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interfaceconfig.lua:154
@@ -117,7 +118,7 @@ msgstr "Sprawdź jakość łącza"
 msgid "Check routing table"
 msgstr "Sprawdź tabelę trasowania"
 
-#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:98
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:112
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_detail.htm:34
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_troubleshooting.htm:34
 msgid "Collecting data..."
@@ -155,7 +156,7 @@ msgstr "Szczegóły"
 msgid "Diagnostics"
 msgstr "Diagnostyka"
 
-#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:50
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:64
 msgid "Disabled"
 msgstr "Wyłączone"
 
@@ -165,6 +166,10 @@ msgid ""
 msgstr ""
 "Opuszczony interfejs zostanie uznany za podniesiony po wielu udanych testach "
 "ping"
+
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:44
+msgid "Downtime"
+msgstr "Przestój"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/globalsconfig.lua:26
 msgid "Emergency"
@@ -232,7 +237,7 @@ msgstr "Maska zapory sieciowej"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interfaceconfig.lua:242
 msgid "Flush conntrack table"
-msgstr "Tablica flush conntrack"
+msgstr "Opróżnij tabelę conntrack"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interfaceconfig.lua:243
 msgid "Flush global firewall conntrack table on interface events"
@@ -296,6 +301,7 @@ msgstr "Stan początkowy"
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interface.lua:149
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/member.lua:27
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/memberconfig.lua:18
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:74
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_detail.htm:10
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_diagnostics.htm:10
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_diagnostics.htm:61
@@ -345,7 +351,7 @@ msgstr "Ostatnia wizyta"
 msgid "Load Balancing"
 msgstr "Równoważenie obciążenia"
 
-#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:97
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:111
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_detail.htm:33
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_diagnostics.htm:36
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_troubleshooting.htm:33
@@ -389,7 +395,7 @@ msgstr "MWAN - Zasady"
 msgid "MWAN Interface Configuration - %s"
 msgstr "Konfiguracja interfejsu MWAN - %s"
 
-#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:95
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:109
 msgid "MWAN Interfaces"
 msgstr "Interfejsy MWAN"
 
@@ -432,11 +438,11 @@ msgstr ""
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/member.lua:17
 msgid "Member"
-msgstr "Użytkownik"
+msgstr "Członek"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/policyconfig.lua:18
 msgid "Member used"
-msgstr "Użytkownik używa"
+msgstr "Członek używa"
 
 #: applications/luci-app-mwan3/luasrc/controller/mwan3.lua:51
 msgid "Members"
@@ -480,9 +486,13 @@ msgstr ""
 msgid "No"
 msgstr "Nie"
 
-#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:77
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:91
 msgid "No MWAN interfaces found"
 msgstr "Nie znaleziono interfejsu MWAN"
+
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:50
+msgid "No Tracking"
+msgstr "Bez śledzenia"
 
 #: applications/luci-app-mwan3/luasrc/controller/mwan3.lua:159
 msgid "No gateway for interface %s found."
@@ -660,6 +670,10 @@ msgstr "Adres źródłowy"
 msgid "Source port"
 msgstr "Port źródłowy"
 
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:78
+msgid "Status"
+msgstr "Status"
+
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/ruleconfig.lua:55
 msgid "Sticky"
 msgstr "Przyklejony"
@@ -759,6 +773,11 @@ msgstr ""
 msgid "Troubleshooting"
 msgstr "Rozwiązywanie problemów"
 
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:36
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:53
+msgid "Uptime"
+msgstr "Czas pracy"
+
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/ruleconfig.lua:46
 msgid "View the content of /etc/protocols for protocol description"
 msgstr "Zobacz zawartość/etc/protocols dla opisu protokołu"
@@ -819,8 +838,8 @@ msgstr "Rozmiar"
 msgid ""
 "When all policy members are offline use this behavior for matched traffic"
 msgstr ""
-"Kiedy wszyscy użytkownicy polityki są w trybie offline używają tego "
-"zachowania dla dopasowanego ruchu"
+"Gdy wszyscy członkowie zasad są offline, użyj tego zachowania dla "
+"dopasowanego ruchu"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interface.lua:163
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/ruleconfig.lua:58

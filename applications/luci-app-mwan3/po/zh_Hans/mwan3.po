@@ -3,15 +3,15 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-02-07 14:21+0000\n"
-"Last-Translator: 孤爺仔 <7312140@qq.com>\n"
+"PO-Revision-Date: 2021-08-18 10:44+0000\n"
+"Last-Translator: TsLenMo <2013319822@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "openwrt/luciapplicationsmwan3/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.5-dev\n"
+"X-Generator: Weblate 4.8-dev\n"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interfaceconfig.lua:176
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interfaceconfig.lua:192
@@ -44,6 +44,7 @@ msgstr "%d 分钟"
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interfaceconfig.lua:165
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interfaceconfig.lua:181
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interfaceconfig.lua:201
+#, fuzzy
 msgid "%d second"
 msgstr "%d 秒"
 
@@ -95,7 +96,7 @@ msgstr "取值范围：1-256。如果不填写，默认值为 1"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/globalsconfig.lua:27
 msgid "Alert"
-msgstr "警戒"
+msgstr "提醒"
 
 #: applications/luci-app-mwan3/luasrc/controller/mwan3.lua:177
 msgid "All required IP rules for interface %s found"
@@ -117,7 +118,7 @@ msgstr "检查连接质量"
 msgid "Check routing table"
 msgstr "检查路由表"
 
-#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:98
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:112
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_detail.htm:34
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_troubleshooting.htm:34
 msgid "Collecting data..."
@@ -155,7 +156,7 @@ msgstr "详细信息"
 msgid "Diagnostics"
 msgstr "网络诊断"
 
-#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:50
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:64
 msgid "Disabled"
 msgstr "已禁用"
 
@@ -163,6 +164,10 @@ msgstr "已禁用"
 msgid ""
 "Downed interface will be deemed up after this many successful ping tests"
 msgstr "当 Ping 成功次数达到这个数值后，已经被认为离线的接口将会重新上线"
+
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:44
+msgid "Downtime"
+msgstr "故障时间"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/globalsconfig.lua:26
 msgid "Emergency"
@@ -175,7 +180,7 @@ msgstr "启用 SSL 跟踪"
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interface.lua:159
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interfaceconfig.lua:23
 msgid "Enabled"
-msgstr "启用"
+msgstr "已启用"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/ruleconfig.lua:73
 msgid ""
@@ -291,6 +296,7 @@ msgstr "初始状态"
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interface.lua:149
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/member.lua:27
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/memberconfig.lua:18
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:74
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_detail.htm:10
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_diagnostics.htm:10
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_diagnostics.htm:61
@@ -340,7 +346,7 @@ msgstr "备用成员"
 msgid "Load Balancing"
 msgstr "负载均衡"
 
-#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:97
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:111
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_detail.htm:33
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_diagnostics.htm:36
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_troubleshooting.htm:33
@@ -384,7 +390,7 @@ msgstr "MWAN - 规则"
 msgid "MWAN Interface Configuration - %s"
 msgstr "MWAN 接口配置 - %s"
 
-#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:95
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:109
 msgid "MWAN Interfaces"
 msgstr "MWAN 接口"
 
@@ -475,9 +481,13 @@ msgstr ""
 msgid "No"
 msgstr "否"
 
-#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:77
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:91
 msgid "No MWAN interfaces found"
 msgstr "没有找到 MWAN 接口"
+
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:50
+msgid "No Tracking"
+msgstr "无跟踪"
 
 #: applications/luci-app-mwan3/luasrc/controller/mwan3.lua:159
 msgid "No gateway for interface %s found."
@@ -626,11 +636,11 @@ msgid ""
 "interfaces, members or policies"
 msgstr ""
 "规则用于指定哪些流量将使用特定的 MWAN 策略<br />规则可基于 IP 地址，端口或协"
-"议<br />每条流量至上而下进行匹配，如果匹配中了某条规则，则其下方的规则将被忽"
-"略<br />不符合任何规则的流量将使用主路由表进行路由<br />目的地为已知（非默"
-"认）网络的流量由主路由表处理<br />如果流量符合某条规则，但该规则所使用的策略"
-"中的所有 WAN 接口都离线，则该流量会被丢弃<br />名称可包含字符 A-Z，a-z，0-9，"
-"_ ，但不能有空格<br />规则不能与接口、成员或策略重名"
+"议<br />每条流量至上而下进行匹配<br />如果匹配中了某条规则，则其下方的规则将"
+"被忽略<br />不符合任何规则的流量将使用主路由表进行路由<br />目的地为已知（非"
+"默认）网络的流量由主路由表处理<br />如果流量符合某条规则，但该规则所使用的策"
+"略中的所有 WAN 接口都离线，则该流量会被丢弃<br />名称可包含字符 A-Z，a-z，"
+"0-9，_ ，但不能有空格<br />规则不能与接口、成员或策略重名"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/ruleconfig.lua:62
 msgid "Seconds. Acceptable values: 1-1000000. Defaults to 600 if not set"
@@ -645,6 +655,10 @@ msgstr "源地址"
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/ruleconfig.lua:31
 msgid "Source port"
 msgstr "源端口"
+
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:78
+msgid "Status"
+msgstr "状态"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/ruleconfig.lua:55
 msgid "Sticky"
@@ -699,7 +713,7 @@ msgstr ""
 "您可以在此修改“/etc/mwan3.user”的内容。<br />该文件会在系统升级后保留。<br /"
 "><br />注意：<br />该文件会作为 shell 脚本执行。<br />脚本的第一行必须是 "
 "&#34;#!/bin/sh&#34;，不带引号。<br />以 # 开头的行是注释，不会被执行。<br />"
-"您可以在此自定义 mwan3 事件响应脚本。<br />在启用了 mwan3 的接口上，当 "
+"您可以在此自定义 mwan3 事件响应脚本。<br />在启用了 mwan3 的接口上，<br />当 "
 "netifd 产生 hotplug 事件时该脚本会被执行。<br /><br />有三个主要的环境变量会"
 "被传递给该脚本。<br /><br />$ACTION<br /> * \"ifup\" 是由 netifd 和 "
 "mwan3track 调用的<br />* \"ifdown\" 是由 netifd 和 mwan3track 调用的<br />* "
@@ -736,6 +750,11 @@ msgstr ""
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_troubleshooting.htm:13
 msgid "Troubleshooting"
 msgstr "故障排除"
+
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:36
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:53
+msgid "Uptime"
+msgstr "运行时间"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/ruleconfig.lua:46
 msgid "View the content of /etc/protocols for protocol description"

@@ -217,9 +217,8 @@ return view.extend({
 		o.placeholder = null;
 		o.depends('target', 'SNAT');
 		o.validate = function(section_id, value) {
-			var port = this.map.lookupOption('snat_port', section_id),
-			    a = this.formvalue(section_id),
-			    p = port ? port[0].formvalue(section_id) : null;
+			var a = this.formvalue(section_id),
+			    p = this.section.formvalue(section_id, 'snat_port');
 
 			if ((a == null || a == '') && (p == null || p == '') && value == '')
 				return _('A rewrite IP must be specified!');
@@ -278,11 +277,11 @@ return view.extend({
 		for (var i = 1; i <= 31; i++)
 			o.value(i);
 
-		o = s.taboption('timed', form.Value, 'start_time', _('Start Time (hh.mm.ss)'));
+		o = s.taboption('timed', form.Value, 'start_time', _('Start Time (hh:mm:ss)'));
 		o.modalonly = true;
 		o.datatype = 'timehhmmss';
 
-		o = s.taboption('timed', form.Value, 'stop_time', _('Stop Time (hh.mm.ss)'));
+		o = s.taboption('timed', form.Value, 'stop_time', _('Stop Time (hh:mm:ss)'));
 		o.modalonly = true;
 		o.datatype = 'timehhmmss';
 

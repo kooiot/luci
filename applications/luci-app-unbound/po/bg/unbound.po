@@ -1,8 +1,14 @@
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2021-09-27 22:36+0000\n"
+"Last-Translator: Iskren Mihaylov <iskren.mihaylov91@gmail.com>\n"
+"Language-Team: Bulgarian <https://hosted.weblate.org/projects/openwrt/"
+"luciapplicationsunbound/bg/>\n"
 "Language: bg\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.9-dev\n"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/configure.lua:160
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/zone-details.lua:53
@@ -180,7 +186,7 @@ msgstr ""
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/zones.lua:39
 msgid "Enable"
-msgstr ""
+msgstr "Разрешаване"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/configure.lua:102
 msgid "Enable DNS64"
@@ -216,7 +222,7 @@ msgstr ""
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/zone-details.lua:29
 msgid "Enabled"
-msgstr ""
+msgstr "Разрешен"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/configure.lua:297
 msgid "Extended Statistics"
@@ -260,7 +266,7 @@ msgstr ""
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/zones.lua:71
 msgid "Forward"
-msgstr ""
+msgstr "Препращане"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/zone-details.lua:40
 msgid "Forward (simple handoff)"
@@ -549,7 +555,7 @@ msgstr ""
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/server.lua:11
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/uciedit.lua:11
 msgid "Save"
-msgstr ""
+msgstr "Запази"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/zone-details.lua:67
 msgid "Server Port"
@@ -599,7 +605,7 @@ msgstr ""
 
 #: applications/luci-app-unbound/luasrc/controller/unbound.lua:39
 msgid "Status"
-msgstr ""
+msgstr "Статус"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/configure.lua:273
 msgid "Strict Minimize"
