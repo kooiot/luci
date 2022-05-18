@@ -91,6 +91,7 @@ return network.registerProtocol('3g', {
 		o.value('umts_only', _('UMTS only'));
 		o.value('gprs_only', _('GPRS only'));
 		o.value('evdo', 'CDMA/EV-DO');
+		o.value('ec20', 'EC20 only');
 
 		o = s.taboption('general', form.Value, 'apn', _('APN'));
 		o.validate = function(section_id, value) {
