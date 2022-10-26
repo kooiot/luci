@@ -921,7 +921,7 @@ dispatch = function(_http, path) {
 					http.status(403, 'Forbidden');
 					http.header('X-LuCI-Login-Required', 'yes');
 
-					let scope = { duser: 'root', fuser: user };
+					let scope = { duser: 'admin', fuser: user };
 					let theme_sysauth = `themes/${basename(runtime.env.media)}/sysauth`;
 
 					if (runtime.is_ucode_template(theme_sysauth) || runtime.is_lua_template(theme_sysauth)) {
@@ -940,6 +940,7 @@ dispatch = function(_http, path) {
 				    cookie_secure = (http.getenv('HTTPS') == 'on') ? '; secure' : '';
 
 				http.header('Set-Cookie', `${cookie_name}=${session.sid}; path=${build_url()}; SameSite=strict; HttpOnly${cookie_secure}`);
+				http.header('Set-Cookie', `sysuser=${session.username}; path=${build_url()}; SameSite=strict`);
 				http.redirect(build_url(...resolved.ctx.request_path));
 
 				return;
