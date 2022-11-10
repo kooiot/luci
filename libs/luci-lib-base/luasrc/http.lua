@@ -46,6 +46,10 @@ function header(key, value)
 	L.http:header(key, value)
 end
 
+function setcookie(value)
+	L.http:setcookie(value)
+end
+
 function prepare_content(mime)
 	L.http:prepare_content(mime)
 end

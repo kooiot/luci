@@ -939,8 +939,9 @@ dispatch = function(_http, path) {
 				let cookie_name = (http.getenv('HTTPS') == 'on') ? 'sysauth_https' : 'sysauth_http',
 				    cookie_secure = (http.getenv('HTTPS') == 'on') ? '; secure' : '';
 
-				http.header('Set-Cookie', `${cookie_name}=${session.sid}; path=${build_url()}; SameSite=strict; HttpOnly${cookie_secure}`);
-				http.header('Set-Cookie', `sysuser=${session.username}; path=${build_url()}; SameSite=strict`);
+				/* http.header('Set-Cookie', `sysuser=${session.data?.username}; path=${build_url()}; SameSite=strict${cookie_secure}`); */
+				http.setcookie(`${cookie_name}=${session.sid}; path=${build_url()}; SameSite=strict; HttpOnly${cookie_secure}`);
+				http.setcookie(`sysuser=${session.data?.username}; path=${build_url()}; SameSite=strict${cookie_secure}`);
 				http.redirect(build_url(...resolved.ctx.request_path));
 
 				return;

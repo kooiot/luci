@@ -462,6 +462,11 @@ const Class = {
 		this.headers[lc(key)] = value;
 	},
 
+	setcookie: function(value) {
+		this.cookies ??= [];
+		push(this.cookies, value);
+	},
+
 	prepare_content: function(mime) {
 		if (!this.headers?.['content-type']) {
 			if (mime == 'application/xhtml+xml') {
@@ -517,6 +522,12 @@ const Class = {
 			this.output('\r\n');
 		}
 
+		for (let v in this.cookies) {
+			this.output('set-cookie: ');
+			this.output(v);
+			this.output('\r\n');
+		}
+
 		this.output('\r\n');
 
 		this.eoh = true;
@@ -566,6 +577,7 @@ export default function(env, sourcein, sinkout) {
 		message: {
 			env,
 			headers: {},
+			cookies: [],
 			params: urldecode_params(env?.QUERY_STRING ?? '')
 		},
 

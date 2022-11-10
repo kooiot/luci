@@ -165,12 +165,12 @@ function process_lua_controller(path)
 			if entry.sysauth_authenticator == "htmlauth" then
 				entry.auth = {
 					login = true,
-					methods = { "cookie:sysauth_https", "cookie:sysauth_http" }
+					methods = { "cookie:sysauth_https", "cookie:sysauth_http", "cookie:sysuser" }
 				}
 			elseif subname == "rpc" and entry.module == "luci.controller.rpc" then
 				entry.auth = {
 					login = false,
-					methods = { "query:auth", "cookie:sysauth_https", "cookie:sysauth_http" }
+					methods = { "query:auth", "cookie:sysauth_https", "cookie:sysauth_http", "cookie:sysuser" }
 				}
 			elseif entry.module == "luci.controller.admin.uci" then
 				entry.auth = {
