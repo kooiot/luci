@@ -109,11 +109,16 @@ get_init_status() {
 	local name
 	name="$(basename "$1")"
 	name="${name:-$packageName}" 
-	local errors ports dns outputFile outputCache outputGzip
+	local errors warnings ports dns outputFile outputCache outputGzip
 	local i
 	errors="$(ubus_get_status errors)"
+	warnings="$(ubus_get_status warnings)"
 	ports="$(ubus_get_ports)"
-	dns="$(uci -q get $packageName.config.dns)"
+	if [ -n "$(uci -q get $packageName.config.dnsmasq_config_file_url)" ]; then
+		dns="dnsmasq.conf"
+	else
+		dns="$(uci -q get $packageName.config.dns)"
+	fi
 	case "$dns" in
 		dnsmasq.addnhosts)
 			outputFile="$dnsmasqAddnhostsFile"
@@ -158,8 +163,40 @@ get_init_status() {
 	fi
 	json_add_string 'version' "$(get_version "$name")"
 	json_add_array 'errors'
-		for i in $errors; do json_add_string '' "$i"; done
+	if [ -n "$errors" ]; then
+		for i in $errors; do
+			if str_contains "$i" '|'; then
+				error_extra="${i##*|}"
+				error_id="${i%|*}"
+			else
+				error_id="$i"
+				unset error_extra
+			fi
+			json_add_object
+			json_add_string 'id' "$error_id"
+			json_add_string 'extra' "$error_extra"
+			json_close_object
+		done
+	fi
 	json_close_array
+	json_add_array 'warnings'
+	if [ -n "$warnings" ]; then
+		for i in $warnings; do
+			if str_contains "$i" '|'; then
+				error_extra="${i##*|}"
+				error_id="${i%|*}"
+			else
+				error_id="$i"
+				unset error_extra
+			fi
+			json_add_object
+			json_add_string 'id' "$error_id"
+			json_add_string 'extra' "$error_extra"
+			json_close_object
+		done
+	fi
+	json_close_array
+
 	if [ -n "$ports" ]; then
 		json_add_boolean 'force_dns_active' '1'
 		json_add_array 'force_dns_ports'
