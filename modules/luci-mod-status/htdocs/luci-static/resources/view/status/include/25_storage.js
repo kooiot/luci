@@ -29,11 +29,13 @@ return baseclass.extend({
 
 	render: function(systeminfo) {
 		var root = L.isObject(systeminfo.root) ? systeminfo.root : {},
-		    tmp = L.isObject(systeminfo.tmp) ? systeminfo.tmp : {};
+		    tmp = L.isObject(systeminfo.tmp) ? systeminfo.tmp : {},
+		    data = L.isObject(systeminfo.data) ? systeminfo.data : {};
 
 		var fields = [];
 		fields.push(_('Disk space'), root.used*1024, root.total*1024);
 		fields.push(_('Temp space'), tmp.used*1024, tmp.total*1024);
+		fields.push(_('Data space'), data.used*1024, data.total*1024);
 
 		var table = E('table', { 'class': 'table' });
 
