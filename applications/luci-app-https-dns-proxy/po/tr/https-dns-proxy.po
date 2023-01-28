@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-11-04 15:10+0000\n"
+"PO-Revision-Date: 2023-01-22 17:57+0000\n"
 "Last-Translator: Oğuz Ersen <oguz@ersen.moe>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationshttps-dns-proxy/tr/>\n"
@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2-dev\n"
+"X-Generator: Weblate 4.15.1\n"
 
 #: applications/luci-app-https-dns-proxy/luasrc/model/cbi/https-dns-proxy.lua:92
 msgid "%s DoH at %s:%s"
@@ -22,11 +22,15 @@ msgstr "%s yüklenmemiş ya da bulunamadı"
 msgid "360 Secure DNS - CN"
 msgstr "360 Güvenli DNS - CN"
 
-#: applications/luci-app-https-dns-proxy/luasrc/https-dns-proxy/providers/com.adguard.dns-family.lua:3
+#: applications/luci-app-https-dns-proxy/luasrc/https-dns-proxy/providers/io.adguard-dns.dns-family.lua:3
 msgid "AdGuard (Family Protection)"
 msgstr "AdGuard (Aile Kalkanı)"
 
-#: applications/luci-app-https-dns-proxy/luasrc/https-dns-proxy/providers/com.adguard.dns.lua:3
+#: applications/luci-app-https-dns-proxy/luasrc/https-dns-proxy/providers/io.adguard-dns.dns-nonfiltering.lua:3
+msgid "AdGuard (Non-filtering)"
+msgstr "AdGuard (Filtresiz)"
+
+#: applications/luci-app-https-dns-proxy/luasrc/https-dns-proxy/providers/io.adguard-dns.dns.lua:3
 msgid "AdGuard (Standard)"
 msgstr "AdGuard (Standart)"
 
@@ -309,8 +313,8 @@ msgstr "IIJ Genel DNS - JP"
 
 #: applications/luci-app-https-dns-proxy/luasrc/model/cbi/https-dns-proxy.lua:123
 msgid ""
-"If update option is selected, the 'DNS forwardings' section of %sDHCP and DNS"
-"%s will be automatically updated to use selected DoH providers (%smore "
+"If update option is selected, the 'DNS forwardings' section of %sDHCP and "
+"DNS%s will be automatically updated to use selected DoH providers (%smore "
 "information%s)."
 msgstr ""
 "Güncelleme seçeneği seçilirse,%sDHCP ve DNS%s 'nin 'DNS iletimleri' bölümü, "
