@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-03-30 17:00+0200\n"
-"PO-Revision-Date: 2023-02-13 12:12+0000\n"
+"PO-Revision-Date: 2023-03-01 12:40+0000\n"
 "Last-Translator: ssantos <ssantos@web.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsfirewall/de/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.16-dev\n"
+"X-Generator: Weblate 4.16-rc\n"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:48
 msgid ""
@@ -317,7 +317,7 @@ msgstr "Ungültige Pakete verwerfen"
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:230
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/snats.js:164
 msgid "Enable"
-msgstr "Aktivieren"
+msgstr "aktivieren"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/forwards.js:248
 msgid "Enable NAT Loopback"
@@ -336,6 +336,8 @@ msgid ""
 "Enable network address and port translation (NAT or NAPT) for outbound "
 "traffic on this zone. This is typically enabled on the <em>wan</em> zone."
 msgstr ""
+"Ativar a conversão de endereços e portas de rede (NAT ou NAPT) para o "
+"tráfego de saída nessa zona. Isto é normalmente ativado na zona <em>wan</em>."
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/tools/firewall.js:338
 msgid "Expecting: %s"
@@ -506,12 +508,12 @@ msgstr "IPv4 und IPv6"
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:280
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:234
 msgid "IPv4 only"
-msgstr "Nur IPv4"
+msgstr "nur IPv4"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:281
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:235
 msgid "IPv6 only"
-msgstr "Nur IPv6"
+msgstr "nur IPV4"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:251
 msgid "Inbound device"
