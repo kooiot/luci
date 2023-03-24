@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-05-26 19:03+0200\n"
-"PO-Revision-Date: 2023-03-03 05:41+0000\n"
-"Last-Translator: Felipe Nogueira <contato.fnog@gmail.com>\n"
+"PO-Revision-Date: 2023-03-19 12:40+0000\n"
+"Last-Translator: ssantos <ssantos@web.de>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/openwrt/luci/"
 "pt/>\n"
 "Language: pt\n"
@@ -1438,6 +1438,10 @@ msgstr "Configuração CLAT falhou"
 msgid "CNAME or fqdn"
 msgstr "CNAME ou fqdn"
 
+#: protocols/luci-proto-cni/htdocs/luci-static/resources/protocol/cni.js:6
+msgid "CNI (Externally managed interface)"
+msgstr ""
+
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:72
 msgid "CPU usage (%)"
 msgstr "Uso do CPU (%)"
@@ -2555,7 +2559,7 @@ msgstr "Transferir backup"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:432
 msgid "Download mtdblock"
-msgstr "Transferir o bloco mtd"
+msgstr "Descarregar o bloco mtd"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1538
 msgid "Downstream SNR offset"
@@ -2583,6 +2587,9 @@ msgid ""
 "proxy on the network and such frames need not be used or in the case of "
 "802.11, must not be used to prevent attacks."
 msgstr ""
+"Eliminar todos os quadros ARP gratuitos, por exemplo, caso haja um proxy ARP "
+"bom, conhecido na rede, onde estes quadros não precisem ser usados ou, no "
+"caso do 802.11, não devam ser usados para evitar ataques."
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/tools/network.js:733
 msgid ""
@@ -2590,26 +2597,31 @@ msgid ""
 "good NA proxy on the network and such frames need not be used or in the case "
 "of 802.11, must not be used to prevent attacks."
 msgstr ""
+"Dexar cair todos os anúncios de vizinhos não solicitados, por exemplo, se "
+"houver um bom proxy NA conhecido na rede e tais quadros não precisem ser "
+"usados ou, no caso de 802.11, não devam ser usados para evitar ataques."
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/tools/network.js:710
 msgid "Drop gratuitous ARP"
-msgstr ""
+msgstr "Deixar cair ARP gratuito"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/tools/network.js:787
 msgid "Drop layer 2 multicast frames containing IPv4 unicast packets."
 msgstr ""
+"Deixar cair os quadros multicast da camada 2 contendo pacotes unicast IPv4."
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/tools/network.js:791
 msgid "Drop layer 2 multicast frames containing IPv6 unicast packets."
 msgstr ""
+"Deixar cair os quadros multicast da camada 2 contendo pacotes unicast IPv6."
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/tools/network.js:787
 msgid "Drop nested IPv4 unicast"
-msgstr ""
+msgstr "Deixar cair unicast IPv4 aninhado"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/tools/network.js:791
 msgid "Drop nested IPv6 unicast"
-msgstr ""
+msgstr "Deixar cair unicast IPv6 aninhado"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/nftables.js:96
 msgctxt "nft drop action"
@@ -2623,7 +2635,7 @@ msgstr "Abandonar pacotes inigualáveis"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/tools/network.js:733
 msgid "Drop unsolicited NA"
-msgstr ""
+msgstr "Daixar cair NA não solicitado"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/dropbear.js:12
 msgid "Dropbear Instance"
@@ -2805,7 +2817,7 @@ msgstr "Ativar a negociação IPv6 no link PPP"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/tools/network.js:729
 msgid "Enable IPv6 segment routing"
-msgstr ""
+msgstr "Ativa o roteamento do segmento IPv6"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/switch.js:194
 msgid "Enable Jumbo Frame passthrough"
@@ -3795,7 +3807,7 @@ msgstr "Alto"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/tools/network.js:707
 msgid "Honor gratuitous ARP"
-msgstr ""
+msgstr "Honrar ARP gratuito"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/nftables.js:593
 msgctxt "Chain hook description"
@@ -4670,7 +4682,7 @@ msgstr "Inverta a correspondência"
 #: modules/luci-mod-network/htdocs/luci-static/resources/tools/network.js:223
 msgctxt "VLAN port state"
 msgid "Is Primary VLAN"
-msgstr ""
+msgstr "É a VLAN primária"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1149
 msgid "Isolate Clients"
@@ -5979,7 +5991,7 @@ msgstr "Ruído"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/50_dsl.js:30
 msgid "Noise Margin"
-msgstr ""
+msgstr "Margem de ruído"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:272
 msgid "Noise:"
@@ -6127,7 +6139,7 @@ msgstr "Rota On-Link"
 msgid "One of hostname or MAC address must be specified!"
 msgstr "Um nome de host ou endereço MAC deve ser especificado!"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:481
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:490
 msgid "One of the following: %s"
 msgstr "Uma das seguintes: %s"
 
@@ -6865,7 +6877,7 @@ msgstr "Isolamento da porta"
 msgid "Port status:"
 msgstr "Estado da porta:"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:507
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:516
 msgid "Potential negation of: %s"
 msgstr "Negação potencial de: %s"
 
@@ -8830,7 +8842,7 @@ msgstr "Tabela"
 #: modules/luci-mod-network/htdocs/luci-static/resources/tools/network.js:219
 msgctxt "VLAN port state"
 msgid "Tagged"
-msgstr ""
+msgstr "Marcado"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:650
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:56
@@ -9893,7 +9905,7 @@ msgstr "Tipo de protocolo não suportado."
 #: modules/luci-mod-network/htdocs/luci-static/resources/tools/network.js:215
 msgctxt "VLAN port state"
 msgid "Untagged"
-msgstr ""
+msgstr "Não marcado"
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:532
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:97
@@ -10433,6 +10445,10 @@ msgid ""
 "requests or replies, otherwise only preexisting table entries are updated, "
 "but no new hosts are learned."
 msgstr ""
+"Quando ativado, as novas entradas da tabela ARP são adicionadas a partir das "
+"solicitações ou das respostas gratuitas de APR que forem recebidas, caso "
+"contrário, apenas as entradas preexistentes da tabela serão atualizadas, mas "
+"nenhum novo host será recebido."
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/led-trigger/heartbeat.js:14
 msgid ""
@@ -10808,7 +10824,7 @@ msgstr "duplex completo"
 msgid "half-duplex"
 msgstr "meio duplex"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:584
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:593
 msgid "hexadecimal encoded value"
 msgstr "valor codificado hexadecimal"
 
@@ -10996,7 +11012,7 @@ msgstr ""
 "Protocol\">HTTP</abbr> ou <abbr title=\"Hypertext Transfer Protocol "
 "Secure\">HTTPS</abbr>."
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:574
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:583
 msgid "unique value"
 msgstr "valor único"
 
@@ -11118,8 +11134,8 @@ msgstr "identificador UCI, nome de host ou endereço IP válido"
 msgid "valid address:port"
 msgstr "endereço:porto válido"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:548
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:552
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:557
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:561
 msgid "valid date (YYYY-MM-DD)"
 msgstr "data válida (AAAAA-MM-DD)"
 
@@ -11159,11 +11175,15 @@ msgstr "valor inteiro válido"
 msgid "valid multicast MAC address"
 msgstr "endereço MAC multicast válido"
 
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:433
+msgid "valid network device name, not \".\" or \"..\""
+msgstr ""
+
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:323
 msgid "valid network in address/netmask notation"
 msgstr "rede válida em notação de endereço/máscara de rede"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:523
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:532
 msgid "valid phone digit (0-9, \"*\", \"#\", \"!\" or \".\")"
 msgstr "dígito válido do telefone (0-9, \"*\", \"#\", \"!\" ou \".\")"
 
@@ -11177,35 +11197,35 @@ msgstr "porta ou intervalo de portas válido (porta1-porta2)"
 msgid "valid port value"
 msgstr "valor de porta válido"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:528
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:537
 msgid "valid time (HH:MM:SS)"
 msgstr "tempo válido (HH:MM:SS)"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:450
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:459
 msgid "value between %d and %d characters"
 msgstr "valor entre caracteres %d e %d"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:431
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:440
 msgid "value between %f and %f"
 msgstr "valor entre %f e %f"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:435
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:444
 msgid "value greater or equal to %f"
 msgstr "valor maior ou igual a %f"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:439
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:448
 msgid "value smaller or equal to %f"
 msgstr "valor menor ou igual a %f"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:444
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:453
 msgid "value with %d characters"
 msgstr "valor com caracteres %d"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:455
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:464
 msgid "value with at least %d characters"
 msgstr "valor com pelo menos %d caracteres"
 
-#: modules/luci-base/htdocs/luci-static/resources/validation.js:460
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:469
 msgid "value with at most %d characters"
 msgstr "valor com o máximo de %d caracteres"
 
