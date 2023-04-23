@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-04-02 20:37+0000\n"
+"PO-Revision-Date: 2023-04-17 08:10+0000\n"
 "Last-Translator: st7105 <st7105@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsdockerman/ru/>\n"
@@ -21,7 +21,7 @@ msgstr "Добавить"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:580
 msgid "Add host device to the container"
-msgstr "Добавить хост-устройство в контейнер"
+msgstr "Добавить в контейнер устройство с хоста"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:556
 msgid "Advance"
@@ -29,7 +29,7 @@ msgstr "Дополнительно"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:571
 msgid "Allocates an ephemeral host port for all of a container's exposed ports"
-msgstr "Выделяет эфемерный порт хоста для всех открытых портов контейнера"
+msgstr "Резервирует временный порт хоста для всех открытых портов контейнера"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:483
 msgid "Always pull image first"
@@ -61,7 +61,7 @@ msgstr "Базовое устройство"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:538
 msgid "Bind Mount(-v)"
-msgstr "Связывание Mount(-v)"
+msgstr "Bind Mount(-v)"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:539
 msgid "Bind mount a volume"
@@ -484,7 +484,7 @@ msgstr "Информация"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newnetwork.lua:64
 msgid "Ingress"
-msgstr "Ingress"
+msgstr "Ингресс"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newnetwork.lua:65
 msgid ""
@@ -964,7 +964,7 @@ msgstr "Пользователь (-u)"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newnetwork.lua:53
 msgid "VEPA (Virtual Ethernet Port Aggregator)"
-msgstr "VEPA (Virtual Ethernet Port Aggregator)"
+msgstr "VEPA (агрегатор портов виртуального Ethernet)"
 
 #: applications/luci-app-dockerman/luasrc/controller/dockerman.lua:40
 #: applications/luci-app-dockerman/luasrc/view/dockerman/overview.htm:187
@@ -984,8 +984,8 @@ msgid ""
 "When pressing the Import button, both a local image can be loaded onto the "
 "system and a valid image tar can be downloaded from remote."
 msgstr ""
-"При нажатии кнопки Import в систему может быть загружен как локальный образ, "
-"так и действительный tar удалённый образ."
+"По нажатии кнопки \"Импортировать\" в систему может быть загружен как "
+"локальный образ, так и tar-файл из удаленного репозитория."
 
 #~ msgid "Setting"
 #~ msgstr "Настройка"
