@@ -2,161 +2,161 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-06-05 03:51+0000\n"
-"Last-Translator: Wellington Terumi Uemura <wellingtonuemura@gmail.com>\n"
-"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
-"openwrt/luciapplicationscommands/pt_BR/>\n"
-"Language: pt_BR\n"
+"PO-Revision-Date: 2023-06-11 03:31+0000\n"
+"Last-Translator: xtz1983 <xtz1983@gmail.com>\n"
+"Language-Team: Dutch <https://hosted.weblate.org/projects/openwrt/"
+"luciapplicationscommands/nl/>\n"
+"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.18-dev\n"
 
 #: applications/luci-app-commands/htdocs/luci-static/resources/view/commands.js:19
 msgid "A short textual description of the configured command"
-msgstr "Uma pequena descrição textual do comando configurado"
+msgstr "Een korte tekstuele beschrijving van het geconfigureerde commando"
 
 #: applications/luci-app-commands/htdocs/luci-static/resources/view/commands.js:30
 msgid ""
 "Allow executing the command and downloading its output without prior "
 "authentication"
 msgstr ""
-"Permitir a execução do comando e descarregar o resultado sem autenticação "
-"prévia"
+"Sta het uitvoeren van de opdracht en het downloaden van de uitvoer toe "
+"zonder voorafgaande verificatie"
 
 #: applications/luci-app-commands/htdocs/luci-static/resources/view/commands.js:27
 msgid "Allow the user to provide additional command line arguments"
-msgstr "Permitir ao usuário inserir argumentos de linha de comando adicionais"
+msgstr "Sta de gebruiker toe om aanvullende opdrachtregelargumenten op te geven"
 
 #: applications/luci-app-commands/ucode/template/commands.ut:156
 msgid "Arguments:"
-msgstr "Argumentos:"
+msgstr "Argumenten:"
 
 #: applications/luci-app-commands/ucode/template/commands.ut:60
 msgid "Binary data not displayed, download instead."
-msgstr "Dados binários não mostrados, mas podem ser baixados."
+msgstr "Binaire gegevens worden niet weergegeven, download in plaats daarvan."
 
 #: applications/luci-app-commands/ucode/template/commands.ut:65
 msgid "Code:"
-msgstr "Código:"
+msgstr "Code:"
 
 #: applications/luci-app-commands/ucode/template/commands.ut:174
 msgid "Collecting data..."
-msgstr "Coletando dados..."
+msgstr "Gegevens verzamelen..."
 
 #: applications/luci-app-commands/htdocs/luci-static/resources/view/commands.js:21
 msgid "Command"
-msgstr "Comando"
+msgstr "Commando"
 
 #: applications/luci-app-commands/ucode/template/commands_public.ut:32
 msgid "Command executed successfully."
-msgstr "O comando executou com sucesso."
+msgstr "Commando succesvol uitgevoerd."
 
 #: applications/luci-app-commands/ucode/template/commands_public.ut:34
 msgid "Command exited with status code %d"
-msgstr "O comando encerrado com o código %d"
+msgstr "Commando afgesloten met statuscode %d"
 
 #: applications/luci-app-commands/ucode/template/commands.ut:67
 msgid "Command failed"
-msgstr "O comando falhou"
+msgstr "Commando mislukt"
 
 #: applications/luci-app-commands/htdocs/luci-static/resources/view/commands.js:21
 msgid "Command line to execute"
-msgstr "Linha de comandos a executar"
+msgstr "Opdrachtregel om uit te voeren"
 
 #: applications/luci-app-commands/ucode/template/commands.ut:67
 msgid "Command successful"
-msgstr "Comando executado com sucesso"
+msgstr "Opdracht geslaagd"
 
 #: applications/luci-app-commands/ucode/template/commands.ut:154
 msgid "Command:"
-msgstr "Comando:"
+msgstr "Commando:"
 
 #: applications/luci-app-commands/root/usr/share/luci/menu.d/luci-app-commands.json:23
 msgid "Configure"
-msgstr "Configurar"
+msgstr "Configureren"
 
 #: applications/luci-app-commands/htdocs/luci-static/resources/view/commands.js:10
 #: applications/luci-app-commands/root/usr/share/luci/menu.d/luci-app-commands.json:3
 #: applications/luci-app-commands/ucode/template/commands.ut:137
 msgid "Custom Commands"
-msgstr "Comandos Personalizados"
+msgstr "Aangepaste opdrachten"
 
 #: applications/luci-app-commands/htdocs/luci-static/resources/view/commands.js:26
 msgid "Custom arguments"
-msgstr "Argumentos personalizados"
+msgstr "Aangepaste argumenten"
 
 #: applications/luci-app-commands/root/usr/share/luci/menu.d/luci-app-commands.json:14
 msgid "Dashboard"
-msgstr "Painel de Controle"
+msgstr "Dashboard"
 
 #: applications/luci-app-commands/htdocs/luci-static/resources/view/commands.js:18
 msgid "Description"
-msgstr "Descrição"
+msgstr "Beschrijving"
 
 #: applications/luci-app-commands/ucode/template/commands.ut:160
 msgid "Download"
-msgstr "Baixar"
+msgstr "Download"
 
 #: applications/luci-app-commands/ucode/template/commands.ut:117
 msgid "Download execution result"
-msgstr "Baixar os resultados da execução"
+msgstr "Uitvoeringsresultaat downloaden"
 
 #: applications/luci-app-commands/ucode/template/commands.ut:73
 msgid "Failed to execute command!"
-msgstr "Falha ao executar comando!"
+msgstr "Kan opdracht niet uitvoeren!"
 
 #: applications/luci-app-commands/root/usr/share/rpcd/acl.d/luci-app-commands.json:3
 msgid "Grant UCI access for luci-app-commands"
-msgstr "Conceda acesso UCI ao luci-app-commands"
+msgstr "Verleen UCI-toegang voor luci-app-commando's"
 
 #: applications/luci-app-commands/ucode/template/commands.ut:162
 msgid "Link"
-msgstr "Endereço"
+msgstr "Link"
 
 #: applications/luci-app-commands/ucode/template/commands.ut:47
 msgid "Loading"
-msgstr "Carregando"
+msgstr "Laden"
 
 #: applications/luci-app-commands/ucode/template/commands.ut:117
 msgid "Or display result"
-msgstr "Ou mostre o resultado"
+msgstr "Of resultaat weergeven"
 
 #: applications/luci-app-commands/htdocs/luci-static/resources/view/commands.js:29
 msgid "Public access"
-msgstr "Acesso público"
+msgstr "Publieke toegang"
 
 #: applications/luci-app-commands/ucode/template/commands.ut:159
 msgid "Run"
-msgstr "Executar"
+msgstr "Start"
 
 #: applications/luci-app-commands/ucode/template/commands_public.ut:44
 msgid "Standard Error"
-msgstr "Saída de Erro"
+msgstr "Standaardfout"
 
 #: applications/luci-app-commands/ucode/template/commands_public.ut:39
 msgid "Standard Output"
-msgstr "Saída Padrão"
+msgstr "Standaard uitvoer"
 
 #: applications/luci-app-commands/htdocs/luci-static/resources/view/commands.js:11
 msgid ""
 "This page allows you to configure custom shell commands which can be easily "
 "invoked from the web interface."
 msgstr ""
-"Esta página permite a configuração de comandos personalizados que podem ser "
-"facilmente executados através da interface web."
+"Op deze pagina kunt u aangepaste shell-commando's configureren die eenvoudig "
+"kunnen worden aangeroepen vanuit de webinterface."
 
 #: applications/luci-app-commands/ucode/template/commands.ut:144
 msgid "This section contains no values yet"
-msgstr "Esta seção ainda não possui nenhum valor"
+msgstr "Deze sectie bevat nog geen waarden"
 
 #: applications/luci-app-commands/ucode/template/commands.ut:48
 msgid "Waiting for command to complete..."
-msgstr "Aguardando a conclusão do comando..."
+msgstr "Wachten tot de opdracht is voltooid..."
 
 #~ msgid "Command exited with status code"
-#~ msgstr "O comando encerrou com um estado de erro"
+#~ msgstr "Command exited with status code"
 
-#~ msgid "Access command with"
-#~ msgstr "Acessar o comando com"
+#~ msgid "Command exited with status code "
+#~ msgstr "Command exited with status code "
