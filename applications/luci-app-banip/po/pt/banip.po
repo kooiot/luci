@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-05-18 23:53+0000\n"
-"Last-Translator: Fandangor <pina.aj@gmail.com>\n"
+"PO-Revision-Date: 2023-06-27 20:51+0000\n"
+"Last-Translator: ssantos <ssantos@web.de>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsbanip/pt/>\n"
 "Language: pt\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.18-dev\n"
+"X-Generator: Weblate 4.18.1\n"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:75
 msgid "-- Set Selection --"
@@ -125,7 +125,7 @@ msgstr "Configurações avançadas"
 msgid "Allowlist Feed Selection"
 msgstr "Seleção de feed da lista de permissões"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:622
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:627
 msgid "Allowlist Only"
 msgstr "Apenas a lista dos permitidos"
 
@@ -145,6 +145,10 @@ msgstr "Permitir uplink automático"
 msgid "Auto Allowlist"
 msgstr "Lista automática dos permitidos"
 
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:612
+msgid "Auto Block Subnet"
+msgstr "Sub-rede de bloqueio automático"
+
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:608
 msgid "Auto Blocklist"
 msgstr "Lista automática de bloqueio"
@@ -152,6 +156,14 @@ msgstr "Lista automática de bloqueio"
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:252
 msgid "Auto Detection"
 msgstr "Deteção automática"
+
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:612
+msgid ""
+"Automatically add entire subnets to the blocklist Set based on an additional "
+"RDAP request with the suspicious IP."
+msgstr ""
+"Adicione automaticamente sub-redes inteiras ao conjunto da lista de bloqueio "
+"com base numa solicitação adiciona RDAP com o IP suspeito."
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:608
 msgid ""
@@ -186,7 +198,7 @@ msgstr ""
 msgid "Blocklist Feed Selection"
 msgstr "Seleção de feed de lista de bloqueio"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:612
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:617
 msgid "Blocklist Set Expiry"
 msgstr "Expiração definida da lista de bloqueio"
 
@@ -254,11 +266,11 @@ msgstr "Editor de feed personalizado"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:387
 msgid ""
-"Deduplicate IP addresses across all active Sets and and tidy up the local "
+"Deduplicate IP addresses across all active Sets and tidy up the local "
 "blocklist."
 msgstr ""
-"Desduplicar endereços IP em todos os conjuntos ativos e organizar a lista de "
-"bloqueio local."
+"Elimine endereços IP em todos os conjuntos ativos e limpe a lista local de "
+"bloqueio."
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:387
 msgid "Deduplicate IPs"
@@ -382,7 +394,7 @@ msgstr "Ativa o suporte IPv4."
 msgid "Enables IPv6 support."
 msgstr "Ativa o suporte IPv6."
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:612
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:617
 msgid "Expiry time for auto added blocklist Set members."
 msgstr ""
 "Tempo de expiração para membros do conjunto de lista de bloqueio adicionados "
@@ -711,7 +723,7 @@ msgstr "Elementos do relatório"
 msgid "Restart"
 msgstr "Reiniciar"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:622
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:627
 msgid "Restrict the internet access from/to a small number of secure IPs."
 msgstr ""
 "Restrinja o acesso à Internet de/para uma pequena quantidade de IPs seguros."
@@ -815,9 +827,9 @@ msgid "Settings"
 msgstr "Configurações"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:366
-msgid "Split external set loading after every n members to save RAM."
+msgid "Split external Set loading after every n members to save RAM."
 msgstr ""
-"Divida o carregamento do conjunto externo após cada n membros para "
+"Divide o carregamento do conjunto externo após cada n membros para "
 "economizar RAM."
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:303
@@ -834,7 +846,7 @@ msgstr "Parar"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:603
 msgid "Subnet (default)"
-msgstr ""
+msgstr "Sub-rede (padrão)"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:128
 msgid "Survey"
@@ -893,23 +905,27 @@ msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/allowlist.js:32
 msgid ""
-"This is the local banIP allowlist that will permit certain MAC/IP/CIDR "
-"addresses.<br /> <em><b>Please note:</b></em> add only exactly one MAC/IPv4/"
-"IPv6 address or domain name per line."
+"This is the local banIP allowlist that will permit certain MAC-, IP-"
+"addresses or domain names.<br /> <em><b>Please note:</b></em> add only "
+"exactly one MAC/IPv4/IPv6 address or domain name per line. Ranges in CIDR "
+"notation and MAC/IP-bindings are allowed."
 msgstr ""
-"Esta é a lista dos permitidos do banIP local que permitirá determinados "
-"endereços MAC/IP/CIDR.<br /> <em><b>Observação:</b></em> adicione exatamente "
-"um endereço MAC/IPv4/IPv6 ou o nome do domínio por linha."
+"Esta é a lista de permissões local do banIP que permitirá determinados "
+"endereços MAC, IP ou nomes de domínio.<br /> <em><b>Observação:</b></em> "
+"adicione apenas um endereço, nome ou domínio MAC/IPv4/IPv6 por linha. "
+"Intervalos na notação CIDR e ligações MAC/IP são permitidos."
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/blocklist.js:32
 msgid ""
-"This is the local banIP blocklist that will prevent certain MAC/IP/CIDR "
-"addresses.<br /> <em><b>Please note:</b></em> add only exactly one MAC/IPv4/"
-"IPv6 address or domain name per line."
+"This is the local banIP blocklist that will prevent certain MAC-, IP-"
+"addresses or domain names.<br /> <em><b>Please note:</b></em> add only "
+"exactly one MAC/IPv4/IPv6 address or domain name per line. Ranges in CIDR "
+"notation and MAC/IP-bindings are allowed."
 msgstr ""
-"Esta é a lista dos permitidos do banIP local que impedirá determinados "
-"endereços MAC/IP/CIDR.<br /> <em><b>Observação:</b></em> adicione exatamente "
-"um endereço MAC/IPv4/IPv6 ou o nome do domínio por linha."
+"Esta é a lista de bloqueio local do banIP que impedirá determinados "
+"endereços MAC, IP ou nomes de domínio.<br /> <em><b> Observação:</b></em> "
+"adiciona exatamente um endereço MAC/IPv4/IPv6 ou nome de domínio por linha. "
+"São permitidos intervalos na notação CIDR e associações de MAC/IP."
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:188
 msgid ""
@@ -949,11 +965,11 @@ msgstr "Acione a ação nos eventos da interface ifup."
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:203
 msgid "URLv4"
-msgstr ""
+msgstr "URLv4"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:216
 msgid "URLv6"
-msgstr ""
+msgstr "URLv6"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/allowlist.js:22
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/blocklist.js:22
@@ -962,13 +978,13 @@ msgstr "Não foi possível salvar as alterações: %s"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:270
 msgid "Upload Custom Feeds"
-msgstr ""
+msgstr "Enviar os feeds personalizados"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:72
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:78
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:85
 msgid "Upload of the custom feed file failed."
-msgstr ""
+msgstr "O upload do ficheiro com os feeds personalizados falhou."
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:249
 msgid "Verbose Debug Logging"
@@ -1005,6 +1021,12 @@ msgid ""
 "maintainers version just empty the custom feed file again (do not delete "
 "it!)."
 msgstr ""
+"Com este editor, pode enviar o seu ficheiro local com feeds personalizados "
+"ou preencher um novo (uma cópia 1:1 da versão enviada com o pacote). O "
+"ficheiro está localizado em '/etc/banip/banip.custom.feeds'. Depois pode "
+"editar este ficheiro, apagar as entradas, adicionar novas ou fazer um backup "
+"local. Para voltar à versão do mantenedor, apenas deixe o ficheiro de feed "
+"personalizado vazio (mas não o exclua!)."
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:471
 msgid "alert"
