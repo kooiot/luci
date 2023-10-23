@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2023-10-06 08:29+0000\n"
+"PO-Revision-Date: 2023-10-21 06:20+0000\n"
 "Last-Translator: Džiugas J <dziugas1959@hotmail.com>\n"
 "Language-Team: Lithuanian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsadblock-fast/lt/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n % 10 == 1 && (n % 100 < 11 || n % 100 > "
 "19)) ? 0 : ((n % 10 >= 2 && n % 10 <= 9 && (n % 100 < 11 || n % 100 > 19)) ? "
 "1 : 2);\n"
-"X-Generator: Weblate 5.1-dev\n"
+"X-Generator: Weblate 5.1\n"
 
 #: applications/luci-app-adblock-fast/htdocs/luci-static/resources/adblock-fast/status.js:223
 msgid "%s is currently disabled"
@@ -151,7 +151,7 @@ msgstr ""
 #: applications/luci-app-adblock-fast/htdocs/luci-static/resources/adblock-fast/status.js:404
 #: applications/luci-app-adblock-fast/htdocs/luci-static/resources/view/adblock-fast/overview.js:239
 msgid "Disable"
-msgstr ""
+msgstr "Išjungti"
 
 #: applications/luci-app-adblock-fast/htdocs/luci-static/resources/view/adblock-fast/overview.js:341
 msgid "Disable Debugging"
@@ -159,7 +159,7 @@ msgstr ""
 
 #: applications/luci-app-adblock-fast/htdocs/luci-static/resources/adblock-fast/status.js:156
 msgid "Disabled"
-msgstr ""
+msgstr "Išjungtas/-i"
 
 #: applications/luci-app-adblock-fast/htdocs/luci-static/resources/adblock-fast/status.js:398
 msgid "Disabling %s service"
@@ -310,7 +310,7 @@ msgstr ""
 
 #: applications/luci-app-adblock-fast/htdocs/luci-static/resources/adblock-fast/status.js:142
 msgid "Force DNS ports:"
-msgstr ""
+msgstr "Priversti „DNS“ prievadai:"
 
 #: applications/luci-app-adblock-fast/htdocs/luci-static/resources/adblock-fast/status.js:347
 msgid "Force Re-Download"
@@ -392,7 +392,7 @@ msgstr ""
 
 #: applications/luci-app-adblock-fast/htdocs/luci-static/resources/adblock-fast/status.js:176
 msgid "Not installed or not found"
-msgstr ""
+msgstr "Neįdiegta arba nerasta"
 
 #: applications/luci-app-adblock-fast/htdocs/luci-static/resources/view/adblock-fast/overview.js:208
 msgid "Output Verbosity Setting"
@@ -537,7 +537,7 @@ msgstr ""
 
 #: applications/luci-app-adblock-fast/htdocs/luci-static/resources/view/adblock-fast/overview.js:385
 msgid "Unknown"
-msgstr ""
+msgstr "Nežinomas"
 
 #: applications/luci-app-adblock-fast/htdocs/luci-static/resources/view/adblock-fast/overview.js:148
 msgid "Use AdBlocking on the dnsmasq instance(s)"
@@ -592,7 +592,7 @@ msgstr ""
 
 #: applications/luci-app-adblock-fast/htdocs/luci-static/resources/view/adblock-fast/overview.js:226
 msgid "none"
-msgstr ""
+msgstr "joks"
 
 #: applications/luci-app-adblock-fast/htdocs/luci-static/resources/view/adblock-fast/overview.js:126
 msgid "unbound adblock list"
