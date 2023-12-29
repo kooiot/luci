@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2023-12-01 13:07+0000\n"
+"PO-Revision-Date: 2023-12-19 21:33+0000\n"
 "Last-Translator: Džiugas J <dziugas1959@hotmail.com>\n"
 "Language-Team: Lithuanian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsadblock/lt/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n % 10 == 1 && (n % 100 < 11 || n % 100 > "
 "19)) ? 0 : ((n % 10 >= 2 && n % 10 <= 9 && (n % 100 < 11 || n % 100 > 19)) ? "
 "1 : 2);\n"
-"X-Generator: Weblate 5.3-dev\n"
+"X-Generator: Weblate 5.3\n"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:272
 msgid "Action"
@@ -24,19 +24,19 @@ msgstr "Aktyvūs Ištekliai"
 
 #: applications/luci-app-adblock/root/usr/share/luci/menu.d/luci-app-adblock.json:3
 msgid "Adblock"
-msgstr ""
+msgstr "„Adblock“ – Reklaminio turinio blokatorius"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:40
 msgid "Adblock action"
-msgstr ""
+msgstr "Reklaminio turinio blokatoriaus veiksmas"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:11
 msgid "Add Blacklist Domain"
-msgstr ""
+msgstr "Pridėti draudžiamo sąrašo domeną-sritį"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:46
 msgid "Add Whitelist Domain"
-msgstr ""
+msgstr "Pridėti leidžiamojo sąrašo domeną-sritį"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:12
 msgid "Add this (sub-)domain to your local blacklist."
@@ -52,7 +52,7 @@ msgstr ""
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:300
 msgid "Additional Settings"
-msgstr ""
+msgstr "Papildomi nustatymai"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:380
 msgid "Additional trigger delay in seconds before adblock processing begins."
@@ -60,15 +60,15 @@ msgstr ""
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:301
 msgid "Advanced DNS Settings"
-msgstr ""
+msgstr "Pažengusieji „DNS“ nustatymai"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:303
 msgid "Advanced E-Mail Settings"
-msgstr ""
+msgstr "Pažengusieji el. pašto nustatymai"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:302
 msgid "Advanced Report Settings"
-msgstr ""
+msgstr "Pažengusieji reportažo nustatymai"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:464
 msgid "Allow Local Client IPs"
@@ -83,11 +83,11 @@ msgstr ""
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:271
 msgid "Answer"
-msgstr ""
+msgstr "Atsakymas"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:394
 msgid "Backup Directory"
-msgstr ""
+msgstr "Atsarginės kopijos katalogas/vietovė"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:385
 msgid "Base Temp Directory"
@@ -108,7 +108,7 @@ msgstr ""
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:296
 msgid "Blacklist..."
-msgstr ""
+msgstr "Draudžiamasis sąrašas..."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:458
 msgid "Block Local Client IPs"
@@ -128,7 +128,7 @@ msgstr ""
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:225
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:229
 msgid "Blocked Domains"
-msgstr ""
+msgstr "Blokuojami domenai-sritys"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:390
 msgid "Blocklist Backup"
@@ -163,7 +163,7 @@ msgstr "Atšaukti"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:573
 msgid "Categories"
-msgstr ""
+msgstr "Kategorijos"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:269
 msgid "Client"
@@ -171,7 +171,7 @@ msgstr "Klientas"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:221
 msgid "Clients"
-msgstr ""
+msgstr "Klientai"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:136
 msgid ""
@@ -217,7 +217,7 @@ msgstr ""
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:267
 msgid "Date"
-msgstr ""
+msgstr "Data"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:455
 msgid "Disable DNS Allow"
@@ -233,7 +233,7 @@ msgstr "Domenas-Sritis"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:223
 msgid "Domains"
-msgstr ""
+msgstr "Domenai-Sritys"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:407
 msgid "Don't check SSL server certificates during download."
@@ -257,7 +257,7 @@ msgstr "El. pašto pranešimas"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:527
 msgid "E-Mail Notification Count"
-msgstr ""
+msgstr "El. pašto pranešimų skaičius"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:523
 msgid "E-Mail Profile"
@@ -277,11 +277,11 @@ msgstr "El. pašto tema"
 
 #: applications/luci-app-adblock/root/usr/share/luci/menu.d/luci-app-adblock.json:35
 msgid "Edit Blacklist"
-msgstr ""
+msgstr "Redaguoti draudžiamąjį sąrašą"
 
 #: applications/luci-app-adblock/root/usr/share/luci/menu.d/luci-app-adblock.json:43
 msgid "Edit Whitelist"
-msgstr ""
+msgstr "Redaguoti leidžiamąjį sąrašą"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:452
 msgid ""
@@ -386,7 +386,7 @@ msgstr "Bendri nustatymai"
 
 #: applications/luci-app-adblock/root/usr/share/rpcd/acl.d/luci-app-adblock.json:3
 msgid "Grant access to LuCI app adblock"
-msgstr ""
+msgstr "Duoti prieigą prie „LuCI app adblock“"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:223
 msgid "Information"
@@ -398,7 +398,7 @@ msgstr ""
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:257
 msgid "Last Run"
-msgstr ""
+msgstr "Paskutinį kartą vykdytą"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:355
 msgid "Latest DNS Requests"
@@ -713,7 +713,7 @@ msgstr ""
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:268
 msgid "Time"
-msgstr ""
+msgstr "Laikas"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:442
 msgid "Timeout to wait for a successful DNS backend restart."
@@ -763,7 +763,7 @@ msgstr ""
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:288
 msgid "Whitelist..."
-msgstr ""
+msgstr "Leidžiamasis sąrašas..."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:422
 msgid "bind (/var/lib/bind)"
