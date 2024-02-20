@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-12-14 13:58+0000\n"
+"PO-Revision-Date: 2024-01-11 23:35+0000\n"
 "Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationshttps-dns-proxy/es/>\n"
@@ -11,11 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.3\n"
-
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:132
-msgid "%s"
-msgstr ""
+"X-Generator: Weblate 5.4-dev\n"
 
 #: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:258
 msgid "%s%s%s proxy at %s on port %s.%s"
@@ -73,7 +69,7 @@ msgstr "No actualizar las configuraciones"
 
 #: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:357
 msgid "Enable"
-msgstr "Activar"
+msgstr "Habilitar"
 
 #: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:351
 msgid "Enabling %s service"
@@ -137,7 +133,7 @@ msgstr "Instancias del proxy DNS HTTPS"
 
 #: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:84
 msgid ""
-"If update option is selected, the %s'DNS forwardings' section of DHCP and "
+"If update option is selected, the %s'DNS Forwards' section of DHCP and "
 "DNS%s will be automatically updated to use selected DoH providers (%smore "
 "information%s)."
 msgstr ""
@@ -232,7 +228,7 @@ msgstr "Consulte %sREADME%s para obtener más detalles."
 
 #: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:118
 msgid "Select the DNSMASQ Configs to update"
-msgstr ""
+msgstr "Seleccione la configuración de DNSMASQ a actualizar"
 
 #: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:402
 msgid "Service Control"
@@ -280,7 +276,7 @@ msgstr "Actualizar todas las configuraciones"
 
 #: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:93
 msgid "Update select configs"
-msgstr ""
+msgstr "Actualizar las configuraciones seleccionadas"
 
 #: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:403
 msgid "Use HTTP/1"
