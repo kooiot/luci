@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2024-02-01 08:53+0000\n"
+"PO-Revision-Date: 2024-03-12 11:02+0000\n"
 "Last-Translator: Džiugas J <dziugas1959@hotmail.com>\n"
 "Language-Team: Lithuanian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationstinyproxy/lt/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n % 10 == 1 && (n % 100 < 11 || n % 100 > "
 "19)) ? 0 : ((n % 10 >= 2 && n % 10 <= 9 && (n % 100 < 11 || n % 100 > 19)) ? "
 "1 : 2);\n"
-"X-Generator: Weblate 5.4-dev\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:219
 msgid ""
@@ -150,7 +150,7 @@ msgstr ""
 
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:39
 msgid "Listen address"
-msgstr ""
+msgstr "Laukti (-iama/-s) prisijungimo/jungties ryšio adresas/-o"
 
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:31
 msgid "Listen port"
@@ -289,7 +289,7 @@ msgstr "Būklė/Būsena"
 
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:225
 msgid "Target host"
-msgstr ""
+msgstr "Taikomasis skleidėjas/p.k – vedėjas"
 
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:5
 #: applications/luci-app-tinyproxy/root/usr/share/luci/menu.d/luci-app-tinyproxy.json:3
@@ -306,7 +306,7 @@ msgstr "„Tinyproxy“ yra nedidelė ir greita netalpojantis „HTTP/-S“-įga
 
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:211
 msgid "Upstream Proxies"
-msgstr ""
+msgstr "Išsiunčiamieji/-ojo (srauto) įgaliotieji"
 
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:212
 msgid ""
@@ -324,7 +324,7 @@ msgstr "Naudotojas/Vartotojas"
 
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:111
 msgid "Via hostname"
-msgstr ""
+msgstr "Per įrenginio (t.y skleidėjo/p.k – vedėjo) pavadinimas"
 
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:221
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:233

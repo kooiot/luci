@@ -222,7 +222,7 @@ var UIElement = baseclass.extend(/** @lends LuCI.ui.AbstractElement.prototype */
 	},
 
 	/**
-	 * Setup listeners for native DOM events that may update the widget value.
+	 * Set up listeners for native DOM events that may update the widget value.
 	 *
 	 * Sets up event handlers on the given target DOM node for the given event
 	 * names which may cause the input value to update, such as `keyup` or
@@ -265,7 +265,7 @@ var UIElement = baseclass.extend(/** @lends LuCI.ui.AbstractElement.prototype */
 	},
 
 	/**
-	 * Setup listeners for native DOM events that may change the widget value.
+	 * Set up listeners for native DOM events that may change the widget value.
 	 *
 	 * Sets up event handlers on the given target DOM node for the given event
 	 * names which may cause the input value to change completely, such as
@@ -292,7 +292,7 @@ var UIElement = baseclass.extend(/** @lends LuCI.ui.AbstractElement.prototype */
 	},
 
 	/**
-	 * Render the widget, setup event listeners and return resulting markup.
+	 * Render the widget, set up event listeners and return resulting markup.
 	 *
 	 * @instance
 	 * @memberof LuCI.ui.AbstractElement
@@ -1458,7 +1458,7 @@ var UIDropdown = UIElement.extend(/** @lends LuCI.ui.Dropdown.prototype */ {
 			li.setAttribute('display', 0);
 			li.setAttribute('selected', '');
 
-			this.closeDropdown(sb, true);
+			this.closeDropdown(sb);
 		}
 
 		this.saveValues(sb, ul);
@@ -1604,6 +1604,9 @@ var UIDropdown = UIElement.extend(/** @lends LuCI.ui.Dropdown.prototype */ {
 
 		if (this.options.multiple)
 			this.transformItem(sb, new_item);
+
+		if (!new_item.hasAttribute('unselectable'))
+			new_item.setAttribute('tabindex', 0);
 
 		return new_item;
 	},
@@ -1814,7 +1817,7 @@ var UIDropdown = UIElement.extend(/** @lends LuCI.ui.Dropdown.prototype */ {
 					var li = active.nextElementSibling;
 					this.setFocus(sb, li);
 					if (this.options.create && li == li.parentNode.lastElementChild) {
-						var input = li.querySelector('input');
+						var input = li.querySelector('input:not([type="hidden"]):not([type="checkbox"]');
 						if (input) input.focus();
 					}
 					ev.preventDefault();
@@ -1875,9 +1878,16 @@ var UIDropdown = UIElement.extend(/** @lends LuCI.ui.Dropdown.prototype */ {
 			if (input.classList.contains('cbi-input-invalid'))
 				return;
 
+			this.handleCreateBlur(ev);
 			this.createItems(sb, input.value);
 			input.value = '';
-			input.blur();
+			break;
+
+		case 27:
+			this.handleCreateBlur(ev);
+			this.closeDropdown(sb);
+			ev.stopPropagation();
+			input.value = '';
 			break;
 
 		case 38:
@@ -3496,7 +3506,7 @@ var UI = baseclass.extend(/** @lends LuCI.ui.prototype */ {
 		tooltipDiv = document.body.appendChild(
 			dom.create('div', { class: 'cbi-tooltip' }));
 
-		/* setup old aliases */
+		/* set up old aliases */
 		L.showModal = this.showModal;
 		L.hideModal = this.hideModal;
 		L.showTooltip = this.showTooltip;
@@ -3567,7 +3577,7 @@ var UI = baseclass.extend(/** @lends LuCI.ui.prototype */ {
 	 * behaviour. It has no effect if no modal dialog is currently open.
 	 *
 	 * Note that this function is stand-alone, it does not rely on `this` and
-	 * will not invoke other class functions so it suitable to be used as event
+	 * will not invoke other class functions so it is suitable to be used as event
 	 * handler as-is without the need to bind it first.
 	 */
 	hideModal: function() {
