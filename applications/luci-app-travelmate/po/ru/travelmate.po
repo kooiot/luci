@@ -114,7 +114,7 @@ msgstr "CHAP"
 msgid "Captive Portal Detection"
 msgstr "Обнаружение Captive Portal-а"
 
-#: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:396
+#: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:391
 msgid "Captive Portal URL"
 msgstr "Адрес Captive Portal"
 
@@ -191,19 +191,19 @@ msgstr "Закрыть"
 msgid "Drag to reorder"
 msgstr "Перетащите, чтобы изменить порядок"
 
-#: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:426
+#: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:421
 msgid "E-Mail Hook"
 msgstr "Хук электронной почты"
 
-#: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:444
+#: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:439
 msgid "E-Mail Profile"
 msgstr "Профиль электронной почты"
 
-#: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:429
+#: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:424
 msgid "E-Mail Receiver Address"
 msgstr "Адрес получателя"
 
-#: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:434
+#: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:429
 msgid "E-Mail Sender Address"
 msgstr "Адрес отправителя"
 
@@ -211,7 +211,7 @@ msgstr "Адрес отправителя"
 msgid "E-Mail Settings"
 msgstr "Настройки электронной почты"
 
-#: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:439
+#: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:434
 msgid "E-Mail Topic"
 msgstr "Тема"
 
@@ -361,12 +361,6 @@ msgstr ""
 "Ограничение максимального количества автоматически добавляемых открытых "
 "Uplink каналов. Чтобы отключить это ограничение, установите значение '0'."
 
-#: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:391
-msgid "Limit the nearby scan results to process only the strongest uplinks."
-msgstr ""
-"Ограничьте результаты ближайшего сканирования, чтобы обрабатывать только "
-"самые сильные восходящие каналы."
-
 #: applications/luci-app-travelmate/root/usr/share/luci/menu.d/luci-app-travelmate.json:35
 msgid "Log View"
 msgstr "Просмотр журнала"
@@ -509,7 +503,7 @@ msgstr ""
 "Предварительное сканирование и переключение на Uplink с более высоким "
 "приоритетом, несмотря на уже существующее соединение."
 
-#: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:444
+#: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:439
 msgid "Profile used by 'msmtp' for travelmate notification E-Mails."
 msgstr ""
 "Профиль, используемый 'msmtp' для рассылки электронной почты с уведомлениями "
@@ -527,7 +521,7 @@ msgstr "Выбор радиомодуля"
 msgid "Randomize MAC Addresses"
 msgstr "Случайное значение MAC-адресов"
 
-#: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:429
+#: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:424
 msgid "Receiver address for travelmate notification E-Mails."
 msgstr "Адрес получателя электронной почты для уведомлений от travelmate."
 
@@ -591,10 +585,6 @@ msgstr "SSID (скрытый)"
 msgid "Save"
 msgstr "Сохранить"
 
-#: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:391
-msgid "Scan Limit"
-msgstr "Лимит сканирования"
-
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:741
 msgid "Scan on"
 msgstr "Сканирование включено"
@@ -603,17 +593,17 @@ msgstr "Сканирование включено"
 msgid "Script Arguments"
 msgstr "Аргументы для скрипта"
 
-#: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:434
+#: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:429
 msgid "Sender address for travelmate notification E-Mails."
 msgstr "Адрес отправителя электронной почты для уведомлений от travelmate."
 
-#: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:426
+#: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:421
 msgid "Sends notification E-Mails after every succesful uplink connect."
 msgstr ""
 "Отправляет уведомления по электронной почте после каждого успешного "
 "подключения к Uplink."
 
-#: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:414
+#: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:409
 msgid "Service Priority"
 msgstr "Приоритет обслуживания"
 
@@ -705,18 +695,18 @@ msgstr "Метрика интерфейса"
 msgid "The logical vpn network interface like 'wg0'."
 msgstr "Логический сетевой интерфейс vpn, например 'wg0'."
 
-#: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:396
+#: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:391
 msgid ""
 "The selected URL will be used for connectivity- and captive portal checks."
 msgstr ""
 "Выбранный URL-адрес будет использоваться для подключений и проверки Captive "
 "Portal."
 
-#: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:414
+#: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:409
 msgid "The selected priority will be used for travelmate processes."
 msgstr "Выбранный приоритет будет использоваться для процессов travelmate."
 
-#: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:405
+#: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:400
 msgid ""
 "The selected user agent will be used for connectivity- and captive portal "
 "checks."
@@ -756,7 +746,7 @@ msgstr ""
 "Этот мастер создает сетевой интерфейс IPv4- и IPv6- алиасы со всеми "
 "необходимыми настройками сети и брандмауэра."
 
-#: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:439
+#: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:434
 msgid "Topic for travelmate notification E-Mails."
 msgstr "Тема для уведомлений travelmate по электронной почте."
 
@@ -785,7 +775,7 @@ msgstr "Использовать системные сертификаты"
 msgid "Use the specified MAC address for this uplink."
 msgstr "Используйте указанный MAC-адрес для этого Uplink."
 
-#: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:405
+#: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:400
 msgid "User Agent"
 msgstr "User Agent"
 
