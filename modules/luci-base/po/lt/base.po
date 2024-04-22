@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2024-04-10 03:02+0000\n"
+"PO-Revision-Date: 2024-04-15 15:01+0000\n"
 "Last-Translator: Džiugas J <dziugas1959@hotmail.com>\n"
 "Language-Team: Lithuanian <https://hosted.weblate.org/projects/openwrt/luci/"
 "lt/>\n"
@@ -15,12 +15,12 @@ msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:1113
 msgid "!known (not known)"
-msgstr "!žinoma (nežinoma)"
+msgstr "!žinoma (nežinoma/-as)"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/nftables.js:649
 msgctxt "Yet unknown nftables table family (\"family\" table \"name\")"
 msgid "\"%h\" table \"%h\""
-msgstr "„%h“ sąrašas „%h“"
+msgstr "„%h“ lentelė „%h“"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1651
 msgid "%.1f dB"
@@ -183,7 +183,7 @@ msgstr "3"
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:1085
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1040
 msgid "3h (3 hours)"
-msgstr "3val. (3 valandos)"
+msgstr "3val. (3-ys/-is valandos/-as)"
 
 #: protocols/luci-proto-sstp/htdocs/luci-static/resources/protocol/sstp.js:63
 msgctxt "sstp log level value"
@@ -2685,7 +2685,7 @@ msgstr "Išjungti šį tinklą"
 #: protocols/luci-proto-ppp/htdocs/luci-static/resources/protocol/pppoe.js:57
 #: protocols/luci-proto-ppp/htdocs/luci-static/resources/protocol/pptp.js:70
 msgid "Disabled"
-msgstr "Išjungtas/-i"
+msgstr "Išjungta/Neįgalinta (-as/-i)"
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:538
 msgctxt "Label indicating that WireGuard peer is disabled"
@@ -2877,7 +2877,7 @@ msgstr "Išjungimo/sustabdymo atidėjimas"
 
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:2941
 msgid "Download"
-msgstr ""
+msgstr "Atsisiųsti"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:394
 msgid "Download backup"
@@ -2885,7 +2885,7 @@ msgstr "Atsisiųsti atsarginę kopiją"
 
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:3017
 msgid "Download failed: %s"
-msgstr ""
+msgstr "Atsisiuntimas nepavyko: %s"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:432
 msgid "Download mtdblock"
@@ -5839,7 +5839,7 @@ msgstr "Žurnalo užklausos"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:123
 msgid "Logging"
-msgstr "Žurnalininimas"
+msgstr "Žurnalinimas"
 
 #: themes/luci-theme-bootstrap/htdocs/luci-static/resources/view/bootstrap/sysauth.js:23
 msgid "Logging in…"
@@ -6286,7 +6286,7 @@ msgstr "„Modemo Tvarkytuvas“"
 #: modules/luci-base/htdocs/luci-static/resources/network.js:3867
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1073
 msgid "Monitor"
-msgstr "Monitorius"
+msgstr "Prižiūryklė/-ėtojas \\ Monitorius \\ Stebėti/-ojas"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:31
 msgid "More Characters"
@@ -9319,7 +9319,7 @@ msgid ""
 "stateful DHCPv6."
 msgstr ""
 "Nurodo žymas, siunčiamas <abbr title=\"angl. Router Advertisement | liet. "
-"Maršrutizatoriaus skelbimas\">RA</abbr> pranešimuose, pavyzdžiui, nurodant "
+"Maršrutizatoriaus skelbimas\">„RA“</abbr> pranešimuose, pavyzdžiui, nurodant "
 "klientams prašyti papildomos informacijos per „DHCPv6“."
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:177
@@ -9764,11 +9764,12 @@ msgstr "Pateikti"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:617
 msgid "Suppress logging"
-msgstr "Sumenkinti žurnalymą"
+msgstr "Sumenkinti žurnalinimą"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:618
 msgid "Suppress logging of the routine operation for the DHCP protocol."
-msgstr "Slopinti „DHCP“ protokolo įprastinės operacijos registravimą."
+msgstr ""
+"Slopinti „DHCP“ protokolo žurnalinimą; įprastinės operacijos registravimą."
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/20_memory.js:46
 msgid "Swap free"
@@ -10182,7 +10183,7 @@ msgid ""
 "The device file of the memory or partition (<abbr title=\"for example\">e.g."
 "</abbr> <code>/dev/sda1</code>)"
 msgstr ""
-"Atminties arba skaidinio įrenginio failas („<abbr title=\"pavyzdžiui\"> pvz: "
+"Atminties arba skaidinio įrenginio failas („<abbr title=\"pavyzdžiui\">pvz: "
 "„</abbr> <code>/dev/sda1</code>“)"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/tools/network.js:504
@@ -10658,7 +10659,9 @@ msgstr "Tai yra vienintelis „DHCP“ serveris vietiniame tinkle."
 
 #: protocols/luci-proto-ipv6/htdocs/luci-static/resources/protocol/6in4.js:73
 msgid "This is the plain username for logging into the account"
-msgstr "Tai yra paprastas prisijungimo prie paskyros vartotojo vardas"
+msgstr ""
+"Tai yra paprastas prisijungimo prie paskyros vartotojo vardas, skirtas "
+"žurnalinimui"
 
 #: protocols/luci-proto-ipv6/htdocs/luci-static/resources/protocol/6in4.js:57
 msgid ""
@@ -12281,7 +12284,7 @@ msgstr ""
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:959
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1022
 msgid "relay mode"
-msgstr "Perdavimo režimas"
+msgstr "perdavimo režimas"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1704
 msgid "routed"
