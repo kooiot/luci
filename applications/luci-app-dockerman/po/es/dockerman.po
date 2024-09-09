@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-07-20 20:10+0000\n"
+"PO-Revision-Date: 2024-09-07 04:11+0000\n"
 "Last-Translator: brodrigueznu <brodrigueznu@hotmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsdockerman/es/>\n"
@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.7-dev\n"
+"X-Generator: Weblate 5.8-dev\n"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:604
 msgid "A list of kernel capabilities to add to the container"
@@ -670,7 +670,7 @@ msgstr "Red superpuesta"
 
 #: applications/luci-app-dockerman/luasrc/controller/dockerman.lua:36
 msgid "Overview"
-msgstr "Visión general"
+msgstr "Descripción general"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/networks.lua:81
 msgid "Parent Interface"
@@ -757,7 +757,7 @@ msgstr "Remover etiqueta"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/images.lua:140
 msgid "RepoTags"
-msgstr "RepoTags"
+msgstr "Etiquetas del repositorio"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:454
 msgid "Resolve CLI"
@@ -836,7 +836,7 @@ msgstr "Estadísticas"
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:300
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/containers.lua:128
 msgid "Status"
-msgstr "Estatus"
+msgstr "Estado"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:236
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/containers.lua:211

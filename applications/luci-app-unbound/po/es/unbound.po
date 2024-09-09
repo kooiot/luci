@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-07-20 20:09+0000\n"
+"PO-Revision-Date: 2024-09-07 04:11+0000\n"
 "Last-Translator: brodrigueznu <brodrigueznu@hotmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsunbound/es/>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.7-dev\n"
+"X-Generator: Weblate 5.8-dev\n"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/configure.lua:161
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/zone-details.lua:53
@@ -194,7 +194,7 @@ msgstr "Edite: Unbound"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/zones.lua:39
 msgid "Enable"
-msgstr "Habilitar"
+msgstr "Activar"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/configure.lua:103
 msgid "Enable DNS64"
@@ -565,7 +565,7 @@ msgstr "Recurso"
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/configure.lua:121
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/configure.lua:304
 msgid "Root DSKEY Age"
-msgstr "Root DSKEY Age"
+msgstr "Edad de la Clave DS de la Raíz"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/extended.lua:11
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/manual.lua:11
@@ -622,7 +622,7 @@ msgstr "Estadísticas"
 
 #: applications/luci-app-unbound/luasrc/controller/unbound.lua:39
 msgid "Status"
-msgstr "Estatus"
+msgstr "Estado"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/configure.lua:274
 msgid "Strict Minimize"
@@ -785,7 +785,7 @@ msgstr "aceptar resultados anteriores para"
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/configure.lua:125
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/configure.lua:308
 msgid "default"
-msgstr "predeterminado"
+msgstr "por defecto"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/zones.lua:175
 msgid "download from <var>%s</var>"
