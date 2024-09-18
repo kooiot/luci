@@ -251,6 +251,7 @@ function has_sourcefilter(proto) {
 	case 'dhcpv6':
 	case 'directip':
 	case 'mbim':
+	case 'modemmanager':
 	case 'ncm':
 	case 'ppp':
 	case 'pppoa':
@@ -1071,7 +1072,8 @@ return view.extend({
 				o.datatype = 'uinteger';
 				o.placeholder = '0';
 
-				o = nettools.replaceOption(s, 'advanced', form.Value, 'metric', _('Use gateway metric'));
+				o = nettools.replaceOption(s, 'advanced', form.Value, 'metric', _('Use gateway metric'),
+					_('Metric is an ordinal, where a gateway with 1 is chosen 1st, 2 is chosen 2nd, 3 is chosen 3rd, etc'));
 				o.datatype = 'uinteger';
 				o.placeholder = '0';
 
