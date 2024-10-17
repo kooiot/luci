@@ -11,7 +11,7 @@ var pkg = {
 		return "pbr";
 	},
 	get ReadmeCompat() {
-		return "1.1.7-1";
+		return "1.1.7-21";
 	},
 	get URL() {
 		return (
@@ -302,7 +302,6 @@ var status = baseclass.extend({
 					errorConfigValidation: _("Config (%s) validation failure").format(
 						"/etc/config/" + pkg.Name
 					),
-					errorNoIpFull: _("%s binary cannot be found").format("ip-full"),
 					errorNoIptables: _("%s binary cannot be found").format("iptables"),
 					errorNoIpset: _(
 						"Resolver set support (%s) requires ipset, but ipset binary cannot be found"
@@ -320,7 +319,7 @@ var status = baseclass.extend({
 						"The %s service failed to discover WAN gateway"
 					).format(pkg.Name),
 					errorNoWanInterface: _(
-						"The %s inteface not found, you need to set the 'pbr.config.procd_wan_interface' option"
+						"The %s interface not found, you need to set the 'pbr.config.procd_wan_interface' option"
 					),
 					errorNoWanInterfaceHint: _(
 						"Refer to https://docs.openwrt.melmac.net/pbr/#procd_wan_interface"
@@ -396,6 +395,9 @@ var status = baseclass.extend({
 					errorIncompatibleUserFile: _(
 						"Incompatible custom user file detected '%s'"
 					),
+					errorDefaultFw4TableMissing: _("Default fw4 table '%s' is missing"),
+					errorDefaultFw4ChainMissing: _("Default fw4 chain '%s' is missing"),
+					errorRequiredBinaryMissing: _("Required binary '%s' is missing"),
 				};
 				var errorsTitle = E(
 					"label",

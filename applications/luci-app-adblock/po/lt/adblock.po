@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2024-09-11 13:27+0000\n"
+"PO-Revision-Date: 2024-10-16 09:51+0000\n"
 "Last-Translator: Džiugas Januševičius <dziugas1959@hotmail.com>\n"
 "Language-Team: Lithuanian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsadblock/lt/>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && ("
 "n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.8-dev\n"
+"X-Generator: Weblate 5.8-rc\n"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:272
 msgid "Action"
@@ -445,7 +445,7 @@ msgstr "Žurnalo peržiūra"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:372
 msgid "Low Priority Service"
-msgstr "Mažo prioriteto tarnyba"
+msgstr "Mažos pirmenybės tarnyba"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:408
 msgid ""
@@ -736,7 +736,7 @@ msgstr ""
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:377
 msgid "Trigger Delay"
-msgstr ""
+msgstr "Suaktyvinimo atidėjimas"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/blacklist.js:17
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/whitelist.js:17
@@ -751,7 +751,7 @@ msgstr "Variantai"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:369
 msgid "Verbose Debug Logging"
-msgstr ""
+msgstr "Platus/Išsamus/Daugiažodiškas derinimo/trukdžių šalinimo žurnalinimas"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:69
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/whitelist.js:15
