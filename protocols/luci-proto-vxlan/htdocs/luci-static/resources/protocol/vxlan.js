@@ -94,8 +94,8 @@ return network.registerProtocol('vxlan', {
 		o.datatype = 'min(1)';
 
 		o = s.taboption('general', form.Flag, 'learning', _('Learning'),
-			_('Automatic mac learning using multicast; inserts unknown source link layer addresses and IP addresses into the VXLAN device %s'
-				.format('<abbr title="%s">%s</abbr>'.format(_('Forwarding DataBase'), _('FDB')))));
+			_('Automatic mac learning using multicast; inserts unknown source link layer addresses and IP addresses into the VXLAN device %s')
+				.format('<abbr title="%s">%s</abbr>'.format(_('Forwarding DataBase'), _('FDB'))));
 		o.optional = true;
 		o.default = '1';
 		o.rmempty = false;
@@ -157,10 +157,13 @@ return network.registerProtocol('vxlan', {
 			return false;
 		};
 		o.write = function(section_id, value) {
-			return uci.set('network', section_id, 'tos', parseInt(value).toString(16).padStart(2, '0'));
+			if (!value) return
+			value = value === 'inherit' ? value : parseInt(value).toString(16).padStart(2, '0');
+			return uci.set('network', section_id, 'tos', value);
 		};
 		o.load = function(section_id) {
-			return parseInt(uci.get('network', section_id, 'tos'), 16).toString();
+			const value = uci.get('network', section_id, 'tos');
+			return value ? (value === 'inherit' ? value : parseInt(value, 16).toString()) : null;
 		};
 
 		o = s.taboption('advanced', form.Flag, 'rxcsum', _('Enable rx checksum'));
@@ -235,7 +238,7 @@ return network.registerProtocol('vxlan', {
 			let isMulticastIP = ipv4MulticastRegex.test(dst) || ipv6MulticastRegex.test(dst);
 
 			if (!value && isMulticastIP) {
-				return _('Via shall be specified when %s is a multicast address'.format(_('Peer IP')));
+				return _('Via shall be specified when %s is a multicast address').format(_('Peer IP'));
 			}
 			return true;
 		};
