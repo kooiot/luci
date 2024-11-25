@@ -21,7 +21,11 @@ return baseclass.extend({
 		['camellia256'],
 		['camellia128ctr'],
 		['camellia192ctr'],
-		['camellia256ctr']
+		['camellia256ctr'],
+		['sm1ecb'],
+		['sm1cbc'],
+		['sm4ecb'],
+		['sm4cbc']
 	]),
 
 	_authenticatedEncryptionAlgorithms: new Map([
@@ -71,7 +75,8 @@ return baseclass.extend({
 		['sha256'],
 		['sha384'],
 		['sha512'],
-		['sha256_96']
+		['sha256_96'],
+		['sm3']
 	]),
 
 	_dhAlgorithms: new Map([
@@ -96,7 +101,8 @@ return baseclass.extend({
 		['ecp384bp'],
 		['ecp512bp'],
 		['curve25519'],
-		['curve448']
+		['curve448'],
+		['sm2dh'],
 	]),
 
 	_prfAlgorithms: new Map([
@@ -106,7 +112,8 @@ return baseclass.extend({
 		['prfaescmac'],
 		['prfsha256'],
 		['prfsha384'],
-		['prfsha512']
+		['prfsha512'],
+		['prfsm3']
 	]),
 
 	_getAlgorithmNames: function (algorithms) {
