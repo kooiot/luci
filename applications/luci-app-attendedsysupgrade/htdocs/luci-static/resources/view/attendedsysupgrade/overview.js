@@ -9,17 +9,17 @@
 'require dom';
 'require fs';
 
-let callPackagelist = rpc.declare({
+const callPackagelist = rpc.declare({
 	object: 'rpc-sys',
 	method: 'packagelist',
 });
 
-let callSystemBoard = rpc.declare({
+const callSystemBoard = rpc.declare({
 	object: 'system',
 	method: 'board',
 });
 
-let callUpgradeStart = rpc.declare({
+const callUpgradeStart = rpc.declare({
 	object: 'rpc-sys',
 	method: 'upgrade_start',
 	params: ['keep'],
@@ -83,8 +83,9 @@ return view.extend({
 			return (e.filesystem == firmware.filesystem);
 		}
 		var typeFilter = function(e) {
-			if (firmware.target.indexOf("x86") != -1) {
-				// x86 images can be combined-efi (EFI) or combined (BIOS)
+			let efi_targets = ['armsr', 'loongarch', 'x86'];
+			let efi_capable = efi_targets.some((tgt) => firmware.target.startsWith(tgt));
+			if (efi_capable) {
 				if (data.efi) {
 					return (e.type == 'combined-efi');
 				} else {

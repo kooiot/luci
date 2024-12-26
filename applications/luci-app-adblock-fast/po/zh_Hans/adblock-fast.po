@@ -5,17 +5,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-08-19 21:09+0000\n"
-"Last-Translator: 大王叫我来巡山 <hamburger2048@users.noreply.hosted.weblate."
-"org>\n"
-"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
-"openwrt/luciapplicationsadblock-fast/zh_Hans/>\n"
+"PO-Revision-Date: 2024-12-01 21:35+0000\n"
+"Last-Translator: try496 <pinghejk@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/openwrt/luciapplicationsadblock-fast/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.7\n"
+"X-Generator: Weblate 5.9-dev\n"
 
 #: applications/luci-app-adblock-fast/htdocs/luci-static/resources/adblock-fast/status.js:245
 msgid "%s is currently disabled"
@@ -431,6 +430,10 @@ msgstr "同时开始所有的列表下载和处理任务，减少启动时间。
 msgid "Let local devices use their own DNS servers if set"
 msgstr "如果进行了设置，允许本地设备使用自己的 DNS 服务器"
 
+#: applications/luci-app-adblock-fast/htdocs/luci-static/resources/adblock-fast/status.js:201
+msgid "Missing recommended package: '%s'"
+msgstr "缺少推荐的软件包：'%s'"
+
 #: applications/luci-app-adblock-fast/htdocs/luci-static/resources/view/adblock-fast/overview.js:524
 msgid "Name"
 msgstr "名称"
@@ -545,10 +548,6 @@ msgstr "大小：%s"
 #: applications/luci-app-adblock-fast/htdocs/luci-static/resources/view/adblock-fast/overview.js:320
 msgid "Some output"
 msgstr "一些输出"
-
-#: applications/luci-app-adblock-fast/htdocs/luci-static/resources/adblock-fast/status.js:201
-msgid "Some recommended packages are missing"
-msgstr "缺少某些推荐包"
 
 #: applications/luci-app-adblock-fast/htdocs/luci-static/resources/adblock-fast/status.js:357
 msgid "Start"
@@ -731,19 +730,19 @@ msgstr "dnsmasq 服务器文件"
 
 #: applications/luci-app-adblock-fast/htdocs/luci-static/resources/adblock-fast/status.js:305
 msgid "failed to create backup file %s"
-msgstr ""
+msgstr "创建备份文件 %s 失败"
 
 #: applications/luci-app-adblock-fast/htdocs/luci-static/resources/adblock-fast/status.js:308
 msgid "failed to create final block-list %s"
-msgstr ""
+msgstr "创建最终拦截列表 %s 失败"
 
 #: applications/luci-app-adblock-fast/htdocs/luci-static/resources/adblock-fast/status.js:306
 msgid "failed to delete data file %s"
-msgstr ""
+msgstr "删除数据文件 %s 失败"
 
 #: applications/luci-app-adblock-fast/htdocs/luci-static/resources/adblock-fast/status.js:307
 msgid "failed to restore backup file %s"
-msgstr ""
+msgstr "恢复备份文件 %s 失败"
 
 #: applications/luci-app-adblock-fast/htdocs/luci-static/resources/view/adblock-fast/overview.js:334
 msgid "none"
@@ -764,6 +763,9 @@ msgstr "smartdns nft 集"
 #: applications/luci-app-adblock-fast/htdocs/luci-static/resources/view/adblock-fast/overview.js:155
 msgid "unbound adblock list"
 msgstr "unbound 广告拦截列表"
+
+#~ msgid "Some recommended packages are missing"
+#~ msgstr "缺少某些推荐包"
 
 #~ msgid "%s"
 #~ msgstr "%s"
