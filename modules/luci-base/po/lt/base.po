@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2024-10-24 13:06+0000\n"
-"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"PO-Revision-Date: 2025-01-25 01:47+0000\n"
+"Last-Translator: George Sapkin <georgespk@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Lithuanian <https://hosted.weblate.org/projects/openwrt/luci/"
 "lt/>\n"
 "Language: lt\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "(n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.8.2-dev\n"
+"X-Generator: Weblate 5.10-dev\n"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:1076
 msgid "!known (not known)"
@@ -829,7 +829,7 @@ msgstr "Pridėdant IPv6 į IPv4 rinkinį ir atvirkščiai nepavyksta."
 #: protocols/luci-proto-vxlan/htdocs/luci-static/resources/protocol/vxlan.js:178
 #: protocols/luci-proto-vxlan/htdocs/luci-static/resources/protocol/vxlan6.js:178
 msgid "Additional Peers"
-msgstr ""
+msgstr "Papildomi lygiarangiai"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:583
 msgid "Additional hosts files"
@@ -2378,7 +2378,7 @@ msgid "Data Transmitted"
 msgstr "Duomenų perduota"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:186
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:197
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:199
 #: protocols/luci-proto-modemmanager/htdocs/luci-static/resources/protocol/modemmanager.js:157
 msgid "Debug"
 msgstr "Derinimas/Trukdžių šalinimas"
@@ -2651,6 +2651,7 @@ msgstr "Išjungti šį tinklą"
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1806
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/60_wifi.js:13
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:66
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:198
 #: protocols/luci-proto-3g/htdocs/luci-static/resources/protocol/3g.js:121
 #: protocols/luci-proto-mbim/htdocs/luci-static/resources/protocol/mbim.js:108
 #: protocols/luci-proto-mbim/htdocs/luci-static/resources/protocol/mbim.js:117
@@ -2811,7 +2812,7 @@ msgstr ""
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/nftables.js:96
 msgctxt "nft notrack action"
 msgid "Do not track"
-msgstr ""
+msgstr "Nesekti"
 
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:2811
 msgid "Do you really want to delete \"%s\" ?"
@@ -3089,12 +3090,12 @@ msgstr "Kritinė situacija"
 #: protocols/luci-proto-vxlan/htdocs/luci-static/resources/protocol/vxlan.js:119
 #: protocols/luci-proto-vxlan/htdocs/luci-static/resources/protocol/vxlan6.js:119
 msgid "Emits netlink IP ADDR miss notifications"
-msgstr ""
+msgstr "Išduoda pranešimus apie tinklo kanalo IP adreso praleidimą"
 
 #: protocols/luci-proto-vxlan/htdocs/luci-static/resources/protocol/vxlan.js:113
 #: protocols/luci-proto-vxlan/htdocs/luci-static/resources/protocol/vxlan6.js:113
 msgid "Emits netlink LLADDR miss notifications"
-msgstr ""
+msgstr "Išduoda pranešimus apie tinklo kanalo LLADDR praleidimą"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:891
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:931
@@ -3402,7 +3403,7 @@ msgstr "Įsteigti „MLD versija 2“"
 #: protocols/luci-proto-vxlan/htdocs/luci-static/resources/protocol/vxlan.js:84
 #: protocols/luci-proto-vxlan/htdocs/luci-static/resources/protocol/vxlan6.js:84
 msgid "Ensure MTU does not exceed that of parent interface"
-msgstr ""
+msgstr "Įsitikinkite, kad MTU neviršija pirminės sąsajos MTU"
 
 #: modules/luci-compat/luasrc/view/cbi/dropdown.htm:16
 msgid "Enter custom value"
@@ -6185,7 +6186,7 @@ msgstr "Junglusis/Tankusis (tinklas) ir kelvados susijusios parinktys"
 
 #: modules/luci-base/htdocs/luci-static/resources/rpc.js:404
 msgid "Method not found"
-msgstr "Būdas nerastas"
+msgstr "Metodas nerastas"
 
 #: protocols/luci-proto-bonding/htdocs/luci-static/resources/protocol/bonding.js:350
 msgid "Method of link monitoring"
@@ -6873,7 +6874,7 @@ msgid "None"
 msgstr "Joks (-ia/-ie)"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:949
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:198
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:197
 msgid "Normal"
 msgstr "Normaliai/-us"
 
@@ -7046,6 +7047,10 @@ msgstr ""
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:547
 msgid "Only accept replies via"
 msgstr "Priimti atsakymus tik per"
+
+#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:185
+msgid "Only affects dmesg kernel log"
+msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/tools/network.js:769
 msgid "Only allow communication with non-isolated bridge ports when enabled"
@@ -11177,7 +11182,7 @@ msgstr "Nežinoma/-s/-i"
 
 #: protocols/luci-proto-modemmanager/htdocs/luci-static/resources/protocol/modemmanager.js:12
 msgid "Unknown and unsupported connection method."
-msgstr "Nežinomas ir nepalaikomas prisijungimo būdas."
+msgstr "Nežinomas ir nepalaikomas prisijungimo metodas."
 
 #: modules/luci-base/htdocs/luci-static/resources/network.js:2401
 #: modules/luci-compat/luasrc/model/network.lua:1138
@@ -11757,7 +11762,6 @@ msgid "Waiting for device..."
 msgstr "Laukiama įrenginio..."
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:189
-#: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:199
 #: protocols/luci-proto-modemmanager/htdocs/luci-static/resources/protocol/modemmanager.js:155
 msgid "Warning"
 msgstr "Įspėjimas"
