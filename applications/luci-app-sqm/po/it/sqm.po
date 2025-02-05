@@ -39,8 +39,8 @@ msgid ""
 "Advanced options will only be used as long as this box is checked (only "
 "needed if MTU > 1500)."
 msgstr ""
-"Le opzioni avanzate saranno disponibili solo se questa opzione è spuntata ("
-"necessario solo se MTU > 1500)."
+"Le opzioni avanzate saranno disponibili solo se questa opzione è spuntata "
+"(necessario solo se MTU > 1500)."
 
 #: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:133
 msgid "Advanced options will only be used as long as this box is checked."
@@ -75,8 +75,8 @@ msgstr "Scarica la velocità (ingresso)"
 
 #: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:92
 msgid ""
-"Download speed (kbit/s) (ingress) set to 0 to selectively disable ingress "
-"shaping"
+"Download speed (kbit/s) (ingress) set to 0 to disable ingress shaping "
+"selectively"
 msgstr ""
 "Velocità di download (kbit/s) (ingresso) impostata a 0 per disattivare "
 "selettivamente l'ingresso"

@@ -737,9 +737,9 @@ return view.extend({
 
 						/* Assume that serving RAs by default is fine, but disallow it for certain
 						   interface protocols such as DHCP, DHCPv6 or the various PPP flavors.
-						   The intent is to only allow RA serving for interface protocols doing
+						   The intent is only to allow RA serving for interface protocols doing
 						   some kind of static IP config over something resembling a layer 2
-						   ethernet device. */
+						   Ethernet device. */
 						switch (protoval) {
 						case 'dhcp':
 						case 'dhcpv6':
@@ -1572,9 +1572,10 @@ return view.extend({
 		o.datatype = 'cidr6';
 
 		o = s.option(form.ListValue, 'packet_steering', _('Packet Steering'), _('Enable packet steering across CPUs. May help or hinder network speed.'));
-		o.value('', _('Disabled'));
+		o.value('0', _('Disabled'));
 		o.value('1',_('Enabled'));
 		o.value('2',_('Enabled (all CPUs)'));
+		o.default = '1';
 		o.optional = true;
 
 		var steer_flow = uci.get('network', 'globals', 'steering_flows');	

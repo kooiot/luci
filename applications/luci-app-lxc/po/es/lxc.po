@@ -49,7 +49,7 @@ msgstr "Crear"
 msgid "Create New Container"
 msgstr "Crear nuevo contenedor"
 
-#: applications/luci-app-lxc/luasrc/view/lxc.htm:133
+#: applications/luci-app-lxc/luasrc/view/lxc.htm:132
 msgid "Delete"
 msgstr "Eliminar"
 
@@ -74,7 +74,7 @@ msgstr "Conceder acceso UCI para luci-app-lxc"
 msgid "LXC Containers"
 msgstr "Contenedores LXC"
 
-#: applications/luci-app-lxc/luasrc/view/lxc.htm:73
+#: applications/luci-app-lxc/luasrc/view/lxc.htm:72
 msgid "Loading"
 msgstr "Cargando"
 
@@ -98,7 +98,7 @@ msgstr "Nombre"
 msgid "Options"
 msgstr "Opciones"
 
-#: applications/luci-app-lxc/luasrc/view/lxc.htm:131
+#: applications/luci-app-lxc/luasrc/view/lxc.htm:130
 msgid "Start"
 msgstr "Iniciar"
 
@@ -106,36 +106,10 @@ msgstr "Iniciar"
 msgid "Status"
 msgstr "Estado"
 
-#: applications/luci-app-lxc/luasrc/view/lxc.htm:132
+#: applications/luci-app-lxc/luasrc/view/lxc.htm:131
 msgid "Stop"
 msgstr "Detener"
 
 #: applications/luci-app-lxc/luasrc/view/lxc.htm:46
 msgid "Template"
 msgstr "Plantilla"
-
-#~ msgid "Enable SSL"
-#~ msgstr "Activar SSL"
-
-#~ msgid ""
-#~ "Enable optional SSL encryption support. This requires additional packages "
-#~ "like 'wget', 'ca-certificates', 'gnupg' and 'gnupg-utils'."
-#~ msgstr ""
-#~ "Activar el soporte de cifrado SSL opcional. Esto requiere paquetes "
-#~ "adicionales como 'wget', 'ca-certificates', 'gnupg' y 'gnupg-utils'."
-
-#~ msgid ""
-#~ "<b>Please note:</b> For LXC Containers you need a custom OpenWrt image."
-#~ "<br />"
-#~ msgstr ""
-#~ "<b>Tenga en cuenta:</b> Para los contenedores LXC necesita una imagen "
-#~ "OpenWrt personalizada.<br />"
-
-#~ msgid ""
-#~ "The image should include at least support for 'kernel cgroups', 'kernel "
-#~ "namespaces' and 'miscellaneous LXC related options' plus 'kmod-veth' for "
-#~ "optional network support."
-#~ msgstr ""
-#~ "La imagen debe incluir al menos soporte para 'kernel cgroups', 'kernel "
-#~ "namespaces' y 'miscellaneous LXC related options' más 'kmod-veth' para "
-#~ "soporte de red opcional."

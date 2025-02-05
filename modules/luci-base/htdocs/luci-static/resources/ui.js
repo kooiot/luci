@@ -1598,7 +1598,7 @@ const UIDropdown = UIElement.extend(/** @lends LuCI.ui.Dropdown.prototype */ {
 		let markup = null;
 
 		if (tpl)
-			markup = (tpl.textContent ?? tpl.innerHTML ?? tpl.firstChild.data).replace(/^<!--|-->$/, '').trim();
+			markup = (tpl.textContent ?? tpl.innerHTML ?? tpl.firstChild.data).replace(/^<!--|--!?>$/g, '').trim();
 		else
 			markup = '<li data-value="{{value}}"><span data-label-placeholder="true" /></li>';
 
@@ -2320,6 +2320,7 @@ const UIDynamicList = UIElement.extend(/** @lends LuCI.ui.DynamicList.prototype 
 			e.target.classList.remove('drag-over');
 			const target = e.target.classList.contains('item') ? e.target : dl.querySelector('.add-item');
 			dl.insertBefore(draggedItem, target);
+			this.dispatchCbiDynlistChange(dl, draggedItem.value);
 		});
 
 		dl.addEventListener('click', (e) => {
@@ -2376,6 +2377,7 @@ const UIDynamicList = UIElement.extend(/** @lends LuCI.ui.DynamicList.prototype 
 				dl.insertBefore(draggedItem, placeholder);
 				draggedItem.classList.remove('dragging')
 				placeholder.parentNode.removeChild(placeholder);
+				this.dispatchCbiDynlistChange(dl, draggedItem.value);
 				placeholder = null;
 				draggedItem = null;
 			}
@@ -2427,6 +2429,11 @@ const UIDynamicList = UIElement.extend(/** @lends LuCI.ui.DynamicList.prototype 
 			ai.parentNode.insertBefore(new_item, ai);
 		}
 
+		this.dispatchCbiDynlistChange(dl,value);
+	},
+
+	/** @private */
+	dispatchCbiDynlistChange(dl,value) {
 		dl.dispatchEvent(new CustomEvent('cbi-dynlist-change', {
 			bubbles: true,
 			detail: {
@@ -2454,15 +2461,7 @@ const UIDynamicList = UIElement.extend(/** @lends LuCI.ui.DynamicList.prototype 
 
 		item.parentNode.removeChild(item);
 
-		dl.dispatchEvent(new CustomEvent('cbi-dynlist-change', {
-			bubbles: true,
-			detail: {
-				instance: this,
-				element: dl,
-				value: value,
-				remove: true
-			}
-		}));
+		this.dispatchCbiDynlistChange(dl, value);
 	},
 
 	/** @private */
@@ -2949,7 +2948,7 @@ const UIFileUpload = UIElement.extend(/** @lends LuCI.ui.FileUpload.prototype */
 		ev.preventDefault();
 
 		if (fileStat.type == 'directory')
-			msg = _('Do you really want to recursively delete the directory "%s" ?').format(name);
+			msg = _('Do you really want to delete the "%s" directory recursively?').format(name);
 		else
 			msg = _('Do you really want to delete "%s" ?').format(name);
 
@@ -5015,8 +5014,8 @@ const UI = baseclass.extend(/** @lends LuCI.ui.prototype */ {
 	 * default.
 	 *
 	 * @returns {function}
-	 * Returns the compiled validator function which can be used to manually
-	 * trigger field validation or to bind it to further events.
+	 * Returns the compiled validator function which can be used to trigger
+	 * field validation manually or to bind it to further events.
 	 *
 	 * @see LuCI.validation
 	 */

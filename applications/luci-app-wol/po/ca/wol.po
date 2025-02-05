@@ -69,7 +69,7 @@ msgstr "Despert en LAN"
 
 #: applications/luci-app-wol/htdocs/luci-static/resources/view/wol.js:39
 msgid ""
-"Wake on LAN is a mechanism to remotely boot computers in the local network."
+"Wake on LAN is a mechanism to boot computers remotely in the local network."
 msgstr ""
 "Despert en LAN és un mecanisme per a iniciar remotament ordinadors en la "
 "xarxa local."
@@ -90,9 +90,3 @@ msgstr ""
 #: applications/luci-app-wol/htdocs/luci-static/resources/view/wol.js:44
 msgid "WoL program"
 msgstr "Programa WoL"
-
-#~ msgid "Broadcast on all interfaces"
-#~ msgstr "Difon en totes les interfícies"
-
-#~ msgid "Starting WoL utility:"
-#~ msgstr "Iniciant la utilitat WoL:"

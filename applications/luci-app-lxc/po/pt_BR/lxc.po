@@ -46,7 +46,7 @@ msgstr "Criar"
 msgid "Create New Container"
 msgstr "Criar um Novo Container"
 
-#: applications/luci-app-lxc/luasrc/view/lxc.htm:133
+#: applications/luci-app-lxc/luasrc/view/lxc.htm:132
 msgid "Delete"
 msgstr "Apagar"
 
@@ -71,7 +71,7 @@ msgstr "Conceder acesso UCI ao luci-app-lxc"
 msgid "LXC Containers"
 msgstr "Contêineres LXC"
 
-#: applications/luci-app-lxc/luasrc/view/lxc.htm:73
+#: applications/luci-app-lxc/luasrc/view/lxc.htm:72
 msgid "Loading"
 msgstr "Carregando"
 
@@ -94,7 +94,7 @@ msgstr "Nome"
 msgid "Options"
 msgstr "Opções"
 
-#: applications/luci-app-lxc/luasrc/view/lxc.htm:131
+#: applications/luci-app-lxc/luasrc/view/lxc.htm:130
 msgid "Start"
 msgstr "Início"
 
@@ -102,20 +102,10 @@ msgstr "Início"
 msgid "Status"
 msgstr "Status"
 
-#: applications/luci-app-lxc/luasrc/view/lxc.htm:132
+#: applications/luci-app-lxc/luasrc/view/lxc.htm:131
 msgid "Stop"
 msgstr "Parar"
 
 #: applications/luci-app-lxc/luasrc/view/lxc.htm:46
 msgid "Template"
 msgstr "Modelo"
-
-#~ msgid "Enable SSL"
-#~ msgstr "Ativar o SSL"
-
-#~ msgid ""
-#~ "Enable optional SSL encryption support. This requires additional packages "
-#~ "like 'wget', 'ca-certificates', 'gnupg' and 'gnupg-utils'."
-#~ msgstr ""
-#~ "Ative o suporte de criptografia SSL opcional. Isto requer pacotes "
-#~ "adicionais como 'wget', 'ca-certificates', 'gnupg' e o 'gnupg-utils'."

@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-06-12 09:11+0000\n"
-"Last-Translator: Piotr Kołtun <pkoltungm@gmail.com>\n"
+"PO-Revision-Date: 2025-01-27 22:28+0000\n"
+"Last-Translator: Matthaiks <kitynska@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsadvanced-reboot/pl/>\n"
 "Language: pl\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.6-dev\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 5.10-dev\n"
 
 #: applications/luci-app-advanced-reboot/htdocs/luci-static/resources/view/system/advanced_reboot.js:193
 #: applications/luci-app-advanced-reboot/root/usr/share/luci/menu.d/luci-app-advanced-reboot.json:3
@@ -171,15 +171,15 @@ msgid ""
 "back to the currently active partition.<br /><br /> Click \"Proceed\" below "
 "to reboot device to an alternative partition."
 msgstr ""
-"OSTRZEŻENIE: Inna partycja może mieć swoje własne ustawienia i zupełnie inny "
-"firmware.<br /><br /> Ponieważ konfiguracja sieci i SSID/hasło WiFi na innej "
-"partycji mogą być różne, być może trzeba będzie dostosować ustawienia "
-"komputera, aby mieć dostęp do urządzenia po ponownym uruchomieniu "
-"systemu.<br /><br /> Należy również pamiętać, że alternatywne firmware "
-"partycji może nie zapewniać łatwego sposobu przełączenia aktywnej partycji i "
-"ponownego uruchomienia systemu na obecnie aktywną partycję.<br /><br /> "
-"Kliknij przycisk \"Przejdź dalej\" poniżej, aby zrestartować urządzenie do "
-"innej partycji."
+"OSTRZEŻENIE: Alternatywna partycja może zawierać własne ustawienia i "
+"całkowicie inne oprogramowanie firmware.<br /><br /> Ponieważ konfiguracja "
+"sieci oraz SSID/hasło Wi-Fi na alternatywnej partycji mogą się różnić, "
+"konieczne może być dostosowanie ustawień komputera, aby uzyskać dostęp do "
+"urządzenia po jego ponownym uruchomieniu.<br /><br /> Należy również "
+"pamiętać, że firmware na alternatywnej partycji może nie oferować łatwego "
+"sposobu na przełączenie aktywnej partycji i powrotu do obecnie aktywnej "
+"partycji.<br /><br /> Kliknij \"Przejdź dalej\", aby zrestartować urządzenie "
+"i przełączyć na alternatywną partycję."
 
 #: applications/luci-app-advanced-reboot/htdocs/luci-static/resources/view/system/advanced_reboot.js:52
 msgid ""
@@ -219,71 +219,3 @@ msgstr "Ostrzeżenie: Ten system nie obsługuje wyłączania zasilania!"
 #: applications/luci-app-advanced-reboot/htdocs/luci-static/resources/view/system/advanced_reboot.js:225
 msgid "Warning: Unable to obtain device information!"
 msgstr "Ostrzeżenie: Nie można uzyskać informacji o urządzeniu!"
-
-#~ msgid "Warning: Device (%s) is unknown or isn't a dual-partition device!"
-#~ msgstr ""
-#~ "Ostrzeżenie: Urządzenie (%s) jest nieznane lub nie jest urządzeniem z "
-#~ "dwiema partycjami!"
-
-#~ msgid "Alternative"
-#~ msgstr "Alternatywne"
-
-#~ msgid "Changes applied."
-#~ msgstr "Zmiany zostały zastosowane."
-
-#~ msgid "Current"
-#~ msgstr "Obecny"
-
-#~ msgid "Loading"
-#~ msgstr "Ładowanie"
-
-#~ msgid "Rebooting..."
-#~ msgstr "Ponowne uruchamianie..."
-
-#~ msgid "System"
-#~ msgstr "System"
-
-#~ msgid ""
-#~ "The system is rebooting now.<br /> DO NOT POWER OFF THE DEVICE!<br /> "
-#~ "Wait a few minutes before you try to reconnect. It might be necessary to "
-#~ "renew the address of your computer to reach the device again, depending "
-#~ "on your settings."
-#~ msgstr ""
-#~ "System jest teraz ponownie uruchamiany.<br />NIE WYŁĄCZAJ ZASILANIA "
-#~ "URZĄDZENIA!<br />Poczekaj kilka minut przed próbą ponownego nawiązania "
-#~ "połączenia. W zależności od ustawień może być konieczne odnowienie adresu "
-#~ "komputera, aby ponownie połączyć się z urządzeniem."
-
-#~ msgid "Waiting for changes to be applied..."
-#~ msgstr "Oczekiwanie na zastosowanie zmian..."
-
-#~ msgid "attempting to mount alternative partition (mtd%s)"
-#~ msgstr "próba zamontowania partycji alternatywnej (mtd%s)"
-
-#~ msgid "attempting to unmount alternative partition (mtd%s)"
-#~ msgstr "próba odinstalowania partycji alternatywnej (mtd%s)"
-
-#~ msgid "Unable to obtain firmware environment variable"
-#~ msgstr "Nie można uzyskać zmiennej środowiskowej firmware"
-
-#~ msgid "Unable to set Dual Boot Flag Partition entry for partition"
-#~ msgstr ""
-#~ "Nie można ustawić wpisu flagi partycji podwójnego rozruchu dla partycji"
-
-#~ msgid "Unable to set firmware environment variable"
-#~ msgstr "Nie można ustawić zmiennej środowiskowej firmware"
-
-#~ msgid "attempting to mount alternative partition"
-#~ msgstr "próba zamontowania alternatywnej partycji"
-
-#~ msgid "attempting to unmount alternative partition"
-#~ msgstr "próba odmontowania alternatywnej partycji"
-
-#~ msgid "to"
-#~ msgstr "do"
-
-#~ msgid "Action"
-#~ msgstr "Akcja"
-
-#~ msgid "Firmware/OS (Kernel)"
-#~ msgstr "Firmware/System operacyjny (Jądro)"

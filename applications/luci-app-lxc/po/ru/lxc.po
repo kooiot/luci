@@ -46,7 +46,7 @@ msgstr "Создать"
 msgid "Create New Container"
 msgstr "Создать новый контейнер"
 
-#: applications/luci-app-lxc/luasrc/view/lxc.htm:133
+#: applications/luci-app-lxc/luasrc/view/lxc.htm:132
 msgid "Delete"
 msgstr "Удалить"
 
@@ -71,7 +71,7 @@ msgstr "Предоставить UCI доступ к luci-app-lxc"
 msgid "LXC Containers"
 msgstr "LXC-контейнеры"
 
-#: applications/luci-app-lxc/luasrc/view/lxc.htm:73
+#: applications/luci-app-lxc/luasrc/view/lxc.htm:72
 msgid "Loading"
 msgstr "Загрузка"
 
@@ -96,7 +96,7 @@ msgstr "Название"
 msgid "Options"
 msgstr "Настройки"
 
-#: applications/luci-app-lxc/luasrc/view/lxc.htm:131
+#: applications/luci-app-lxc/luasrc/view/lxc.htm:130
 msgid "Start"
 msgstr "Запустить"
 
@@ -104,21 +104,10 @@ msgstr "Запустить"
 msgid "Status"
 msgstr "Статус"
 
-#: applications/luci-app-lxc/luasrc/view/lxc.htm:132
+#: applications/luci-app-lxc/luasrc/view/lxc.htm:131
 msgid "Stop"
 msgstr "Остановить"
 
 #: applications/luci-app-lxc/luasrc/view/lxc.htm:46
 msgid "Template"
 msgstr "Шаблон"
-
-#~ msgid "Enable SSL"
-#~ msgstr "Включить SSL"
-
-#~ msgid ""
-#~ "Enable optional SSL encryption support. This requires additional packages "
-#~ "like 'wget', 'ca-certificates', 'gnupg' and 'gnupg-utils'."
-#~ msgstr ""
-#~ "Включить необязательную поддержку шифрования SSL. Это требуется некоторым "
-#~ "дополнительным пакетам, например: 'wget', 'ca-certificates', 'gnupg' и "
-#~ "'gnupg-utils'."

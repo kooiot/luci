@@ -487,8 +487,8 @@ msgstr ""
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:117
 msgid ""
-"Render the QR-Code of the selected Access Point to comfortably transfer the "
-"WLAN credentials to your mobile devices."
+"Render the QR-Code of the selected Access Point to transfer the WLAN "
+"credentials to your mobile devices comfortably."
 msgstr ""
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:775
@@ -888,24 +888,3 @@ msgstr ""
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:309
 msgid "use the second radio only (radio1)"
 msgstr ""
-
-#~ msgid "Action"
-#~ msgstr "Azione"
-
-#~ msgid "Automatic"
-#~ msgstr "Automatico"
-
-#~ msgid "Cipher"
-#~ msgstr "Cifra"
-
-#~ msgid "Force CCMP (AES)"
-#~ msgstr "Forza CCMP (AES)"
-
-#~ msgid "Force TKIP"
-#~ msgstr "Forza TKIP"
-
-#~ msgid "Force TKIP and CCMP (AES)"
-#~ msgstr "Forza TKIP e CCMP (AES)"
-
-#~ msgid "Loading"
-#~ msgstr "Caricamento"

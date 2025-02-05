@@ -66,8 +66,8 @@ msgstr ""
 
 #: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:92
 msgid ""
-"Download speed (kbit/s) (ingress) set to 0 to selectively disable ingress "
-"shaping"
+"Download speed (kbit/s) (ingress) set to 0 to disable ingress shaping "
+"selectively"
 msgstr ""
 
 #: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:154
@@ -299,14 +299,3 @@ msgstr ""
 #: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:219
 msgid "default"
 msgstr "по подразбиране"
-
-#, fuzzy
-#~ msgid ""
-#~ "Download speed (kbit/s) (ingress) set to 0 to selectively disable ingress "
-#~ "shaping:"
-#~ msgstr ""
-#~ "Скорост на изтегляне (kbit/s) (входящ) зададена на 0, деактивира "
-#~ "оформянето на входящия трафик:"
-
-#~ msgid "Ignore DSCP on ingress:"
-#~ msgstr "Игнориране на DSCP за входящ:"

@@ -65,7 +65,7 @@ msgstr "网络唤醒"
 
 #: applications/luci-app-wol/htdocs/luci-static/resources/view/wol.js:39
 msgid ""
-"Wake on LAN is a mechanism to remotely boot computers in the local network."
+"Wake on LAN is a mechanism to boot computers remotely in the local network."
 msgstr "网络唤醒是一个远程启动本地网络内计算机的机制。"
 
 #: applications/luci-app-wol/htdocs/luci-static/resources/view/wol.js:140
@@ -84,9 +84,3 @@ msgstr "唤醒主机失败:"
 #: applications/luci-app-wol/htdocs/luci-static/resources/view/wol.js:44
 msgid "WoL program"
 msgstr "网络唤醒程序"
-
-#~ msgid "Broadcast on all interfaces"
-#~ msgstr "向所有接口广播"
-
-#~ msgid "Starting WoL utility:"
-#~ msgstr "正在启动网络唤醒工具："

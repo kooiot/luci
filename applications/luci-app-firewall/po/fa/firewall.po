@@ -1349,7 +1349,7 @@ msgid "Your device runs firewall4."
 msgstr "دستگاه شما از فایروال 4 استفاده می کند."
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:143
-msgid "Zone ⇒ Forwardings"
+msgid "Zone ⇒ Forwards"
 msgstr "فوروارد ⇒منطقه"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:101
@@ -1495,10 +1495,6 @@ msgstr "ip[/cidr]<br />"
 msgid "ip[/cidr]<br />For use with Match datatypes: <code>*_ip</code>."
 msgstr "ip[/cidr]<br />برای استفاده با انواع داده Match: <code>*_ip</code>."
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:70
-msgid "ipv4"
-msgstr "آی پی نسخه ۴"
-
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:133
 msgid "list"
 msgstr "لیست"
@@ -1592,42 +1588,3 @@ msgstr "تا ۶۵۵۳۶ ورودی."
 #: applications/luci-app-firewall/htdocs/luci-static/resources/tools/firewall.js:339
 msgid "valid firewall mark"
 msgstr "علامت فایروال معتبر"
-
-#~ msgid "Software based offloading for routing/NAT"
-#~ msgstr "تخیله کردن مبتنی بر نرم افزار برای مسیریابی/NAT"
-
-#~ msgid ""
-#~ "Forwarded IPv4%{proto?, protocol %{proto#%{next?, }<var>%{item.name}</"
-#~ "var>}}%{mark?, mark <var%{mark.inv? data-tooltip=\"Match fwmarks except "
-#~ "%{mark.num}%{mark.mask? with mask %{mark.mask}}.\":%{mark.mask? data-"
-#~ "tooltip=\"Mask fwmark value with %{mark.mask} before compare.\"}}>%{mark."
-#~ "val}</var>}"
-#~ msgstr ""
-#~ "Forwarded IPv4%{proto?, protocol %{proto#%{next?, }<var>%{item.name}</"
-#~ "var>}}%{mark?, mark <var%{mark.inv? data-tooltip=\"Match fwmarks except "
-#~ "%{mark.num}%{mark.mask? with mask %{mark.mask}}.\":%{mark.mask? data-"
-#~ "tooltip=\"Mask fwmark value with %{mark.mask} before compare.\"}}>%{mark."
-#~ "val}</var>}"
-
-#~ msgid ""
-#~ "Incoming IPv4%{proto?, protocol %{proto#%{next?, }%{item.types?<var "
-#~ "class=\"cbi-tooltip-container\">%{item.name}<span class=\"cbi-"
-#~ "tooltip\">ICMP with types %{item.types#%{next?, }<var>%{item}</var>}</"
-#~ "span></var>:<var>%{item.name}</var>}}}%{mark?, mark <var%{mark.inv? data-"
-#~ "tooltip=\"Match fwmarks except %{mark.num}%{mark.mask? with mask %{mark."
-#~ "mask}}.\":%{mark.mask? data-tooltip=\"Mask fwmark value with %{mark.mask} "
-#~ "before compare.\"}}>%{mark.val}</var>}%{helper?, helper %{helper.inv?<var "
-#~ "data-tooltip=\"Match any helper except &quot;%{helper.name}&quot;"
-#~ "\">%{helper.val}</var>:<var data-tooltip=\"%{helper.name}\">%{helper.val}"
-#~ "</var>}}"
-#~ msgstr ""
-#~ "Incoming IPv4%{proto?, protocol %{proto#%{next?, }%{item.types?<var "
-#~ "class=\"cbi-tooltip-container\">%{item.name}<span class=\"cbi-"
-#~ "tooltip\">ICMP with types %{item.types#%{next?, }<var>%{item}</var>}</"
-#~ "span></var>:<var>%{item.name}</var>}}}%{mark?, mark <var%{mark.inv? data-"
-#~ "tooltip=\"Match fwmarks except %{mark.num}%{mark.mask? with mask %{mark."
-#~ "mask}}.\":%{mark.mask? data-tooltip=\"Mask fwmark value with %{mark.mask} "
-#~ "before compare.\"}}>%{mark.val}</var>}%{helper?, helper %{helper.inv?<var "
-#~ "data-tooltip=\"Match any helper except &quot;%{helper.name}&quot;"
-#~ "\">%{helper.val}</var>:<var data-tooltip=\"%{helper.name}\">%{helper.val}"
-#~ "</var>}}"

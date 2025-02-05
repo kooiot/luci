@@ -1234,7 +1234,7 @@ msgid "Your device runs firewall4."
 msgstr ""
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:143
-msgid "Zone ⇒ Forwardings"
+msgid "Zone ⇒ Forwards"
 msgstr "Zon ⇒ Vidarebefordringar"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:101
@@ -1375,10 +1375,6 @@ msgstr ""
 msgid "ip[/cidr]<br />For use with Match datatypes: <code>*_ip</code>."
 msgstr ""
 
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:70
-msgid "ipv4"
-msgstr ""
-
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:133
 msgid "list"
 msgstr ""
@@ -1472,16 +1468,3 @@ msgstr ""
 #: applications/luci-app-firewall/htdocs/luci-static/resources/tools/firewall.js:339
 msgid "valid firewall mark"
 msgstr ""
-
-#~ msgid ""
-#~ "Forwarded IPv4%{proto?, protocol %{proto#%{next?, }<var>%{item.name}</"
-#~ "var>}}%{mark?, mark <var%{mark.inv? data-tooltip=\"Match fwmarks except "
-#~ "%{mark.num}%{mark.mask? with mask %{mark.mask}}.\":%{mark.mask? data-"
-#~ "tooltip=\"Mask fwmark value with %{mark.mask} before compare.\"}}>%{mark."
-#~ "val}</var>}"
-#~ msgstr ""
-#~ "Vidarebefordrade IPv4%{proto?, protocol %{proto#%{next?, }<var>%{item."
-#~ "name}</var>}}%{mark?, mark <var%{mark.inv? data-tooltip=\"Matcha fwmarks "
-#~ "förutom %{mark.num}%{mark.mask? med mask %{mark.mask}}.\":%{mark.mask? "
-#~ "data-tooltip=\"Maskera fwmark-värdet med %{mark.mask} före jämförelse.\"}}"
-#~ ">%{mark.val}</var>}"

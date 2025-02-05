@@ -14,15 +14,15 @@ msgstr ""
 msgid "Allowed IP ranges"
 msgstr "परवानगी दिलेली आयपी श्रेण्या"
 
-#: applications/luci-app-bcp38/htdocs/luci-static/resources/view/bcp38/form.js:26
-msgid ""
-"Attempt to automatically detect if the upstream IP will be blocked by the "
-"configuration, and add an exception if it will. If this does not work "
-"correctly, you can add exceptions manually below."
-msgstr ""
-
 #: applications/luci-app-bcp38/htdocs/luci-static/resources/view/bcp38/form.js:25
 msgid "Auto-detect upstream IP"
+msgstr ""
+
+#: applications/luci-app-bcp38/htdocs/luci-static/resources/view/bcp38/form.js:26
+msgid ""
+"Automatically attempt to detect whether the upstream IP will be blocked by "
+"the configuration, adding an exception if so. If this does not work "
+"correctly, you can add exceptions manually below."
 msgstr ""
 
 #: applications/luci-app-bcp38/htdocs/luci-static/resources/view/bcp38/form.js:10
@@ -71,7 +71,3 @@ msgid ""
 "bcp38\">BCP 38</a>. For IPv6, only source specific default routes are "
 "installed, so no BCP38 firewall routes are needed."
 msgstr ""
-
-#~ msgid ""
-#~ "Interface to apply the blocking to (should be the upstream WAN interface)."
-#~ msgstr "यावर अवरोधित करणे लागू करण्यासाठी इंटरफेस (अपस्ट्रीम डब्ल्यूएएन इंटरफेस असावा)."
