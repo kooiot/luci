@@ -130,7 +130,7 @@ return view.extend({
 		o.placeholder = _('Unnamed zone');
 		o.modalonly = true;
 		o.rmempty = false;
-		o.datatype = 'and(uciname,maxlength(11))';
+		o.datatype = L.hasSystemFeature('firewall4') ? 'uciname' : 'and(uciname,maxlength(11))';
 		o.write = function(section_id, formvalue) {
 			var cfgvalue = this.cfgvalue(section_id);
 
@@ -140,7 +140,7 @@ return view.extend({
 				return firewall.renameZone(cfgvalue, formvalue);
 		};
 
-		o = s.option(widgets.ZoneForwards, '_info', _('Zone ⇒ Forwardings'));
+		o = s.option(widgets.ZoneForwards, '_info', _('Zone ⇒ Forwards'));
 		o.editable = true;
 		o.modalonly = false;
 		o.cfgvalue = function(section_id) {
