@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-07-15 20:49+0000\n"
-"Last-Translator: Rex_sa <rex.sa@pm.me>\n"
+"PO-Revision-Date: 2025-03-01 05:42+0000\n"
+"Last-Translator: Ali Alhialy <ali_d19@yahoo.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsadblock/ar/>\n"
 "Language: ar\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 5.7-dev\n"
+"X-Generator: Weblate 5.10.3-dev\n"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:272
 msgid "Action"
@@ -168,9 +168,9 @@ msgstr ""
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:176
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:72
 msgid "Cancel"
-msgstr "إلغاء"
+msgstr "الغاء"
 
-#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:574
+#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:569
 msgid "Categories"
 msgstr "فئات"
 
@@ -270,10 +270,6 @@ msgstr "تحميل الأداة"
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:361
 msgid "E-Mail Notification"
 msgstr "إعلام البريد الإلكتروني"
-
-#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:528
-msgid "E-Mail Notification Count"
-msgstr "عدد إعلام البريد الإلكتروني"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:524
 msgid "E-Mail Profile"
@@ -501,14 +497,6 @@ msgstr "استعلام"
 msgid "Query active blocklists and backups for a specific domain."
 msgstr "الاستعلام عن قوائم الحظر والنسخ الاحتياطية النشطة لمجال معين."
 
-#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:528
-msgid ""
-"Raise the notification count, to get E-Mails if the overall blocklist count "
-"is less or equal to the given limit."
-msgstr ""
-"ارفع عدد الإشعارات للحصول على رسائل البريد الإلكتروني إذا كان العدد الإجمالي "
-"لقائمة الحظر أقل من الحد المعطى أو مساويًا له."
-
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:365
 msgid "Receiver address for adblock notification e-mails."
 msgstr "عنوان المستلم لرسائل البريد الإلكتروني الخاصة بإشعار adblock."
@@ -628,7 +616,7 @@ msgstr "تشغيل الأدوات"
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:74
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:106
 msgid "Save"
-msgstr "إحفض"
+msgstr "إحفظ"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:436
 msgid "Second instance"
@@ -639,8 +627,8 @@ msgid ""
 "Send adblock related notification e-mails. Please note: this needs "
 "additional 'msmtp' package installation."
 msgstr ""
-"إرسال رسائل البريد الإلكتروني الخاصة بالإشعار عن حظر الإعلانات. يرجى ملاحظة: "
-"هذا يحتاج إلى تثبيت حزمة 'msmtp' إضافية."
+"إرسال رسائل البريد الإلكتروني الخاصة بالإشعار عن حظر الإعلانات. يرجى "
+"الملاحظة: يحتاج هذا إلى تثبيت حزمة 'msmtp' إضافية."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:516
 msgid "Sender address for adblock notification E-Mails."
@@ -658,7 +646,7 @@ msgstr "قم بتعيين مثيل الواجهة الخلفية لـ dns الم
 msgid "Settings"
 msgstr "الاعدادات"
 
-#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:550
+#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:545
 msgid "Sources (Size, Focus)"
 msgstr "المصادر (الحجم والتركيز)"
 
@@ -717,12 +705,16 @@ msgid ""
 "The changes to the blacklist have been saved. Reload your adblock lists for "
 "the changes to take effect."
 msgstr ""
+"تم حفظ التغييرات على القائمة السوداء. اعد تحميل قوائم مانع الاعلانات حتى "
+"تاخذ التعديلات مجراها."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/whitelist.js:15
 msgid ""
 "The changes to the whitelist have been saved. Reload your adblock lists for "
 "the changes to take effect."
 msgstr ""
+"تم حفظ التغييرات على القائمة البيضاء. اعد تحميل قوائم مانع الاعلانات لتاخذ "
+"التغييرات مجراها."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:56
 msgid "The day of the week (opt., values: 0-6 possibly sep. by , or -)"
@@ -812,9 +804,9 @@ msgstr "تأخير الزناد"
 msgid "Unable to save changes: %s"
 msgstr "تعذر حفظ التغييرات: s%"
 
-#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:589
-#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:605
-#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:621
+#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:584
+#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:600
+#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:616
 msgid "Variants"
 msgstr "المتغيرات"
 

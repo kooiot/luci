@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-10-23 12:34+0000\n"
+"PO-Revision-Date: 2025-02-25 07:43+0000\n"
 "Last-Translator: Kristoffer Grundström <swedishsailfishosuser@tutanota.com>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsadblock/sv/>\n"
@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.8.2-dev\n"
+"X-Generator: Weblate 5.10.2-dev\n"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:272
 msgid "Action"
@@ -165,7 +165,7 @@ msgstr ""
 msgid "Cancel"
 msgstr "Avbryt"
 
-#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:574
+#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:569
 msgid "Categories"
 msgstr "Kategorier"
 
@@ -265,10 +265,6 @@ msgstr "Ladda ner verktyget"
 msgid "E-Mail Notification"
 msgstr "E-postavisering"
 
-#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:528
-msgid "E-Mail Notification Count"
-msgstr "Antal E-postaviseringar"
-
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:524
 msgid "E-Mail Profile"
 msgstr "E-postprofil"
@@ -317,7 +313,7 @@ msgstr "Aktivera utförlig avlusningsloggning i händelse av behandlingsfel."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:309
 msgid "Enabled"
-msgstr "Aktiverat"
+msgstr "Aktiverad"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:319
 msgid "End Timestamp"
@@ -493,14 +489,6 @@ msgstr "Fråga"
 msgid "Query active blocklists and backups for a specific domain."
 msgstr "Fråga aktiva svartlistor och säkerhetskopior efter en given domän."
 
-#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:528
-msgid ""
-"Raise the notification count, to get E-Mails if the overall blocklist count "
-"is less or equal to the given limit."
-msgstr ""
-"Öka aviseringsantalet för att få e-post om den sammantagna spärrlistans "
-"antal är mindre än eller lika med den givna gränsen."
-
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:365
 msgid "Receiver address for adblock notification e-mails."
 msgstr "Mottagande adress för annonsblockeringsaviserings-e-postmeddelanden."
@@ -649,7 +637,7 @@ msgstr "Ställ in DNS-bakändens instans som används av adblock."
 msgid "Settings"
 msgstr "Inställningar"
 
-#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:550
+#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:545
 msgid "Sources (Size, Focus)"
 msgstr "Källor (Storlek, Fokus)"
 
@@ -792,9 +780,9 @@ msgstr ""
 msgid "Unable to save changes: %s"
 msgstr ""
 
-#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:589
-#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:605
-#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:621
+#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:584
+#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:600
+#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:616
 msgid "Variants"
 msgstr ""
 

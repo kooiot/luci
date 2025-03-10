@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-01-27 15:34+0000\n"
-"Last-Translator: Piotr Kołtun <pkoltungm@gmail.com>\n"
+"PO-Revision-Date: 2025-02-22 14:33+0000\n"
+"Last-Translator: Matthaiks <kitynska@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsadblock/pl/>\n"
 "Language: pl\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.10-dev\n"
+"X-Generator: Weblate 5.10.1-dev\n"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:272
 msgid "Action"
@@ -173,7 +173,7 @@ msgstr ""
 msgid "Cancel"
 msgstr "Anuluj"
 
-#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:574
+#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:569
 msgid "Categories"
 msgstr "Kategorie"
 
@@ -272,10 +272,6 @@ msgstr "Narzędzie pobierania"
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:361
 msgid "E-Mail Notification"
 msgstr "Powiadomienie e-mail"
-
-#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:528
-msgid "E-Mail Notification Count"
-msgstr "Licznik powiadomień e-mail"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:524
 msgid "E-Mail Profile"
@@ -509,14 +505,6 @@ msgstr ""
 "Wysyłaj zapytania o określoną domenę do aktywnych i zapasowych list "
 "blokowania."
 
-#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:528
-msgid ""
-"Raise the notification count, to get E-Mails if the overall blocklist count "
-"is less or equal to the given limit."
-msgstr ""
-"Zwiększ liczbę powiadomień, aby otrzymywać wiadomości e-mail jeśli ogólna "
-"liczba blokowanych list jest mniejsza lub równa podanemu limitowi."
-
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:365
 msgid "Receiver address for adblock notification e-mails."
 msgstr "Adres odbiorcy dla powiadomień e-mail blokowania reklam."
@@ -665,7 +653,7 @@ msgstr "Ustaw instancję backendu DNS używaną przez blokowanie reklam."
 msgid "Settings"
 msgstr "Ustawienia"
 
-#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:550
+#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:545
 msgid "Sources (Size, Focus)"
 msgstr "Źródła (wielkość, skupienie)"
 
@@ -726,12 +714,16 @@ msgid ""
 "The changes to the blacklist have been saved. Reload your adblock lists for "
 "the changes to take effect."
 msgstr ""
+"Zmiany na liście blokowanych zostały zapisane. Przeładuj listy blokera "
+"reklam, aby zmiany zaczęły obowiązywać."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/whitelist.js:15
 msgid ""
 "The changes to the whitelist have been saved. Reload your adblock lists for "
 "the changes to take effect."
 msgstr ""
+"Zmiany na liście dozwolonych zostały zapisane. Przeładuj listy blokera "
+"reklam, aby zmiany zaczęły obowiązywać."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:56
 msgid "The day of the week (opt., values: 0-6 possibly sep. by , or -)"
@@ -822,9 +814,9 @@ msgstr "Opóźnienie wyzwalacza"
 msgid "Unable to save changes: %s"
 msgstr "Nie można zapisać zmian: %s"
 
-#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:589
-#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:605
-#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:621
+#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:584
+#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:600
+#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:616
 msgid "Variants"
 msgstr "Warianty"
 
@@ -870,7 +862,7 @@ msgstr "raw (/tmp)"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:424
 msgid "smartdns (/tmp/smartdns)"
-msgstr ""
+msgstr "smartdns (/tmp/smartdns)"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:422
 msgid "unbound (/var/lib/unbound)"
