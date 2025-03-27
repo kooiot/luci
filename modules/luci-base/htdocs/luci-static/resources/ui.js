@@ -2876,10 +2876,10 @@ const UIFileUpload = UIElement.extend(/** @lends LuCI.ui.FileUpload.prototype */
 
 	/** @private */
 	canonicalizePath(path) {
-		return path.replace(/\/{2,}/, '/')
-			.replace(/\/\.(\/|$)/g, '/')
-			.replace(/[^\/]+\/\.\.(\/|$)/g, '/')
-			.replace(/\/$/, '');
+	return path.replace(/\/{2,}/g, '/')                // Collapse multiple slashes
+				.replace(/\/\.(\/|$)/g, '/')           // Remove `/.`
+				.replace(/[^\/]+\/\.\.(\/|$)/g, '/')   // Resolve `/..`
+				.replace(/\/$/g, (m, o, s) => s.length > 1 ? '' : '/'); // Remove trailing `/` only if not root
 	},
 
 	/** @private */
@@ -2890,10 +2890,7 @@ const UIFileUpload = UIElement.extend(/** @lends LuCI.ui.FileUpload.prototype */
 		if (cpath.length <= croot.length)
 			return [ croot ];
 
-		if (cpath.charAt(croot.length) != '/')
-			return [ croot ];
-
-		const parts = cpath.substring(croot.length + 1).split(/\//);
+		const parts = cpath.substring(croot.length).split(/\//);
 
 		parts.unshift(croot);
 
@@ -3078,13 +3075,13 @@ const UIFileUpload = UIElement.extend(/** @lends LuCI.ui.FileUpload.prototype */
 		let cur = '';
 
 		for (let i = 0; i < dirs.length; i++) {
-			cur = cur ? `${cur}/${dirs[i]}` : dirs[i];
+			cur += dirs[i];
 			dom.append(breadcrumb, [
 				i ? ' » ' : '',
 				E('a', {
 					'href': '#',
 					'click': UI.prototype.createHandlerFn(this, 'handleSelect', cur ?? '/', null)
-				}, dirs[i] != '' ? '%h'.format(dirs[i]) : E('em', '(root)')),
+				}, dirs[i] !== '/' ? '%h'.format(dirs[i]) : E('em', '(root)')),
 			]);
 		}
 
@@ -3886,6 +3883,64 @@ const UI = baseclass.extend(/** @lends LuCI.ui.prototype */ {
 		msg.classList.add(...classes);
 
 		mc.insertBefore(msg, mc.firstElementChild);
+
+		return msg;
+	},
+
+	/**
+	 * Add a time-limited notification banner at the top of the current view.
+	 *
+	 * A notification banner is an alert message usually displayed at the
+	 * top of the current view, spanning the entire available width.
+	 * Notification banners will stay in place until dismissed by the user, or
+	 * it has expired.
+	 * Multiple banners may be shown at the same time.
+	 *
+	 * Additional CSS class names may be passed to influence the appearance of
+	 * the banner. Valid values for the classes depend on the underlying theme.
+	 *
+	 * @see LuCI.dom.content
+	 *
+	 * @param {string} [title]
+	 * The title of the notification banner. If `null`, no title element
+	 * will be rendered.
+	 *
+	 * @param {*} children
+	 * The contents to add to the notification banner. This should be a DOM
+	 * node or a document fragment in most cases. The value is passed as-is
+	 * to the `dom.content()` function - refer to its documentation for
+	 * applicable values.
+	 * 
+	 * @param {int} [timeout]
+	 * A millisecond value after which the notification will disappear
+	 * automatically. If omitted, the notification will remain until it receives
+	 * the click event.
+	 *
+	 * @param {...string} [classes]
+	 * A number of extra CSS class names which are set on the notification
+	 * banner element.
+	 *
+	 * @returns {Node}
+	 * Returns a DOM Node representing the notification banner element.
+	 */
+	addTimeLimitedNotification(title, children, timeout, ...classes) {
+		const msg = this.addNotification(title, children, ...classes);
+
+		function fadeOutNotification(element) {
+			if (element) {
+				element.classList.add('fade-out');
+				element.classList.remove('fade-in');
+				setTimeout(() => {
+					if (element.parentNode) {
+						element.parentNode.removeChild(element);
+					}
+				});
+			}
+		}
+
+		if (typeof timeout === 'number' && timeout > 0) {
+			setTimeout(() => fadeOutNotification(msg), timeout);
+		}
 
 		return msg;
 	},
