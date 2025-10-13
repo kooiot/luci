@@ -1,19 +1,19 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-04-23 07:04+0000\n"
-"Last-Translator: olimpiumarius <oliver_magnum44@yahoo.com>\n"
+"PO-Revision-Date: 2025-10-10 05:14+0000\n"
+"Last-Translator: CRISTIAN ANDREI <cristianvdr@gmail.com>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsfrps/ro/>\n"
 "Language: ro\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
-"20)) ? 1 : 2;\n"
-"X-Generator: Weblate 4.18-dev\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : "
+"(n==0 || (n%100 > 0 && n%100 < 20)) ? 1 : 2;\n"
+"X-Generator: Weblate 5.14-dev\n"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:15
 msgid "Additional configs"
-msgstr "Configurații adiționale"
+msgstr "Configurații suplimentare"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:43
 msgid "Additional settings"
@@ -93,7 +93,7 @@ msgstr ""
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:143
 msgid "Collecting data ..."
-msgstr "Colectarea datelor ..."
+msgstr "Colectare date ..."
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:151
 msgid "Common settings"
@@ -196,8 +196,8 @@ msgid ""
 ">By default, this value is 90."
 msgstr ""
 "HeartBeatTimeout specifică timpul maxim de așteptare a unei bătăi de inimă "
-"înainte de a încheia conexiunea. Nu se recomandă modificarea acestei "
-"valori.<br />În mod implicit, această valoare este 90."
+"înainte de a încheia conexiunea. Nu se recomandă modificarea acestei valori."
+"<br />În mod implicit, această valoare este 90."
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:42
 msgid "Heartbeat timeout"
@@ -239,9 +239,9 @@ msgstr ""
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:33
 msgid ""
-"LogLevel specifies the minimum log level. Valid values are \"trace\", \"debug"
-"\", \"info\", \"warn\", and \"error\".<br />By default, this value is \"info"
-"\"."
+"LogLevel specifies the minimum log level. Valid values are \"trace\", "
+"\"debug\", \"info\", \"warn\", and \"error\".<br />By default, this value is "
+"\"info\"."
 msgstr ""
 "LogLevel specifică nivelul minim al jurnalului. Valorile valabile sunt "
 "\"trace\", \"debug\", \"info\", \"warn\" și \"error\".<br />Prin definiție, "
@@ -294,12 +294,12 @@ msgid ""
 "be the same as BindAddr.<br />By default, this value is \"0.0.0.0\"."
 msgstr ""
 "ProxyBindAddr specifică adresa la care se leagă proxy-ul. Această valoare "
-"poate fi aceeași cu BindAddr.<br />În mod implicit, această valoare este \"0."
-"0.0.0\"."
+"poate fi aceeași cu BindAddr.<br />În mod implicit, această valoare este "
+"\"0.0.0.0\"."
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:116
 msgid "RUNNING"
-msgstr "RULARE"
+msgstr "Funcţionare"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:13
 msgid "Respawn when crashed"
@@ -322,9 +322,9 @@ msgstr "Setări de pornire"
 msgid ""
 "SubDomainHost specifies the domain that will be attached to sub-domains "
 "requested by the client when using Vhost proxying. For example, if this "
-"value is set to \"frps.com\" and the client requested the subdomain \"test"
-"\", the resulting URL would be \"test.frps.com\".<br />By default, this "
-"value is \"\"."
+"value is set to \"frps.com\" and the client requested the subdomain "
+"\"test\", the resulting URL would be \"test.frps.com\".<br />By default, "
+"this value is \"\"."
 msgstr ""
 "SubDomainHost specifică domeniul care va fi atașat la subdomeniile "
 "solicitate de client atunci când se utilizează proxy Vhost. De exemplu, dacă "

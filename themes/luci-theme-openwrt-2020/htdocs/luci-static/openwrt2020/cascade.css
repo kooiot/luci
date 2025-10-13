@@ -155,8 +155,8 @@ abbr[title], acronym[title] {
 }
 
 #mainmenu {
-	flex: 1 1 100px;
-	max-width: 250px;
+/*	flex: 1 1 100px;*/
+	max-width: max-content;
 	background: var(--main-dark-color);
 	color: var(--main-bright-color);
 	padding: 1em;
@@ -369,6 +369,44 @@ tr.placeholder > td {
  * view specific table invariants
  */
 
+.cbi-title {
+	display: flex;
+        margin: 0 0 1rem 0;
+}
+
+.cbi-title > h3{
+	margin: unset;
+}
+
+.cbi-title div {
+	margin-left: 5px;
+	margin-right: auto;
+	align-self: center;
+}
+
+.cbi-title [data-indicator] {
+	background: var(--secondary-bright-color);
+	color: var(--main-bright-color);
+	border: 0.5px solid var(--main-bright-color);
+	display: inline-block;
+	font-size: .85em;
+	line-height: calc(1.5em - 1px);
+	padding: 0 calc(0.5em - 0.5px);
+	margin: 0.125em;
+	border-radius: 1em;
+	white-space: nowrap;
+}
+
+.cbi-title [data-indicator][data-style="active"] {
+	background: var(--main-bright-color);
+	color: var(--secondary-bright-color);
+	border: 0.5px solid var(--secondary-bright-color);
+}
+
+.cbi-title [data-indicator][data-clickable] {
+	cursor: pointer;
+}
+
  #cbi-wireless-wifi-device .ifacebadge {
  	flex-direction: column;
  	justify-content: space-around;
@@ -552,7 +590,9 @@ tr.placeholder > td {
 	vertical-align: middle !important;
 }
 
-.nowrap {
+.nowrap:not(span) {
+/*	Sometimes you need to wrap: badges on narrow screens look weird 
+	and nowrap defeats other width constraints, so exclude span */
 	white-space: nowrap !important;
 }
 
@@ -702,6 +742,11 @@ p > a {
 	white-space: nowrap;
 }
 
+#cbi-network-interface .ifacebox img {
+	width: 24px;
+	height: 24px;
+}
+
 .ifacebadge {
 	display: inline-flex;
 	align-items: center;
@@ -714,7 +759,8 @@ p > a {
 .ifacebadge > img {
 	vertical-align: text-bottom;
 	margin: .25em;
-	height: 16px;
+	height: 32px;
+	width: 32px;
 }
 
 .ifacebadge > * {
@@ -779,6 +825,11 @@ p > a {
 .zone-forwards {
 	display: flex;
 	align-items: center;
+	flex-wrap: nowrap;
+}
+
+.zone-forwards > * {
+	text-wrap: auto;
 }
 
 .cbi-progressbar {
@@ -1258,6 +1309,12 @@ textarea {
 
 .cbi-dropdown:not(.btn):not(.cbi-button) {
 	box-shadow: inset 0 0 1px var(--main-dark-color);
+}
+
+.cbi-dropdown img {
+	/* the following are necessary to constrain (vector) images of any size */
+	max-height: 1.6em;  /* Adjusts image height to fit slightly larger than text line height */
+	width: auto;  /* Preserves aspect ratio */
 }
 
 .cbi-dropdown > ul {

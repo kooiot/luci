@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-02-01 22:49+0000\n"
-"Last-Translator: ButterflyOfFire <boffire@users.noreply.hosted.weblate.org>\n"
+"PO-Revision-Date: 2025-08-11 21:02+0000\n"
+"Last-Translator: Adam El adnani <eladnaniadam595@gmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationstravelmate/fr/>\n"
 "Language: fr\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.4-dev\n"
+"X-Generator: Weblate 5.13-dev\n"
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:76
 msgid "-- AP Selection --"
@@ -261,6 +261,7 @@ msgstr "Activer/désactiver ce réseau"
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:301
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:284
+#, fuzzy
 msgid "Enabled"
 msgstr "Activé"
 
@@ -422,10 +423,10 @@ msgstr "Vue d'ensemble"
 msgid ""
 "Overview of all configured uplinks for travelmate. You can edit, remove or "
 "prioritize existing uplinks by drag &#38; drop and scan for new ones.<br /> "
-"The currently used uplink connection is emphasized in <span style=\"color:"
-"rgb(51, 119, 204);font-weight:bold\">blue</span>, an encrypted VPN uplink "
-"connection is emphasized in <span style=\"color:rgb(68, 170, 68);font-weight:"
-"bold\">green</span>."
+"The currently used uplink connection is emphasized in <span "
+"style=\"color:rgb(51, 119, 204);font-weight:bold\">blue</span>, an encrypted "
+"VPN uplink connection is emphasized in <span style=\"color:rgb(68, 170, "
+"68);font-weight:bold\">green</span>."
 msgstr ""
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:421
@@ -925,71 +926,3 @@ msgstr ""
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:309
 msgid "use the second radio only (radio1)"
 msgstr ""
-
-#~ msgid "Delete this network"
-#~ msgstr "Supprimer ce réseau"
-
-#~ msgid "Action"
-#~ msgstr "Action"
-
-#~ msgid "Advanced"
-#~ msgstr "Avancé"
-
-#~ msgid "Automatic"
-#~ msgstr "Automatique"
-
-#~ msgid "Cipher"
-#~ msgstr "Code de chiffrement"
-
-#~ msgid "Down"
-#~ msgstr "En bas"
-
-#~ msgid "Extra Options"
-#~ msgstr "Options supplémentaires"
-
-#~ msgid "Force CCMP (AES)"
-#~ msgstr "Forcer CCMP (AES)"
-
-#~ msgid "Force TKIP"
-#~ msgstr "Forcer TKIP"
-
-#~ msgid "Force TKIP and CCMP (AES)"
-#~ msgstr "Forcer TKIP et CCMP (AES)"
-
-#~ msgid "Input file not found, please check your configuration."
-#~ msgstr ""
-#~ "Fichier d'entrée introuvable, veuillez vérifier votre configuration."
-
-#~ msgid "Loading"
-#~ msgstr "Chargement"
-
-#~ msgid "Move down"
-#~ msgstr "Descendre"
-
-#~ msgid "Move up"
-#~ msgstr "Monter"
-
-#~ msgid ""
-#~ "Options for further tweaking in case the defaults are not suitable for "
-#~ "you."
-#~ msgstr ""
-#~ "Options permettant d'apporter des modifications supplémentaires au cas où "
-#~ "les valeurs par défaut ne vous conviendraient pas."
-
-#~ msgid "Restart"
-#~ msgstr "Redémarrer"
-
-#~ msgid "Runtime Information"
-#~ msgstr "Information processus"
-
-#~ msgid "Scan"
-#~ msgstr "Scan"
-
-#~ msgid "Up"
-#~ msgstr "Haut"
-
-#~ msgid "View Logfile"
-#~ msgstr "Afficher le fichier de journal"
-
-#~ msgid "hidden"
-#~ msgstr "caché"

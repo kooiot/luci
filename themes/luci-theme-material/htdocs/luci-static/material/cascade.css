@@ -343,9 +343,11 @@ small {
 	float: left;
 	overflow-x: auto;
 	width: calc(0% + 15rem);
+	min-width: max-content;
 	height: calc(100% - 4rem);
 	background-color: var(--menu-bg-color);
 	transition: visibility 400ms, width 400ms;
+	z-index: 800;
 }
 
 .main-right {
@@ -368,7 +370,9 @@ small {
 	float: left;
 }
 
-.nowrap:not(.td) {
+.nowrap:not(.td span) {
+/*	Sometimes you need to wrap: badges on narrow screens look weird 
+	and nowrap defeats other width constraints, so exclude span */
 	white-space: nowrap;
 }
 
@@ -803,6 +807,7 @@ fieldset > fieldset,
 }
 
 .cbi-section > h3:first-child,
+.cbi-title,
 .panel-title {
 	font-size: 1.4rem;
 	line-height: 1;
@@ -813,6 +818,28 @@ fieldset > fieldset,
 	padding-bottom: 1rem;
 	color: #404040;
 	border-bottom: thin solid #eee;
+}
+
+.cbi-title {
+	display: flex;
+}
+
+.cbi-title > h3:first-child {
+	font-size: unset;
+	margin: unset;
+	padding-bottom: unset;
+}
+
+.cbi-title [data-indicator] {
+	position: relative;
+	top: 0.2rem;
+	float: left;
+	margin-left: 0.3rem;
+	cursor: pointer;
+}
+
+.cbi-title [data-indicator][data-style="active"] {
+	background-color: #002B49 !important;
 }
 
 .cbi-section > h4:first-child,
@@ -1462,6 +1489,12 @@ body:not(.Interfaces) .cbi-rowstyle-2:first-child {
 	margin-top: -3px;
 }
 
+.cbi-dropdown img {
+	/* the following are necessary to constrain (vector) images of any size */
+	max-height: 1.6em;  /* Adjusts image height to fit slightly larger than text line height */
+	width: auto;  /* Preserves aspect ratio */
+}
+
 .cbi-dropdown > ul {
 	display: flex;
 	overflow-x: hidden;
@@ -1818,7 +1851,7 @@ body.modal-overlay-active #modal_overlay {
 	left: .2em;
 	width: 32px;
 	content: "";
-	background: url(../resources/icons/loading.gif) no-repeat center;
+	background: url(../resources/icons/loading.svg) no-repeat center;
 	background-size: 16px;
 }
 
@@ -1880,6 +1913,12 @@ body.modal-overlay-active #modal_overlay {
 	border-bottom: thin solid #ccc;
 	background: #eee;
 	box-shadow: inset 0 1px 0 rgba(255, 255, 255, .2), 0 1px 2px rgba(0, 0, 0, .05);
+}
+
+.ifacebadge img {
+	width: 32px;
+	height: 32px;
+	vertical-align: middle;
 }
 
 td > .ifacebadge,
@@ -1945,7 +1984,6 @@ td > .ifacebadge,
 
 #syslog {
 	font-size: small;
-	overflow-y: hidden;
 	width: 100%;
 	min-height: 15rem;
 	padding: 1rem;
@@ -2069,6 +2107,11 @@ td > .ifacebadge,
 	padding: .25em;
 }
 
+#cbi-network-interface .ifacebox img {
+	width: 24px;
+	height: 24px;
+}
+
 .cbi-image-button {
 	margin-left: .5rem;
 }
@@ -2189,10 +2232,12 @@ span[data-tooltip] .label {
 .zone-forwards {
 	display: flex;
 	min-width: 10rem;
+	flex-wrap: nowrap;
 }
 
 .zone-forwards > * {
 	flex: 1 1 45%;
+	text-wrap: auto;
 }
 
 .zone-forwards > span {
@@ -2557,17 +2602,13 @@ input[name="nslookup"] {
 }
 
 /* IE hacks */
-@media all and (-ms-high-contrast: none) {
+@media all {
 	.main > .main-left > .nav > .slide > .menu::before {
 		top: 30.25%;
 	}
 
 	.main > .main-left > .nav > li:last-child::before {
 		top: 20%;
-	}
-
-	.showSide::before {
-		top: -12px;
 	}
 }
 
@@ -3150,12 +3191,12 @@ input[name="nslookup"] {
 	::-webkit-scrollbar-thumb {
 		background: #9e9e9e;
 	}
-
+/*
 	::-webkit-scrollbar-thumb:hover {
 		background: #757575;
 	}
 
 	::-webkit-scrollbar-thumb:active {
 		background: #424242;
-	}
+	}*/
 }

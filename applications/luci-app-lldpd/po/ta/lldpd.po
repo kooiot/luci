@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-01-25 19:24+0000\n"
+"PO-Revision-Date: 2025-06-16 11:44+0000\n"
 "Last-Translator: தமிழ்நேரம் <anishprabu.t@gmail.com>\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationslldpd/ta/>\n"
@@ -8,17 +8,22 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:374
 msgid "1A"
 msgstr "1 அ"
 
+#: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:853
+msgctxt "lldpd Custom TLV"
+msgid "Add Custom TLV"
+msgstr "தனிப்பயன் TLV ஐச் சேர்க்கவும்"
+
 #: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/status.js:54
 msgid "Administrative Status"
 msgstr "நிர்வாக நிலை"
 
-#: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:841
+#: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:1005
 msgid "Advanced Settings"
 msgstr "மேம்பட்ட அமைப்புகள்"
 
@@ -45,9 +50,13 @@ msgstr ""
 msgid "Altitude"
 msgstr "குத்துயரம்"
 
-#: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:835
+#: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:996
 msgid "Basic Settings"
 msgstr "அடிப்படை அமைப்புகள்"
+
+#: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:926
+msgid "Behaviour"
+msgstr "நடத்தை"
 
 #: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:358
 msgid "Building"
@@ -72,6 +81,16 @@ msgstr "சிடிபி பதிப்பு"
 #: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:740
 msgid "CDPv1 and CDPv2"
 msgstr "சிடிபிவி 1 மற்றும் சி.டி.பி.வி 2"
+
+#: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:970
+msgid "CSV of 1 or more hex values, e.g. aa or bb,cc or 11,55,1a"
+msgstr ""
+"1 அல்லது அதற்கு மேற்பட்ட ஃச் மதிப்புகளின் சி.எச்.வி, எ.கா. AA அல்லது BB, CC அல்லது "
+"11,55,1A"
+
+#: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:940
+msgid "CSV of 3 hex values, e.g. aa,ee,ff"
+msgstr "3 ஃச் மதிப்புகளின் சி.எச்.வி, எ.கா. aa, ee, ff"
 
 #: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:39
 msgid "Cannot have both interface %s and its exclusion %s"
@@ -99,6 +118,10 @@ msgstr "தரவு சேகரித்தல் ..."
 msgid "Communication Device Endpoints (Class III)"
 msgstr "தொடர்பு சாதன இறுதிப் புள்ளிகள் (வகுப்பு III)"
 
+#: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:966
+msgid "Content"
+msgstr "உள்ளடக்கம்"
+
 #: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:205
 msgid "Coordinate based"
 msgstr "ஒருங்கிணைப்பு அடிப்படையிலானது"
@@ -107,9 +130,17 @@ msgstr "ஒருங்கிணைப்பு அடிப்படையி�
 msgid "Country"
 msgstr "நாடு"
 
+#: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:845
+msgid "Custom TLV"
+msgstr "தனிப்பயன் TLV"
+
 #: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:307
 msgid "Datum"
 msgstr "தரவு"
+
+#: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:847
+msgid "Default insert behaviour is add."
+msgstr "இயல்புநிலை செருகும் நடத்தை சேர்."
 
 #: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:439
 msgid ""
@@ -117,9 +148,9 @@ msgid ""
 "is used as a management address without any check. To blacklist IPv6 "
 "addresses, use <code>!*:*</code>."
 msgstr ""
-"முதல் IPv4 மற்றும் IPv6 க்கு இயல்புநிலை. சரியான ஐபி முகவரி வழங்கப்பட்டால், அது எந்த "
-"காசோலையும் இல்லாமல் மேலாண்மை முகவரியாக பயன்படுத்தப்படுகிறது. ஐபிவி 6 முகவரிகளை "
-"தடுப்புப்பட்டியலில் வைக்க, <code> ஐப் பயன்படுத்தவும்!*:*</Code>."
+"முதல் IPv4 மற்றும் IPv6 க்கு இயல்புநிலை. சரியான ஐபி முகவரி வழங்கப்பட்டால், அது எந்தக் "
+"காசோலையும் இல்லாமல் மேலாண்மை முகவரியாகப் பயன்படுத்தப்படுகிறது. ஐபிவி 6 முகவரிகளைத் "
+"தடுப்புப்பட்டியலில் வைக்க, <code> ஐப் பயன்படுத்தவும்!*:*</code>."
 
 #: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/status.js:61
 msgid "Delete count"
@@ -134,8 +165,8 @@ msgid ""
 "Determines the transmitted packet TTL (== this value * transmit delay). The "
 "default value is 4 &therefore; the default TTL is 120 seconds."
 msgstr ""
-"கடத்தப்பட்ட பாக்கெட் TTL ஐ தீர்மானிக்கிறது (== இந்த மதிப்பு * பரிமாற்ற தாமதம்). இயல்புநிலை"
-" மதிப்பு 4 & எனவே; இயல்புநிலை TTL 120 வினாடிகள்."
+"கடத்தப்பட்ட பாக்கெட் TTL ஐ தீர்மானிக்கிறது (== இந்த மதிப்பு * பரிமாற்ற தாமதம்). "
+"இயல்புநிலை மதிப்பு 4 & எனவே; இயல்புநிலை TTL 120 வினாடிகள்."
 
 #: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:638
 msgid "Disable LLDP-MED inventory TLV transmission"
@@ -175,11 +206,11 @@ msgstr "எலின் முகவரி"
 
 #: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:364
 msgid "Empire State Bldg"
-msgstr "எம்பயர் ச்டேட் பி.டி.சி."
+msgstr "எம்பயர் ச்டேட் கட்டிடம்"
 
 #: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:730
 msgid "Enable CDP"
-msgstr "சி.டி.பி."
+msgstr "சி.டி.பி. இயக்கு"
 
 #: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:790
 msgid "Enable EDP"
@@ -229,8 +260,8 @@ msgid ""
 "Enable the support of SONMP protocol to deal with Nortel routers and "
 "switches that do not speak LLDP."
 msgstr ""
-"எல்.எல்.டி.பி பேசாத நார்டல் ரவுட்டர்கள் மற்றும் சுவிட்சுகளை சமாளிக்க சோன்எம்பி நெறிமுறையின்"
-" ஆதரவை இயக்கவும்."
+"எல்.எல்.டி.பி பேசாத நார்டல் ரவுட்டர்கள் மற்றும் சுவிட்சுகளை சமாளிக்க சோன்எம்பி "
+"நெறிமுறையின் ஆதரவை இயக்கவும்."
 
 #: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:715
 msgid ""
@@ -313,6 +344,10 @@ msgstr "இடைமுக புள்ளிவிவரங்கள்"
 msgid "Interface name"
 msgstr "இடைமுக பெயர்"
 
+#: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:922
+msgid "Invalid TLV string format"
+msgstr "தவறான TLV சரம் வடிவம்"
+
 #: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:648
 msgid ""
 "Kernel name (ie: Linux) will still be shared, and Inventory software version "
@@ -350,11 +385,11 @@ msgstr "எல்.எல்.டி.பி-மெட் கொள்கை"
 msgid "LLDPDU destination MAC"
 msgstr "LLDPDU இலக்கு மேக்"
 
-#: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:851
+#: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:1015
 msgid "LLDPd Settings"
 msgstr "எல்.எல்.டி.பி.டி அமைப்புகள்"
 
-#: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:852
+#: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:1016
 msgid "LLDPd is an implementation of IEEE 802.1ab"
 msgstr "LLDPD என்பது IEEE 802.1ab இன் செயல்படுத்தல் ஆகும்"
 
@@ -370,8 +405,7 @@ msgstr ""
 
 #: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:504
 msgid "LLDPd won't send any frames; only listen to neighbors."
-msgstr ""
-"எல்.எல்.டி.பி.டி எந்த பிரேம்களையும் அனுப்பாது; அண்டை வீட்டாரைக் கேளுங்கள்."
+msgstr "எல்.எல்.டி.பி.டி எந்த பிரேம்களையும் அனுப்பாது; அண்டை வீட்டாரைக் கேளுங்கள்."
 
 #: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:257
 msgid "Latitude"
@@ -416,8 +450,7 @@ msgstr "மீடியா எண்ட்பாயிண்ட் (வகுப
 
 #: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:476
 msgid "Must be a greater than zero number optionally suffixed with \"ms\""
-msgstr ""
-"\"எம்.எச்\" உடன் பின்னொட்டு செய்யப்படும் சுழிய எண்ணை விட அதிகமாக இருக்க வேண்டும்"
+msgstr "\"எம்.எச்\" உடன் பின்னொட்டு செய்யப்படும் சுழிய எண்ணை விட அதிகமாக இருக்க வேண்டும்"
 
 #: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:495
 msgid "Must be a number"
@@ -449,7 +482,11 @@ msgstr "பிணையம் io"
 msgid "Network IO for chassis ID"
 msgstr "சேச் ஐடிக்கு பிணையம் io"
 
-#: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:838
+#: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:855
+msgid "Network Interface(s)"
+msgstr "பிணைய இடைமுகம் (கள்)"
+
+#: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:999
 msgid "Network Interfaces"
 msgstr "பிணைய இடைமுகங்கள்"
 
@@ -463,7 +500,11 @@ msgstr "காண்பிக்க தரவு இல்லை"
 msgid "Number"
 msgstr "எண்"
 
-#: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:854
+#: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:937
+msgid "OUI CSV"
+msgstr "ஒய் காபிம"
+
+#: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:1018
 msgid "On this page you may configure LLDPd parameters."
 msgstr "இந்த பக்கத்தில் நீங்கள் LLDPD அளவுருக்களை உள்ளமைக்கலாம்."
 
@@ -507,15 +548,19 @@ msgstr "பிந்தைய குறியீடு"
 msgid "Protocol"
 msgstr "நெறிமுறை"
 
-#: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:844
+#: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:1008
 msgid "Protocols Support"
 msgstr "நெறிமுறைகள் உதவி"
+
+#: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:982
+msgid "Raw"
+msgstr "மூல"
 
 #: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:226
 msgid "Raw config string sent to lldpd, starting: [coordinate|address|elin]"
 msgstr ""
-"மூல கட்டமைப்பு சரம் எல்.எல்.டி.பி.டி.க்கு அனுப்பப்பட்டது, தொடங்குகிறது: "
-"[ஒருங்கிணைப்பு | முகவரி | எலின்]"
+"மூல கட்டமைப்பு சரம் எல்.எல்.டி.பி.டி.க்கு அனுப்பப்பட்டது, தொடங்குகிறது: [ஒருங்கிணைப்பு | "
+"முகவரி | எலின்]"
 
 #: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:225
 msgid "Raw location config"
@@ -555,23 +600,19 @@ msgstr "தொடரியல் <a %s> இங்கே </a> ஐப் பார
 
 #: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:747
 msgid "Send CDP packets even if no CDP peer detected"
-msgstr ""
-"சிடிபி பியர் எதுவும் கண்டறியப்படவில்லை என்றாலும் சிடிபி பாக்கெட்டுகளை அனுப்பவும்"
+msgstr "சிடிபி பியர் எதுவும் கண்டறியப்படவில்லை என்றாலும் சிடிபி பாக்கெட்டுகளை அனுப்பவும்"
 
 #: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:798
 msgid "Send EDP packets even if no EDP peer detected"
-msgstr ""
-"ஈடிபி பியர் எதுவும் கண்டறியப்படவில்லை என்றாலும் ஈடிபி பாக்கெட்டுகளை அனுப்பவும்"
+msgstr "ஈடிபி பியர் எதுவும் கண்டறியப்படவில்லை என்றாலும் ஈடிபி பாக்கெட்டுகளை அனுப்பவும்"
 
 #: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:778
 msgid "Send FDP packets even if no FDP peer detected"
-msgstr ""
-"FDP பியர் எதுவும் கண்டறியப்படவில்லை என்றாலும் FDP பாக்கெட்டுகளை அனுப்பவும்"
+msgstr "FDP பியர் எதுவும் கண்டறியப்படவில்லை என்றாலும் FDP பாக்கெட்டுகளை அனுப்பவும்"
 
 #: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:824
 msgid "Send SONMP packets even if no SONMP peer detected"
-msgstr ""
-"SONMP பியர் எதுவும் கண்டறியப்படவில்லை என்றாலும் SONMP பாக்கெட்டுகளை அனுப்பவும்"
+msgstr "SONMP பியர் எதுவும் கண்டறியப்படவில்லை என்றாலும் SONMP பாக்கெட்டுகளை அனுப்பவும்"
 
 #: applications/luci-app-lldpd/root/usr/share/luci/menu.d/luci-app-lldpd.json:28
 msgid "Settings"
@@ -609,6 +650,10 @@ msgstr "நிலை"
 msgid "Street"
 msgstr "தெரு"
 
+#: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:953
+msgid "Subtype"
+msgstr "துணை வகை"
+
 #: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:468
 msgid "Suffix %s for millisecond values."
 msgstr "மில்லி நொடி மதிப்புகளுக்கான பின்னொட்டு %s."
@@ -641,6 +686,18 @@ msgstr "கணினி மேலாண்மை IO விளம்பரங்�
 msgid "System platform description"
 msgstr "கணினி இயங்குதள விளக்கம்"
 
+#: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:1002
+msgid "TLV"
+msgstr "டி.எல்.வி."
+
+#: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:846
+msgid ""
+"TLV that lack network interfaces here are sent according to <code>interface "
+"pattern</code> (Network IO under Network Interfaces)."
+msgstr ""
+"பிணையம் இடைமுகங்கள் இல்லாத டி.எல்.வி <code> இடைமுக முறை </code> இன் படி "
+"அனுப்பப்படுகிறது (பிணைய இடைமுகங்களின் கீழ் பிணையம் IO)."
+
 #: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/status.js:219
 msgid "TTL"
 msgstr "Ttl"
@@ -651,8 +708,7 @@ msgstr "இயல்புநிலை விளக்கம் கர்னல�
 
 #: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:656
 msgid "The default filter is 15. Refer to &quot;FILTERING NEIGHBORS&quot;."
-msgstr ""
-"இயல்புநிலை வடிகட்டி 15 ஆகும். & Quot; அண்டை நாடுகளை வடிகட்டுதல் & quot ;."
+msgstr "இயல்புநிலை வடிகட்டி 15 ஆகும். & Quot; அண்டை நாடுகளை வடிகட்டுதல் & quot ;."
 
 #: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:414
 msgid "The default is derived from kernel information."
@@ -720,8 +776,16 @@ msgid ""
 "With this option, you can force the port identifier to be the interface name "
 "or the MAC address."
 msgstr ""
-"இந்த விருப்பத்துடன், நீங்கள் துறைமுகம் அடையாளங்காட்டியை இடைமுக பெயர் அல்லது MAC முகவரியா"
-"க கட்டாயப்படுத்தலாம்."
+"இந்த விருப்பத்துடன், நீங்கள் துறைமுகம் அடையாளங்காட்டியை இடைமுக பெயர் அல்லது MAC "
+"முகவரியாக கட்டாயப்படுத்தலாம்."
+
+#: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:928
+msgid "add"
+msgstr "கூட்டு"
+
+#: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:927
+msgid "default"
+msgstr "இயல்புநிலை"
 
 #: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/status.js:287
 msgid "disabled"
@@ -742,6 +806,10 @@ msgstr "ஒரே ஒரு அண்டை வீட்டாரை மட்�
 #: applications/luci-app-lldpd/htdocs/luci-static/resources/lldpd.js:47
 msgid "keep only one protocol"
 msgstr "ஒரே ஒரு நெறிமுறையை வைத்திருங்கள்"
+
+#: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:929
+msgid "replace"
+msgstr "மாற்றவும்"
 
 #: applications/luci-app-lldpd/htdocs/luci-static/resources/view/lldpd/config.js:296
 msgid "valid syntax: %f .. %f [mf]"

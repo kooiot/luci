@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-01-27 18:47+0000\n"
-"Last-Translator: ZW <roc_fe@users.noreply.hosted.weblate.org>\n"
+"PO-Revision-Date: 2025-06-18 15:02+0000\n"
+"Last-Translator: EESF-2 <eesf-2@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Chinese (Traditional Han script) <https://hosted.weblate.org/"
 "projects/openwrt/luciapplicationssquid/zh_Hant/>\n"
 "Language: zh_Hant\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.10-dev\n"
+"X-Generator: Weblate 5.12.1\n"
 
 #: applications/luci-app-squid/htdocs/luci-static/resources/view/squid.js:50
 msgid "Advanced Settings"
@@ -37,7 +37,7 @@ msgstr ""
 
 #: applications/luci-app-squid/htdocs/luci-static/resources/view/squid.js:17
 msgid "File must be located in directory /etc/squid"
-msgstr ""
+msgstr "檔案必須位於/etc/squid目錄中"
 
 #: applications/luci-app-squid/htdocs/luci-static/resources/view/squid.js:49
 msgid "General Settings"
@@ -49,7 +49,7 @@ msgstr "授予luci-app-squid存取UCI的權限"
 
 #: applications/luci-app-squid/htdocs/luci-static/resources/view/squid.js:70
 msgid "HTTP port options"
-msgstr ""
+msgstr "HTTP連接埠選項"
 
 #: applications/luci-app-squid/htdocs/luci-static/resources/view/squid.js:59
 #: applications/luci-app-squid/htdocs/luci-static/resources/view/squid.js:107
@@ -62,11 +62,11 @@ msgstr "連接埠"
 
 #: applications/luci-app-squid/htdocs/luci-static/resources/view/squid.js:74
 msgid "SSL DB"
-msgstr ""
+msgstr "SSL資料庫"
 
 #: applications/luci-app-squid/htdocs/luci-static/resources/view/squid.js:78
 msgid "SSL DB options"
-msgstr ""
+msgstr "SSL資料庫選項"
 
 #: applications/luci-app-squid/htdocs/luci-static/resources/view/squid.js:43
 #: applications/luci-app-squid/root/usr/share/luci/menu.d/luci-app-squid.json:3
@@ -75,4 +75,4 @@ msgstr "Squid"
 
 #: applications/luci-app-squid/htdocs/luci-static/resources/view/squid.js:82
 msgid "Visible Hostname"
-msgstr "可見的主機名"
+msgstr "可見的主機名稱"
