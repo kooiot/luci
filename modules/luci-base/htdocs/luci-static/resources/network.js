@@ -349,6 +349,7 @@ function maskToPrefix(mask, v6) {
 
 function initNetworkState(refresh) {
 	if (_state == null || refresh) {
+		const hasWifi = L.hasSystemFeature('wifi');
 		_init = _init || Promise.all([
 			L.resolveDefault(callNetworkInterfaceDump(), []),
 			L.resolveDefault(callLuciBoardJSON(), {}),
@@ -357,7 +358,7 @@ function initNetworkState(refresh) {
 			L.resolveDefault(callLuciHostHints(), {}),
 			getProtocolHandlers(),
 			L.resolveDefault(uci.load('network')),
-			L.hasSystemFeature('wifi') ? L.resolveDefault(uci.load('wireless')) : L.resolveDefault(),
+			hasWifi ? L.resolveDefault(uci.load('wireless')) : L.resolveDefault(),
 			L.resolveDefault(uci.load('luci'))
 		]).then(function(data) {
 			var netifd_ifaces = data[0],
@@ -639,7 +640,7 @@ function enumerateNetworks() {
 }
 
 
-var Hosts, Network, Protocol, Device, WifiDevice, WifiNetwork;
+var Hosts, Network, Protocol, Device, WifiDevice, WifiNetwork, WifiVlan;
 
 /**
  * @class network
@@ -2956,6 +2957,7 @@ Device = baseclass.extend(/** @lends LuCI.network.Device.prototype */ {
 	 *  - `bridge` if it is a bridge device (e.g. `br-lan`)
 	 *  - `tunnel` if it is a tun or tap device (e.g. `tun0`)
 	 *  - `vlan` if it is a vlan device (e.g. `eth0.1`)
+	 *  - `vrf` if it is a Virtual Routing and Forwarding type (e.g. `vrf0`)
 	 *  - `switch` if it is a switch device (e.g.`eth1` connected to switch0)
 	 *  - `ethernet` for all other device types
 	 */
@@ -2966,6 +2968,8 @@ Device = baseclass.extend(/** @lends LuCI.network.Device.prototype */ {
 			return 'wifi';
 		else if (this.dev.devtype == 'bridge' || _state.isBridge[this.device])
 			return 'bridge';
+		else if (this.dev.devtype == 'wireguard')
+			return 'wireguard';
 		else if (_state.isTunnel[this.device])
 			return 'tunnel';
 		else if (this.dev.devtype == 'vlan' || this.device.indexOf('.') > -1)
@@ -2976,6 +2980,8 @@ Device = baseclass.extend(/** @lends LuCI.network.Device.prototype */ {
 			return 'vlan';
 		else if (this.config.type == 'bridge')
 			return 'bridge';
+		else if (this.config.type == 'vrf')
+			return 'vrf';
 		else
 			return 'ethernet';
 	},
@@ -3030,12 +3036,18 @@ Device = baseclass.extend(/** @lends LuCI.network.Device.prototype */ {
 		case 'bridge':
 			return _('Bridge');
 
+		case 'vrf':
+			return _('Virtual Routing and Forwarding (VRF)');
+
 		case 'switch':
 			return (_state.netdevs[this.device] && _state.netdevs[this.device].devtype == 'dsa')
 				? _('Switch port') : _('Ethernet Switch');
 
 		case 'vlan':
 			return (_state.isSwitch[this.device] ? _('Switch VLAN') : _('Software VLAN'));
+
+		case 'wireguard':
+			return _('WireGuard Interface');
 
 		case 'tunnel':
 			return _('Tunnel Interface');
@@ -4150,14 +4162,40 @@ WifiNetwork = baseclass.extend(/** @lends LuCI.network.WifiNetwork.prototype */ 
 	 */
 	getAssocList: function() {
 		var tasks = [];
-		var ifnames = [ this.getIfname() ].concat(this.getVlanIfnames());
+		var station;
 
-		for (var i = 0; i < ifnames.length; i++)
-			tasks.push(callIwinfoAssoclist(ifnames[i]));
+		for (let vlan of this.getVlans())
+			tasks.push(callIwinfoAssoclist(vlan.getIfname()).then(
+				function(stations) {
+					for (station of stations)
+						station.vlan = vlan;
+
+					return stations;
+				})
+			);
+
+		tasks.push(callIwinfoAssoclist(this.getIfname()));
 
 		return Promise.all(tasks).then(function(values) {
 			return Array.prototype.concat.apply([], values);
 		});
+	},
+
+	/**
+	 * Fetch the vlans for this network.
+	 *
+	 * @returns {Array<LuCI.network.WifiVlan>}
+	 * Returns an array of vlans for this network.
+	 */
+	getVlans: function() {
+		var vlans = [];
+		var vlans_ubus = this.ubus('net', 'vlans');
+
+		if (vlans_ubus)
+			for (let vlan of vlans_ubus)
+				vlans.push(new WifiVlan(vlan));
+
+		return vlans;
 	},
 
 	/**
@@ -4434,6 +4472,79 @@ WifiNetwork = baseclass.extend(/** @lends LuCI.network.WifiNetwork.prototype */ 
 			params: [ 'addr', 'deauth', 'reason', 'ban_time' ]
 		})(mac, deauth, reason, ban_time);
 	}
+});
+
+/**
+ * @class
+ * @memberof LuCI.network
+ * @hideconstructor
+ * @classdesc
+ *
+ * A `Network.WifiVlan` class instance represents a vlan on a WifiNetwork.
+ */
+WifiVlan = baseclass.extend(/** @lends LuCI.network.WifiVlan.prototype */ {
+	__init__: function(vlan) {
+		this.ifname = vlan.ifname;
+		if (L.isObject(vlan.config)) {
+			this.vid = vlan.config.vid;
+			this.name = vlan.config.name;
+
+			if (Array.isArray(vlan.config.network) && vlan.config.network.length)
+				this.network = vlan.config.network[0];
+		}
+	},
+
+	/**
+	 * Get the name of the wifi vlan.
+	 *
+	 * @returns {string}
+	 * Returns the name.
+	 */
+	getName: function() {
+		return this.name;
+	},
+
+	/**
+	 * Get the vlan id of the wifi vlan.
+	 *
+	 * @returns {number}
+	 * Returns the vlan id.
+	 */
+	getVlanId: function() {
+		return this.vid;
+	},
+
+	/**
+	 * Get the network of the wifi vlan.
+	 *
+	 * @returns {string}
+	 * Returns the network.
+	 */
+	getNetwork: function() {
+		return this.network;
+	},
+
+	/**
+	 * Get the Linux network device name of the wifi vlan.
+	 *
+	 * @returns {string}
+	 * Returns the current network device name for this wifi vlan.
+	 */
+	getIfname: function() {
+		return this.ifname;
+	},
+
+	/**
+	 * Get a long description string for the wifi vlan.
+	 *
+	 * @returns {string}
+	 * Returns a string containing the vlan id and the vlan name,
+	 * if it is different than the vlan id
+	 */
+	getI18n: function() {
+		var name =  this.name && this.name != this.vid ? ' (' + this.name + ')' : '';
+		return 'vlan %d%s'.format(this.vid, name);
+	},
 });
 
 return Network;

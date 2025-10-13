@@ -35,11 +35,11 @@ function render_iface(dev, alias) {
 	    up   = dev ? dev.isUp() : false;
 
 	return E('span', { class: 'cbi-tooltip-container' }, [
-		E('img', { 'class' : 'middle', 'src': L.resource('icons/%s%s.png').format(
+		E('img', { 'class' : 'middle', 'src': L.resource('icons/%s%s.svg').format(
 			alias ? 'alias' : type,
 			up ? '' : '_disabled') }),
 		E('span', { 'class': 'cbi-tooltip ifacebadge large' }, [
-			E('img', { 'src': L.resource('icons/%s%s.png').format(
+			E('img', { 'src': L.resource('icons/%s%s.svg').format(
 				type, up ? '' : '_disabled') }),
 			L.itemlist(E('span', { 'class': 'left' }), [
 				_('Type'),      dev ? dev.getTypeI18n() : null,
@@ -103,7 +103,7 @@ function render_modal_status(node, ifc) {
 
 	dom.content(node, [
 		E('img', {
-			'src': L.resource('icons/%s%s.png').format(dev ? dev.getType() : 'ethernet', (dev && dev.isUp()) ? '' : '_disabled'),
+			'src': L.resource('icons/%s%s.svg').format(dev ? dev.getType() : 'ethernet', ifc.isUp() ? '' : '_disabled'),
 			'title': dev ? dev.getTypeI18n() : _('Not present')
 		}),
 		ifc ? render_status(E('span'), ifc, true) : E('em', _('Interface not present or not connected yet.'))
@@ -297,7 +297,7 @@ return view.extend({
 				var dev = ifc.getDevice();
 				dom.content(stat, [
 					E('img', {
-						'src': L.resource('icons/%s%s.png').format(dev ? dev.getType() : 'ethernet', (dev && dev.isUp()) ? '' : '_disabled'),
+						'src': L.resource('icons/%s%s.svg').format(dev ? dev.getType() : 'ethernet', ifc.isUp() ? '' : '_disabled'),
 						'title': dev ? dev.getTypeI18n() : _('Not present')
 					}),
 					render_status(E('span'), ifc, true)
@@ -847,7 +847,8 @@ return view.extend({
 						}
 					};
 
-					so = ss.taboption('ipv6-ra', form.Value, 'ra_pref64', _('NAT64 prefix'), _('Announce NAT64 prefix in <abbr title="Router Advertisement">RA</abbr> messages.'));
+					so = ss.taboption('ipv6-ra', form.Value, 'ra_pref64', _('NAT64 prefix'), _('Announce NAT64 prefix in <abbr title="Router Advertisement">RA</abbr> messages.') +  ' ' + 
+						_('See %s and %s.'.format('<a href="%s" target="_blank">RFC6146</a>', '<a href="%s" target="_blank">RFC8781</a>').format('https://www.rfc-editor.org/rfc/rfc6146', 'https://www.rfc-editor.org/rfc/rfc8781')));
 					so.optional = true;
 					so.datatype = 'cidr6';
 					so.placeholder = '64:ff9b::/96';
@@ -865,6 +866,24 @@ return view.extend({
 					so.optional = true;
 					so.datatype = 'uinteger';
 					so.placeholder = '200';
+					so.depends('ra', 'server');
+					so.depends({ ra: 'hybrid', master: '0' });
+
+					so = ss.taboption('ipv6-ra', form.Value, 'ra_reachabletime', _('<abbr title="Router Advertisement">RA</abbr> Reachability Timer'), 
+						_('Units: milliseconds. 0 means unspecified.') + ' ' +
+						_('Dictates how long a node assumes a neighbor is reachable after a reachability confirmation; published in <abbr title="Router Advertisement">RA</abbr> messages.'));
+					so.optional = true;
+					so.datatype = 'range(0, 3600000)'; // RFC4861 and odhcpd caps to 3,600,000 msec
+					so.placeholder = '0';
+					so.depends('ra', 'server');
+					so.depends({ ra: 'hybrid', master: '0' });
+
+					so = ss.taboption('ipv6-ra', form.Value, 'ra_retranstime', _('<abbr title="Router Advertisement">RA</abbr> Retransmission Timer'), 
+						_('Units: milliseconds. 0 means unspecified.') + ' ' +
+						_('Controls retransmitted Neighbor Solicitation messages; published in <abbr title="Router Advertisement">RA</abbr> messages.'));
+					so.optional = true;
+					so.placeholder = '0';
+					so.datatype = 'range(0, 60000)'; // odhcpd caps to 60,000 msec
 					so.depends('ra', 'server');
 					so.depends({ ra: 'hybrid', master: '0' });
 
@@ -1292,7 +1311,7 @@ return view.extend({
 					'data-network': section_id
 				}, [
 					E('img', {
-						'src': L.resource('icons/ethernet_disabled.png'),
+						'src': L.resource('icons/ethernet_disabled.svg'),
 						'style': 'width:16px; height:16px'
 					}),
 					E('br'), E('small', '?')
@@ -1402,7 +1421,7 @@ return view.extend({
 			var isNew = (uci.get('network', s.section, 'name') == null),
 			    dev = getDevice(s.section);
 
-			nettools.addDeviceOptions(s, dev, isNew);
+			nettools.addDeviceOptions(s, dev, isNew, rtTables);
 		};
 
 		s.handleModalCancel = function(map /*, ... */) {
@@ -1475,6 +1494,9 @@ return view.extend({
 			case 'veth':
 				return 'veth';
 
+			case 'vrf':
+				return 'vrf';
+
 			case 'wifi':
 			case 'alias':
 			case 'switch':
@@ -1509,6 +1531,9 @@ return view.extend({
 
 			case 'veth':
 				return _('Virtual Ethernet');
+
+			case 'vrf':
+				return _('Virtual Routing and Forwarding (VRF)');
 
 			default:
 				return _('Network device');
@@ -1570,6 +1595,17 @@ return view.extend({
 			_('ULA for IPv6 is analogous to IPv4 private network addressing.') + ' ' +
 			_('This prefix is randomly generated at first install.'));
 		o.datatype = 'cidr6';
+
+		const l3mdevhelp1 = _('%s services running on this device in the default VRF context (ie., not bound to any VRF device) shall work across all VRF domains.');
+		const l3mdevhelp2 = _('Off means VRF traffic will be handled exclusively by sockets bound to VRFs.');
+
+		o = s.option(form.Flag, 'tcp_l3mdev', _('TCP Layer 3 Master Device (tcp_l3mdev) accept'),
+			l3mdevhelp1.format('TCP') + '<br/>' +
+			l3mdevhelp2);
+
+		o = s.option(form.Flag, 'udp_l3mdev', _('UDP Layer 3 Master Device (udp_l3mdev) accept'),
+			l3mdevhelp1.format('UDP') + '<br/>' +
+			l3mdevhelp2);
 
 		o = s.option(form.ListValue, 'packet_steering', _('Packet Steering'), _('Enable packet steering across CPUs. May help or hinder network speed.'));
 		o.value('0', _('Disabled'));

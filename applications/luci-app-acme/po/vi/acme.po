@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-01-26 16:51+0000\n"
-"Last-Translator: Hứa Đức Quân <huaducquan14@gmail.com>\n"
+"PO-Revision-Date: 2025-08-05 09:41+0000\n"
+"Last-Translator: Vũ Minh Ngọc <vuminhngocpt@gmail.com>\n"
 "Language-Team: Vietnamese <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsacme/vi/>\n"
 "Language: vi\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.4-dev\n"
+"X-Generator: Weblate 5.13-dev\n"
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:28
 #: applications/luci-app-acme/root/usr/share/luci/menu.d/luci-app-acme.json:3
@@ -76,8 +76,9 @@ msgid "Days until renewal"
 msgstr "Cho đến ngày được làm mới"
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:84
+#, fuzzy
 msgid "Default"
-msgstr ""
+msgstr "Mặc định"
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:462
 msgid "Domain Alias"
@@ -239,10 +240,10 @@ msgid ""
 "by each API. Add multiple entries here in KEY=VAL shell variable format to "
 "supply multiple credential variables."
 msgstr ""
-"Thông tin đăng nhập cho chế độ API DNS đã chọn ở trên. Xem https://github."
-"com/acmesh-official/acme.sh/wiki/dnsapi để biết định dạng thông tin xác thực "
-"mà mỗi API yêu cầu. Thêm nhiều mục vào đây ở định dạng biến hệ vỏ KEY=VAL để "
-"cung cấp nhiều biến thông tin xác thực."
+"Thông tin đăng nhập cho chế độ API DNS đã chọn ở trên. Xem https://"
+"github.com/acmesh-official/acme.sh/wiki/dnsapi để biết định dạng thông tin "
+"xác thực mà mỗi API yêu cầu. Thêm nhiều mục vào đây ở định dạng biến hệ vỏ "
+"KEY=VAL để cung cấp nhiều biến thông tin xác thực."
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:463
 msgid ""

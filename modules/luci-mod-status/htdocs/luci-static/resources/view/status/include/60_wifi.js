@@ -5,6 +5,7 @@
 'require uci';
 'require fs';
 'require rpc';
+'require firewall';
 
 return baseclass.extend({
 	title: _('Wireless'),
@@ -113,17 +114,17 @@ return baseclass.extend({
 
 			var icon;
 			if (net.isDisabled())
-				icon = L.resource('icons/signal-none.png');
+				icon = L.resource('icons/signal-none.svg');
 			else if (quality <= 0)
-				icon = L.resource('icons/signal-0.png');
+				icon = L.resource('icons/signal-000-000.svg');
 			else if (quality < 25)
-				icon = L.resource('icons/signal-0-25.png');
+				icon = L.resource('icons/signal-000-025.svg');
 			else if (quality < 50)
-				icon = L.resource('icons/signal-25-50.png');
+				icon = L.resource('icons/signal-025-050.svg');
 			else if (quality < 75)
-				icon = L.resource('icons/signal-50-75.png');
+				icon = L.resource('icons/signal-050-075.svg');
 			else
-				icon = L.resource('icons/signal-75-100.png');
+				icon = L.resource('icons/signal-075-100.svg');
 
 			var WPS_button = null;
 
@@ -184,6 +185,7 @@ return baseclass.extend({
 			network.getHostHints(),
 			this.callSessionAccess('access-group', 'luci-mod-status-index-wifi', 'read'),
 			this.callSessionAccess('access-group', 'luci-mod-status-index-wifi', 'write'),
+			firewall.getZones(),
 			L.hasSystemFeature('wifi') ? L.resolveDefault(uci.load('wireless')) : L.resolveDefault(),
 		]).then(L.bind(function(data) {
 			var tasks = [],
@@ -216,7 +218,8 @@ return baseclass.extend({
 		    networks = data[1],
 		    hosthints = data[2],
 		    hasReadPermission = data[3],
-		    hasWritePermission = data[4];
+		    hasWritePermission = data[4],
+		    zones = data[5];
 
 		var table = E('div', { 'class': 'network-status-table' });
 
@@ -260,15 +263,15 @@ return baseclass.extend({
 				var icon;
 				var q = Math.min((bss.signal + 110) / 70 * 100, 100);
 				if (q == 0)
-					icon = L.resource('icons/signal-0.png');
+					icon = L.resource('icons/signal-000-000.svg');
 				else if (q < 25)
-					icon = L.resource('icons/signal-0-25.png');
+					icon = L.resource('icons/signal-000-025.svg');
 				else if (q < 50)
-					icon = L.resource('icons/signal-25-50.png');
+					icon = L.resource('icons/signal-025-050.svg');
 				else if (q < 75)
-					icon = L.resource('icons/signal-50-75.png');
+					icon = L.resource('icons/signal-050-075.svg');
 				else
-					icon = L.resource('icons/signal-75-100.png');
+					icon = L.resource('icons/signal-075-100.svg');
 
 				var sig_title, sig_value;
 
@@ -300,7 +303,7 @@ return baseclass.extend({
 						'data-ifname': networks[i].getIfname(),
 						'data-ssid': networks[i].getActiveSSID()
 					}, [
-						E('img', { 'src': L.resource('icons/wifi.png') }),
+						E('img', { 'src': L.resource('icons/wifi.svg'), 'style': 'width:32px;height:32px' }),
 						E('span', {}, [
 							' ', networks[i].getShortName(),
 							E('small', {}, [ ' (', networks[i].getIfname(), ')' ])
@@ -325,6 +328,24 @@ return baseclass.extend({
 						E('span', this.wifirate(bss.tx))
 					])
 				];
+
+				if (bss.vlan) {
+					var desc = bss.vlan.getI18n();
+					var vlan_network = bss.vlan.getNetwork();
+					var vlan_zone;
+
+					if (vlan_network)
+						for (let zone of zones)
+							if (zone.getNetworks().includes(vlan_network))
+								vlan_zone = zone;
+
+					row[0].insertBefore(
+						E('div', {
+							'class' : 'zonebadge',
+							'title' : desc,
+							'style' : firewall.getZoneColorStyle(vlan_zone)
+						}, [ desc ]), row[0].firstChild);
+				}
 
 				if (networks[i].isClientDisconnectSupported() && hasWritePermission) {
 					if (assoclist.firstElementChild.childNodes.length < 6)

@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-10-14 17:15+0000\n"
+"PO-Revision-Date: 2025-05-08 13:02+0000\n"
 "Last-Translator: hmzs <hmzs@1szer1.hu>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsmwan3/hu/>\n"
@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.8-rc\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:211
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:227
@@ -41,7 +41,6 @@ msgstr "%d perc"
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:200
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:216
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:238
-#, fuzzy
 msgid "%d second"
 msgstr "%d másodperc"
 
@@ -137,7 +136,7 @@ msgstr "Kapcsolatminőség ellenőrzése"
 msgid "Check routing table"
 msgstr "Útválasztási táblázat ellenőrzése"
 
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:95
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:96
 msgid "Collecting data ..."
 msgstr ""
 
@@ -165,8 +164,8 @@ msgstr "Célport"
 msgid "Diagnostics"
 msgstr "Diagnosztika"
 
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:56
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:65
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:57
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:66
 msgid "Disabled"
 msgstr "Letiltva"
 
@@ -177,8 +176,8 @@ msgstr ""
 "A lekapcsolt csatoló felkapcsoltnak lesz tekintve ennyi sikeres pingelési "
 "teszt után"
 
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:40
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:48
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:41
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:49
 msgid "Downtime"
 msgstr ""
 
@@ -260,7 +259,7 @@ msgstr "Globálisak"
 
 #: applications/luci-app-mwan3/root/usr/share/rpcd/acl.d/luci-app-mwan3.json:3
 msgid "Grant UCI access for luci-app-mwan3"
-msgstr ""
+msgstr "UCI hozzáférés engedélyezése a <em>luci-app-mwan3</em> alkalmazásnak"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/diagnostics.js:68
 msgid "Hotplug ifdown"
@@ -284,7 +283,7 @@ msgstr "IPv4 és IPv6"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/rule.js:62
 msgid "IPv4 only"
-msgstr ""
+msgstr "Csak IPv4"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:68
 msgid "IPv6"
@@ -292,7 +291,7 @@ msgstr "IPv6"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/rule.js:63
 msgid "IPv6 only"
-msgstr ""
+msgstr "Csak IPv6"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/globals.js:31
 msgid "Info"
@@ -304,9 +303,9 @@ msgstr "Kezdeti állapot"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/member.js:50
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/diagnostics.js:83
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:64
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:76
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:100
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:65
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:77
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:101
 #: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:64
 msgid "Interface"
 msgstr "Csatoló"
@@ -414,7 +413,7 @@ msgstr ""
 msgid "Metric"
 msgstr "Mérőszám"
 
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:18
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:19
 #: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:3
 #: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:46
 msgid "MultiWAN Manager"
@@ -440,7 +439,7 @@ msgstr ""
 msgid "MultiWAN Manager - Notify"
 msgstr ""
 
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:92
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:93
 msgid "MultiWAN Manager - Overview"
 msgstr ""
 
@@ -503,12 +502,12 @@ msgstr ""
 msgid "No"
 msgstr "Nem"
 
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:20
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:21
 msgid "No MWAN interfaces found"
 msgstr "Nem találhatók MWAN csatolók"
 
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:43
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:51
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:44
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:52
 msgid "No Tracking"
 msgstr ""
 
@@ -529,14 +528,14 @@ msgid "Notify"
 msgstr ""
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:62
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:37
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:45
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:38
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:46
 msgid "Offline"
 msgstr "Nem érhető el"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:61
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:30
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:39
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:31
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:40
 msgid "Online"
 msgstr "Elérhető"
 
@@ -668,9 +667,9 @@ msgstr "Forráscím"
 msgid "Source port"
 msgstr "Forrásport"
 
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:65
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:82
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:106
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:66
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:83
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:107
 #: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:21
 msgid "Status"
 msgstr ""
@@ -776,10 +775,10 @@ msgstr "Hibaelhárítás"
 msgid "Unable to save contents: %s"
 msgstr "Nem lehet elmenteni a tartalmat: %s"
 
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:33
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:47
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:42
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:55
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:34
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:48
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:43
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:56
 msgid "Uptime"
 msgstr "Futási idő"
 
@@ -795,8 +794,8 @@ msgstr "Figyelmeztetés"
 msgid ""
 "When all policy members are offline use this behavior for matched traffic"
 msgstr ""
-"Ha az összes házirendtag nem érhető el, akkor használja ezt a viselkedést az "
-"egyező forgalomnál"
+"Amikor minden szabályzattag elérhetetlen, használja ezt a viselkedést az "
+"egyező forgalomhoz"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/rule.js:97
 msgid "Yes"
