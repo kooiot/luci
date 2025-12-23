@@ -115,6 +115,9 @@
 	--disabled-opacity: .7;
 
 	color-scheme: light;
+
+	--font-sans: Helvetica Neue, Helvetica, Arial, ui-sans-serif, system-ui, sans-serif;
+	--font-mono: Monaco, Andale Mono, Courier New, ui-monospace, monospace;
 }
 
 :root[data-darkmode="true"] {
@@ -273,7 +276,7 @@ textarea {
  * ------------------------------------------------------------------------------------------- */
 body {
 	background-color: var(--background-color-high);
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: var(--font-sans);
 	font-size: 13px;
 	font-weight: normal;
 	line-height: 18px;
@@ -480,7 +483,7 @@ address {
 
 code, pre {
 	padding: 0 3px 2px;
-	font-family: Monaco, Andale Mono, Courier New, monospace;
+	font-family: var(--font-mono);
 	font-size: 12px;
 	border-radius: 3px;
 }
@@ -532,7 +535,7 @@ label,
 input,
 button,
 select {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: var(--font-sans);
 	font-size: 13px;
 	font-weight: normal;
 	line-height: normal;
@@ -587,6 +590,12 @@ select,
 	line-height: 18px;
 	border: 1px solid var(--border-color-high);
 	border-radius: 3px;
+}
+
+@media screen and (min-width: 768px) {
+	#localtime {
+		width: 300px;
+	}
 }
 
 input,
@@ -1442,7 +1451,7 @@ body.modal-overlay-active #modal_overlay {
 }
 
 .btn .close, .alert-message .close {
-	font-family: Arial, sans-serif;
+	font-family: var(--font-sans);
 	line-height: 18px;
 }
 
@@ -2012,38 +2021,6 @@ form.inline { display: inline; margin-bottom: 0; }
 	color: var(--text-color-highest);
 	margin-bottom: 18px;
 	font-family: monospace;
-}
-
-.cbi-title {
-	display: flex;
-}
-
-.cbi-title div {
-	margin-left: 5px;
-	margin-right: auto;
-	align-self: center;
-}
-
-.cbi-title [data-indicator] {
-	padding: 3px 3px 2px;
-	font-size: 9.75px;
-	font-weight: bold;
-	color: var(--text-color-high);
-	text-transform: uppercase;
-	white-space: nowrap;
-	background-color: var(--background-color-low);
-	border-radius: 3px;
-	text-shadow: none;
-	margin: .125em 0 .125em .4em;
-}
-
-.cbi-title [data-indicator][data-style="active"] {
-	color: var(--on-primary-color);
-	background-color: var(--primary-color-high);
-}
-
-.cbi-title [data-indicator][data-clickable] {
-	cursor: pointer;
 }
 
 .cbi-section-table .tr:hover .td,

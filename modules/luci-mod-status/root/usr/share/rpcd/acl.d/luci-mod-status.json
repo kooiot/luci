@@ -31,11 +31,10 @@
 		"read": {
 			"cgi-io": [ "exec" ],
 			"file": {
-				"/bin/dmesg -r": [ "exec" ],
-				"/usr/libexec/syslog-wrapper": [ "exec" ]
+				"/bin/dmesg -r": [ "exec" ]
 			},
 			"ubus": {
-				"file": [ "stat" ]
+				"log": [ "read" ]
 			}
 		}
 	},
@@ -49,7 +48,7 @@
 				"/sbin/ip -[46] rule show": [ "exec" ]
 			},
 			"ubus": {
-				"file": [ "exec", "stat" ],
+				"file": [ "exec" ],
 				"fingerprint": [ "fingerprint" ]
 			}
 		}
@@ -64,7 +63,7 @@
 				"/sbin/ip -[46] -j rule show": [ "exec" ]
 			},
 			"ubus": {
-				"file": [ "exec", "stat" ],
+				"file": [ "exec" ],
 				"fingerprint": [ "fingerprint" ]
 			}
 		}
