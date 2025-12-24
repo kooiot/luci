@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-08-21 11:34+0000\n"
+"PO-Revision-Date: 2025-11-02 14:00+0000\n"
 "Last-Translator: ssantos <ssantos@web.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsadblock-fast/de/>\n"
@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.13\n"
+"X-Generator: Weblate 5.14.1-dev\n"
 
 #: applications/luci-app-adblock-fast/htdocs/luci-static/resources/adblock-fast/status.js:99
 msgid "%s is currently disabled"
@@ -739,11 +739,11 @@ msgstr "Version %s"
 
 #: applications/luci-app-adblock-fast/htdocs/luci-static/resources/adblock-fast/status.js:67
 msgid "Waiting for trigger (on_boot)"
-msgstr ""
+msgstr "Warte auf Auslöser (on_boot)"
 
 #: applications/luci-app-adblock-fast/htdocs/luci-static/resources/adblock-fast/status.js:68
 msgid "Waiting for trigger (on_start)"
-msgstr ""
+msgstr "Warte auf Auslöser (on_start)"
 
 #: applications/luci-app-adblock-fast/htdocs/luci-static/resources/view/adblock-fast/overview.js:244
 msgid ""
@@ -816,50 +816,3 @@ msgstr "smartdns nft set"
 #: applications/luci-app-adblock-fast/htdocs/luci-static/resources/view/adblock-fast/overview.js:155
 msgid "unbound adblock list"
 msgstr "unbound-Werbeblockerliste"
-
-#~ msgid "Error"
-#~ msgstr "Fehler"
-
-#~ msgid "Fail"
-#~ msgstr "Fehlschlag"
-
-#~ msgid "Warning"
-#~ msgstr "Warnung"
-
-#~ msgid "AdBlock on all instances"
-#~ msgstr "AdBlock auf allen Instanzen"
-
-#~ msgid "AdBlock on select instances"
-#~ msgstr "AdBlock auf ausgewählten Instanzen"
-
-#~ msgid "No AdBlock on SmartDNS"
-#~ msgstr "Kein AdBlock auf SmartDNS"
-
-#~ msgid "No AdBlock on dnsmasq"
-#~ msgstr "Kein AdBlock auf dnsmasq"
-
-#~ msgid "Pick the SmartDNS instance(s) for AdBlocking"
-#~ msgstr "Wählen Sie die SmartDNS-Instanz(en) für AdBlock"
-
-#~ msgid "Pick the dnsmasq instance(s) for AdBlocking"
-#~ msgstr "Wählen Sie die dnsmasq-Instanz(en) für AdBlocking"
-
-#~ msgid "Use AdBlocking on the SmartDNS instance(s)"
-#~ msgstr "Verwenden von AdBlock auf der/n SmartDNS-Instanz(en)"
-
-#~ msgid "Use AdBlocking on the dnsmasq instance(s)"
-#~ msgstr "AdBlocking für die dnsmasq-Instanz(en) verwenden"
-
-#~ msgid ""
-#~ "You can limit the AdBlocking to the specific SmartDNS instance(s) (%smore "
-#~ "information%s)."
-#~ msgstr ""
-#~ "Sie können die AdBlockierung auf die spezifischen SmartDNS-Instanz(en) "
-#~ "beschränken (%sweitere Informationen%s)."
-
-#~ msgid ""
-#~ "You can limit the AdBlocking to the specific dnsmasq instance(s) (%smore "
-#~ "information%s)."
-#~ msgstr ""
-#~ "Sie können das AdBlocking auf die bestimmte dnsmasq-Instanz(en) "
-#~ "beschränken (%sweitere Informationen%s)."

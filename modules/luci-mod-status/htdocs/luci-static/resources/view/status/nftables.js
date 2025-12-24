@@ -138,6 +138,7 @@ var action_translations = {
 
 	'return': _('Continue in calling chain'),
 
+	'ct helper': _('Utilise <strong>%h</strong> conntrack helper'),
 	'flow': _('Utilize flow table <strong>%h</strong>')
 };
 
@@ -145,8 +146,16 @@ return view.extend({
 	load: function() {
 		return Promise.all([
 			L.resolveDefault(fs.exec_direct('/usr/sbin/nft', [ '--terse', '--json', 'list', 'ruleset' ], 'json'), {}),
-			L.resolveDefault(fs.exec_direct('/usr/sbin/iptables-save'), ''),
-			L.resolveDefault(fs.exec_direct('/usr/sbin/ip6tables-save'), '')
+			fs.stat('/usr/sbin/iptables-legacy-save').then(function(stat) {
+                return L.resolveDefault(fs.exec_direct('/usr/sbin/iptables-legacy-save'), '');
+            }).catch(function(err) {
+                return L.resolveDefault(fs.exec_direct('/usr/sbin/iptables-save'), '');
+            }),
+            fs.stat('/usr/sbin/ip6tables-legacy-save').then(function(stat) {
+                return L.resolveDefault(fs.exec_direct('/usr/sbin/ip6tables-legacy-save'), '');
+            }).catch(function(err) {
+                return L.resolveDefault(fs.exec_direct('/usr/sbin/ip6tables-save'), '');
+            })
 		]);
 	},
 
@@ -168,6 +177,7 @@ return view.extend({
 				case 'masquerade':
 				case 'return':
 				case 'flow':
+				case 'ct helper':
 				case 'log':
 					return true;
 				}
@@ -301,7 +311,7 @@ return view.extend({
 	renderVMap: function(spec, table) {
 		// spec: { key: {...}, data: { set: [ [mapkey, actionSpec], ... ] } }
 		const matchElem = E('span', { 'class': 'ifacebadge' },
-			_('Verdict map: <var>%h</var>  is').format(this.exprToString(spec.key)));
+			_('Verdict map: <var>%h</var> is').format(this.exprToString(spec.key)));
 
 		const actions = [];
 		const keys = [];
@@ -406,6 +416,11 @@ return view.extend({
 		switch (kind) {
 		case 'match':
 			return this.renderMatchExpr(spec);
+
+		case 'ct helper':
+			return E('span', {
+					'class': 'ifacebadge'
+			}, action_translations[kind].format(spec));
 
 		case 'reject':
 			var k = 'reject.%s'.format(spec.type);

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-08-12 14:46+0000\n"
+"PO-Revision-Date: 2025-11-24 10:29+0000\n"
 "Last-Translator: Janderson Vieira Santos <jandersonvs79@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "openwrt/luciapplicationsadblock-fast/pt_BR/>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.13-dev\n"
+"X-Generator: Weblate 5.15-dev\n"
 
 #: applications/luci-app-adblock-fast/htdocs/luci-static/resources/adblock-fast/status.js:99
 msgid "%s is currently disabled"
@@ -670,7 +670,7 @@ msgstr "O pacote principal (adblock-fast) está desatualizado, atualize-o"
 
 #: applications/luci-app-adblock-fast/htdocs/luci-static/resources/view/adblock-fast/overview.js:529
 msgid "URL"
-msgstr "Endereço URL"
+msgstr "URL"
 
 #: applications/luci-app-adblock-fast/htdocs/luci-static/resources/view/adblock-fast/overview.js:165
 msgid ""
@@ -734,11 +734,11 @@ msgstr "Versão %s"
 
 #: applications/luci-app-adblock-fast/htdocs/luci-static/resources/adblock-fast/status.js:67
 msgid "Waiting for trigger (on_boot)"
-msgstr ""
+msgstr "Aguardando acionador (on_boot)"
 
 #: applications/luci-app-adblock-fast/htdocs/luci-static/resources/adblock-fast/status.js:68
 msgid "Waiting for trigger (on_start)"
-msgstr ""
+msgstr "Aguardando acionador (on_start)"
 
 #: applications/luci-app-adblock-fast/htdocs/luci-static/resources/view/adblock-fast/overview.js:244
 msgid ""
@@ -811,50 +811,3 @@ msgstr "Conjunto nft do SmartDNS"
 #: applications/luci-app-adblock-fast/htdocs/luci-static/resources/view/adblock-fast/overview.js:155
 msgid "unbound adblock list"
 msgstr "lista de bloqueio de anúncios não vinculados"
-
-#~ msgid "Error"
-#~ msgstr "Erro"
-
-#~ msgid "Fail"
-#~ msgstr "Falha"
-
-#~ msgid "Warning"
-#~ msgstr "Alerta"
-
-#~ msgid "AdBlock on all instances"
-#~ msgstr "AdBlock em todas as instâncias"
-
-#~ msgid "AdBlock on select instances"
-#~ msgstr "AdBlock em instâncias selecionadas"
-
-#~ msgid "No AdBlock on SmartDNS"
-#~ msgstr "Sem AdBlock no SmartDNS"
-
-#~ msgid "No AdBlock on dnsmasq"
-#~ msgstr "Sem AdBlock no dnsmasq"
-
-#~ msgid "Pick the SmartDNS instance(s) for AdBlocking"
-#~ msgstr "Escolha a(s) instância(s) SmartDNS para AdBlocking"
-
-#~ msgid "Pick the dnsmasq instance(s) for AdBlocking"
-#~ msgstr "Escolha a(s) instância(s) dnsmasq para AdBlocking"
-
-#~ msgid "Use AdBlocking on the SmartDNS instance(s)"
-#~ msgstr "Utilize o bloqueio de anúncios na(s) instância(s) do SmartDNS"
-
-#~ msgid "Use AdBlocking on the dnsmasq instance(s)"
-#~ msgstr "Usar o bloqueio de anúncios na(s) instância(s) do dnsmasq"
-
-#~ msgid ""
-#~ "You can limit the AdBlocking to the specific SmartDNS instance(s) (%smore "
-#~ "information%s)."
-#~ msgstr ""
-#~ "Você pode limitar o bloqueio de anúncios a instâncias específicas do "
-#~ "SmartDNS (%smais informações%s)."
-
-#~ msgid ""
-#~ "You can limit the AdBlocking to the specific dnsmasq instance(s) (%smore "
-#~ "information%s)."
-#~ msgstr ""
-#~ "Você pode limitar o bloqueio de anúncios a instâncias específicas do "
-#~ "dnsmasq (%smais informações%s)."

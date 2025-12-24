@@ -19,7 +19,7 @@ const safeList = [
 ];
 
 function isFileInSafeList(file){
-	for (name of safeList) {
+	for (let name of safeList) {
 		if (file === name)
 			return true;
 	}
@@ -27,7 +27,7 @@ function isFileInSafeList(file){
 }
 
 function normalizeKey(s) {
-	return s.replace(/\s+/g, ' ').trim();
+	return s?.replace(/\s+/g, ' ')?.trim();
 }
 
 function determineKeyEnv() {
@@ -51,10 +51,16 @@ function listKeyFiles() {
 	);
 }
 
+function safeText(str) {
+	return String(str).replace(/[&<>"']/g, s => ({
+		'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+	}[s]));
+}
+
 function renderKeyItem(pubkey) {
 	const safeFile = isFileInSafeList(pubkey?.filename);
 	const lines = pubkey?.key?.trim()?.split('\n').map(line =>
-		[ E('br'), E('code', line) ]
+		[ E('br'), E('code', {}, [ safeText(line) ]) ]
 	).flat();
 	return E('div', {
 		class: 'item',
@@ -62,7 +68,7 @@ function renderKeyItem(pubkey) {
 		'data-file': pubkey?.filename,
 		'data-key': normalizeKey(pubkey?.key)
 	}, [
-		E('strong', [ pubkey?.filename || _('Unnamed key') ]),
+		E('strong', {}, [ pubkey?.filename || _('Unnamed key') ]),
 		...lines
 	]);
 }
@@ -81,6 +87,7 @@ function refreshKeyList(list, keys) {
 
 function saveKeyFile(keyContent, file, fileContent) {
 	const ts = Date.now();
+	// Note: opkg can only verify against a key with filename that matches its key hash
 	// generate a file name in case key content was pasted
 	const filename = file ? file?.name?.split('.')?.[0] + (KEYEXT || '') : null;
 	const noname = 'key_' + ts + (KEYEXT || '');
@@ -111,7 +118,7 @@ function removeKey(ev) {
 }
 
 function isPemFormat(content) {
-	return /-BEGIN ([A-Z ]+)?PUBLIC KEY-/.test(content);
+	return new RegExp('-BEGIN ([A-Z ]+)?PUBLIC KEY-').test(content);
 }
 
 function keyEnvironmentCheck(key) {
@@ -129,11 +136,54 @@ function keyEnvironmentCheck(key) {
 function addKey(ev, file, fileContent) {
 	const list = findParent(ev.target, '.cbi-dynlist');
 	const input = list.querySelector('textarea[type="text"]');
-	const key = input.value;
+	let key = (fileContent ?? input.value.trim());
 
 	if (!key.length)
 		return;
 
+	// Handle remote URL paste
+	if (/^https?:\/\/\S+$/i.test(key) && !fileContent) {
+		ui.addTimeLimitedNotification(_('Fetching key from URL…'), [], 5000, 'info');
+
+		L.Request.request(key, { method: 'GET' }).then(res => {
+			if (res.status !== 200) {
+				ui.addTimeLimitedNotification(_('Failed to fetch key'), [
+					E('p', _('HTTP error %d').format(res.status)),
+				], 7000, 'warning');
+				return;
+			}
+
+			const fetched = res.responseText?.trim();
+			if (!fetched || fetched.length > 8192) {
+				ui.addTimeLimitedNotification(_('Key file too large'), [
+					E('p', _('Fetched content seems too long. Maximum 8192 bytes.')),
+				], 7000, 'warning');
+				return;
+			}
+
+			if (!fetched || fetched.length < 32) {
+				ui.addTimeLimitedNotification(_('Invalid or empty key file'), [
+					E('p', _('Fetched content seems empty or too short.')),
+				], 7000, 'warning');
+				return;
+			}
+
+			const filename = res?.url?.split('/').pop().split('?')[0].split('#')[0];
+
+			// Remove extension if any (we'll re-add based on environment)
+			const file = {name: filename.replace(/\.[^.]+$/, '') };
+
+			addKey(ev, file, fetched);
+		}).catch(err => {
+			ui.addTimeLimitedNotification(_('Failed to fetch key'), [
+				E('p', err.message),
+			], 7000, 'warning');
+		});
+
+		return;
+	}
+
+	// From here on, key content (either pasted, fetched, or dropped)
 	const formatError = keyEnvironmentCheck(key);
 	if (formatError) {
 		ui.addTimeLimitedNotification(_('Invalid key format'), [
@@ -205,7 +255,8 @@ return view.extend({
 					'aria-label': _('Paste or drag repository public key'),
 					class: 'cbi-input-text',
 					type: 'text',
-					placeholder: _('Paste or drag to upload a software repository public key…'),
+					style: 'width: 300px; min-height: 120px; ',
+					placeholder: _('Paste content of a file, or a URL to a key file, or drag and drop here to upload a software repository public key…'),
 					keydown: function(ev) { if (ev.keyCode === 13) addKey(ev); },
 					disabled: isReadonlyView
 				}),
