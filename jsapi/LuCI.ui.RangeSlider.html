@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Class: FileUpload</title>
+    <title>Class: RangeSlider</title>
     
     
     <script src="scripts/prettify/prettify.js"></script>
@@ -3841,7 +3841,7 @@
     </ul>
 </div>
     <div class="main">
-        <h1 class="page-title" data-filename="LuCI.ui.FileUpload.html">Class: FileUpload</h1>
+        <h1 class="page-title" data-filename="LuCI.ui.RangeSlider.html">Class: RangeSlider</h1>
         
 
 
@@ -3852,18 +3852,18 @@
     <h2>
         <span class="ancestors"><a href="LuCI.html">LuCI</a><a href="LuCI.ui.html">.ui</a>.</span>
     
-    FileUpload
+    RangeSlider
     </h2>
     
-        <div class="class-description"><p>The <code>FileUpload</code> class implements a widget which allows the user to upload,
-browse, select and delete files beneath a predefined remote directory.</p>
+        <div class="class-description"><p>The <code>RangeSlider</code> class implements a widget which allows the user to set a
+value from a predefined range.</p>
 <p>UI widget instances are usually not supposed to be created by view code
-directly, instead they're implicitly created by <code>LuCI.form</code> when
+directly. Instead they're implicitly created by <code>LuCI.form</code> when
 instantiating CBI forms.</p>
 <p>This class is automatically instantiated as part of <code>LuCI.ui</code>. To use it
-in views, use <code>'require ui'</code> and refer to <code>ui.FileUpload</code>. To import it in
+in views, use <code>'require ui'</code> and refer to <code>ui.RangeSlider</code>. To import it in
 external JavaScript, use <code>L.require(&quot;ui&quot;).then(...)</code> and access the
-<code>FileUpload</code> property of the class instance value.</p></div>
+<code>RangeSlider</code> property of the class instance value.</p></div>
     
 </header>  
 
@@ -3875,14 +3875,14 @@ external JavaScript, use <code>L.require(&quot;ui&quot;).then(...)</code> and ac
         
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="FileUpload">
+        <h4 class="name" id="RangeSlider">
             
-            new LuCI.ui.FileUpload<span class="signature">(<span class="optional">value</span>, <span class="optional">options</span>)</span>
+            new LuCI.ui.RangeSlider<span class="signature">(<span class="optional">value</span>, <span class="optional">options</span>)</span>
         </h4>
     
         
         <div class="tag-source">
-            <a href="ui.js.html">ui.js</a>, <a href="ui.js.html#line2865">line 2865</a>
+            <a href="ui.js.html">ui.js</a>, <a href="ui.js.html#line2648">line 2648</a>
         </div>
         
     </div>
@@ -3893,7 +3893,7 @@ external JavaScript, use <code>L.require(&quot;ui&quot;).then(...)</code> and ac
     
     
     <div class="description">
-        <p>Instantiate a file upload widget.</p>
+        <p>Instantiate a range slider widget.</p>
     </div>
     
 
@@ -3958,7 +3958,7 @@ external JavaScript, use <code>L.require(&quot;ui&quot;).then(...)</code> and ac
                         
                     
                 
-                <p>The initial input value.</p></td>
+                <p>The initial value to set the slider handle position.</p></td>
         </tr>
 	
 	
@@ -3971,7 +3971,7 @@ external JavaScript, use <code>L.require(&quot;ui&quot;).then(...)</code> and ac
             <td class="type">
             
                 
-<span class="param-type"><a href="LuCI.ui.DynamicList.html#.InitOptions">LuCI.ui.DynamicList.InitOptions</a></span>
+<span class="param-type"><a href="LuCI.ui.RangeSlider.html#.InitOptions">LuCI.ui.RangeSlider.InitOptions</a></span>
 
 
             
@@ -3992,8 +3992,7 @@ external JavaScript, use <code>L.require(&quot;ui&quot;).then(...)</code> and ac
                         
                     
                 
-                <p>Object describing the widget specific options to initialize the file
-upload control.</p></td>
+                <p>Object describing the widget specific options to initialize the range slider.</p></td>
         </tr>
 	
 	
@@ -4065,6 +4064,77 @@ upload control.</p></td>
         <h3 class="subsection-title">Methods</h3>
         
         <dl>
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="getCalculatedValue">
+            
+            getCalculatedValue<span class="signature">()</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            <a href="ui.js.html">ui.js</a>, <a href="ui.js.html#line2783">line 2783</a>
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Return the value calculated by the <code>calculate</code> function.</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
             
 <dt>
     <div class="nameContainer inherited">
@@ -4172,14 +4242,14 @@ upload control.</p></td>
     <div class="nameContainer inherited">
         <h4 class="name" id="getValue">
             
-                <span class="inherited"><a href="LuCI.ui.FileUpload.html#getValue">inherited</a></span>
+                <span class="inherited"><a href="LuCI.ui.AbstractElement.html#getValue">inherited</a></span>
             
             getValue<span class="signature">()</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{string|Array.&lt;string>|null}</span>
         </h4>
     
         
         <div class="tag-source">
-            <a href="ui.js.html">ui.js</a>, <a href="ui.js.html#line3356">line 3356</a>
+            <a href="ui.js.html">ui.js</a>, <a href="ui.js.html#line81">line 81</a>
         </div>
         
     </div>
@@ -4663,14 +4733,14 @@ registered.</p></td>
     <div class="nameContainer inherited">
         <h4 class="name" id="render">
             
-                <span class="inherited"><a href="LuCI.ui.FileUpload.html#render">inherited</a></span>
+                <span class="inherited"><a href="LuCI.ui.AbstractElement.html#render">inherited</a></span>
             
             render<span class="signature">()</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{Node}</span>
         </h4>
     
         
         <div class="tag-source">
-            <a href="ui.js.html">ui.js</a>, <a href="ui.js.html#line2959">line 2959</a>
+            <a href="ui.js.html">ui.js</a>, <a href="ui.js.html#line303">line 303</a>
         </div>
         
     </div>
@@ -5207,14 +5277,14 @@ trigger input value validation.</p>
     <div class="nameContainer inherited">
         <h4 class="name" id="setValue">
             
-                <span class="inherited"><a href="LuCI.ui.FileUpload.html#setValue">inherited</a></span>
+                <span class="inherited"><a href="LuCI.ui.AbstractElement.html#setValue">inherited</a></span>
             
             setValue<span class="signature">(value)</span>
         </h4>
     
         
         <div class="tag-source">
-            <a href="ui.js.html">ui.js</a>, <a href="ui.js.html#line3361">line 3361</a>
+            <a href="ui.js.html">ui.js</a>, <a href="ui.js.html#line99">line 99</a>
         </div>
         
     </div>
@@ -5414,7 +5484,7 @@ trigger validation runs, e.g. when programmatically altering values.</p>
                 
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id=".InitOptions">LuCI.ui.FileUpload.InitOptions<span class="type-signature type luci.ui.abstractelement.initoptions"><a href="LuCI.ui.AbstractElement.html#.InitOptions">LuCI.ui.AbstractElement.InitOptions</a></span> </h4>
+        <h4 class="name" id=".InitOptions">LuCI.ui.RangeSlider.InitOptions<span class="type-signature type luci.ui.abstractelement.initoptions"><a href="LuCI.ui.AbstractElement.html#.InitOptions">LuCI.ui.AbstractElement.InitOptions</a></span> </h4>
     </div>
     
     
@@ -5461,13 +5531,13 @@ the following properties are recognized:</p>
 	
         <tr>
             
-                <td class="name"><code>browser</code></td>
+                <td class="name"><code>min</code></td>
             
             
             <td class="type">
             
                 
-<span class="param-type">boolean</span>
+<span class="param-type">int</span>
 
 
             
@@ -5486,25 +5556,25 @@ the following properties are recognized:</p>
             
                 <td class="default">
                 
-                    false
+                    1
                 
                 </td>
             
             
-            <td class="description last"><p>Use a file browser mode.</p></td>
+            <td class="description last"><p>Specifies the minimum value of the range.</p></td>
         </tr>
 	
 	
 	
         <tr>
             
-                <td class="name"><code>show_hidden</code></td>
+                <td class="name"><code>max</code></td>
             
             
             <td class="type">
             
                 
-<span class="param-type">boolean</span>
+<span class="param-type">int</span>
 
 
             
@@ -5523,141 +5593,19 @@ the following properties are recognized:</p>
             
                 <td class="default">
                 
-                    false
+                    100
                 
                 </td>
             
             
-            <td class="description last"><p>Specifies whether hidden files should be displayed when browsing remote
-files. Note that this is not a security feature, hidden files are always
-present in the remote file listings received, this option merely controls
-whether they're displayed or not.</p></td>
+            <td class="description last"><p>Specifies the maximum value of the range.</p></td>
         </tr>
 	
 	
 	
         <tr>
             
-                <td class="name"><code>enable_upload</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">boolean</span>
-
-
-            
-            </td>
-            
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-                    
-                
-                </td>
-            
-            
-            
-                <td class="default">
-                
-                    true
-                
-                </td>
-            
-            
-            <td class="description last"><p>Specifies whether the widget allows the user to upload files. If set to
-<code>false</code>, only existing files may be selected. Note that this is not a
-security feature. Whether file upload requests are accepted remotely
-depends on the ACL setup for the current session. This option merely
-controls whether the upload controls are rendered or not.</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>enable_remove</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">boolean</span>
-
-
-            
-            </td>
-            
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-                    
-                
-                </td>
-            
-            
-            
-                <td class="default">
-                
-                    true
-                
-                </td>
-            
-            
-            <td class="description last"><p>Specifies whether the widget allows the user to delete remove files.
-If set to <code>false</code>, existing files may not be removed. Note that this is
-not a security feature. Whether file delete requests are accepted
-remotely depends on the ACL setup for the current session. This option
-merely controls whether the file remove controls are rendered or not.</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>enable_download</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">boolean</span>
-
-
-            
-            </td>
-            
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-                    
-                
-                </td>
-            
-            
-            
-                <td class="default">
-                
-                    false
-                
-                </td>
-            
-            
-            <td class="description last"><p>Specifies whether the widget allows the user to download files.</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>root_directory</code></td>
+                <td class="name"><code>step</code></td>
             
             
             <td class="type">
@@ -5682,16 +5630,87 @@ merely controls whether the file remove controls are rendered or not.</p></td>
             
                 <td class="default">
                 
-                    /etc/luci-uploads
+                    1
                 
                 </td>
             
             
-            <td class="description last"><p>Specifies the remote directory the upload and file browsing actions take
-place in. Browsing to directories outside the root directory is
-prevented by the widget. Note that this is not a security feature.
-Whether remote directories are browsable or not solely depends on the
-ACL setup for the current session.</p></td>
+            <td class="description last"><p>Specifies the step value of the range slider handle. Use &quot;any&quot; for
+arbitrary precision floating point numbers.</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>calcunits</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+                <td class="default">
+                
+                    null
+                
+                </td>
+            
+            
+            <td class="description last"><p>Specifies a suffix string to append to the calculated value output.</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>disabled</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+                <td class="default">
+                
+                    false
+                
+                </td>
+            
+            
+            <td class="description last"><p>Specifies whether the the widget is disabled.</p></td>
         </tr>
 	
 	
