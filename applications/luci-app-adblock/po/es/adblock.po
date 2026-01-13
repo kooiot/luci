@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-11-23 09:51+0000\n"
-"Last-Translator: Franco Castillo <castillofrancodamian@gmail.com>\n"
+"PO-Revision-Date: 2026-01-10 04:39+0000\n"
+"Last-Translator: Juan Benites <benitesjn@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsadblock/es/>\n"
 "Language: es\n"
@@ -11,20 +11,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.15-dev\n"
+"X-Generator: Weblate 5.15.1\n"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:282
-#, fuzzy
 msgid "-- default --"
 msgstr "-- por defecto --"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/feeds.js:220
 msgid "0.0.0.0 <Domain>"
-msgstr ""
+msgstr "0.0.0.0 <Dominio>"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/feeds.js:219
 msgid "127.0.0.1 <Domain>"
-msgstr ""
+msgstr "127.0.0.1 <Dominio>"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:525
 msgid "1Hosts List Selection"
@@ -32,11 +31,11 @@ msgstr "Selección de lista 1Hosts"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/feeds.js:221
 msgid "<Adblock Plus Syntax>"
-msgstr ""
+msgstr "<Sintaxis de Adblock Plus>"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/feeds.js:218
 msgid "<Domain>"
-msgstr ""
+msgstr "<Dominio>"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:322
 msgid "Action"
@@ -307,7 +306,7 @@ msgstr "No verifica los certificados SSL del servidor durante la descarga."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/feeds.js:255
 msgid "Download"
-msgstr "Descarga"
+msgstr "Descargar"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:302
 msgid "Download Insecure"
@@ -713,7 +712,7 @@ msgstr "Guardar y Recargar"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:574
 msgid "Save & Restart"
-msgstr "Guardar y Reiniciar"
+msgstr "Guardar y reiniciar"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:341
 msgid "Second instance"
@@ -792,7 +791,7 @@ msgstr "Suspender"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:174
 msgid "System Info"
-msgstr "Información del sistema"
+msgstr "Info del sistema"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:233
 msgid "TLD Compression"
@@ -920,7 +919,7 @@ msgstr "¡No se puede interpretar el archivo de fuente predeterminado!"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:84
 msgid "Unable to parse the runtime information!"
-msgstr "¡No se puede interpretar la información de tiempo de ejecución!"
+msgstr "¡No se puede analizar la información del tiempo de ejecución!"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/allowlist.js:55
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/blocklist.js:55

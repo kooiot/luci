@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-12-27 06:29+0000\n"
+"PO-Revision-Date: 2026-01-06 13:19+0000\n"
 "Last-Translator: Hyeonjeong Lee <h9101654@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsdcwapd/ko/>\n"
@@ -40,7 +40,7 @@ msgstr ""
 
 #: applications/luci-app-dcwapd/htdocs/luci-static/resources/view/dcwapd/dcwapd.js:178
 msgid "Destination port"
-msgstr ""
+msgstr "목적지 포트"
 
 #: applications/luci-app-dcwapd/htdocs/luci-static/resources/view/dcwapd/dcwapd.js:27
 #: applications/luci-app-dcwapd/htdocs/luci-static/resources/view/dcwapd/dcwapd.js:28
@@ -50,7 +50,7 @@ msgstr ""
 #: applications/luci-app-dcwapd/htdocs/luci-static/resources/view/dcwapd/dcwapd.js:28
 #: applications/luci-app-dcwapd/root/usr/share/luci/menu.d/luci-app-dcwapd.json:3
 msgid "Dual Channel WiFi"
-msgstr ""
+msgstr "듀얼 채널 WiFi"
 
 #: applications/luci-app-dcwapd/htdocs/luci-static/resources/view/dcwapd/dcwapd.js:38
 #: applications/luci-app-dcwapd/htdocs/luci-static/resources/view/dcwapd/dcwapd.js:100
@@ -64,7 +64,7 @@ msgstr ""
 #: applications/luci-app-dcwapd/htdocs/luci-static/resources/view/dcwapd/dcwapd.js:145
 #: applications/luci-app-dcwapd/htdocs/luci-static/resources/view/dcwapd/dcwapd.js:197
 msgid "Filters"
-msgstr ""
+msgstr "필터"
 
 #: applications/luci-app-dcwapd/htdocs/luci-static/resources/view/dcwapd/dcwapd.js:31
 msgid "General"
@@ -72,7 +72,7 @@ msgstr "일반"
 
 #: applications/luci-app-dcwapd/htdocs/luci-static/resources/view/dcwapd/dcwapd.js:31
 msgid "General Settings"
-msgstr "기본 설정"
+msgstr "일반 설정"
 
 #: applications/luci-app-dcwapd/root/usr/share/rpcd/acl.d/luci-app-dcwapd.json:3
 msgid "Grant UCI access for luci-app-dcwapd"
@@ -88,7 +88,7 @@ msgstr "MAC 주소"
 
 #: applications/luci-app-dcwapd/htdocs/luci-static/resources/view/dcwapd/dcwapd.js:151
 msgid "Packet size"
-msgstr ""
+msgstr "패킷 크기"
 
 #: applications/luci-app-dcwapd/htdocs/luci-static/resources/view/dcwapd/dcwapd.js:169
 msgid "Protocol"
@@ -109,7 +109,7 @@ msgstr ""
 
 #: applications/luci-app-dcwapd/htdocs/luci-static/resources/view/dcwapd/dcwapd.js:163
 msgid "Source port"
-msgstr ""
+msgstr "출발지 포트"
 
 #: applications/luci-app-dcwapd/htdocs/luci-static/resources/view/dcwapd/dcwapd.js:44
 msgid "Specify the temporary directory for dcwapd file storage."
