@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-12-29 10:01+0000\n"
+"PO-Revision-Date: 2026-02-10 18:11+0000\n"
 "Last-Translator: Hyeonjeong Lee <h9101654@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsattendedsysupgrade/ko/>\n"
@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 5.16-dev\n"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:290
 msgid ""
@@ -26,7 +26,7 @@ msgstr "주소"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/configuration.js:22
 msgid "Address of the sysupgrade server"
-msgstr "Sysupgrade 서버 주소"
+msgstr "시스템 업데이트(Sysupgrade) 서버 주소"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/configuration.js:50
 msgid "Advanced Mode"
@@ -37,11 +37,11 @@ msgstr "고급 모드"
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/status/include/11_upgrades.js:46
 #: applications/luci-app-attendedsysupgrade/root/usr/share/luci/menu.d/luci-app-attendedsysupgrade.json:3
 msgid "Attended Sysupgrade"
-msgstr "유인 업그레이드"
+msgstr "사용자 정의 업데이트"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/configuration.js:12
 msgid "Attendedsysupgrade Configuration."
-msgstr "유인 업그레이드(Attended Sysupgrade) 설정입니다."
+msgstr "사용자 정의 업데이트(Attendedsysupgrade) 설정입니다."
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/status/include/11_upgrades.js:29
 msgid "Available"
@@ -49,7 +49,7 @@ msgstr "사용 가능"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:617
 msgid "Board Name / Profile"
-msgstr "보드 이름 / 프로파일"
+msgstr "보드 이름 / 프로필"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:190
 msgid "Build Date"
@@ -61,7 +61,7 @@ msgstr "펌웨어 빌드 중..."
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:93
 msgid "Calculating package hash"
-msgstr "패키지 해시 계산중"
+msgstr "패키지 해시 계산 중"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:230
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:632
@@ -123,7 +123,7 @@ msgstr "펌웨어 이미지 다운로드"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:100
 msgid "Downloading ImageBuilder archive"
-msgstr "이미지빌더 아카이브 다운로드 중"
+msgstr "ImageBuilder 아카이브 다운로드 중"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:444
 msgid "Downloading firmware from server to browser"
@@ -143,15 +143,15 @@ msgstr "업그레이드 서버 연결 실패"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:479
 msgid "Error during download of firmware. Please try again"
-msgstr "펌웨어 다운로드 중 오류발생. 나중에 다시 시도해주세요"
+msgstr "펌웨어 다운로드 중 오류가 발생했습니다. 다시 시도하세요"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:97
 msgid "Failed to generate firmware image"
-msgstr "펌웨어 이미지 생성이 실패함"
+msgstr "펌웨어 이미지 생성 실패"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:192
 msgid "Filename"
-msgstr "파일명"
+msgstr "파일 이름"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:194
 msgid "Filesystem"
@@ -167,7 +167,7 @@ msgstr "먼저, 확인하세요:"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:94
 msgid "Generating firmware image"
-msgstr "펌웨어 이미지 생성중"
+msgstr "펌웨어 이미지 생성 중"
 
 #: applications/luci-app-attendedsysupgrade/root/usr/share/rpcd/acl.d/luci-app-attendedsysupgrade.json:3
 msgid "Grant UCI access to LuCI app attendedsysupgrade"
@@ -179,7 +179,7 @@ msgstr "펌웨어 이미지 설치"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:485
 msgid "Installing the sysupgrade image..."
-msgstr "sysupgrade 이미지 설치 중..."
+msgstr "시스템 업데이트 이미지 설치 중..."
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:483
 msgid "Installing..."
@@ -187,7 +187,7 @@ msgstr "설치 중..."
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:226
 msgid "Keep settings and retain the current configuration"
-msgstr "현재 설정을 유지"
+msgstr "기존 설정 및 현재 구성 유지"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/status/include/11_upgrades.js:20
 msgid "Kernel Version"
@@ -235,7 +235,7 @@ msgstr "클립보드 내용을 다음에 붙여넣으세요:"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:186
 msgid "Profile"
-msgstr "프로파일"
+msgstr "프로필"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:268
 msgid "Progress: %s%% %s"
@@ -243,11 +243,11 @@ msgstr "진행률: %s%% %s"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:254
 msgid "Queued..."
-msgstr "큐에 추가됨..."
+msgstr "대기 중..."
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/configuration.js:28
 msgid "Rebuilders"
-msgstr "리빌더들"
+msgstr "리빌더"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:204
 msgid "Rebuilds"
@@ -255,7 +255,7 @@ msgstr "리빌드"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:89
 msgid "Received build request"
-msgstr "수신된 빌드 요청"
+msgstr "빌드 요청 수신됨"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:325
 msgid "Request Data:"
@@ -279,7 +279,7 @@ msgstr "SHA256"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:751
 msgid "Search for firmware upgrade"
-msgstr "펌웨어 업그레이드 검색"
+msgstr "펌웨어 업데이트 확인"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/configuration.js:42
 msgid "Search for new sysupgrades on opening the tab"
@@ -287,15 +287,15 @@ msgstr "탭을 열면 새로운 시스템 업그레이드 검색하기"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/configuration.js:41
 msgid "Search on opening"
-msgstr "탭을 열 때 검색"
+msgstr "메뉴 진입 시 확인"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:518
 msgid "Searching for an available sysupgrade of %s - %s"
-msgstr "%s - %s 로부터 사용가능한 Sysupgrade 검색중"
+msgstr "%s - %s의 사용 가능한 시스템 업데이트 확인 중"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:514
 msgid "Searching..."
-msgstr "검색 중..."
+msgstr "조회 중..."
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/configuration.js:15
 msgid "Server"
@@ -307,11 +307,11 @@ msgstr "서버 응답: %s"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:101
 msgid "Setting Up ImageBuilder"
-msgstr "이미지빌더 설정하기"
+msgstr "ImageBuilder 준비 중"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:90
 msgid "Setting up ImageBuilder"
-msgstr "이미지빌더 설정하기"
+msgstr "ImageBuilder 준비 중"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/configuration.js:51
 msgid "Show advanced options like package list modification"
@@ -319,7 +319,7 @@ msgstr "패키지 목록 수정 등 고급 옵션을 표시합니다"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:95
 msgid "Signing images"
-msgstr "이미지에 서명중"
+msgstr "이미지 서명 중"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:245
 msgid "Successfully created firmware image"
@@ -334,8 +334,8 @@ msgid ""
 "The attended sysupgrade service allows to upgrade vanilla and custom "
 "firmware images easily."
 msgstr ""
-"유인 업그레이드 서비스는 순정 또는 커스텀 펌웨어 이미지로 쉽게 업그레이드할 "
-"수 있게 해줍니다."
+"사용자 정의 업데이트 기능을 사용하면 순정 및 사용자 정의 펌웨어를 간편하게 업"
+"데이트할 수 있습니다."
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:674
 msgid "The device runs the latest firmware version %s - %s"
@@ -344,7 +344,7 @@ msgstr "최신 펌웨어 버전 실행 중: %s - %s"
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:735
 msgid ""
 "This is done by building a new firmware on demand via an online service."
-msgstr "온라인 서비스를 통해 요청하면 새 펌웨어를 빌드합니다."
+msgstr "온라인 서버를 통해 맞춤형 펌웨어를 실시간으로 빌드하여 제공합니다."
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:489
 msgid ""
@@ -361,11 +361,11 @@ msgstr "업로드 중..."
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:92
 msgid "Validating package selection"
-msgstr "선택된 패키지 검사중"
+msgstr "패키지 선택 검증 중"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:91
 msgid "Validating revision"
-msgstr "버전 검사중"
+msgstr "리비전 검증 중"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:178
 msgid "Version"

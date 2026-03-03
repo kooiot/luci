@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-12-28 09:01+0000\n"
+"PO-Revision-Date: 2026-02-15 08:22+0000\n"
 "Last-Translator: Hyeonjeong Lee <h9101654@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsdockerman/ko/>\n"
@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 5.16-dev\n"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:604
 msgid "A list of kernel capabilities to add to the container"
@@ -16,7 +16,7 @@ msgstr ""
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/containers.lua:183
 msgid "Add"
-msgstr ""
+msgstr "추가"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:580
 msgid "Add host device to the container"
@@ -24,7 +24,7 @@ msgstr ""
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:556
 msgid "Advance"
-msgstr ""
+msgstr "고급 설정"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:571
 msgid "Allocates an ephemeral host port for all of a container's exposed ports"
@@ -42,7 +42,7 @@ msgstr "LuCI 도커 클라이언트가 연될된 도커 호스트의 개요가 �
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/overview.lua:29
 msgid "Api Version"
-msgstr "Api 버전"
+msgstr "API 버전"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newnetwork.lua:84
 msgid "Auto create macvlan interface in Openwrt"
@@ -81,11 +81,11 @@ msgstr ""
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newnetwork.lua:51
 msgid "Bridge (Support direct communication between MAC VLANs)"
-msgstr ""
+msgstr "브리지 (MACVLAN 간 직접 통신 지원)"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newnetwork.lua:34
 msgid "Bridge device"
-msgstr ""
+msgstr "브리지 장치"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/images.lua:84
 msgid ""
@@ -97,7 +97,7 @@ msgstr ""
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:603
 msgid "CAP-ADD(--cap-add)"
-msgstr ""
+msgstr "CAP-ADD(--cap-add)"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:573
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:620
@@ -106,7 +106,7 @@ msgstr ""
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:770
 msgid "CPU Usage"
-msgstr ""
+msgstr "CPU 사용"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:621
 msgid ""
@@ -142,11 +142,11 @@ msgstr "명령어"
 
 #: applications/luci-app-dockerman/luasrc/view/dockerman/newcontainer_resolve.htm:100
 msgid "Command line"
-msgstr ""
+msgstr "명령줄"
 
 #: applications/luci-app-dockerman/luasrc/view/dockerman/newcontainer_resolve.htm:72
 msgid "Command line Error"
-msgstr ""
+msgstr "명령줄 오류"
 
 #: applications/luci-app-dockerman/luasrc/controller/dockerman.lua:16
 msgid "Configuration"
@@ -159,7 +159,7 @@ msgstr "기본 브리지 네트워크 구성"
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:397
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:698
 msgid "Connect"
-msgstr ""
+msgstr "연결"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:395
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:429
@@ -181,7 +181,7 @@ msgstr ""
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:662
 msgid "Container Logs"
-msgstr ""
+msgstr "컨테이너 로그"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/containers.lua:125
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:458
@@ -245,58 +245,58 @@ msgstr ""
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:388
 msgid "Disconnect"
-msgstr ""
+msgstr "연결 해제"
 
 #: applications/luci-app-dockerman/luasrc/controller/dockerman.lua:13
 #: applications/luci-app-dockerman/luasrc/view/dockerman/logs.htm:3
 msgid "Docker"
-msgstr "도커"
+msgstr "Docker"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/configuration.lua:7
 msgid "Docker - Configuration"
-msgstr "도커 - 구성"
+msgstr "Docker - 설정"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:199
 msgid "Docker - Container (%s)"
-msgstr ""
+msgstr "Docker - 컨테이너 (%s)"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/containers.lua:94
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:439
 msgid "Docker - Containers"
-msgstr "도커 - 컨테이너"
+msgstr "Docker - 컨테이너"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/images.lua:72
 msgid "Docker - Images"
-msgstr "도커 - 이미지"
+msgstr "Docker - 이미지"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newnetwork.lua:12
 msgid "Docker - Network"
-msgstr "도커 - 네트워크"
+msgstr "Docker - 네트워크"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/networks.lua:51
 msgid "Docker - Networks"
-msgstr "도커 - 네트워크"
+msgstr "Docker - 네트워크"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/overview.lua:22
 msgid "Docker - Overview"
-msgstr "도커 - 개요"
+msgstr "Docker - 개요"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/volumes.lua:69
 msgid "Docker - Volumes"
-msgstr "도커 - 볼륨"
+msgstr "Docker - 볼륨"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:474
 msgid "Docker Image"
-msgstr "도커 - 이미지"
+msgstr "Docker 이미지"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/configuration.lua:36
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/overview.lua:32
 msgid "Docker Root Dir"
-msgstr "도커 루트 디렉토리"
+msgstr "Docker 루트 디렉터리"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/overview.lua:28
 msgid "Docker Version"
-msgstr "도커 버전"
+msgstr "Docker 버전"
 
 #: applications/luci-app-dockerman/luasrc/view/dockerman/apply_widget.htm:91
 msgid "Docker actions done."
@@ -322,11 +322,11 @@ msgstr ""
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newnetwork.lua:110
 msgid "Enable IPv6"
-msgstr ""
+msgstr "IPv6 사용"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:343
 msgid "Env"
-msgstr ""
+msgstr "환경 변수"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:531
 msgid "Environmental Variable(-e)"
@@ -334,7 +334,7 @@ msgstr ""
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/configuration.lua:59
 msgid "Error"
-msgstr "에러"
+msgstr "오류(Error)"
 
 #: applications/luci-app-dockerman/luasrc/controller/dockerman.lua:41
 #: applications/luci-app-dockerman/luasrc/view/dockerman/logs.htm:5
@@ -363,7 +363,7 @@ msgstr ""
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/configuration.lua:60
 msgid "Fatal"
-msgstr "심각 (Fatal)"
+msgstr "심각(Fatal)"
 
 #: applications/luci-app-dockerman/luasrc/view/dockerman/container.htm:6
 msgid "File"
@@ -400,7 +400,7 @@ msgstr ""
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:563
 msgid "Host Name"
-msgstr ""
+msgstr "호스트 이름"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/configuration.lua:19
 msgid "Host or IP Address for the connection to a remote docker instance"
@@ -411,33 +411,33 @@ msgstr ""
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/images.lua:150
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/networks.lua:75
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newnetwork.lua:36
 msgid "IP VLAN"
-msgstr ""
+msgstr "IP VLAN"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newnetwork.lua:101
 msgid "IP range"
-msgstr ""
+msgstr "IP 범위"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:507
 msgid "IPv4 Address"
-msgstr ""
+msgstr "IPv4 주소"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newnetwork.lua:122
 msgid "IPv6 Gateway"
-msgstr ""
+msgstr "IPv6 게이트웨이"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newnetwork.lua:116
 msgid "IPv6 Subnet"
-msgstr ""
+msgstr "IPv6 서브넷"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:296
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/containers.lua:139
 #: applications/luci-app-dockerman/luasrc/view/dockerman/images_import.htm:54
 msgid "Image"
-msgstr ""
+msgstr "이미지"
 
 #: applications/luci-app-dockerman/luasrc/controller/dockerman.lua:38
 #: applications/luci-app-dockerman/luasrc/view/dockerman/overview.htm:151
@@ -465,7 +465,7 @@ msgstr "인덱스 서버 주소"
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/overview.lua:37
 #: applications/luci-app-dockerman/luasrc/view/dockerman/container.htm:3
 msgid "Info"
-msgstr "정보 (Info)"
+msgstr "정보(Info)"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newnetwork.lua:64
 msgid "Ingress"
@@ -490,7 +490,7 @@ msgstr ""
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newnetwork.lua:56
 msgid "Ipvlan Mode"
-msgstr ""
+msgstr "IPVLAN 모드"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/configuration.lua:49
 msgid ""
@@ -504,11 +504,11 @@ msgstr "강제 종료"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newnetwork.lua:60
 msgid "L2 bridge"
-msgstr ""
+msgstr "L2 브리지"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newnetwork.lua:61
 msgid "L3 bridge"
-msgstr ""
+msgstr "L3 브리지"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:351
 msgid "Links"
@@ -521,7 +521,7 @@ msgstr ""
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/images.lua:276
 #: applications/luci-app-dockerman/luasrc/view/dockerman/images_load.htm:2
 msgid "Load"
-msgstr ""
+msgstr "로드"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/configuration.lua:54
 msgid "Log Level"
@@ -533,11 +533,11 @@ msgstr ""
 
 #: applications/luci-app-dockerman/luasrc/view/dockerman/container.htm:9
 msgid "Logs"
-msgstr ""
+msgstr "로그"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newnetwork.lua:35
 msgid "MAC VLAN"
-msgstr ""
+msgstr "MAC VLAN"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:581
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:629
@@ -546,7 +546,7 @@ msgstr "메모리"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:774
 msgid "Memory Usage"
-msgstr ""
+msgstr "메모리 사용"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:630
 msgid ""
@@ -574,7 +574,7 @@ msgstr ""
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:335
 msgid "Mount/Volume"
-msgstr ""
+msgstr "마운트 지점/볼륨"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:287
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:411
@@ -614,7 +614,7 @@ msgstr "추가"
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/images.lua:39
 #: applications/luci-app-dockerman/luasrc/view/dockerman/images_import.htm:54
 msgid "New tag"
-msgstr ""
+msgstr "새 태그"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:612
 msgid "Number of CPUs. Number is a fractional number. 0.000 means no limit"
@@ -638,7 +638,7 @@ msgstr ""
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newnetwork.lua:72
 msgid "Options"
-msgstr ""
+msgstr "옵션"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newnetwork.lua:37
 msgid "Overlay network"
@@ -654,7 +654,7 @@ msgstr "상위 인터페이스"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newnetwork.lua:54
 msgid "Pass-through (Mirror physical device to single MAC VLAN)"
-msgstr ""
+msgstr "패스스루 (물리 장치의 모든 트래픽을 단일 MACVLAN에 전달)"
 
 #: applications/luci-app-dockerman/luasrc/view/dockerman/container_file.htm:7
 msgid "Path"
@@ -683,7 +683,7 @@ msgstr "포트"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newnetwork.lua:52
 msgid "Private (Prevent communication between MAC VLANs)"
-msgstr ""
+msgstr "격리 (MACVLAN 간 통신 차단)"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:489
 msgid "Privileged"
@@ -712,11 +712,11 @@ msgstr "원격 엔드포인트"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/configuration.lua:18
 msgid "Remote Host"
-msgstr ""
+msgstr "원격 호스트"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/configuration.lua:27
 msgid "Remote Port"
-msgstr ""
+msgstr "원격 포트"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:272
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/containers.lua:229
@@ -741,7 +741,7 @@ msgstr ""
 
 #: applications/luci-app-dockerman/luasrc/view/dockerman/container.htm:4
 msgid "Resources"
-msgstr ""
+msgstr "자원"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:227
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/containers.lua:202
@@ -780,7 +780,7 @@ msgstr ""
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/configuration.lua:55
 msgid "Set the logging level"
-msgstr "로깅 수준 설정"
+msgstr "로그 기록 수준 설정"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/images.lua:146
 msgid "Size"
@@ -807,7 +807,7 @@ msgstr "시작 시간"
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:779
 #: applications/luci-app-dockerman/luasrc/view/dockerman/container.htm:5
 msgid "Stats"
-msgstr ""
+msgstr "통계"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:300
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/containers.lua:128
@@ -830,7 +830,7 @@ msgstr "서브넷"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:367
 msgid "Sysctl"
-msgstr ""
+msgstr "Sysctl"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:595
 msgid "Sysctl(--sysctl)"
@@ -850,7 +850,7 @@ msgstr ""
 
 #: applications/luci-app-dockerman/luasrc/view/dockerman/container_stats.htm:56
 msgid "TX/RX"
-msgstr ""
+msgstr "TX/RX"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:564
 msgid "The hostname to use for the container"
@@ -881,11 +881,11 @@ msgstr ""
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:359
 msgid "Tmpfs"
-msgstr ""
+msgstr "Tmpfs"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:587
 msgid "Tmpfs(--tmpfs)"
-msgstr ""
+msgstr "Tmpfs(--tmpfs)"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/overview.lua:31
 msgid "Total Memory"
@@ -893,12 +893,12 @@ msgstr "총 메모리"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:688
 msgid "UID"
-msgstr ""
+msgstr "UID"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:289
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:328
 msgid "Update"
-msgstr ""
+msgstr "갱신"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:254
 msgid "Upgrade"
@@ -911,15 +911,15 @@ msgstr "업로드"
 
 #: applications/luci-app-dockerman/luasrc/view/dockerman/container_file.htm:46
 msgid "Upload Error"
-msgstr ""
+msgstr "업로드 오류"
 
 #: applications/luci-app-dockerman/luasrc/view/dockerman/container_file.htm:43
 msgid "Upload Success"
-msgstr ""
+msgstr "업로드 성공"
 
 #: applications/luci-app-dockerman/luasrc/view/dockerman/container_stats.htm:48
 msgid "Upload/Download"
-msgstr ""
+msgstr "업로드/다운로드"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:331
 msgid "User"
@@ -931,7 +931,7 @@ msgstr ""
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newnetwork.lua:53
 msgid "VEPA (Virtual Ethernet Port Aggregator)"
-msgstr ""
+msgstr "VEPA (가상 이더넷 포트 통합)"
 
 #: applications/luci-app-dockerman/luasrc/controller/dockerman.lua:40
 #: applications/luci-app-dockerman/luasrc/view/dockerman/overview.htm:187
@@ -944,7 +944,7 @@ msgstr "볼륨 개요"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/configuration.lua:58
 msgid "Warning"
-msgstr "경고"
+msgstr "경고(Warning)"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/images.lua:125
 msgid ""

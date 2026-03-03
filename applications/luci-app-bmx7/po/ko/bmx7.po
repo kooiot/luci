@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-12-28 09:00+0000\n"
+"PO-Revision-Date: 2026-02-07 16:10+0000\n"
 "Last-Translator: Hyeonjeong Lee <h9101654@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsbmx7/ko/>\n"
@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 5.16-dev\n"
 
 #: applications/luci-app-bmx7/root/usr/lib/lua/luci/view/bmx7/tunnels_j.htm:33
 msgid "Announcements"
@@ -16,7 +16,7 @@ msgstr ""
 
 #: applications/luci-app-bmx7/root/usr/lib/lua/luci/view/bmx7/status_j.htm:27
 msgid "BMX7 revision"
-msgstr ""
+msgstr "BMX7 리비전"
 
 #: applications/luci-app-bmx7/root/usr/lib/lua/luci/view/bmx7/tunnels_j.htm:41
 msgid "Bandwidth"
@@ -155,7 +155,7 @@ msgstr ""
 
 #: applications/luci-app-bmx7/root/usr/lib/lua/luci/view/bmx7/status_j.htm:82
 msgid "Routes"
-msgstr "라우트"
+msgstr "경로(Routes)"
 
 #: applications/luci-app-bmx7/root/usr/lib/lua/luci/view/admin_status/index/bmx7_nodes.htm:9
 #: applications/luci-app-bmx7/root/usr/lib/lua/luci/view/bmx7/nodes_j.htm:77
@@ -212,7 +212,7 @@ msgstr "유형"
 
 #: applications/luci-app-bmx7/root/usr/lib/lua/luci/view/bmx7/status_j.htm:43
 msgid "Uptime"
-msgstr "가동시간"
+msgstr "가동 시간"
 
 #: applications/luci-app-bmx7/root/usr/lib/lua/luci/view/admin_status/index/bmx7_nodes.htm:11
 #: applications/luci-app-bmx7/root/usr/lib/lua/luci/view/bmx7/nodes_j.htm:79

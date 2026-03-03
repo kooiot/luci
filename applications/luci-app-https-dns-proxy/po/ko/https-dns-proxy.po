@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-12-30 17:00+0000\n"
+"PO-Revision-Date: 2026-01-18 17:11+0000\n"
 "Last-Translator: Hyeonjeong Lee <h9101654@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationshttps-dns-proxy/ko/>\n"
@@ -8,15 +8,44 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 5.15.2\n"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:284
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:283
 msgid "%s%s%s proxy at %s on port %s.%s"
 msgstr "%s%s%s 프록시, 주소 %s, 포트 %s.%s"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:276
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:275
 msgid "%s%s%s proxy on port %s.%s"
 msgstr "%s%s%s 프록시, 포트 %s.%s"
+
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:564
+msgid "*"
+msgstr "*"
+
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:251
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:585
+msgid "0: Fatal"
+msgstr "0: 심각(Fatal)"
+
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:252
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:586
+msgid "1: Error"
+msgstr "1: 오류(Error)"
+
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:253
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:587
+msgid "2: Warning"
+msgstr "2: 경고(Warning)"
+
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:254
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:588
+msgid "3: Info"
+msgstr "3: 정보(Info)"
+
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:255
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:589
+msgid "4: Debug"
+msgstr "4: 디버그(Debug)"
 
 #: applications/luci-app-https-dns-proxy/root/usr/share/https-dns-proxy/providers/co.oszx.dns.json:14
 #: applications/luci-app-https-dns-proxy/root/usr/share/https-dns-proxy/providers/gr.libredns.doh.json:14
@@ -83,7 +112,7 @@ msgstr "호주"
 msgid "BlahDNS"
 msgstr "BlahDNS"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:154
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:161
 msgid ""
 "Blocks access to Mozilla Encrypted resolvers, forcing local devices to use "
 "router for DNS resolution (%smore information%s)."
@@ -91,7 +120,7 @@ msgstr ""
 "Mozilla 암호화된 리졸버에 대한 접근을 차단하여, 로컬 기기가 라우터의 DNS 설정"
 "을 강제로 사용하도록 합니다. (%s자세히 알아보기%s)"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:138
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:144
 msgid ""
 "Blocks access to iCloud Private Relay resolvers, forcing local devices to "
 "use router for DNS resolution (%smore information%s)."
@@ -99,9 +128,14 @@ msgstr ""
 "iCloud 비공개 릴레이 리졸버에 대한 접근을 차단하여, 로컬 기기가 라우터의 DNS "
 "설정을 강제로 사용하도록 합니다. (%s자세히 알아보기%s)"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:335
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:514
 msgid "Bootstrap DNS"
 msgstr "초기 기동(Bootstrap) DNS"
+
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:289
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:606
+msgid "CA Certs File"
+msgstr "CA 인증서 파일"
 
 #: applications/luci-app-https-dns-proxy/root/usr/share/https-dns-proxy/providers/net.cfiec.dns.json:2
 msgid "CFIEC Public IPv6 Only DNS (CN)"
@@ -111,11 +145,11 @@ msgstr "CFIEC 퍼블릭 IPv6 전용 DNS (CN)"
 msgid "CIRA Canadian Shield"
 msgstr "CIRA Canadian Shield"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:152
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:159
 msgid "Canary Domains Mozilla"
 msgstr "Mozilla 카나리아 도메인"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:136
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:142
 msgid "Canary Domains iCloud"
 msgstr "iCloud 카나리아 도메인"
 
@@ -134,6 +168,11 @@ msgstr "Cloudflare 캐시 사용"
 #: applications/luci-app-https-dns-proxy/root/usr/share/https-dns-proxy/providers/one.comss.dns.json:2
 msgid "Comss DNS (RU)"
 msgstr "Comss DNS (RU)"
+
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:293
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:611
+msgid "Connection Loss Time"
+msgstr "연결 손실 시간"
 
 #: applications/luci-app-https-dns-proxy/root/usr/share/https-dns-proxy/providers/com.controld.freedns.json:2
 msgid "ControlD"
@@ -159,7 +198,7 @@ msgstr "DNSPod Public DNS (CN)"
 msgid "DNSlify DNS"
 msgstr "DNSlify DNS"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:399
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:577
 msgid "DSCP Codepoint"
 msgstr "DSCP 우선순위(Codepoint)"
 
@@ -179,15 +218,15 @@ msgstr "Digitale Gesellschaft (CH)"
 msgid "Direct"
 msgstr "직접 연결"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:408
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:407
 msgid "Disable"
 msgstr "비활성화"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:402
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:401
 msgid "Disabling %s service"
 msgstr "%s 서비스를 비활성화하는 중"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:73
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:76
 msgid "Do not update configs"
 msgstr "설정 업데이트 안 함"
 
@@ -199,11 +238,11 @@ msgstr "DoH 360 DNS (CN)"
 msgid "DoH DNS (SB)"
 msgstr "DoH DNS (SB)"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:389
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:388
 msgid "Enable"
 msgstr "활성화"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:383
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:382
 msgid "Enabling %s service"
 msgstr "%s 서비스를 활성화하는 중"
 
@@ -237,29 +276,36 @@ msgstr "핀란드"
 msgid "Force DNS Ports"
 msgstr "강제 DNS 포트"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:197
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:196
 msgid "Force DNS ports:"
 msgstr "강제 DNS 포트:"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:121
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:126
 msgid "Force Router DNS"
 msgstr "라우터 DNS 강제"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:130
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:145
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:164
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:135
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:151
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:171
 msgid "Force Router DNS server to all local devices"
 msgstr "모든 로컬 기기에 라우터 DNS 서버 강제 적용"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:432
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:221
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:646
 msgid "Force use of HTTP/1"
-msgstr "HTTP/1 사용 강제"
+msgstr "HTTP/1 강제 사용"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:444
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:233
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:654
+msgid "Force use of HTTP/3 (QUIC)"
+msgstr "HTTP/3 (QUIC) 강제 사용"
+
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:246
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:663
 msgid "Force use of IPv6 DNS resolvers"
 msgstr "IPv6 DNS 리졸버 강제 사용"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:123
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:128
 msgid ""
 "Forces Router DNS use on local devices, also known as DNS Hijacking. Only "
 "works on `lan` interface by default (%smore information%s)."
@@ -270,6 +316,10 @@ msgstr ""
 #: applications/luci-app-https-dns-proxy/root/usr/share/https-dns-proxy/providers/com.blahdns.doh.json:18
 msgid "Germany"
 msgstr "독일"
+
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:52
+msgid "Global Instance Options"
+msgstr "전역 인스턴스 설정"
 
 #: applications/luci-app-https-dns-proxy/root/usr/share/https-dns-proxy/providers/google.dns.json:2
 msgid "Google"
@@ -287,17 +337,29 @@ msgstr "HTTPS DNS 프록시"
 msgid "HTTPS DNS Proxy - Configuration"
 msgstr "HTTPS DNS 프록시 - 설정"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:191
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:341
 msgid "HTTPS DNS Proxy - Instances"
 msgstr "HTTPS DNS 프록시 - 인스턴스"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:187
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:186
 msgid "HTTPS DNS Proxy - Status"
 msgstr "HTTPS DNS 프록시 - 상태"
 
 #: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/status/include/71_https-dns-proxy.js:11
 msgid "HTTPS DNS Proxy Instances"
 msgstr "HTTPS DNS 프록시 인스턴스"
+
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:179
+msgid "Heartbeat Domain"
+msgstr "하트비트 도메인"
+
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:194
+msgid "Heartbeat Sleep Timeout"
+msgstr "하트비트 대기 시간"
+
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:205
+msgid "Heartbeat Wait Timeout"
+msgstr "하트비트 응답 제한 시간"
 
 #: applications/luci-app-https-dns-proxy/root/usr/share/https-dns-proxy/providers/net.he.ordns.json:2
 msgid "Hurricane Electric"
@@ -311,7 +373,7 @@ msgstr "IDNet (UK)"
 msgid "IIJ Public DNS (JP)"
 msgstr "IIJ 퍼블릭 DNS (JP)"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:63
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:66
 msgid ""
 "If update option is selected, the %s'DNS Forwards' section of DHCP and DNS%s "
 "will be automatically updated to use selected DoH providers (%smore "
@@ -336,15 +398,15 @@ msgstr "일본"
 msgid "Lelux DNS (FI)"
 msgstr "Lelux DNS (FI)"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:163
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:170
 msgid "Let local devices use Mozilla Private Relay"
 msgstr "로컬 기기의 Mozilla 비공개 릴레이 사용 허용"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:144
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:150
 msgid "Let local devices use iCloud Private Relay"
 msgstr "로컬 기기의 iCloud 비공개 릴레이 사용 허용"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:129
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:134
 msgid "Let local devices use their own DNS servers if set"
 msgstr "로컬 기기에서 자체 DNS 서버 설정 시 우선 사용"
 
@@ -352,12 +414,13 @@ msgstr "로컬 기기에서 자체 DNS 서버 설정 시 우선 사용"
 msgid "LibreDNS (GR)"
 msgstr "LibreDNS (GR)"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:377
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:258
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:539
 #: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/status/include/71_https-dns-proxy.js:56
 msgid "Listen Address"
 msgstr "수신 대기 주소"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:383
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:550
 #: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/status/include/71_https-dns-proxy.js:57
 msgid "Listen Port"
 msgstr "수신 대기 포트"
@@ -367,17 +430,29 @@ msgstr "수신 대기 포트"
 msgid "Location"
 msgstr "위치"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:411
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:298
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:617
+msgid "Log Limit"
+msgstr "로그 제한"
+
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:276
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:592
 msgid "Logging File Path"
 msgstr "로그 파일 경로"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:405
-msgid "Logging Verbosity"
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:249
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:582
+msgid "Logging Verbosity Level"
 msgstr "로그 기록 상세 수준"
 
 #: applications/luci-app-https-dns-proxy/root/usr/share/https-dns-proxy/providers/com.controld.freedns.json:22
 msgid "Malware Filter"
 msgstr "맬웨어 필터"
+
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:303
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:623
+msgid "Max Idle Time"
+msgstr "최대 유휴 시간"
 
 #: applications/luci-app-https-dns-proxy/root/usr/share/https-dns-proxy/providers/net.mullvad.dns.json:2
 msgid "Mullvad"
@@ -403,7 +478,7 @@ msgstr "NextDNS.io"
 msgid "Norway"
 msgstr "노르웨이"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:213
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:212
 msgid "Not installed or not found"
 msgstr "설치되지 않았거나 찾을 수 없음"
 
@@ -423,17 +498,17 @@ msgstr "OpenDNS"
 msgid "OpenNameServer"
 msgstr "OpenNameServer"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:267
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:299
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:469
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:485
 msgid "Parameter"
 msgstr "매개변수"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:295
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:294
 msgid "Please %sdonate%s to support development of this project."
 msgstr "이 프로젝트의 지속적인 개발을 위해 %s후원%s해 주세요."
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:172
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:181
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:322
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:331
 msgid ""
 "Please note that %s is not supported on this system (%smore information%s)."
 msgstr "참고: 이 시스템에서는 %s를 지원하지 않습니다. (%s자세히 알아보기%s)"
@@ -442,7 +517,8 @@ msgstr "참고: 이 시스템에서는 %s를 지원하지 않습니다. (%s자�
 msgid "Poland"
 msgstr "폴란드"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:416
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:281
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:596
 msgid "Polling Interval"
 msgstr "조회(Polling) 간격"
 
@@ -470,11 +546,12 @@ msgstr "보호 (자녀 보호)"
 msgid "Protective with child protection & ad-blocking"
 msgstr "보호 (자녀 보호 및 광고 차단)"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:233
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:383
 msgid "Provider"
 msgstr "제공자"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:422
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:286
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:602
 msgid "Proxy Server"
 msgstr "프록시 서버"
 
@@ -486,11 +563,11 @@ msgstr "Quad 101 (TW)"
 msgid "Quad 9"
 msgstr "Quad 9"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:351
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:350
 msgid "Restart"
 msgstr "재시작"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:345
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:344
 msgid "Restarting %s service"
 msgstr "%s 서비스를 재시작하는 중"
 
@@ -506,11 +583,13 @@ msgstr "Rethink DNS"
 msgid "RubyFish (CN)"
 msgstr "RubyFish (CN)"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:394
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:267
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:572
 msgid "Run As Group"
 msgstr "실행 그룹"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:389
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:263
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:567
 msgid "Run As User"
 msgstr "실행 사용자"
 
@@ -531,23 +610,27 @@ msgstr "보안 및 ECS 지원"
 msgid "Security Filter"
 msgstr "보안 필터"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:229
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:228
 msgid "See the %sREADME%s for details."
 msgstr "자세한 내용은 %sREADME%s를 참조하세요."
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:99
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:103
 msgid "Select the DNSMASQ Configs to update"
 msgstr "업데이트할 DNSMASQ 설정 선택"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:434
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:433
 msgid "Service Control"
 msgstr "서비스 제어"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:227
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:226
 msgid "Service Instances"
 msgstr "서비스 인스턴스"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:191
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:51
+msgid "Service Options"
+msgstr "서비스 옵션"
+
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:190
 msgid "Service Status"
 msgstr "서비스 상태"
 
@@ -558,6 +641,14 @@ msgstr "싱가포르"
 #: applications/luci-app-https-dns-proxy/root/usr/share/https-dns-proxy/providers/org.snopyta.dns.doh.fi.json:2
 msgid "Snopyta DNS (FI)"
 msgstr "Snopyta DNS (FI)"
+
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:559
+msgid "Source (Bind To) Address"
+msgstr "출발지 (지정) 주소"
+
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:271
+msgid "Source Address"
+msgstr "출발지 주소"
 
 #: applications/luci-app-https-dns-proxy/root/usr/share/https-dns-proxy/providers/net.ahadns.doh.json:22
 msgid "Spain"
@@ -573,19 +664,24 @@ msgstr "스페인"
 msgid "Standard"
 msgstr "표준"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:332
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:331
 msgid "Start"
 msgstr "시작"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:326
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:325
 msgid "Starting %s service"
 msgstr "%s 서비스를 시작하는 중"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:370
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:308
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:629
+msgid "Statistic Interval"
+msgstr "통계 수집 주기"
+
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:369
 msgid "Stop"
 msgstr "중지"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:364
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:363
 msgid "Stopping %s service"
 msgstr "%s 서비스를 중지하는 중"
 
@@ -597,6 +693,15 @@ msgstr "Switch DNS (CH)"
 msgid "Switzerland"
 msgstr "스위스"
 
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:313
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:635
+msgid "TCP Client Limit"
+msgstr "TCP 클라이언트 제한"
+
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:181
+msgid "The domain used for connectivity checks (%smore information%s)."
+msgstr "연결성 확인에 사용되는 도메인입니다. (%s자세히 알아보기%s)"
+
 #: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/status/include/71_https-dns-proxy.js:105
 msgid "There are no active instances."
 msgstr "활성 인스턴스가 없습니다."
@@ -604,6 +709,14 @@ msgstr "활성 인스턴스가 없습니다."
 #: applications/luci-app-https-dns-proxy/root/usr/share/https-dns-proxy/providers/app.tiarap.doh.json:2
 msgid "Tiarap Public DNS (JP)"
 msgstr "Tiarap 퍼블릭 DNS (JP)"
+
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:195
+msgid "Time to wait before checking connectivity (seconds)."
+msgstr "연결성 확인을 시작하기 전 대기하는 시간(초)입니다."
+
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:206
+msgid "Time to wait for connectivity check response (seconds)."
+msgstr "연결성 확인 응답을 기다리는 최대 시간(초)입니다."
 
 #: applications/luci-app-https-dns-proxy/root/usr/share/https-dns-proxy/providers/net.ahadns.doh.json:18
 msgid "US/Chicago"
@@ -622,7 +735,7 @@ msgstr "미국 뉴욕"
 msgid "Unfiltered"
 msgstr "필터링 없음"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:229
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:379
 msgid "Unknown"
 msgstr "알 수 없음"
 
@@ -630,31 +743,42 @@ msgstr "알 수 없음"
 msgid "Unsecured"
 msgstr "비보안"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:61
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:64
 msgid "Update DNSMASQ Config on Start/Stop"
 msgstr "시작/중지 시 DNSMASQ 설정 업데이트"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:71
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:74
 msgid "Update all configs"
 msgstr "모든 설정 업데이트"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:72
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:75
 msgid "Update select configs"
 msgstr "선택 설정만 업데이트"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:427
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:216
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:641
 msgid "Use HTTP/1"
 msgstr "HTTP/1 사용"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:438
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:228
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:649
+msgid "Use HTTP/3 (QUIC)"
+msgstr "HTTP/3 (QUIC) 사용"
+
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:241
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:658
 msgid "Use IPv6 resolvers"
 msgstr "IPv6 리졸버 사용"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:443
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:245
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:662
 msgid "Use any family DNS resolvers"
 msgstr "모든 주소 체계의 DNS 리졸버 사용"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:431
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:220
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:232
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:645
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:653
 msgid "Use negotiated HTTP version"
 msgstr "협상된 HTTP 버전 사용"
 
@@ -676,21 +800,26 @@ msgstr "사용자 이름"
 msgid "Variant"
 msgstr "유형"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:195
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:194
 msgid "Version %s - Running."
 msgstr "버전 %s - 실행 중."
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:207
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:206
 msgid "Version %s - Stopped (Disabled)."
 msgstr "버전 %s - 중지됨. (비활성)"
 
-#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:205
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/https-dns-proxy/status.js:204
 msgid "Version %s - Stopped."
 msgstr "버전 %s - 중지됨."
 
 #: applications/luci-app-https-dns-proxy/root/usr/share/https-dns-proxy/providers/org.wikimedia-dns.json:2
 msgid "Wikimedia"
 msgstr "Wikimedia"
+
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:547
+#: applications/luci-app-https-dns-proxy/htdocs/luci-static/resources/view/https-dns-proxy/overview.js:556
+msgid "auto"
+msgstr "자동"
 
 #: applications/luci-app-https-dns-proxy/root/usr/share/https-dns-proxy/providers/org.opennameserver.json:14
 msgid "ns1: Germany - Baden-Baden"
