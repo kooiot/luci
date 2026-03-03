@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2025-09-08 07:50+0000\n"
-"Last-Translator: Максим Горпиніч <gorpinicmaksim0@gmail.com>\n"
+"PO-Revision-Date: 2026-02-23 17:10+0000\n"
+"Last-Translator: Oleksii Nazarenko <energy.aleks@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationssnmpd/uk/>\n"
 "Language: uk\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.14-dev\n"
+"X-Generator: Weblate 5.16.1-dev\n"
 
 #: applications/luci-app-snmpd/htdocs/luci-static/resources/view/snmpd/snmpd.js:260
 msgid "A group maps com2sec names to access names"
@@ -108,7 +108,7 @@ msgstr "Контекст"
 msgid "DES"
 msgstr "DES"
 
-#: applications/luci-app-snmpd/htdocs/luci-static/resources/view/snmpd/download.js:73
+#: applications/luci-app-snmpd/htdocs/luci-static/resources/view/snmpd/download.js:72
 #: applications/luci-app-snmpd/root/usr/share/luci/menu.d/luci-app-snmpd.json:28
 msgid "Download"
 msgstr "Завантажити"
@@ -212,7 +212,7 @@ msgstr "Розташування"
 
 #: applications/luci-app-snmpd/htdocs/luci-static/resources/view/snmpd/snmpd.js:656
 msgid "Logging"
-msgstr "Лісозаготівля"
+msgstr "Логування"
 
 #: applications/luci-app-snmpd/htdocs/luci-static/resources/view/snmpd/snmpd.js:461
 msgid "MD5"
@@ -340,7 +340,8 @@ msgstr "Версія SNMP"
 
 #: applications/luci-app-snmpd/htdocs/luci-static/resources/view/snmpd/snmpd.js:140
 msgid "SNMP version used to monitor and control the device"
-msgstr "Версія SNMP, що використовується для моніторингу та керування пристроєм"
+msgstr ""
+"Версія SNMP, що використовується для моніторингу та керування пристроєм"
 
 #: applications/luci-app-snmpd/root/usr/share/luci/menu.d/luci-app-snmpd.json:3
 msgid "SNMPD"
@@ -467,8 +468,8 @@ msgstr "Пастки"
 #: applications/luci-app-snmpd/htdocs/luci-static/resources/view/snmpd/snmpd.js:389
 msgid "Trusted source for SNMP read community access (hostname or IP)"
 msgstr ""
-"Довірене джерело для доступу спільноти до читання SNMP (ім'я хоста або "
-"IP-адреса)"
+"Довірене джерело для доступу спільноти до читання SNMP (ім'я хоста або IP-"
+"адреса)"
 
 #: applications/luci-app-snmpd/htdocs/luci-static/resources/view/snmpd/snmpd.js:549
 msgid "Type"

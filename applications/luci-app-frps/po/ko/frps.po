@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-01-11 05:02+0000\n"
+"PO-Revision-Date: 2026-02-15 08:21+0000\n"
 "Last-Translator: Hyeonjeong Lee <h9101654@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsfrps/ko/>\n"
@@ -8,11 +8,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 5.16-dev\n"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:15
 msgid "Additional configs"
-msgstr ""
+msgstr "추가 설정"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:47
 msgid "Additional settings"
@@ -46,7 +46,7 @@ msgstr ""
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:20
 msgid "Bind port"
-msgstr ""
+msgstr "바인드 포트"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:19
 msgid ""
@@ -81,11 +81,11 @@ msgid ""
 "value is 0."
 msgstr ""
 
-#: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:147
+#: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:145
 msgid "Collecting data ..."
 msgstr "데이터 수집 중 ..."
 
-#: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:155
+#: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:153
 msgid "Common settings"
 msgstr ""
 
@@ -260,14 +260,12 @@ msgid ""
 "this value is 0."
 msgstr ""
 
-#: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:122
+#: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:120
 msgid "NOT RUNNING"
 msgstr "중지됨"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:14
-msgid ""
-"OS environments pass to frp for config file template, see <a href=\"https://"
-"github.com/fatedier/frp#configuration-file-template\">frp README</a>"
+msgid "OS environments pass to frp for config file template, see %s"
 msgstr ""
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:24
@@ -284,7 +282,7 @@ msgstr ""
 msgid "QUIC bind port"
 msgstr ""
 
-#: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:120
+#: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:118
 msgid "RUNNING"
 msgstr "실행 중"
 
@@ -300,10 +298,10 @@ msgstr ""
 msgid "Run daemon as user"
 msgstr ""
 
-#: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:156
-#: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:160
+#: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:154
+#: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:158
 msgid "Startup settings"
-msgstr ""
+msgstr "시작 설정"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:41
 msgid ""
@@ -336,7 +334,7 @@ msgstr ""
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:40
 msgid "Token"
-msgstr ""
+msgstr "토큰"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:40
 msgid ""
@@ -381,9 +379,9 @@ msgid ""
 "<br />By default, this value is 0."
 msgstr ""
 
+#: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:118
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:120
-#: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:122
-#: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:132
+#: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:130
 #: applications/luci-app-frps/root/usr/share/luci/menu.d/luci-app-frps.json:3
 msgid "frp Server"
 msgstr ""

@@ -1,16 +1,28 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-10-30 16:57+0000\n"
+"PO-Revision-Date: 2026-01-25 06:24+0000\n"
 "Last-Translator: Максим Горпиніч <gorpinicmaksim0@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsacme/uk/>\n"
 "Language: uk\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural="
-"(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? "
-"1 : 2);\n"
-"X-Generator: Weblate 5.14.1-dev\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 5.16-dev\n"
+
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:227
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:235
+msgid "%s for the details of this process."
+msgstr ""
+
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:218
+msgid "%s for the format of credentials required by each API."
+msgstr ""
+
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:165
+msgid "%s for the list of available APIs."
+msgstr ""
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/logread.js:4
 msgid "ACME Log"
@@ -25,7 +37,7 @@ msgstr "Сертифікати ACME"
 msgid "ACME global config"
 msgstr "Глобальні налаштування ACME"
 
-#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:277
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:281
 msgid "ACME server URL"
 msgstr "URL-адреса сервера ACME"
 
@@ -33,15 +45,21 @@ msgstr "URL-адреса сервера ACME"
 msgid "Account email"
 msgstr "Електронна адреса пошти облікового запису"
 
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:220
+msgid ""
+"Add multiple entries here in KEY=VAL shell variable format to supply "
+"multiple credential variables."
+msgstr ""
+
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:84
 msgid "Advanced Settings"
 msgstr "Розширені налаштування"
 
-#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:190
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:191
 msgid "Alternative DNS API options"
 msgstr "Альтернативні варіанти DNS API"
 
-#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:419
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:427
 msgid "Cancel"
 msgstr "Скасувати"
 
@@ -49,19 +67,23 @@ msgstr "Скасувати"
 msgid "Cert files are stored in"
 msgstr "Сертифікати зберігаються у каталог"
 
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:306
+msgid "Certificate Profile"
+msgstr "Профіль сертифіката"
+
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:76
 msgid "Certificate config"
 msgstr "Параметри сертифіката"
 
-#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:537
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:545
 msgid "Certificates"
 msgstr "Сертифікати"
 
-#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:223
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:225
 msgid "Challenge Alias"
 msgstr "Псевдоніми виклику"
 
-#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:412
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:420
 msgid "Check the configurations of the added domain certificates"
 msgstr "Перевірте конфігурації доданих сертифікатів домену"
 
@@ -69,7 +91,7 @@ msgstr "Перевірте конфігурації доданих сертиф�
 msgid "Configure"
 msgstr "Конфігурації"
 
-#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:278
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:282
 msgid "Custom ACME server directory URL."
 msgstr "URL-адреса каталогу користувацького сервера ACME."
 
@@ -77,7 +99,7 @@ msgstr "URL-адреса каталогу користувацького сер�
 msgid "DNS API"
 msgstr "DNS API"
 
-#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:215
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:216
 msgid "DNS API credentials"
 msgstr "Облікові дані DNS API"
 
@@ -86,19 +108,23 @@ msgstr "Облікові дані DNS API"
 msgid "DNS Challenge Validation"
 msgstr "DNS Перевірка викликів"
 
-#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:296
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:168
+msgid "DNS mode is also the only mode that supports wildcard certificates."
+msgstr ""
+
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:300
 msgid "Days until renewal"
 msgstr "Днів до поновлення"
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:118
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:120
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:157
-#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:280
-#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:440
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:284
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:448
 msgid "Default"
 msgstr "За замовчуванням"
 
-#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:230
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:233
 msgid "Domain Alias"
 msgstr "Псевдонім домену"
 
@@ -116,11 +142,11 @@ msgstr ""
 "наступні імена будуть альтернативними. Запримітьте, що всі доменні імена "
 "повинні вказувати на маршрутизатор у глобальному DNS."
 
-#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:251
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:255
 msgid "ECC 256 bits"
 msgstr "ECC 256 біт"
 
-#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:252
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:256
 msgid "ECC 384 bits"
 msgstr "ECC 384 біт"
 
@@ -145,7 +171,7 @@ msgstr "Знайдено домени DDNS"
 msgid "General Settings"
 msgstr "Загальні налаштування"
 
-#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:288
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:292
 msgid ""
 "Get certificate from the Letsencrypt staging server (use for testing; the "
 "certificate won't be valid)."
@@ -169,6 +195,10 @@ msgstr ""
 msgid "Import"
 msgstr "Імпорт"
 
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:167
+msgid "In DNS mode, the domain name does not have to resolve to the router IP."
+msgstr ""
+
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:107
 msgid "Install package %s"
 msgstr "Встановити пакет %s"
@@ -177,7 +207,7 @@ msgstr "Встановити пакет %s"
 msgid "Invalid domain. Allowed lowercase a-z, numbers and hyphen -"
 msgstr "Недійсний домен. Дозволені малі літери a-z, цифри та дефіс -"
 
-#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:519
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:527
 msgid "Issued on"
 msgstr "Видано на"
 
@@ -189,13 +219,21 @@ msgstr ""
 "Можливо, знадобиться змінити це, якщо ваш веб-сервер знаходиться за "
 "зворотним проксі-сервером і використовує інший порт."
 
-#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:246
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:250
 msgid "Key size (and type) for the generated certificate."
 msgstr "Розмір (і тип) ключа для згенерованого сертифіката."
 
-#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:245
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:249
 msgid "Key type"
 msgstr "Тип ключа"
+
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:229
+msgid "LUCI only supports one challenge alias per certificate."
+msgstr ""
+
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:237
+msgid "LUCI only supports one challenge domain per certificate."
+msgstr ""
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:115
 msgid "Listen port"
@@ -205,9 +243,21 @@ msgstr "Порт прослуховування"
 msgid "Log View"
 msgstr "Перегляд журналу"
 
-#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:516
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:524
 msgid "Main Domain"
 msgstr "Основний домен"
+
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:44
+msgid ""
+"Note that the domain names in the certificate must already be configured to "
+"point at the router's public IP address."
+msgstr ""
+
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:46
+msgid ""
+"Once configured, issuing certificates can take a while. Check the logs for "
+"progress and any errors."
+msgstr ""
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:106
 msgid "Package is not installed"
@@ -221,42 +271,46 @@ msgstr ""
 "Порт, через який слід прослуховувати запити ACME. Порт буде тимчасово "
 "відкритий під час перевірки."
 
-#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:517
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:525
 msgid "Private Key"
-msgstr "Приватний ключ"
+msgstr "Закритий ключ"
 
-#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:518
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:526
 msgid "Public Certificate"
 msgstr "Публічний сертифікат"
 
-#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:248
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:252
 msgid "RSA 2048 bits"
 msgstr "RSA 2048 біт"
 
-#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:249
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:253
 msgid "RSA 3072 bits"
 msgstr "RSA 3072 біт"
 
-#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:250
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:254
 msgid "RSA 4096 bits"
 msgstr "RSA 4096 біт"
 
-#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:432
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:440
 msgid "Save"
 msgstr "Зберегти"
 
-#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:238
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:242
 msgid "Seconds to wait for a DNS record to be updated before continue."
 msgstr "Секунди очікування оновлення запису DNS перед продовженням."
 
-#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:183
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:184
 msgid "See instructions"
 msgstr "Дивіться інструкції"
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:49
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:94
-#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:239
-#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:279
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:166
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:219
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:228
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:236
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:243
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:283
 msgid "See more"
 msgstr "Дивитися більше"
 
@@ -277,29 +331,15 @@ msgstr ""
 "для видачі сертифіката. Режим DNS дозволить вам використовувати API DNS "
 "вашого постачальника DNS для видачі сертифіката."
 
-#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:224
-msgid ""
-"The challenge alias to use for ALL domains. See https://github.com/acmesh-"
-"official/acme.sh/wiki/DNS-alias-mode for the details of this process. LUCI "
-"only supports one challenge alias per certificate."
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:226
+msgid "The challenge alias to use for ALL domains."
 msgstr ""
-"Псевдонім виклику для ВСІХ доменів. Дивіться https://github.com/acmesh-"
-"official/acme.sh/wiki/DNS-alias-mode, щоб дізнатися більше про цей процес. "
-"LUCI підтримує лише один псевдонім виклику на сертифікат."
 
-#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:216
-msgid ""
-"The credentials for the DNS API mode selected above. See https://github.com/"
-"acmesh-official/acme.sh/wiki/dnsapi for the format of credentials required "
-"by each API. Add multiple entries here in KEY=VAL shell variable format to "
-"supply multiple credential variables."
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:217
+msgid "The credentials for the DNS API mode selected above."
 msgstr ""
-"Облікові дані для режиму DNS API, вибраного вище. Див. https://github.com/"
-"acmesh-official/acme.sh/wiki/dnsapi для формату облікових даних, необхідних "
-"для кожного API. Додайте тут кілька записів у форматі змінної оболонки "
-"KEY=VAL, щоб надати декілька змінних облікових даних."
 
-#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:399
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:407
 msgid ""
 "The domain %s in DDNS %s is already configured in %s. Please check it after "
 "the importing."
@@ -307,32 +347,16 @@ msgstr ""
 "Домен %s у DDNS %s вже налаштовано в %s. Будь ласка, перевірте це після "
 "імпорту."
 
-#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:231
-msgid ""
-"The domain alias to use for ALL domains. See https://github.com/acmesh-"
-"official/acme.sh/wiki/DNS-alias-mode for the details of this process. LUCI "
-"only supports one challenge domain per certificate."
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:234
+msgid "The domain alias to use for ALL domains."
 msgstr ""
-"Псевдонім домену для ВСІХ доменів. Дивіться https://github.com/acmesh-"
-"official/acme.sh/wiki/DNS-alias-mode, щоб дізнатися більше про цей процес. "
-"LUCI підтримує лише один псевдонім виклику на сертифікат."
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:41
 msgid ""
 "This configures ACME (Letsencrypt) automatic certificate installation. "
 "Simply fill out this to have the router configured with Letsencrypt-issued "
-"certificates for the web interface. Note that the domain names in the "
-"certificate must already be configured to point at the router's public IP "
-"address. Once configured, issuing certificates can take a while. Check the "
-"logs for progress and any errors."
+"certificates for the web interface."
 msgstr ""
-"Це налаштовує автоматичне встановлення сертифіката ACME (Letsencrypt). "
-"Просто заповніть цю форму, щоб налаштувати маршрутизатор із сертифікатами, "
-"виданими Letsencrypt, для вебінтерфейсу. Зауважте, що доменні імена в "
-"сертифікаті вже мають бути налаштовані так, щоб вони вказували на публічну "
-"IP-адресу маршрутизатора. Після налаштування видача сертифікатів може "
-"зайняти деякий час. Перевірте журнали на наявність прогресу та будь-яких "
-"помилок."
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:119
 msgid "To temporary open port you can specify your web server port e.g. 80."
@@ -343,26 +367,20 @@ msgstr ""
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:164
 msgid ""
 "To use DNS mode to issue certificates, set this to the name of a DNS API "
-"supported by acme.sh. See https://github.com/acmesh-official/acme.sh/wiki/"
-"dnsapi for the list of available APIs. In DNS mode, the domain name does not "
-"have to resolve to the router IP. DNS mode is also the only mode that "
-"supports wildcard certificates. Using this mode requires the acme-dnsapi "
-"package to be installed."
+"supported by acme.sh."
 msgstr ""
-"Щоб використовувати режим DNS для видачі сертифікатів, встановіть ім’я DNS "
-"API, який підтримує acme.sh. Перегляньте https://github.com/acmesh-official/"
-"acme.sh/wiki/dnsapi для отримання списку доступних API. У режимі DNS доменне "
-"ім’я не повинно дозволятися в IP-адресу маршрутизатора. Режим DNS також є "
-"єдиним режимом, який підтримує підстановочні сертифікати. Для використання "
-"цього режиму потрібно встановити пакет acme-dnsapi."
 
-#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:278
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:282
 msgid "Use a custom CA instead of Let's Encrypt."
 msgstr "Використовувати інший ЦС замість Let's Encrypt."
 
-#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:286
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:290
 msgid "Use staging server"
 msgstr "Використовувати проміжний сервер"
+
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:169
+msgid "Using this mode requires the acme-dnsapi package to be installed."
+msgstr ""
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:93
 msgid "Validate via TLS port 443."
@@ -378,7 +396,7 @@ msgstr "Метод перевірки"
 msgid "Validation via TLS ALPN"
 msgstr "Перевірка через TLS ALPN"
 
-#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:237
+#: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:241
 msgid "Wait for DNS update"
 msgstr "Зачекайте оновлення DNS"
 
@@ -405,6 +423,66 @@ msgstr ""
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme/acme.js:147
 msgid "wildcards * require Validation method: DNS"
 msgstr "шаблони * обов'язкові. Метод перевірки: DNS"
+
+#~ msgid ""
+#~ "The challenge alias to use for ALL domains. See https://github.com/acmesh-"
+#~ "official/acme.sh/wiki/DNS-alias-mode for the details of this process. "
+#~ "LUCI only supports one challenge alias per certificate."
+#~ msgstr ""
+#~ "Псевдонім виклику для ВСІХ доменів. Дивіться https://github.com/acmesh-"
+#~ "official/acme.sh/wiki/DNS-alias-mode, щоб дізнатися більше про цей "
+#~ "процес. LUCI підтримує лише один псевдонім виклику на сертифікат."
+
+#~ msgid ""
+#~ "The credentials for the DNS API mode selected above. See https://"
+#~ "github.com/acmesh-official/acme.sh/wiki/dnsapi for the format of "
+#~ "credentials required by each API. Add multiple entries here in KEY=VAL "
+#~ "shell variable format to supply multiple credential variables."
+#~ msgstr ""
+#~ "Облікові дані для режиму DNS API, вибраного вище. Див. https://github.com/"
+#~ "acmesh-official/acme.sh/wiki/dnsapi для формату облікових даних, "
+#~ "необхідних для кожного API. Додайте тут кілька записів у форматі змінної "
+#~ "оболонки KEY=VAL, щоб надати декілька змінних облікових даних."
+
+#~ msgid ""
+#~ "The domain alias to use for ALL domains. See https://github.com/acmesh-"
+#~ "official/acme.sh/wiki/DNS-alias-mode for the details of this process. "
+#~ "LUCI only supports one challenge domain per certificate."
+#~ msgstr ""
+#~ "Псевдонім домену для ВСІХ доменів. Дивіться https://github.com/acmesh-"
+#~ "official/acme.sh/wiki/DNS-alias-mode, щоб дізнатися більше про цей "
+#~ "процес. LUCI підтримує лише один псевдонім виклику на сертифікат."
+
+#~ msgid ""
+#~ "This configures ACME (Letsencrypt) automatic certificate installation. "
+#~ "Simply fill out this to have the router configured with Letsencrypt-"
+#~ "issued certificates for the web interface. Note that the domain names in "
+#~ "the certificate must already be configured to point at the router's "
+#~ "public IP address. Once configured, issuing certificates can take a "
+#~ "while. Check the logs for progress and any errors."
+#~ msgstr ""
+#~ "Це налаштовує автоматичне встановлення сертифіката ACME (Letsencrypt). "
+#~ "Просто заповніть цю форму, щоб налаштувати маршрутизатор із "
+#~ "сертифікатами, виданими Letsencrypt, для вебінтерфейсу. Зауважте, що "
+#~ "доменні імена в сертифікаті вже мають бути налаштовані так, щоб вони "
+#~ "вказували на публічну IP-адресу маршрутизатора. Після налаштування видача "
+#~ "сертифікатів може зайняти деякий час. Перевірте журнали на наявність "
+#~ "прогресу та будь-яких помилок."
+
+#~ msgid ""
+#~ "To use DNS mode to issue certificates, set this to the name of a DNS API "
+#~ "supported by acme.sh. See https://github.com/acmesh-official/acme.sh/wiki/"
+#~ "dnsapi for the list of available APIs. In DNS mode, the domain name does "
+#~ "not have to resolve to the router IP. DNS mode is also the only mode that "
+#~ "supports wildcard certificates. Using this mode requires the acme-dnsapi "
+#~ "package to be installed."
+#~ msgstr ""
+#~ "Щоб використовувати режим DNS для видачі сертифікатів, встановіть ім’я "
+#~ "DNS API, який підтримує acme.sh. Перегляньте https://github.com/acmesh-"
+#~ "official/acme.sh/wiki/dnsapi для отримання списку доступних API. У режимі "
+#~ "DNS доменне ім’я не повинно дозволятися в IP-адресу маршрутизатора. Режим "
+#~ "DNS також є єдиним режимом, який підтримує підстановочні сертифікати. Для "
+#~ "використання цього режиму потрібно встановити пакет acme-dnsapi."
 
 #~ msgid "Base64 content of private key. Use instead of YC_SA_Key_File_Path"
 #~ msgstr ""

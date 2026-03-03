@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-01-11 05:02+0000\n"
-"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
+"PO-Revision-Date: 2026-02-22 16:17+0000\n"
+"Last-Translator: David Kejzlar <kejly@kejly.cz>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsfrps/de/>\n"
 "Language: de\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 5.16.1-dev\n"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:15
 msgid "Additional configs"
@@ -86,6 +86,9 @@ msgid ""
 "value is 0, the server will not listen for QUIC connections.<br />By "
 "default, this value is 0."
 msgstr ""
+"BindQuicPort gibt den QUIC-Port an, an dem der Server auf Verbindungen "
+"wartet. Ist dieser Wert 0, nimmt der Server keine QUIC-Verbindungen an.<br />"
+"Standardmäßig ist dieser Wert 0."
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:21
 msgid ""
@@ -94,14 +97,14 @@ msgid ""
 "value is 0."
 msgstr ""
 "BindUdpPort gibt den UDP-Port an, an dem der Server auf Verbindungen wartet. "
-"Ist dieser Wert 0, wartet der Server nicht auf UDP-Verbindungen.<br />"
-"Standardmäßig ist dieser Wert 0."
+"Ist dieser Wert 0, wartet der Server nicht auf UDP-Verbindungen.<br /"
+">Standardmäßig ist dieser Wert 0."
 
-#: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:147
+#: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:145
 msgid "Collecting data ..."
 msgstr "Sammeln von Daten ..."
 
-#: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:155
+#: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:153
 msgid "Common settings"
 msgstr "Allgemeine Einstellungen"
 
@@ -144,11 +147,11 @@ msgstr ""
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:32
 msgid "Dashboard TLS mode"
-msgstr ""
+msgstr "Dashboard TLS Modus"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:34
 msgid "Dashboard TLS private key"
-msgstr ""
+msgstr "Dashboard TLS Privatschlüssel"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:28
 msgid "Dashboard address"
@@ -308,18 +311,13 @@ msgstr ""
 "einzelner Client proxyen darf. Wenn dieser Wert 0 ist, wird keine "
 "Beschränkung angewendet.<br />In der Voreinstellung ist dieser Wert 0."
 
-#: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:122
+#: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:120
 msgid "NOT RUNNING"
 msgstr "LÄUFT NICHT"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:14
-msgid ""
-"OS environments pass to frp for config file template, see <a href=\"https://"
-"github.com/fatedier/frp#configuration-file-template\">frp README</a>"
+msgid "OS environments pass to frp for config file template, see %s"
 msgstr ""
-"Betriebssystemumgebungsvariablen welche an frp für das Konfig-Datei-Template "
-"weitergereicht werden, siehe <a href=\"https://github.com/fatedier/"
-"frp#configuration-file-template\">frp README</a>"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:24
 msgid "Proxy bind address"
@@ -337,7 +335,7 @@ msgstr ""
 msgid "QUIC bind port"
 msgstr ""
 
-#: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:120
+#: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:118
 msgid "RUNNING"
 msgstr "LÄUFT"
 
@@ -353,8 +351,8 @@ msgstr "Daemon als Gruppe ausführen"
 msgid "Run daemon as user"
 msgstr "Daemon als Gruppe ausführen"
 
-#: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:156
-#: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:160
+#: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:154
+#: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:158
 msgid "Startup settings"
 msgstr "Start-Einstellungen"
 
@@ -456,12 +454,21 @@ msgstr ""
 "abhört. Wenn dieser Wert 0 ist, lauscht der Server nicht auf HTTP-Anfragen."
 "<br />Standardmäßig ist dieser Wert 0."
 
+#: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:118
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:120
-#: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:122
-#: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:132
+#: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:130
 #: applications/luci-app-frps/root/usr/share/luci/menu.d/luci-app-frps.json:3
 msgid "frp Server"
 msgstr "frp-Server"
+
+#~ msgid ""
+#~ "OS environments pass to frp for config file template, see <a "
+#~ "href=\"https://github.com/fatedier/frp#configuration-file-template\">frp "
+#~ "README</a>"
+#~ msgstr ""
+#~ "Betriebssystemumgebungsvariablen welche an frp für das Konfig-Datei-"
+#~ "Template weitergereicht werden, siehe <a href=\"https://github.com/"
+#~ "fatedier/frp#configuration-file-template\">frp README</a>"
 
 #~ msgid ""
 #~ "BindUdpPort specifies the UDP port that the server listens on. If this "
