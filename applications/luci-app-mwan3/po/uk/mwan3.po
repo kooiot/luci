@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-09-07 21:06+0000\n"
+"PO-Revision-Date: 2026-01-22 09:00+0000\n"
 "Last-Translator: Максим Горпиніч <gorpinicmaksim0@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsmwan3/uk/>\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.14-dev\n"
+"X-Generator: Weblate 5.16-dev\n"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:211
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:227
@@ -150,7 +150,7 @@ msgstr "Вміст збережено."
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/globals.js:27
 msgid "Critical"
-msgstr "Критична ситуація"
+msgstr "Критичний"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/globals.js:32
 msgid "Debug"
@@ -164,7 +164,7 @@ msgstr "Адреса призначення"
 msgid "Destination port"
 msgstr "Порт призначення"
 
-#: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:29
+#: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:31
 msgid "Diagnostics"
 msgstr "Діагностика"
 
@@ -258,13 +258,17 @@ msgid "Flush global firewall conntrack table on interface events"
 msgstr ""
 "Очищати глобальну таблицю відстеження брандмауера щодо подій інтерфейсу"
 
-#: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:56
+#: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:59
 msgid "Globals"
 msgstr "Глобальні"
 
+#: applications/luci-app-mwan3/root/usr/share/rpcd/acl.d/luci-app-mwan3.json:51
+msgid "Grant access for luci-app-mwan3 configuration"
+msgstr "Надати доступ для конфігурації luci-app-mwan3"
+
 #: applications/luci-app-mwan3/root/usr/share/rpcd/acl.d/luci-app-mwan3.json:3
-msgid "Grant UCI access for luci-app-mwan3"
-msgstr "Надайте доступ UCI для luci-app-mwan3"
+msgid "Grant access for luci-app-mwan3 status information"
+msgstr "Надати доступ до інформації про стан luci-app-mwan3"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/diagnostics.js:68
 msgid "Hotplug ifdown"
@@ -311,7 +315,7 @@ msgstr "Початковий стан"
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:65
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:77
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:101
-#: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:64
+#: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:67
 msgid "Interface"
 msgstr "Інтерфейс"
 
@@ -388,7 +392,7 @@ msgstr ""
 "Може бути введено як один або кілька портів (наприклад, \"22\" або "
 "\"80,443\") або як порт (наприклад, \"1024:2048\") без лапок"
 
-#: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:72
+#: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:75
 msgid "Member"
 msgstr "Член"
 
@@ -426,7 +430,7 @@ msgstr "Метрика"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:19
 #: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:3
-#: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:46
+#: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:47
 msgid "MultiWAN Manager"
 msgstr "Менеджер MultiWAN"
 
@@ -537,7 +541,7 @@ msgstr "Примітки:"
 msgid "Notice"
 msgstr "Зауваження"
 
-#: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:96
+#: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:99
 msgid "Notify"
 msgstr "Повідомити"
 
@@ -553,7 +557,7 @@ msgstr "Зовні"
 msgid "Online"
 msgstr "Зсередини"
 
-#: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:13
+#: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:15
 msgid "Overview"
 msgstr "Огляд"
 
@@ -606,7 +610,7 @@ msgstr ""
 "Політики можуть мати різні назви, що й налаштовані інтерфейси, учасники або "
 "правила"
 
-#: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:80
+#: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:83
 msgid "Policy"
 msgstr "Політика"
 
@@ -647,7 +651,7 @@ msgstr "Таблиця маршрутизації %d"
 msgid "Routing table lookup"
 msgstr "Пошук таблиці маршрутизації"
 
-#: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:88
+#: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:91
 msgid "Rule"
 msgstr "Правило"
 
@@ -693,7 +697,7 @@ msgstr "Порт джерела"
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:66
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:83
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:107
-#: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:21
+#: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:23
 msgid "Status"
 msgstr "Стан"
 
@@ -792,7 +796,7 @@ msgstr ""
 "Трафік, який не відповідає жодному правилу, маршрутизується за допомогою "
 "основної таблиці маршрутизації."
 
-#: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:37
+#: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:39
 msgid "Troubleshooting"
 msgstr "Усунення несправностей"
 
@@ -813,7 +817,7 @@ msgstr "Перегляньте вміст /etc/protocols для опису пр�
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/globals.js:29
 msgid "Warning"
-msgstr "'Попередження"
+msgstr "Попередження"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/policy.js:62
 msgid ""

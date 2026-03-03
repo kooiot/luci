@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: luci-app-privoxy\n"
 "POT-Creation-Date: 2015-06-10 20:16+0100\n"
-"PO-Revision-Date: 2025-06-19 08:24+0000\n"
-"Last-Translator: ZW <roc_fe@users.noreply.hosted.weblate.org>\n"
+"PO-Revision-Date: 2026-02-20 00:35+0000\n"
+"Last-Translator: EESF-2 <eesf-2@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Chinese (Traditional Han script) <https://hosted.weblate.org/"
 "projects/openwrt/luciapplicationsprivoxy/zh_Hant/>\n"
 "Language: zh_Hant\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.12.1\n"
+"X-Generator: Weblate 5.16.1-dev\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:90
@@ -22,6 +22,8 @@ msgid ""
 "A directory where Privoxy can create temporary files.<br /><strong>Only when "
 "using 'external filters', Privoxy has to create temporary files.</strong>"
 msgstr ""
+"Privoxy 可以建立暫存檔案的目錄。<br /><strong>僅當使用 '外部過濾器' 時，"
+"Privoxy 才需要建立臨時檔案。</strong>"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:209
 msgid "Accept intercepted requests"
@@ -33,7 +35,7 @@ msgstr "存取控制"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:96
 msgid "Action Files"
-msgstr ""
+msgstr "動作檔案"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:98
 msgid "Actions that are applied to all sites and maybe overruled later on."
@@ -45,7 +47,7 @@ msgstr "管理員電子郵件"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:213
 msgid "Allow CGI request crunching"
-msgstr ""
+msgstr "啟用 CGI 請求處理"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:84
 msgid ""
@@ -57,7 +59,7 @@ msgstr ""
 msgid ""
 "Assumed server-side keep-alive timeout (in seconds) if not specified by the "
 "server."
-msgstr "當服務端沒有指定超時時間時假定的超時時間（單位：秒）。"
+msgstr ""
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:22
 msgid "Boot delay"
@@ -85,7 +87,7 @@ msgstr "壓縮等級"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:77
 msgid "Configuration Directory"
-msgstr ""
+msgstr "配置目錄"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:13
 msgid "Configure the Privoxy proxy daemon settings."
@@ -97,87 +99,87 @@ msgstr "連線共享"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:266
 msgid "Debug"
-msgstr "除錯"
+msgstr "偵錯"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:273
 msgid "Debug 1"
-msgstr "除錯 1"
+msgstr "偵錯 1"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:313
 msgid "Debug 1024"
-msgstr "除錯 1024"
+msgstr "偵錯 1024"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:301
 msgid "Debug 128"
-msgstr "除錯 128"
+msgstr "偵錯 128"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:289
 msgid "Debug 16"
-msgstr "除錯 16"
+msgstr "偵錯 16"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:277
 msgid "Debug 2"
-msgstr "除錯 2"
+msgstr "偵錯 2"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:317
 msgid "Debug 2048"
-msgstr "除錯 2048"
+msgstr "偵錯 2048"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:305
 msgid "Debug 256"
-msgstr "除錯 256"
+msgstr "偵錯 256"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:293
 msgid "Debug 32"
-msgstr "除錯 32"
+msgstr "偵錯 32"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:331
 msgid "Debug 32768"
-msgstr "除錯 32768"
+msgstr "偵錯 32768"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:281
 msgid "Debug 4"
-msgstr "除錯 4"
+msgstr "偵錯 4"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:321
 msgid "Debug 4096"
-msgstr "除錯 4096"
+msgstr "偵錯 4096"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:309
 msgid "Debug 512"
-msgstr "除錯 512"
+msgstr "偵錯 512"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:297
 msgid "Debug 64"
-msgstr "除錯 64"
+msgstr "偵錯 64"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:335
 msgid "Debug 65536"
-msgstr "除錯 65536"
+msgstr "偵錯 65536"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:285
 msgid "Debug 8"
-msgstr "除錯 8"
+msgstr "偵錯 8"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:325
 msgid "Debug 8192"
-msgstr "除錯 8192"
+msgstr "偵錯 8192"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:306
 msgid "Debug GIF de-animation"
-msgstr "除錯 GIF 動畫"
+msgstr "偵錯 GIF 動畫"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:294
 msgid "Debug force feature"
-msgstr "除錯 Force feature"
+msgstr "偵錯強制功能"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:302
 msgid "Debug redirects"
-msgstr "除錯重新導向"
+msgstr "偵錯重新導向"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:298
 msgid "Debug regular expression filters"
-msgstr "除錯正則表示式"
+msgstr "偵錯正規表示式篩選"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:229
 msgid "Default server timeout"
@@ -197,7 +199,7 @@ msgstr "禁用 == 透明代理模式"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:31
 msgid "Documentation"
-msgstr "記錄資訊"
+msgstr "文件"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:43
 msgid "Email address for the Privoxy administrator."
@@ -209,11 +211,11 @@ msgstr ""
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:251
 msgid "Enable compression"
-msgstr ""
+msgstr "啟用壓縮"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:181
 msgid "Enable proxy authentication forwarding"
-msgstr "允許轉送代理認證"
+msgstr "啟用轉送代理認證"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:156
 msgid "Enable remote toggle"
@@ -225,11 +227,11 @@ msgstr ""
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:20
 msgid "Enable/Disable autostart of Privoxy"
-msgstr ""
+msgstr "啟用 / 停用 Privoxy 自啟動"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:150
 msgid "Enable/Disable filtering when Privoxy starts."
-msgstr "Privoxy 啟動時啟用/禁用過濾。"
+msgstr "Privoxy 啟動時啟用 / 禁用篩選。"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:20
 msgid "Enabled"
@@ -239,11 +241,11 @@ msgstr "已啟用"
 msgid ""
 "Enabling this option is NOT recommended if there is no parent proxy that "
 "requires authentication!"
-msgstr "如果沒有需要認證的父級代理時，不推薦開啟這個選項！"
+msgstr "如果沒有需要認證的父級代理時，不建議開啟這個選項！"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:172
 msgid "Enforce page blocking"
-msgstr ""
+msgstr "執行頁面封鎖"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:55
 msgid "Files and Directories"
@@ -251,27 +253,27 @@ msgstr "檔案和目錄"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:104
 msgid "Filter files"
-msgstr ""
+msgstr "篩選檔案"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:185
 msgid "Forward HTTP"
-msgstr ""
+msgstr "轉送 HTTP"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:189
 msgid "Forward SOCKS 4"
-msgstr ""
+msgstr "轉送 SOCKS 4"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:193
 msgid "Forward SOCKS 4A"
-msgstr ""
+msgstr "轉送 SOCKS 4A"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:197
 msgid "Forward SOCKS 5"
-msgstr ""
+msgstr "轉送 SOCKS 5"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:201
 msgid "Forward SOCKS 5t"
-msgstr ""
+msgstr "轉送 SOCKS 5t"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:178
 msgid "Forwarding"
@@ -279,7 +281,7 @@ msgstr "轉送"
 
 #: applications/luci-app-privoxy/root/usr/share/rpcd/acl.d/luci-app-privoxy.json:3
 msgid "Grant UCI access for luci-app-privoxy"
-msgstr "授予luci-app-privoxy存取UCI的權限"
+msgstr "授予 luci-app-privoxy 存取 UCI 的權限"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:247
 msgid "Handle as empty doc returns ok"
@@ -287,7 +289,7 @@ msgstr ""
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:35
 msgid "Hostname"
-msgstr ""
+msgstr "主機名稱"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:173
 msgid ""
@@ -310,11 +312,11 @@ msgstr "不推薦新手使用。"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:221
 msgid "Keep-alive timeout"
-msgstr ""
+msgstr "保持連線逾時"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:121
 msgid "Listen addresses"
-msgstr ""
+msgstr "監聽位址"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:40
 msgid "Location of the Privoxy User Manual."
@@ -322,11 +324,11 @@ msgstr "Privoxy 使用者手冊位置。"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:60
 msgid "Log Directory"
-msgstr ""
+msgstr "日誌目錄"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:66
 msgid "Log File"
-msgstr ""
+msgstr "日誌檔案"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:332
 msgid "Log all data read from the network"
@@ -344,7 +346,7 @@ msgstr "記錄配置儲存動作"
 msgid ""
 "Log the destination for each request Privoxy let through. See also 'Debug "
 "1024'."
-msgstr "記錄 Privoxy 允許的所有請求。另請參考“Debug 1024”。"
+msgstr "記錄 Privoxy 允許的所有請求。另請參考\"Debug 1024\"。"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:314
 msgid ""
@@ -358,19 +360,19 @@ msgstr "主要規則檔案"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:72
 msgid "Mandatory Input: No File given!"
-msgstr "必需選項：沒有設定檔案！"
+msgstr "必需選項: 沒有設定檔案！"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:242
 msgid "Max. client connections"
-msgstr ""
+msgstr "最高客戶端連線數"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:244
 msgid "Maximum number of client connections that will be served."
-msgstr "客戶端數量上限。"
+msgstr "最大用戶端連線數。"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:142
 msgid "Maximum size (in KB) of the buffer for content filtering."
-msgstr "內容過濾的最大緩衝（單位：KB）。"
+msgstr "內容篩選的最大緩衝 (單位: KB) 。"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:207
 msgid "Misc"
@@ -383,16 +385,16 @@ msgstr "非致命性錯誤 - *強烈建議啟用*"
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:239
 msgid ""
 "Number of seconds after which a socket times out if no data is received."
-msgstr "Socket 連線未收到資料的超時時間。"
+msgstr "Socket 連線未收到資料的逾時。"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:222
 msgid ""
 "Number of seconds after which an open connection will no longer be reused."
-msgstr "開放的連線不再重複使用的超時時間。"
+msgstr "開放的連線不再重複使用的逾時。"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:129
 msgid "Permit access"
-msgstr ""
+msgstr "允許存取"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:130
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:136
@@ -401,15 +403,15 @@ msgstr "請閱讀 Privoxy 手冊以瞭解詳情！"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:12
 msgid "Privoxy"
-msgstr ""
+msgstr "Privoxy"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:15
 msgid "Privoxy Settings"
-msgstr ""
+msgstr "Privoxy 設定"
 
 #: applications/luci-app-privoxy/root/usr/share/luci/menu.d/luci-app-privoxy.json:3
 msgid "Privoxy WEB proxy"
-msgstr "Privoxy 網路代理"
+msgstr "Privoxy WEB 代理"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:55
 msgid ""
@@ -417,12 +419,12 @@ msgid ""
 "configuration, help and logging. This section of the configuration file "
 "tells Privoxy where to find those other files."
 msgstr ""
-"Privoxy 可以（而且一般都會）使用其他一些檔案用於附加設定，幫助和日誌。這個區"
-"域用來告訴 Privoxy 從哪裡找到這些檔案。"
+"Privoxy 可以 (而且一般都會) 使用其他一些檔案用於附加配置，幫助和日誌。配置檔"
+"案的此區域用來告訴 Privoxy 從哪裡找到這些檔案。"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:47
 msgid "Proxy Info URL"
-msgstr ""
+msgstr "代理資訊 URL"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:282
 msgid "Show I/O status"
@@ -434,15 +436,15 @@ msgstr "顯示每個連線的狀態"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:286
 msgid "Show header parsing"
-msgstr "顯示請求頭 解析"
+msgstr "顯示請求標頭解析"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:268
 msgid "Single Threaded"
-msgstr ""
+msgstr "單執行緒"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:237
 msgid "Socket timeout"
-msgstr ""
+msgstr "Socket 逾時"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:217
 msgid "Split large forms"
@@ -454,11 +456,11 @@ msgstr "啟動標語和警告。"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:123
 msgid "Syntax:"
-msgstr "語法："
+msgstr "語法:"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:262
 msgid "Syntax: Client header names delimited by spaces."
-msgstr "格式：由空格分隔的客戶端請求頭名稱。"
+msgstr "語法: 由空格分隔的客戶端請求標頭名稱。"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:199
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:203
@@ -468,7 +470,7 @@ msgstr ""
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:187
 msgid "Syntax: target_pattern http_parent[:port]"
-msgstr "格式：target_pattern http_parent[:port]"
+msgstr "語法: target_pattern http_parent[:port]"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:191
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:195
@@ -481,11 +483,11 @@ msgstr "系統"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:83
 msgid "Template Directory"
-msgstr ""
+msgstr "範本目錄"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:89
 msgid "Temporary Directory"
-msgstr ""
+msgstr "臨時目錄"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:97
 msgid ""
@@ -496,7 +498,7 @@ msgstr "要使用的動作文件。允許使用多個actionfile行，實際上�
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:122
 msgid ""
 "The address and TCP port on which Privoxy will listen for client requests."
-msgstr "Privoxy 接收客戶端請求時監聽的地址和 TCP 埠。"
+msgstr "Privoxy 接收客戶端請求時監聽的位址和 TCP 連接埠。"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:257
 msgid ""
@@ -512,17 +514,17 @@ msgstr ""
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:78
 msgid "The directory where the other configuration files are located."
-msgstr "其他設定檔案所在的目錄。"
+msgstr "其他配置檔案所在的目錄。"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:105
 msgid ""
 "The filter files contain content modification rules that use regular "
 "expressions."
-msgstr "過濾檔案包含了使用正則表示式編寫的內容修改規則。"
+msgstr "篩選檔案包含了使用正規表示式編寫的內容修改規則。"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:36
 msgid "The hostname shown on the CGI pages."
-msgstr "CGI 頁面顯示的主機名。"
+msgstr "CGI 頁面顯示的主機名稱。"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:67
 msgid "The log file to use. File name, relative to log directory."
@@ -530,13 +532,13 @@ msgstr "要使用的日誌檔；檔案名稱與日誌目錄相對。"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:261
 msgid "The order in which client headers are sorted before forwarding them."
-msgstr "轉送資料前，客戶端請求頭的排序。"
+msgstr "轉送資料前，客戶端請求標頭的排序。"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:248
 msgid ""
 "The status code Privoxy returns for pages blocked with +handle-as-empty-"
 "document."
-msgstr "狀態代碼Privoxy返回被+ handle-as-empty-document阻止的頁面。"
+msgstr ""
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:111
 msgid ""
@@ -548,18 +550,18 @@ msgstr "信任機制是一個實驗性的白名單特性，使用時應小心。
 msgid ""
 "This option is only there for debugging purposes. It will drastically reduce "
 "performance."
-msgstr "這個選項僅用於除錯，開啟後會極大地降低效能。"
+msgstr "這個選項僅用於偵錯。它會極大地降低效能。"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:163
 msgid ""
 "This option will be removed in future releases as it has been obsoleted by "
 "the more general header taggers."
-msgstr "這個選項在以後的版本中將被移除，因為它被 header taggers 所取代了。"
+msgstr "這個選項在以後的版本中將被移除，因為它被 header taggers 取代了。"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:118
 msgid ""
 "This tab controls the security-relevant aspects of Privoxy's configuration."
-msgstr "這個標籤用於設定與安全相關的 Privoxy 選項。"
+msgstr "此分頁用於配置與安全相關的 Privoxy 選項。"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:190
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:194
@@ -569,11 +571,11 @@ msgid ""
 "Through which SOCKS proxy (and optionally to which parent HTTP proxy) "
 "specific requests should be routed."
 msgstr ""
-"指定的請求應該通過哪一個 SOCKS 代理（並且通過哪一個 HTTP 父代理，可選）。"
+"指定的請求應該通過哪一個 SOCKS 代理 (並且通過哪一個 HTTP 父代理，可選) 。"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:186
 msgid "To which parent HTTP proxy specific requests should be routed."
-msgstr "請求應轉送至哪一個父級HTTP代理。"
+msgstr "請求應轉送至哪一個父級 HTTP 代理。"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:149
 msgid "Toggle Status"
@@ -585,11 +587,11 @@ msgstr ""
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:50
 msgid "Trust Info URL"
-msgstr ""
+msgstr "信任資訊 URL"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:110
 msgid "Trust file"
-msgstr ""
+msgstr "信任檔案"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:51
 msgid ""
@@ -603,7 +605,7 @@ msgstr ""
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:39
 msgid "User Manual"
-msgstr ""
+msgstr "使用者手冊"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:100
 msgid "User customizations"
@@ -621,7 +623,7 @@ msgstr "是否應把被攔截的請求當作是有效的。"
 msgid ""
 "Whether or not Privoxy recognizes special HTTP headers to change toggle "
 "state."
-msgstr "是否讓 Privoxy 識別特殊的 HTTP 請求頭以切換狀態。"
+msgstr "是否讓 Privoxy 識別特殊的 HTTP 請求標頭以切換狀態。"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:252
 msgid "Whether or not buffered content is compressed before delivery."
@@ -635,11 +637,11 @@ msgstr "是否應在不同的入站連線之間共享持久出站連線。"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:226
 msgid "Whether or not pipelined requests should be served."
-msgstr "是否處理管道化的請求。"
+msgstr "是否處理管道化請求。"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:182
 msgid "Whether or not proxy authentication through Privoxy should work."
-msgstr "是否可以通過 Privoxy 進行代理驗證。"
+msgstr "是否可以通過 Privoxy 進行代理認證。"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:168
 msgid "Whether or not the web-based actions file editor may be used."
@@ -651,16 +653,16 @@ msgstr "是否啟用基於網頁的切換功能。"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:214
 msgid "Whether requests to Privoxy's CGI pages can be blocked or redirected."
-msgstr "可否阻止或重新導向對Privoxy CGI頁面的請求。"
+msgstr "是否阻止或重新導向對 Privoxy CGI 頁面的請求。"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:218
 msgid ""
 "Whether the CGI interface should stay compatible with broken HTTP clients."
-msgstr "是否讓CGI介面相容過時的HTTP用戶端。"
+msgstr "是否讓 CGI 介面相容過時的 HTTP 用戶端。"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:269
 msgid "Whether to run only one server thread."
-msgstr "是否只執行一個服務執行緒。"
+msgstr "是否只執行一個伺服器執行緒。"
 
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:130
 #: applications/luci-app-privoxy/htdocs/luci-static/resources/view/privoxy/privoxy.js:136

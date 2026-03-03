@@ -12,7 +12,7 @@ var pkg = {
 		return "adblock-fast";
 	},
 	get LuciCompat() {
-		return 9;
+		return 13;
 	},
 	get ReadmeCompat() {
 		return "";
@@ -31,7 +31,7 @@ var pkg = {
 			pkg.Name +
 			"/" +
 			(pkg.ReadmeCompat ? pkg.ReadmeCompat + "/" : "") +
-			"#Donate"
+			"#donate"
 		);
 	},
 	isVersionMismatch: function (luci, pkg, rpcd) {
@@ -54,7 +54,7 @@ var pkg = {
 
 	statusTable: {
 		statusNoInstall: _("%s is not installed or not found").format(
-			"adblock-fast"
+			"adblock-fast",
 		),
 		statusStopped: _("Stopped"),
 		statusStarting: _("Starting"),
@@ -70,47 +70,62 @@ var pkg = {
 
 	warningTable: {
 		warningInternalVersionMismatch: _(
-			"Internal version mismatch (package: %s, luci app: %s, luci rpcd: %s), you may need to update packages or reboot the device, please check the %sREADME%s."
+			"Internal version mismatch (package: %s, luci app: %s, luci rpcd: %s), you may need to update packages or reboot the device, please check the %sREADME%s.",
 		),
 		warningExternalDnsmasqConfig: _(
-			"Use of external dnsmasq config file detected, please set '%s' option to '%s'"
+			"Use of external dnsmasq config file detected, please set '%s' option to '%s'",
 		).format("dns", "dnsmasq.conf"),
 		warningMissingRecommendedPackages: _("Missing recommended package: '%s'"),
 		warningOutdatedLuciPackage: _(
-			"The WebUI application (luci-app-adblock-fast) is outdated, please update it"
+			"The WebUI application (luci-app-adblock-fast) is outdated, please update it",
 		),
 		warningOutdatedPrincipalPackage: _(
-			"The principal package (adblock-fast) is outdated, please update it"
+			"The principal package (adblock-fast) is outdated, please update it",
 		),
 		warningInvalidCompressedCacheDir: _(
-			"Invalid compressed cache directory '%s'"
+			"Invalid compressed cache directory '%s'",
 		),
 		warningFreeRamCheckFail: _("Can't detect free RAM"),
 		warningSanityCheckTLD: _("Sanity check discovered TLDs in %s"),
 		warningSanityCheckLeadingDot: _(
-			"Sanity check discovered leading dots in %s"
+			"Sanity check discovered leading dots in %s",
+		),
+		warningInvalidDomainsRemoved: _(
+			"Removed %s invalid domain entries from block-list (domains starting with -/./numbers or containing invalid patterns)",
+		),
+		warningCronDisabled: _(
+			"Cron service is not enabled or running. Enable it with: %s.",
+		),
+		warningCronMissing: _(
+			"Cron daemon is not available. If BusyBox crond is present, enable it with: %s; otherwise install another cron daemon.",
+		),
+		warningCronEntryMissing: _(
+			"Cron entry is missing; click %s to recreate it.",
+		),
+		warningCronEntryMismatch: _(
+			"Cron entry does not match the schedule; click %s to overwrite it.",
 		),
 	},
 
 	errorTable: {
 		errorConfigValidationFail: _("Config (%s) validation failure!").format(
-			"/etc/config/" + "adblock-fast"
+			"/etc/config/" + "adblock-fast",
 		),
 		errorServiceDisabled: _("%s is currently disabled").format("adblock-fast"),
 		errorNoDnsmasqIpset: _(
-			"The dnsmasq ipset support is enabled, but dnsmasq is either not installed or installed dnsmasq does not support ipset"
+			"The dnsmasq ipset support is enabled, but dnsmasq is either not installed or installed dnsmasq does not support ipset",
 		),
 		errorNoIpset: _(
-			"The dnsmasq ipset support is enabled, but ipset is either not installed or installed ipset does not support '%s' type"
+			"The dnsmasq ipset support is enabled, but ipset is either not installed or installed ipset does not support '%s' type",
 		).format("hash:net"),
 		errorNoDnsmasqNftset: _(
-			"The dnsmasq nft set support is enabled, but dnsmasq is either not installed or installed dnsmasq does not support nft set"
+			"The dnsmasq nft set support is enabled, but dnsmasq is either not installed or installed dnsmasq does not support nft set",
 		),
 		errorNoNft: _(
-			"The dnsmasq nft sets support is enabled, but nft is not installed"
+			"The dnsmasq nft sets support is enabled, but nft is not installed",
 		),
 		errorNoWanGateway: _("The %s failed to discover WAN gateway").format(
-			"adblock-fast"
+			"adblock-fast",
 		),
 		errorOutputDirCreate: _("Failed to create directory for %s file"),
 		errorOutputFileCreate: _("Failed to create '%s' file"),
@@ -136,19 +151,19 @@ var pkg = {
 		errorParsingList: _("Failed to parse %s"),
 		errorNoSSLSupport: _("No HTTPS/SSL support on device"),
 		errorCreatingDirectory: _(
-			"Failed to create output/cache/gzip file directory"
+			"Failed to create output/cache/gzip file directory",
 		),
 		errorDetectingFileType: _("Failed to detect format %s"),
 		errorNothingToDo: _("No blocked list URLs nor blocked-domains enabled"),
 		errorTooLittleRam: _(
-			"Free ram (%s) is not enough to process all enabled block-lists"
+			"Free ram (%s) is not enough to process all enabled block-lists",
 		),
 		errorCreatingBackupFile: _("failed to create backup file %s"),
 		errorDeletingDataFile: _("failed to delete data file %s"),
 		errorRestoringBackupFile: _("failed to restore backup file %s"),
 		errorNoOutputFile: _("failed to create final block-list %s"),
 		errorNoHeartbeat: _(
-			"Heartbeat domain is not accessible after resolver restart"
+			"Heartbeat domain is not accessible after resolver restart",
 		),
 	},
 };
@@ -157,6 +172,13 @@ var getFileUrlFilesizes = rpc.declare({
 	object: "luci." + pkg.Name,
 	method: "getFileUrlFilesizes",
 	params: ["name", "url"],
+});
+
+var syncCron = rpc.declare({
+	object: "luci." + pkg.Name,
+	method: "syncCron",
+	params: ["name", "action"],
+	expect: { result: false },
 });
 
 var getInitList = rpc.declare({
@@ -171,16 +193,35 @@ var getInitStatus = rpc.declare({
 	params: ["name"],
 });
 
+var getCronStatus = rpc.declare({
+	object: "luci." + pkg.Name,
+	method: "getCronStatus",
+	params: ["name"],
+});
+
+var getCronEntry = rpc.declare({
+	object: "luci." + pkg.Name,
+	method: "getCronEntry",
+	params: ["name"],
+});
+
+var setCronEntry = rpc.declare({
+	object: "luci." + pkg.Name,
+	method: "setCronEntry",
+	params: ["name", "entry"],
+	expect: { result: false },
+});
+
 var getPlatformSupport = rpc.declare({
 	object: "luci." + pkg.Name,
 	method: "getPlatformSupport",
 	params: ["name"],
 });
 
-var getUbusInfo = rpc.declare({
-	object: "luci." + pkg.Name,
-	method: "getUbusInfo",
-	params: ["name"],
+var getServiceInfo = rpc.declare({
+	object: "service",
+	method: "list",
+	params: ["name", "verbose"],
 });
 
 var _setInitAction = rpc.declare({
@@ -209,17 +250,19 @@ var RPC = {
 		});
 	},
 	setInitAction: function (name, action) {
-		_setInitAction(name, action).then(
-			function (result) {
-				this.emit("setInitAction", result);
-			}.bind(this)
-		).catch(
-			function (error) {
-				// Even if RPC call fails/times out, emit event to start polling
-				// This handles cases where the backend task starts but RPC times out
-				this.emit("setInitAction", { timeout: true });
-			}.bind(this)
-		);
+		_setInitAction(name, action)
+			.then(
+				function (result) {
+					this.emit("setInitAction", result);
+				}.bind(this),
+			)
+			.catch(
+				function (error) {
+					// Even if RPC call fails/times out, emit event to start polling
+					// This handles cases where the backend task starts but RPC times out
+					this.emit("setInitAction", { timeout: true });
+				}.bind(this),
+			);
 	},
 };
 
@@ -232,31 +275,36 @@ var pollServiceStatus = function (callback) {
 		attempt++;
 
 		// Use the RPC function directly from the module scope
-		L.resolveDefault(getInitStatus(pkg.Name), {}).then(function (statusData) {
-			var currentStatus = statusData && statusData[pkg.Name] && statusData[pkg.Name].status;
+		L.resolveDefault(getInitStatus(pkg.Name), {})
+			.then(function (statusData) {
+				var currentStatus =
+					statusData && statusData[pkg.Name] && statusData[pkg.Name].status;
 
-			// Check if completed or failed
-			if (currentStatus === 'statusSuccess' ||
-				currentStatus === 'statusFail' ||
-				currentStatus === 'statusStopped') {
-				callback(true, currentStatus);
-			}
-			// Check if timed out
-			else if (attempt >= maxAttempts) {
-				callback(false, 'timeout');
-			}
-			// Continue polling
-			else {
-				setTimeout(checkStatus, 1000); // Check again in 1 second
-			}
-		}).catch(function (err) {
-			// Retry on error unless timed out
-			if (attempt < maxAttempts) {
-				setTimeout(checkStatus, 1000);
-			} else {
-				callback(false, 'error');
-			}
-		});
+				// Check if completed or failed
+				if (
+					currentStatus === "statusSuccess" ||
+					currentStatus === "statusFail" ||
+					currentStatus === "statusStopped"
+				) {
+					callback(true, currentStatus);
+				}
+				// Check if timed out
+				else if (attempt >= maxAttempts) {
+					callback(false, "timeout");
+				}
+				// Continue polling
+				else {
+					setTimeout(checkStatus, 1000); // Check again in 1 second
+				}
+			})
+			.catch(function (err) {
+				// Retry on error unless timed out
+				if (attempt < maxAttempts) {
+					setTimeout(checkStatus, 1000);
+				} else {
+					callback(false, "error");
+				}
+			});
 	};
 
 	// Start polling after 2 seconds delay (give backend time to start the task)
@@ -267,34 +315,48 @@ var status = baseclass.extend({
 	render: function () {
 		return Promise.all([
 			L.resolveDefault(getInitStatus(pkg.Name), {}),
-			L.resolveDefault(getUbusInfo(pkg.Name), {}),
-		]).then(function ([initStatus, ubusInfo]) {
+			L.resolveDefault(getCronStatus(pkg.Name), {}),
+		]).then(function ([initStatus, cronStatus]) {
+			var initData = initStatus?.[pkg.Name] || {};
 			var reply = {
-				status: initStatus?.[pkg.Name] || {
-					enabled: false,
-					status: null,
-					packageCompat: 0,
-					rpcdCompat: 0,
-					running: null,
-					version: null,
-					errors: [],
-					warnings: [],
-					force_dns_active: null,
-					force_dns_ports: [],
-					entries: null,
-					dns: null,
-					outputFile: null,
-					outputCache: null,
-					outputGzip: null,
-					outputFileExists: null,
-					outputCacheExists: null,
-					outputGzipExists: null,
-					leds: [],
+				status:
+					initData.enabled !== undefined
+						? initData
+						: {
+								enabled: false,
+								status: null,
+								packageCompat: 0,
+								rpcdCompat: 0,
+								running: null,
+								version: null,
+								errors: [],
+								warnings: [],
+								force_dns_active: null,
+								force_dns_ports: [],
+								entries: null,
+								dns: null,
+								outputFile: null,
+								outputCache: null,
+								outputGzip: null,
+								outputFileExists: null,
+								outputCacheExists: null,
+								outputGzipExists: null,
+								leds: [],
+							},
+				ubus: {
+					packageCompat: initData.packageCompat || 0,
+					errors: initData.errors ? [...initData.errors] : [],
+					warnings: initData.warnings ? [...initData.warnings] : [],
 				},
-				ubus: ubusInfo?.[pkg.Name]?.instances?.main?.data || {
-					packageCompat: 0,
-					errors: [],
-					warnings: [],
+				cron: cronStatus?.[pkg.Name] || {
+					auto_update_enabled: false,
+					cron_init: false,
+					cron_bin: false,
+					cron_enabled: false,
+					cron_running: false,
+					cron_line_present: false,
+					cron_line_match: false,
+					cron_line_state: "none",
 				},
 			};
 
@@ -302,7 +364,7 @@ var status = baseclass.extend({
 				pkg.isVersionMismatch(
 					pkg.LuciCompat,
 					reply.status.packageCompat,
-					reply.status.rpcdCompat
+					reply.status.rpcdCompat,
 				)
 			) {
 				reply.ubus.warnings.push({
@@ -312,11 +374,64 @@ var status = baseclass.extend({
 						pkg.LuciCompat,
 						reply.status.rpcdCompat,
 						'<a href="' +
-						pkg.URL +
-						'#internal_version_mismatch" target="_blank">',
+							pkg.URL +
+							'#internal_version_mismatch" target="_blank">',
 						"</a>",
 					],
 				});
+			}
+			var cronSyncNeeded = false;
+			var showCronWarnings =
+				reply.status.enabled &&
+				reply.status.running &&
+				(reply.cron.auto_update_enabled ||
+					reply.cron.cron_line_state === "suspended");
+			if (showCronWarnings) {
+				var enableCronCmd =
+					"<code>/etc/init.d/cron enable && /etc/init.d/cron start</code>";
+				var resyncLabel = "<code>" + _("Resync Cron") + "</code>";
+				if (!reply.cron.cron_init || !reply.cron.cron_bin) {
+					reply.ubus.warnings.push({
+						code: "warningCronMissing",
+						info: enableCronCmd,
+					});
+				} else if (!reply.cron.cron_enabled || !reply.cron.cron_running) {
+					reply.ubus.warnings.push({
+						code: "warningCronDisabled",
+						info: enableCronCmd,
+					});
+				}
+				if (reply.cron.cron_line_state === "suspended") {
+					reply.ubus.warnings.push({
+						code: "warningCronEntryMismatch",
+						info: resyncLabel,
+					});
+					cronSyncNeeded = true;
+				} else if (
+					reply.cron.auto_update_enabled &&
+					(reply.cron.cron_line_state === "unsupported" ||
+						reply.cron.cron_line_state === "multi")
+				) {
+					reply.ubus.warnings.push({
+						code: "warningCronEntryMismatch",
+						info: resyncLabel,
+					});
+					cronSyncNeeded = true;
+				} else if (reply.cron.auto_update_enabled) {
+					if (!reply.cron.cron_line_present) {
+						reply.ubus.warnings.push({
+							code: "warningCronEntryMissing",
+							info: resyncLabel,
+						});
+						cronSyncNeeded = true;
+					} else if (!reply.cron.cron_line_match) {
+						reply.ubus.warnings.push({
+							code: "warningCronEntryMismatch",
+							info: resyncLabel,
+						});
+						cronSyncNeeded = true;
+					}
+				}
 			}
 			var text = "";
 			var outputFile = reply.status.outputFile;
@@ -326,38 +441,13 @@ var status = baseclass.extend({
 			var statusTitle = E(
 				"label",
 				{ class: "cbi-value-title" },
-				_("Service Status")
+				_("Service Status"),
 			);
 			if (reply.status.version) {
 				text += _("Version %s").format(reply.status.version) + " - ";
 				switch (reply.status.status) {
 					case "statusSuccess":
 						text += pkg.statusTable[reply.status.status] + ".";
-						text +=
-							"<br />" +
-							_("Blocking %s domains (with %s).").format(
-								reply.status.entries,
-								reply.status.dns
-							);
-						if (reply.status.outputGzipExists) {
-							text += "<br />" + _("Compressed cache file created.");
-						}
-						if (reply.status.force_dns_active) {
-							text += "<br />" + _("Force DNS ports:");
-							reply.status.force_dns_ports.forEach((element) => {
-								text += " " + element;
-							});
-							text += ".";
-						}
-						text +=
-							"<br />" +
-							"<br />" +
-							_(
-								"Please %sdonate%s to support development of this project."
-							).format(
-								"<a href='" + pkg.DonateURL + "' target='_blank'>",
-								"</a>"
-							);
 						break;
 					case "statusStopped":
 						if (reply.status.enabled) {
@@ -368,11 +458,6 @@ var status = baseclass.extend({
 								" (" +
 								_("Disabled") +
 								").";
-						}
-						if (reply.status.outputCacheExists) {
-							text += "<br />" + _("Cache file found.");
-						} else if (reply.status.outputGzipExists) {
-							text += "<br />" + _("Compressed cache file found.");
 						}
 						break;
 					case "statusRestarting":
@@ -388,26 +473,82 @@ var status = baseclass.extend({
 			} else {
 				text = _("Not installed or not found");
 			}
-			var statusText = E("div", { class: "cbi-value-description" }, text);
+			var statusText = E("div", {}, text);
 			var statusField = E("div", { class: "cbi-value-field" }, statusText);
 			var statusDiv = E("div", { class: "cbi-value" }, [
 				statusTitle,
 				statusField,
 			]);
 
+			var detailsDiv = [];
+			if (reply.status.version) {
+				var detailsText = "";
+				if (reply.status.status === "statusSuccess") {
+					detailsText += _("Blocking %s domains (with %s).").format(
+						reply.status.entries,
+						reply.status.dns,
+					);
+					if (reply.status.outputGzipExists) {
+						detailsText += "<br />" + _("Compressed cache file created.");
+					}
+					if (reply.status.force_dns_active) {
+						detailsText += "<br />" + _("Force DNS ports:");
+						reply.status.force_dns_ports.forEach((element) => {
+							detailsText += " " + element;
+						});
+						detailsText += ".";
+					}
+				}
+				if (reply.status.status === "statusStopped") {
+					if (reply.status.outputCacheExists) {
+						detailsText += _("Cache file found.");
+					} else if (reply.status.outputGzipExists) {
+						detailsText += _("Compressed cache file found.");
+					}
+				}
+				if (detailsText) {
+					var detailsTitle = E(
+						"label",
+						{ class: "cbi-value-title" },
+						_("Service Details"),
+					);
+					var detailsDescr = E(
+						"div",
+						{ class: "cbi-value-description" },
+						_(
+							"Please %sdonate%s to support development of this project.",
+						).format(
+							"<a href='" + pkg.DonateURL + "' target='_blank'>",
+							"</a>",
+						),
+					);
+					var detailsContent = E("div", {}, detailsText);
+					var detailsField = E("div", { class: "cbi-value-field" }, [
+						detailsContent,
+						E("br"),
+						E("br"),
+						detailsDescr,
+					]);
+					detailsDiv = E("div", { class: "cbi-value" }, [
+						detailsTitle,
+						detailsField,
+					]);
+				}
+			}
+
 			var warningsDiv = [];
 			if (reply.ubus.warnings && reply.ubus.warnings.length) {
 				var warningsTitle = E(
 					"label",
 					{ class: "cbi-value-title" },
-					_("Service Warnings")
+					_("Service Warnings"),
 				);
-				var text = "";
+				text = "";
 				reply.ubus.warnings.forEach((element) => {
 					if (element.code && pkg.warningTable[element.code]) {
 						text += pkg.formatMessage(
 							element.info,
-							pkg.warningTable[element.code]
+							pkg.warningTable[element.code],
 						);
 					} else {
 						text += _("Unknown warning") + "<br />";
@@ -417,7 +558,7 @@ var status = baseclass.extend({
 				var warningsField = E(
 					"div",
 					{ class: "cbi-value-field" },
-					warningsText
+					warningsText,
 				);
 				warningsDiv = E("div", { class: "cbi-value" }, [
 					warningsTitle,
@@ -430,14 +571,14 @@ var status = baseclass.extend({
 				var errorsTitle = E(
 					"label",
 					{ class: "cbi-value-title" },
-					_("Service Errors")
+					_("Service Errors"),
 				);
-				var text = "";
+				text = "";
 				reply.ubus.errors.forEach((element) => {
 					if (element.code && pkg.errorTable[element.code]) {
 						text += pkg.formatMessage(
 							element.info,
-							pkg.errorTable[element.code]
+							pkg.errorTable[element.code],
 						);
 					} else {
 						text += _("Unknown error") + "<br />";
@@ -445,7 +586,7 @@ var status = baseclass.extend({
 				});
 				text += _("Errors encountered, please check the %sREADME%s").format(
 					'<a href="' + pkg.URL + '" target="_blank">',
-					"</a>!<br />"
+					"</a>!<br />",
 				);
 				var errorsText = E("div", { class: "cbi-value-description" }, text);
 				var errorsField = E("div", { class: "cbi-value-field" }, errorsText);
@@ -459,7 +600,7 @@ var status = baseclass.extend({
 			var btn_gap_long = E(
 				"span",
 				{},
-				"&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"
+				"&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;",
 			);
 
 			var btn_start = E(
@@ -472,13 +613,13 @@ var status = baseclass.extend({
 							E(
 								"p",
 								{ class: "spinning" },
-								_("Starting %s service").format(pkg.Name)
+								_("Starting %s service").format(pkg.Name),
 							),
 						]);
 						return RPC.setInitAction(pkg.Name, "start");
 					},
 				},
-				_("Start")
+				_("Start"),
 			);
 
 			var btn_action_dl = E(
@@ -491,13 +632,59 @@ var status = baseclass.extend({
 							E(
 								"p",
 								{ class: "spinning" },
-								_("Force redownloading %s block lists").format(pkg.Name)
+								_("Force redownloading %s block lists").format(pkg.Name),
 							),
 						]);
 						return RPC.setInitAction(pkg.Name, "dl");
 					},
 				},
-				_("Redownload")
+				_("Redownload"),
+			);
+
+			var btn_sync_cron = E(
+				"button",
+				{
+					class: "btn cbi-button cbi-button-apply",
+					disabled: true,
+					click: function (ev) {
+						ui.showModal(null, [
+							E("p", { class: "spinning" }, _("Syncing cron schedule")),
+						]);
+						return L.resolveDefault(getCronEntry(pkg.Name), {})
+							.then(function (response) {
+								var entry =
+									(response?.[pkg.Name] && response[pkg.Name].entry) || "";
+								if (!entry) {
+									return Promise.reject(new Error("No cron entry"));
+								}
+								entry = entry.replace(/^\s*#\s*/, "");
+								entry = entry.replace(
+									/adblock-fast-auto-(suspended|disabled)/g,
+									"adblock-fast-auto",
+								);
+								return L.resolveDefault(setCronEntry(pkg.Name, entry), {
+									result: false,
+								});
+							})
+							.then(
+								function (result) {
+									if (!result || result.result === false) {
+										throw new Error("Failed to update cron schedule");
+									}
+									ui.hideModal();
+									location.reload();
+								},
+								function (error) {
+									ui.hideModal();
+									ui.addNotification(
+										null,
+										E("p", {}, _("Failed to sync cron schedule")),
+									);
+								},
+							);
+					},
+				},
+				_("Resync Cron"),
 			);
 
 			var btn_action_pause = E(
@@ -512,7 +699,7 @@ var status = baseclass.extend({
 						return RPC.setInitAction(pkg.Name, "pause");
 					},
 				},
-				_("Pause")
+				_("Pause"),
 			);
 
 			var btn_stop = E(
@@ -525,13 +712,13 @@ var status = baseclass.extend({
 							E(
 								"p",
 								{ class: "spinning" },
-								_("Stopping %s service").format(pkg.Name)
+								_("Stopping %s service").format(pkg.Name),
 							),
 						]);
 						return RPC.setInitAction(pkg.Name, "stop");
 					},
 				},
-				_("Stop")
+				_("Stop"),
 			);
 
 			var btn_enable = E(
@@ -544,13 +731,13 @@ var status = baseclass.extend({
 							E(
 								"p",
 								{ class: "spinning" },
-								_("Enabling %s service").format(pkg.Name)
+								_("Enabling %s service").format(pkg.Name),
 							),
 						]);
 						return RPC.setInitAction(pkg.Name, "enable");
 					},
 				},
-				_("Enable")
+				_("Enable"),
 			);
 
 			var btn_disable = E(
@@ -563,13 +750,13 @@ var status = baseclass.extend({
 							E(
 								"p",
 								{ class: "spinning" },
-								_("Disabling %s service").format(pkg.Name)
+								_("Disabling %s service").format(pkg.Name),
 							),
 						]);
 						return RPC.setInitAction(pkg.Name, "disable");
 					},
 				},
-				_("Disable")
+				_("Disable"),
 			);
 
 			if (reply.status.enabled) {
@@ -584,7 +771,7 @@ var status = baseclass.extend({
 						break;
 					case "statusStopped":
 						btn_start.disabled = false;
-						btn_action_dl.disabled = true;
+						btn_action_dl.disabled = false;
 						btn_action_pause.disabled = true;
 						btn_stop.disabled = true;
 						break;
@@ -605,26 +792,35 @@ var status = baseclass.extend({
 				btn_enable.disabled = false;
 				btn_disable.disabled = true;
 			}
+			if (cronSyncNeeded) {
+				btn_sync_cron.disabled = false;
+			}
 
 			var buttonsDiv = [];
 			var buttonsTitle = E(
 				"label",
 				{ class: "cbi-value-title" },
-				_("Service Control")
+				_("Service Control"),
 			);
-			var buttonsText = E("div", {}, [
+			var buttonsTextItems = [
 				btn_start,
 				btn_gap,
 				// btn_action_pause,
 				// btn_gap,
 				btn_action_dl,
+			];
+			if (cronSyncNeeded) {
+				buttonsTextItems.push(btn_gap, btn_sync_cron);
+			}
+			buttonsTextItems.push(
 				btn_gap,
 				btn_stop,
 				btn_gap_long,
 				btn_enable,
 				btn_gap,
 				btn_disable,
-			]);
+			);
+			var buttonsText = E("div", {}, buttonsTextItems);
 			var buttonsField = E("div", { class: "cbi-value-field" }, buttonsText);
 			if (reply.status.version) {
 				buttonsDiv = E("div", { class: "cbi-value" }, [
@@ -636,6 +832,7 @@ var status = baseclass.extend({
 			return E("div", {}, [
 				header,
 				statusDiv,
+				detailsDiv,
 				warningsDiv,
 				errorsDiv,
 				buttonsDiv,
@@ -658,6 +855,10 @@ return L.Class.extend({
 	pkg: pkg,
 	getInitStatus: getInitStatus,
 	getFileUrlFilesizes: getFileUrlFilesizes,
+	syncCron: syncCron,
+	getCronStatus: getCronStatus,
+	getCronEntry: getCronEntry,
+	setCronEntry: setCronEntry,
 	getPlatformSupport: getPlatformSupport,
-	getUbusInfo: getUbusInfo,
+	getServiceInfo: getServiceInfo,
 });
