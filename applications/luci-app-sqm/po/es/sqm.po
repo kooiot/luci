@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-02-20 02:02+0000\n"
-"Last-Translator: Franco Castillo <castillofrancodamian@gmail.com>\n"
+"PO-Revision-Date: 2026-03-05 21:05+0000\n"
+"Last-Translator: Francisco Serrador <fserrador@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationssqm/es/>\n"
 "Language: es\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.16.1-dev\n"
+"X-Generator: Weblate 5.17-dev\n"
 
 #: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:133
 msgid "Advanced Configuration"
@@ -99,13 +99,15 @@ msgstr "Activar el registro de depuración"
 
 #: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:136
 msgid "Enable multi-queue config"
-msgstr ""
+msgstr "Activar configuración de múltiples colas"
 
 #: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:136
 msgid ""
 "Enable multi-queue qdisc on supported hardware. If .qos script does not "
 "support mq this option is ignored."
 msgstr ""
+"Activa qdisc multicola en hardware compatible. Si el script .qos no es "
+"compatible con mq, esta opción se ignora."
 
 #: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:78
 msgid "Enable this SQM instance."
@@ -340,4 +342,4 @@ msgstr ""
 #: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:192
 #: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:223
 msgid "default"
-msgstr "predeterminado"
+msgstr "por defecto"
