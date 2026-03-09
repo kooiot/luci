@@ -51,6 +51,14 @@ var pkg = {
 	isObjEmpty: function (obj) {
 		return Object.keys(obj).length === 0;
 	},
+	formatPauseTimeout: function (seconds) {
+		var s = parseInt(seconds) || 20;
+		if (s < 60) return s + "s";
+		var m = Math.floor(s / 60);
+		var rem = s % 60;
+		if (rem === 0) return m + "m";
+		return m + "m " + rem + "s";
+	},
 
 	statusTable: {
 		statusNoInstall: _("%s is not installed or not found").format(
@@ -98,12 +106,6 @@ var pkg = {
 		),
 		warningCronMissing: _(
 			"Cron daemon is not available. If BusyBox crond is present, enable it with: %s; otherwise install another cron daemon.",
-		),
-		warningCronEntryMissing: _(
-			"Cron entry is missing; click %s to recreate it.",
-		),
-		warningCronEntryMismatch: _(
-			"Cron entry does not match the schedule; click %s to overwrite it.",
 		),
 	},
 
@@ -196,12 +198,6 @@ var getInitStatus = rpc.declare({
 var getCronStatus = rpc.declare({
 	object: "luci." + pkg.Name,
 	method: "getCronStatus",
-	params: ["name"],
-});
-
-var getCronEntry = rpc.declare({
-	object: "luci." + pkg.Name,
-	method: "getCronEntry",
 	params: ["name"],
 });
 
@@ -380,16 +376,14 @@ var status = baseclass.extend({
 					],
 				});
 			}
-			var cronSyncNeeded = false;
-			var showCronWarnings =
+			if (
 				reply.status.enabled &&
 				reply.status.running &&
 				(reply.cron.auto_update_enabled ||
-					reply.cron.cron_line_state === "suspended");
-			if (showCronWarnings) {
+					reply.cron.cron_line_state === "suspended")
+			) {
 				var enableCronCmd =
 					"<code>/etc/init.d/cron enable && /etc/init.d/cron start</code>";
-				var resyncLabel = "<code>" + _("Resync Cron") + "</code>";
 				if (!reply.cron.cron_init || !reply.cron.cron_bin) {
 					reply.ubus.warnings.push({
 						code: "warningCronMissing",
@@ -401,37 +395,6 @@ var status = baseclass.extend({
 						info: enableCronCmd,
 					});
 				}
-				if (reply.cron.cron_line_state === "suspended") {
-					reply.ubus.warnings.push({
-						code: "warningCronEntryMismatch",
-						info: resyncLabel,
-					});
-					cronSyncNeeded = true;
-				} else if (
-					reply.cron.auto_update_enabled &&
-					(reply.cron.cron_line_state === "unsupported" ||
-						reply.cron.cron_line_state === "multi")
-				) {
-					reply.ubus.warnings.push({
-						code: "warningCronEntryMismatch",
-						info: resyncLabel,
-					});
-					cronSyncNeeded = true;
-				} else if (reply.cron.auto_update_enabled) {
-					if (!reply.cron.cron_line_present) {
-						reply.ubus.warnings.push({
-							code: "warningCronEntryMissing",
-							info: resyncLabel,
-						});
-						cronSyncNeeded = true;
-					} else if (!reply.cron.cron_line_match) {
-						reply.ubus.warnings.push({
-							code: "warningCronEntryMismatch",
-							info: resyncLabel,
-						});
-						cronSyncNeeded = true;
-					}
-				}
 			}
 			var text = "";
 			var outputFile = reply.status.outputFile;
@@ -440,7 +403,7 @@ var status = baseclass.extend({
 			var header = E("h2", {}, _("AdBlock-Fast - Status"));
 			var statusTitle = E(
 				"label",
-				{ class: "cbi-value-title" },
+				{ class: "cbi-value-title", for: pkg.Name + "-status" },
 				_("Service Status"),
 			);
 			if (reply.status.version) {
@@ -473,7 +436,7 @@ var status = baseclass.extend({
 			} else {
 				text = _("Not installed or not found");
 			}
-			var statusText = E("div", {}, text);
+			var statusText = E("output", { id: pkg.Name + "-status" }, text);
 			var statusField = E("div", { class: "cbi-value-field" }, statusText);
 			var statusDiv = E("div", { class: "cbi-value" }, [
 				statusTitle,
@@ -509,7 +472,7 @@ var status = baseclass.extend({
 				if (detailsText) {
 					var detailsTitle = E(
 						"label",
-						{ class: "cbi-value-title" },
+						{ class: "cbi-value-title", for: pkg.Name + "-details" },
 						_("Service Details"),
 					);
 					var detailsDescr = E(
@@ -522,7 +485,7 @@ var status = baseclass.extend({
 							"</a>",
 						),
 					);
-					var detailsContent = E("div", {}, detailsText);
+					var detailsContent = E("output", { id: pkg.Name + "-details" }, detailsText);
 					var detailsField = E("div", { class: "cbi-value-field" }, [
 						detailsContent,
 						E("br"),
@@ -540,7 +503,7 @@ var status = baseclass.extend({
 			if (reply.ubus.warnings && reply.ubus.warnings.length) {
 				var warningsTitle = E(
 					"label",
-					{ class: "cbi-value-title" },
+					{ class: "cbi-value-title", for: pkg.Name + "-warnings" },
 					_("Service Warnings"),
 				);
 				text = "";
@@ -554,7 +517,7 @@ var status = baseclass.extend({
 						text += _("Unknown warning") + "<br />";
 					}
 				});
-				var warningsText = E("div", { class: "cbi-value-description" }, text);
+				var warningsText = E("output", { id: pkg.Name + "-warnings", class: "cbi-value-description" }, text);
 				var warningsField = E(
 					"div",
 					{ class: "cbi-value-field" },
@@ -570,7 +533,7 @@ var status = baseclass.extend({
 			if (reply.ubus.errors && reply.ubus.errors.length) {
 				var errorsTitle = E(
 					"label",
-					{ class: "cbi-value-title" },
+					{ class: "cbi-value-title", for: pkg.Name + "-errors" },
 					_("Service Errors"),
 				);
 				text = "";
@@ -588,7 +551,7 @@ var status = baseclass.extend({
 					'<a href="' + pkg.URL + '" target="_blank">',
 					"</a>!<br />",
 				);
-				var errorsText = E("div", { class: "cbi-value-description" }, text);
+				var errorsText = E("output", { id: pkg.Name + "-errors", class: "cbi-value-description" }, text);
 				var errorsField = E("div", { class: "cbi-value-field" }, errorsText);
 				errorsDiv = E("div", { class: "cbi-value" }, [
 					errorsTitle,
@@ -641,65 +604,55 @@ var status = baseclass.extend({
 				_("Redownload"),
 			);
 
-			var btn_sync_cron = E(
-				"button",
-				{
-					class: "btn cbi-button cbi-button-apply",
-					disabled: true,
-					click: function (ev) {
-						ui.showModal(null, [
-							E("p", { class: "spinning" }, _("Syncing cron schedule")),
-						]);
-						return L.resolveDefault(getCronEntry(pkg.Name), {})
-							.then(function (response) {
-								var entry =
-									(response?.[pkg.Name] && response[pkg.Name].entry) || "";
-								if (!entry) {
-									return Promise.reject(new Error("No cron entry"));
-								}
-								entry = entry.replace(/^\s*#\s*/, "");
-								entry = entry.replace(
-									/adblock-fast-auto-(suspended|disabled)/g,
-									"adblock-fast-auto",
-								);
-								return L.resolveDefault(setCronEntry(pkg.Name, entry), {
-									result: false,
-								});
-							})
-							.then(
-								function (result) {
-									if (!result || result.result === false) {
-										throw new Error("Failed to update cron schedule");
-									}
-									ui.hideModal();
-									location.reload();
-								},
-								function (error) {
-									ui.hideModal();
-									ui.addNotification(
-										null,
-										E("p", {}, _("Failed to sync cron schedule")),
-									);
-								},
-							);
-					},
-				},
-				_("Resync Cron"),
-			);
-
+			var pauseTimeout = parseInt(reply.status.pause_timeout) || 20;
+			var pauseLabel =
+				_("Pause") + " (" + pkg.formatPauseTimeout(pauseTimeout) + ")";
 			var btn_action_pause = E(
 				"button",
 				{
 					class: "btn cbi-button cbi-button-apply",
 					disabled: true,
 					click: function (ev) {
-						ui.showModal(null, [
-							E("p", { class: "spinning" }, _("Pausing %s").format(pkg.Name)),
-						]);
-						return RPC.setInitAction(pkg.Name, "pause");
+						var remaining = pauseTimeout;
+						var allButtons = [
+							btn_start,
+							btn_action_dl,
+							btn_action_pause,
+							btn_stop,
+							btn_enable,
+							btn_disable,
+						];
+						if (typeof btn_sync_cron !== "undefined")
+							allButtons.push(btn_sync_cron);
+						allButtons.forEach(function (b) {
+							b.disabled = true;
+						});
+						btn_action_pause.textContent =
+							_("Pause") +
+							" (" +
+							pkg.formatPauseTimeout(remaining) +
+							")";
+						RPC.setInitAction(pkg.Name, "pause");
+						var countdown = setInterval(function () {
+							remaining--;
+							if (remaining > 0) {
+								btn_action_pause.textContent =
+									_("Pause") +
+									" (" +
+									pkg.formatPauseTimeout(remaining) +
+									")";
+							} else {
+								clearInterval(countdown);
+								btn_action_pause.textContent =
+									_("Pause") + " (" + _("Restarting") + "…)";
+								pollServiceStatus(function () {
+									location.reload();
+								});
+							}
+						}, 1000);
 					},
 				},
-				_("Pause"),
+				pauseLabel,
 			);
 
 			var btn_stop = E(
@@ -792,35 +745,26 @@ var status = baseclass.extend({
 				btn_enable.disabled = false;
 				btn_disable.disabled = true;
 			}
-			if (cronSyncNeeded) {
-				btn_sync_cron.disabled = false;
-			}
-
 			var buttonsDiv = [];
 			var buttonsTitle = E(
 				"label",
-				{ class: "cbi-value-title" },
+				{ class: "cbi-value-title", for: pkg.Name + "-buttons" },
 				_("Service Control"),
 			);
 			var buttonsTextItems = [
 				btn_start,
 				btn_gap,
-				// btn_action_pause,
-				// btn_gap,
 				btn_action_dl,
-			];
-			if (cronSyncNeeded) {
-				buttonsTextItems.push(btn_gap, btn_sync_cron);
-			}
-			buttonsTextItems.push(
+				btn_gap,
+				btn_action_pause,
 				btn_gap,
 				btn_stop,
 				btn_gap_long,
 				btn_enable,
 				btn_gap,
 				btn_disable,
-			);
-			var buttonsText = E("div", {}, buttonsTextItems);
+			];
+			var buttonsText = E("output", { id: pkg.Name + "-buttons" }, buttonsTextItems);
 			var buttonsField = E("div", { class: "cbi-value-field" }, buttonsText);
 			if (reply.status.version) {
 				buttonsDiv = E("div", { class: "cbi-value" }, [
@@ -857,7 +801,6 @@ return L.Class.extend({
 	getFileUrlFilesizes: getFileUrlFilesizes,
 	syncCron: syncCron,
 	getCronStatus: getCronStatus,
-	getCronEntry: getCronEntry,
 	setCronEntry: setCronEntry,
 	getPlatformSupport: getPlatformSupport,
 	getServiceInfo: getServiceInfo,

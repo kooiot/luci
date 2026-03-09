@@ -190,6 +190,20 @@ return view.extend({
 		var status, m, s1, s2, s3, o;
 
 		status = new adb.status();
+
+		if (!initData.enabled) {
+			return status.render().then(function (statusNode) {
+				return E("div", {}, [
+					statusNode,
+					E("div", { class: "cbi-map" }, [
+						E("h2", {}, _("AdBlock-Fast - Configuration")),
+						E("div", { class: "cbi-map-descr" },
+							_("Service is disabled. Please enable the service using the Service Control button above to configure service options.")),
+					]),
+				]);
+			});
+		}
+
 		m = new form.Map(pkg.Name, _("AdBlock-Fast - Configuration"));
 		this._map = m;
 
@@ -673,6 +687,18 @@ return view.extend({
 		);
 		o.default = "20";
 		o.datatype = "range(1,60)";
+
+		o = s1.taboption(
+			"tab_advanced",
+			form.Value,
+			"pause_timeout",
+			_("Pause time-out (in seconds)"),
+			_(
+				"Pause ad-blocking for the specified number of seconds when the Pause button is pressed.",
+			),
+		);
+		o.default = "20";
+		o.datatype = "range(1,600)";
 
 		o = s1.taboption(
 			"tab_advanced",
