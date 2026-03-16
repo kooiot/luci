@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-03-03 17:08+0000\n"
+"PO-Revision-Date: 2026-03-14 19:09+0000\n"
 "Last-Translator: Hyeonjeong Lee <h9101654@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsadblock-fast/ko/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 
 #: applications/luci-app-adblock-fast/htdocs/luci-static/resources/adblock-fast/status.js:116
 msgid "%s is currently disabled"
-msgstr ""
+msgstr "%s 서비스가 현재 비활성화되어 있습니다"
 
 #: applications/luci-app-adblock-fast/htdocs/luci-static/resources/adblock-fast/status.js:64
 msgid "%s is not installed or not found"
@@ -801,7 +801,7 @@ msgstr ""
 
 #: applications/luci-app-adblock-fast/htdocs/luci-static/resources/view/status/include/70_adblock-fast.js:64
 msgid "Unable to retrieve %s status"
-msgstr ""
+msgstr "%s 상태를 불러올 수 없음"
 
 #: applications/luci-app-adblock-fast/htdocs/luci-static/resources/view/adblock-fast/overview.js:832
 #: applications/luci-app-adblock-fast/htdocs/luci-static/resources/view/adblock-fast/overview.js:859
