@@ -3,7 +3,7 @@
 
 'use strict';
 
-import { stdin, access, dirname, basename, open, popen, glob, lsdir, readfile, readlink, error } from 'fs';
+import { stdin, access, dirname, basename, open, popen, glob, lsdir, readfile, readlink, realpath, error } from 'fs';
 import { cursor } from 'uci';
 
 import { init_list, init_index, init_enabled, init_action, conntrack_list, process_list } from 'luci.sys';
@@ -242,6 +242,7 @@ const methods = {
 				ufpd:       access('/usr/sbin/ufpd') == true,
 				vrf:        access('/sys/module/vrf/refcnt') == true, // vrf.ko is loaded
 				netifd_vrf: false,
+				mptcp:      access('/proc/sys/net/mptcp/enabled'),
 			};
 
 			const wifi_features = [ 
@@ -277,27 +278,27 @@ const methods = {
 			let fd = popen('dnsmasq --version 2>/dev/null');
 
 			if (fd) {
-				const m = match(fd.read('all'), /^Compile time options: (.+)$/s);
+				for (let line = fd.read('line'); length(line); line = fd.read('line')) {
+					const m = match(line, /^Compile time options: (.+)\n$/);
 
-				for (let opt in split(m?.[1], ' ')) {
-					let f = replace(opt, 'no-', '', 1);
+					for (let opt in split(m?.[1], ' ')) {
+						let f = replace(opt, 'no-', '', 1);
 
-					result.dnsmasq ??= {};
-					result.dnsmasq[lc(f)] = (f == opt);
+						result.dnsmasq ??= {};
+						result.dnsmasq[lc(f)] = (f == opt);
+					}
 				}
 
 				fd.close();
 			}
 
-			result.odhcpd = false;
 			fd = popen('odhcpd -h 2>/dev/null');
 
 			if (fd) {
-				const output = fd.read('all');
+				for (let line = fd.read('line'); length(line); line = fd.read('line')) {
+					result.odhcpd ??= {};
 
-				if (output) {
-					result.odhcpd = {};
-					const m = match(output, /^Features: (.+)$/s);
+					const m = match(line, /^Features: (.+)\n$/);
 
 					for (let opt in split(m?.[1], ' ')) {
 						let f = replace(opt, 'no-', '', 1);
@@ -636,7 +637,7 @@ const methods = {
 			/* Workaround for targets that do not enumerate  all netdevs in board.json */
 			if (uname().machine in [ 'x86_64' ] &&
 			    match(ports[0]?.device, /^eth\d+$/)) {
-				let bus = readlink(`/sys/class/net/${ports[0].device}/device/subsystem`);
+				let bus = realpath(`/sys/class/net/${ports[0].device}/device/subsystem`);
 
 				for (let netdev in lsdir('/sys/class/net')) {
 					if (!match(netdev, /^eth\d+$/))
@@ -645,7 +646,7 @@ const methods = {
 					if (length(filter(ports, port => port.device == netdev)))
 						continue;
 
-					if (readlink(`/sys/class/net/${netdev}/device/subsystem`) != bus)
+					if (realpath(`/sys/class/net/${netdev}/device/subsystem`) != bus)
 						continue;
 
 					push(ports, { role: 'unknown', device: netdev });

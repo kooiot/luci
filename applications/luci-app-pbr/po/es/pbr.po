@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-03-12 12:47+0000\n"
-"Last-Translator: Francisco Serrador <fserrador@gmail.com>\n"
+"PO-Revision-Date: 2026-04-04 03:09+0000\n"
+"Last-Translator: Franco Castillo <castillofrancodamian@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationspbr/es/>\n"
 "Language: es\n"
@@ -171,7 +171,7 @@ msgstr ""
 
 #: applications/luci-app-pbr/htdocs/luci-static/resources/view/pbr/overview.js:121
 msgid "Dnsmasq ipset"
-msgstr "Conjunto de ip de DNSMASQ"
+msgstr "ipset de dnsmasq"
 
 #: applications/luci-app-pbr/htdocs/luci-static/resources/view/pbr/overview.js:125
 msgid "Dnsmasq nft set"
@@ -275,7 +275,7 @@ msgstr "Inactivo"
 
 #: applications/luci-app-pbr/htdocs/luci-static/resources/view/status/include/72_pbr.js:41
 msgid "Inactive (Disabled)"
-msgstr "Inactivo (deshabilitado)"
+msgstr "Inactivo (desactivado)"
 
 #: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:361
 msgid "Incompatible DHCP Option 6 for interface %s"
@@ -683,7 +683,7 @@ msgstr "Detener"
 
 #: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:255
 msgid "Stopped (Disabled)."
-msgstr "Detenido (deshabilitado)."
+msgstr "Detenido (desactivado)."
 
 #: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:253
 msgid "Stopped."
