@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-04-02 19:05+0000\n"
-"Last-Translator: UDP <udp@users.noreply.hosted.weblate.org>\n"
+"PO-Revision-Date: 2026-04-16 14:10+0000\n"
+"Last-Translator: ZW <roc_fe@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Chinese (Traditional Han script) <https://hosted.weblate.org/"
 "projects/openwrt/luciapplicationsstrongswan-swanctl/zh_Hant/>\n"
 "Language: zh_Hant\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.17-dev\n"
+"X-Generator: Weblate 5.17.1-dev\n"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:299
 msgid "Action on initial configuration load"
@@ -110,7 +110,7 @@ msgstr "DPD 延遲"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/status.js:103
 msgid "Daemon"
-msgstr "守護程式"
+msgstr "常駐程式"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/status.js:15
 msgid "Day"
@@ -600,7 +600,7 @@ msgstr ""
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:279
 msgid "XFRM interface ID set on input and output interfaces"
-msgstr "設定在輸入和輸出介面上的 XFRM 介面 ID"
+msgstr "設定在傳入和傳出介面上的 XFRM 介面 ID"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:65
 msgid "Zone"

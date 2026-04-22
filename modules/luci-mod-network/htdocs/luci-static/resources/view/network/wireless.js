@@ -713,9 +713,9 @@ return view.extend({
 			let hint;
 
 			if (name && ipv4 && ipv6)
-				hint = `${name} <span class="hide-xs">(${ipv4}, ${ipv6})</span>`;
+				hint = `${'%h'.format(name)} <span class="hide-xs">(${ipv4}, ${ipv6})</span>`;
 			else if (name && (ipv4 ?? ipv6))
-				hint = `${name} <span class="hide-xs">(${ipv4 || ipv6})</span>`;
+				hint = `${'%h'.format(name)} <span class="hide-xs">(${ipv4 || ipv6})</span>`;
 			else
 				hint = name || ipv4 || ipv6 || '?';
 
@@ -2359,7 +2359,7 @@ return view.extend({
 					uci.set('wireless', radioDev.getName(), 'htmode', 'HT'+w);
 				}
 				else {
-					uci.remove('wireless', radioDev.getName(), 'htmode');
+					uci.unset('wireless', radioDev.getName(), 'htmode');
 				}
 
 				uci.set('wireless', radioDev.getName(), 'channel', bss.channel);
