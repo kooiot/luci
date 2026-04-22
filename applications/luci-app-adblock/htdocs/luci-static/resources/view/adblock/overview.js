@@ -80,11 +80,11 @@ return view.extend({
 		*/
 		let parseErrCount = 0;
 		poll.add(function () {
-			return L.resolveDefault(fs.stat('/var/run/adb_runtime.json'), null).then(function (stat) {
+			return L.resolveDefault(fs.stat('/var/run/adblock/adblock.runtime.json'), null).then(function (stat) {
 				if (!stat) {
 					return;
 				}
-				return L.resolveDefault(fs.read_direct('/var/run/adb_runtime.json'), null).then(function (res) {
+				return L.resolveDefault(fs.read_direct('/var/run/adblock/adblock.runtime.json'), null).then(function (res) {
 					const status = document.getElementById('status');
 					const buttons = document.querySelectorAll('.cbi-page-actions button');
 					let info = null;
@@ -477,9 +477,9 @@ return view.extend({
 		o.default = '2a13:1001::86:54:11:100';
 		o.rmempty = true;
 
-		const url = `https://${window.location.hostname}/cgi-bin/adblock`;
+		const url = `${window.location.protocol}//${window.location.hostname}/cgi-bin/adblock`;
 		const options = {
-			pixelSize: 2,
+			pixelSize: 3,
 			margin: 1,
 			ecLevel: 'M',
 			whiteColor: 'white',
