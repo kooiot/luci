@@ -1,11 +1,14 @@
 msgid ""
 msgstr ""
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-05-02 19:29+0000\n"
+"Last-Translator: ssantos <ssantos@web.de>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/openwrt/"
+"luciapplicationsrustdesk-server/de/>\n"
 "Language: de\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:541
 msgid "ALWAYS_USE_RELAY"
@@ -226,7 +229,7 @@ msgstr ""
 
 #: applications/luci-app-rustdesk-server/root/usr/share/luci/menu.d/luci-app-rustdesk-server.json:26
 msgid "Log"
-msgstr ""
+msgstr "Protokoll"
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:546
 msgid "Logging level for the ID server"
@@ -456,7 +459,7 @@ msgstr ""
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:552
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:576
 msgid "Trace"
-msgstr ""
+msgstr "Rückverfolgung"
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:526
 msgid "UDP Recv Buffer (-M, --rmem)"

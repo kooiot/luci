@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-04-24 04:42+0000\n"
+"PO-Revision-Date: 2026-05-10 15:13+0000\n"
 "Last-Translator: Džiugas Januševičius <dziugas1959@hotmail.com>\n"
 "Language-Team: Lithuanian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationslibreswan/lt/>\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "(n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.17.1-dev\n"
+"X-Generator: Weblate 2026.5-dev\n"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/proposals.js:50
 msgid "3DES*"
@@ -44,26 +44,29 @@ msgstr "„AES_CTR“"
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/tunnels.js:198
 msgid "Acceptable values are an integer followed by m, h, d"
 msgstr ""
+"Priimtinos reikšmės yra sveikasis skaičius, po kurio eina – m (min), h (val) "
+"ir d (diena)"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/proposals.js:17
 msgid "Add Proposal"
-msgstr ""
+msgstr "Pridėti pasiūlymą"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/tunnels.js:47
 msgid "Add Tunnel"
 msgstr ""
+"Pridėti „tunelį“ – tinklo protokolas, skirtas šifruoti/pereiti į kitą tinklą"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/tunnels.js:72
 msgid "Advanced"
-msgstr ""
+msgstr "Pažangūs"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/globals.js:63
 msgid "Allowed Virtual Private"
-msgstr ""
+msgstr "Leidžiami virtualūs privatūs tinklai"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/tunnels.js:146
 msgid "Auth Method"
-msgstr ""
+msgstr "Autentifikavimo metodas"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/tunnels.js:70
 msgid "Authentication"
@@ -72,6 +75,7 @@ msgstr "Autentifikavimas"
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/tunnels.js:268
 msgid "Auto Update Peer Address of VTI interface"
 msgstr ""
+"Automatiškai atnaujinti „VTI“ sąsajos ir/arba sietuvo lygiarangio adresą"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/proposals.js:57
 msgid "CAMELLIA_CBC"
@@ -83,82 +87,82 @@ msgstr "Išvalyti"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/proposals.js:59
 msgid "DH Group"
-msgstr ""
+msgstr "„DH“ grupė"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/proposals.js:63
 msgid "DH Group 14"
-msgstr ""
+msgstr "„DH“ 14-a grupė"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/proposals.js:64
 msgid "DH Group 15"
-msgstr ""
+msgstr "„DH“ 15-a grupė"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/proposals.js:65
 msgid "DH Group 16"
-msgstr ""
+msgstr "„DH“ 16-a grupė"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/proposals.js:66
 msgid "DH Group 17"
-msgstr ""
+msgstr "„DH“ 17-a grupė"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/proposals.js:67
 msgid "DH Group 18"
-msgstr ""
+msgstr "„DH“ 18-a grupė"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/proposals.js:68
 msgid "DH Group 19"
-msgstr ""
+msgstr "„DH“ 19-a grupė"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/proposals.js:69
 msgid "DH Group 20"
-msgstr ""
+msgstr "„DH“ 20-a grupė"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/proposals.js:70
 msgid "DH Group 21"
-msgstr ""
+msgstr "„DH“ 21-a grupė"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/proposals.js:71
 msgid "DH Group 22*"
-msgstr ""
+msgstr "„DH“ 22-a grupė"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/proposals.js:72
 msgid "DH Group 31"
-msgstr ""
+msgstr "„DH“ 31-a grupė"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/proposals.js:62
 msgid "DH Group 5*"
-msgstr ""
+msgstr "„DH“ 5-a* grupė"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/tunnels.js:210
 msgid "DPD Action"
-msgstr ""
+msgstr "„DPD“ veiksmas"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/tunnels.js:218
 msgid "DPD Delay"
-msgstr ""
+msgstr "„DPD“ atidėjimas"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/tunnels.js:223
 msgid "DPD Timeout"
-msgstr ""
+msgstr "„DPD“ pasibaigusios užklausos laikas"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/globals.js:23
 msgid "Debug Logs"
-msgstr ""
+msgstr "Derinimo/Trukdžių šalinimo žurnalai"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/overview.js:61
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/overview.js:62
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/overview.js:63
 msgid "Down"
-msgstr ""
+msgstr "Išjungtas/-a/┃Išgalintas/-a"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/globals.js:56
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/tunnels.js:240
 msgid "Enable nflog on nfgroup"
-msgstr ""
+msgstr "Įjungti/Įgalinti „nflog“ ant „nfgroup“"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/proposals.js:48
 msgid "Encryption Method"
-msgstr ""
+msgstr "Šifravimo metodas"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/proposals.js:38
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/tunnels.js:69
@@ -167,60 +171,66 @@ msgstr "Bendra/-i/-ai/-s"
 
 #: applications/luci-app-libreswan/root/usr/share/rpcd/acl.d/luci-app-libreswan.json:3
 msgid "Grant access to LuCI app Libreswan IPSec"
-msgstr ""
+msgstr "Duoti prieigą prie „LuCI“ programėles – „IPSec“"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/proposals.js:40
 msgid "Hash Algorithm"
-msgstr ""
+msgstr "maišos algoritmas"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/tunnels.js:214
 msgid "Hold"
-msgstr ""
+msgstr "Laikyti"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/tunnels.js:180
 msgid "IKE Life Time"
-msgstr ""
+msgstr "„IKE“ gyvavimo laikas"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/tunnels.js:161
 msgid "IKE V2"
-msgstr ""
+msgstr "„IKE V2“"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/tunnels.js:164
 msgid "IKE Version 1"
-msgstr ""
+msgstr "„IKE“ 1-oji versija"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/tunnels.js:163
 msgid "IKE Version 2"
-msgstr ""
+msgstr "„IKE“ 2-oji versija"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/globals.js:46
 msgid "IP address to listen on, default depends on Listen Interface"
 msgstr ""
+"Laukiamo prisijungimo/jungties ryšio IP adresas (numatytasis priklauso nuo "
+"laukiamo prisijungimo/jungties ryšio sąsajos ir/arba sietuvo)"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/globals.js:17
 msgid "IPSec Global Settings"
-msgstr ""
+msgstr "„IPSec“ išoriniai/visuotiniai nustatymai"
 
 #: applications/luci-app-libreswan/root/usr/share/luci/menu.d/luci-app-libreswan.json:20
 msgid "IPSec Globals"
-msgstr ""
+msgstr "„IPSec“ išoriniai/visuotiniai"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/proposals.js:11
 #: applications/luci-app-libreswan/root/usr/share/luci/menu.d/luci-app-libreswan.json:29
 msgid "IPSec Proposals"
-msgstr ""
+msgstr "„IPSec“ pasiūlymai"
 
 #: applications/luci-app-libreswan/root/usr/share/luci/menu.d/luci-app-libreswan.json:38
 msgid "IPSec Tunnels"
 msgstr ""
+"„IPSec tuneliai“ – tinklo protokolas, skirtas šifruoti/pereiti į kitus "
+"tinklus"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/overview.js:73
 msgid "IPSec Tunnels Summary"
 msgstr ""
+"„IPSec tunelių“ tinklo protokolas, skirtas šifruoti/pereiti į kitus tinklus "
+"santrauka/suvestinė"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/tunnels.js:77
 msgid "Initiate"
-msgstr ""
+msgstr "Inicijuoti"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/tunnels.js:71
 msgid "Interface"
@@ -228,44 +238,48 @@ msgstr "Sąsaja ir/arba Sietuvas"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/globals.js:40
 msgid "Interface for IPsec to use"
-msgstr ""
+msgstr "Sąsaja ir/arba sietuvas, skirta/-as „IPsec“ naudojimui"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/tunnels.js:98
 msgid "Left ID"
-msgstr ""
+msgstr "Vietinės pusės ID"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/tunnels.js:84
 msgid "Left IP/Device"
-msgstr ""
+msgstr "Vietinės pusės IP/įrenginys"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/tunnels.js:79
 msgid "Left Interface"
-msgstr ""
+msgstr "Vietinės pusės sąsaja ir/arba sietuvas"
 
 #: applications/luci-app-libreswan/root/usr/share/luci/menu.d/luci-app-libreswan.json:3
 msgid "Libreswan IPSec"
-msgstr ""
+msgstr "„Libreswan IPSec“"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/tunnels.js:76
 msgid "Listen"
-msgstr ""
+msgstr "Laukti prisijungimo/jungties ryšio"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/globals.js:45
 msgid "Listen Address"
-msgstr ""
+msgstr "Laukiamo prisijungimo/jungties ryšio adresas"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/globals.js:39
 msgid "Listen Interface"
-msgstr ""
+msgstr "Laukimo prisijungimo/jungties ryšio sąsaja ir/arba sietuvas"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/tunnels.js:250
 msgid "Lists VTI interfaces configured with ikey and okey"
 msgstr ""
+"Išvardija „VTI“ sąsajas ir/arba sietuvus, sukonfigūruotas/-us su „ikey“ ir „"
+"okey“"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/tunnels.js:249
 msgid ""
 "Lists XFRM interfaces in format \"ipsecN\", N denotes ifid of xfrm interface"
 msgstr ""
+"Išvardija „XFRM“ sąsajų ir/arba sietuvu sąrašą formatu – „ipsecN“, kur „N“ "
+"rodo„xfrm“ sąsajos ir/arba sietuvo – „ifid“"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/tunnels.js:114
 msgid "Local Source IP"
@@ -277,7 +291,7 @@ msgstr "Vietinis potinklis"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/tunnels.js:129
 msgid "Local Subnets"
-msgstr ""
+msgstr "Vietiniai potinkliai"
 
 #: applications/luci-app-libreswan/htdocs/luci-static/resources/view/libreswan/proposals.js:42
 msgid "MD5*"

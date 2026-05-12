@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-04-24 04:42+0000\n"
+"PO-Revision-Date: 2026-05-10 15:13+0000\n"
 "Last-Translator: Džiugas Januševičius <dziugas1959@hotmail.com>\n"
 "Language-Team: Lithuanian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsstrongswan-swanctl/lt/>\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "(n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.17.1-dev\n"
+"X-Generator: Weblate 2026.5-dev\n"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:299
 msgid "Action on initial configuration load"
@@ -25,19 +25,19 @@ msgstr "Veiksmas, kai sueina „DPD“ pasibaigusios užklausos laikas"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/status.js:104
 msgid "Active IKE_SAs"
-msgstr ""
+msgstr "Aktyvūs „IKE_SA“ (dgs.)"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:92
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:259
 msgid "Advanced"
-msgstr ""
+msgstr "Pažangūs"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:397
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:404
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:413
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:418
 msgid "Algorithms marked with * are considered insecure"
-msgstr ""
+msgstr "Algoritmai pažymėti su „*“ yra laikomi nesaugiais"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:91
 msgid "Authentication"
@@ -49,28 +49,30 @@ msgstr "Autentifikavimo būdas"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/status.js:123
 msgid "Bytes in"
-msgstr ""
+msgstr "Gauti baitai"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/status.js:124
 msgid "Bytes out"
-msgstr ""
+msgstr "Perduoti baitai"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:195
 msgid "CA Certificate"
-msgstr ""
+msgstr "„CA“ sertifikatas"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:196
 msgid ""
 "CA certificate that need to lie in remote peer's certificate's path of trust"
 msgstr ""
+"„CA“ sertifikatas, kuris turi būti nuotolinio lygiarangio sertifikato "
+"patikimo kelio sudėtyje"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/status.js:151
 msgid "CHILD_SAs"
-msgstr ""
+msgstr "„CHILD_SA“ (dgs.)"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:185
 msgid "Certificate pathname to use for authentication"
-msgstr ""
+msgstr "Sertifikato kelio pavadinimas, naudojamas autentifikavimui"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/status.js:139
 msgid "Close"
@@ -78,36 +80,38 @@ msgstr "Uždaryti/Užverti"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:306
 msgid "Close Action"
-msgstr ""
+msgstr "Uždaryti veiksma"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:95
 msgid "Configuration is enabled or not"
-msgstr ""
+msgstr "Konfigūraciją yra įjungtą/įgalinta arba ne"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:387
 msgid ""
 "Configure Cipher Suites to define IKE (Phase 1) or ESP (Phase 2) Proposals."
 msgstr ""
+"Konfigūruokite šifravimo komplektus, kad apibrėžtumėte „IKE“ (1-o etapo) "
+"arba „ESP“ (2-o etapo) pasiūlymus."
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:57
 msgid "Configure strongSwan for secure VPN connections."
-msgstr ""
+msgstr "Konfigūruokite „strongSwan“ saugiems „VPN“ ryšiams."
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:118
 msgid "Crypto Proposal"
-msgstr ""
+msgstr "Kripto pasiūlymas"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:315
 msgid "Crypto Proposal (Phase 2)"
-msgstr ""
+msgstr "Kripto pasiūlymas (2-a fazė)"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:346
 msgid "DPD Action"
-msgstr ""
+msgstr "„DPD“ veiksmas"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:222
 msgid "DPD Delay"
-msgstr ""
+msgstr "„DPD“ atidėjimas"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/status.js:103
 msgid "Daemon"
@@ -129,34 +133,36 @@ msgstr "Derinimo/Trukdžių šalinimo lygis"
 msgid ""
 "Define Connection Children to be used as Tunnels in Remote Configurations."
 msgstr ""
+"Apibrėžti ryšio „vaikus“, kurie bus naudojami kaip „tuneliai“ – tinklo "
+"protokole, skirti šifruoti/pereiti į kitą tinklą nuotolinėse konfigūracijose."
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:85
 msgid "Define Remote IKE Configurations."
-msgstr ""
+msgstr "Apibrėžti nuotolines „IKE“ konfigūracijas."
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/status.js:164
 msgid "Details"
-msgstr ""
+msgstr "išsamesnės informacijos"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:412
 msgid "Diffie-Hellman Group"
-msgstr ""
+msgstr "Difio-Helmano grupė"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:356
 msgid "Duration of the CHILD_SA before rekeying"
-msgstr ""
+msgstr "„CHILD_SA“ trukmė prieš pakartotinio rakto įvedimo"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:392
 msgid "ESP Proposal"
-msgstr ""
+msgstr "„ESP“ pasiūlymas"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:366
 msgid "Enable Hardware offload"
-msgstr ""
+msgstr "Įjungti/Įgalinti aparatinės įrangos iškrovimo/apkrovos perkėlimą"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:361
 msgid "Enable ipcomp compression"
-msgstr ""
+msgstr "Įjungti/Įgalinti „IPcomp“ suspaudimą/suglaudi(ni)mą"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:94
 msgid "Enabled"
@@ -165,27 +171,27 @@ msgstr "Įjungta/Įgalinta (-s/-i)"
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/status.js:121
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:396
 msgid "Encryption Algorithm"
-msgstr ""
+msgstr "Šifravimo algoritmas"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/status.js:122
 msgid "Encryption Keysize"
-msgstr ""
+msgstr "Šifravimo rakto dydis"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:386
 msgid "Encryption Proposals"
-msgstr ""
+msgstr "Šifravimo pasiūlymai"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/status.js:162
 msgid "Established for"
-msgstr ""
+msgstr "Įkurta"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:66
 msgid "Firewall zone that has to match the defined firewall zone"
-msgstr ""
+msgstr "Užkardos zona, kuri turi atitikti apibrėžtą užkardos zoną"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:98
 msgid "Gateway (Remote Endpoint)"
-msgstr ""
+msgstr "Tinklo tarpuvartė (nuotolinis galutinis taškas)"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:90
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:258
@@ -198,19 +204,19 @@ msgstr "Bendri nustatymai"
 
 #: applications/luci-app-strongswan-swanctl/root/usr/share/rpcd/acl.d/luci-app-strongswan-swanctl.json:3
 msgid "Grant access to luci-app-strongswan-swanctl"
-msgstr ""
+msgstr "Duoti prieigą prie – „luci-app-strongswan-swanctl“"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:365
 msgid "H/W Offload"
-msgstr ""
+msgstr "Aparatinės įrangos iškrovimo/apkrovos perkėlimas"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/status.js:105
 msgid "Half-Open IKE_SAs"
-msgstr ""
+msgstr "Pusiau atidaryti „IKEA_SA“ (dgs.)"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:403
 msgid "Hash Algorithm"
-msgstr ""
+msgstr "maišos algoritmas"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/status.js:16
 msgid "Hour"
@@ -222,72 +228,78 @@ msgstr "Valandos"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:207
 msgid "IKE Fragmentation"
-msgstr ""
+msgstr "„IKE“ fragmentavimas/-cija"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/status.js:161
 msgid "IKE Version"
-msgstr ""
+msgstr "„IKE“ versija"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:159
 msgid "IKE authentication (phase 1)"
-msgstr ""
+msgstr "„IKE“ autentifikavimas (1-oji fazė)"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:234
 msgid ""
 "IKEv2 interval to refresh keying material; also used to compute lifetime"
 msgstr ""
+"„IKEv2“ intervalas, skirtas atnaujinti raktų medžiagą; taip pat naudojamas "
+"gyvavimo laikui apskaičiuoti"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:99
 msgid "IP address or FQDN name of the tunnel remote endpoint"
 msgstr ""
+"„Tunelio“ – Tinklo protokolas, skirtas šifruoti/pereiti į kitą tinklą "
+"nuotolinio galutinio taško IP adresas arba „FQDN“ pavadinimas"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:104
 msgid "IP address or FQDN of the tunnel local endpoint"
 msgstr ""
+"„Tunelio“ – Tinklo protokolas, skirtas šifruoti/pereiti į kitą tinklą "
+"vietinio galutinio taško IP adresas arba „FQDN“"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:360
 msgid "IPComp"
-msgstr ""
+msgstr "„IPComp“"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:228
 msgid "Inactivity"
-msgstr ""
+msgstr "Neaktyvumas"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/status.js:126
 msgid "Install Time"
-msgstr ""
+msgstr "Įdiegimo laikas"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:71
 msgid "Interfaces that accept VPN traffic"
-msgstr ""
+msgstr "Sąsajos ir/arba Sietuvai, kurios/-ie priima „VPN“ srauta"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:229
 msgid "Interval before closing an inactive CHILD_SA"
-msgstr ""
+msgstr "Intervalas prieš uždarant neaktyvų „CHILD_SA“"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:223
 msgid "Interval to check liveness of a peer"
-msgstr ""
+msgstr "Intervalas, skirtas patikrinti lygiarangio gyvumą"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:243
 msgid "Keyexchange"
-msgstr ""
+msgstr "Raktų mainų protokolas"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:216
 msgid "Keying Retries"
-msgstr ""
+msgstr "Raktų keitimo bandymai"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/status.js:125
 msgid "Life Time"
-msgstr ""
+msgstr "Gyvavimo laikas"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:341
 msgid "Lifetime"
-msgstr ""
+msgstr "Gyvavimo laikas"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:239
 msgid "Limit on time to complete rekeying/reauthentication"
-msgstr ""
+msgstr "Laiko apribojimas, atliekant pakartotinį raktų keitimą/autentifikavimą"
 
 #: applications/luci-app-strongswan-swanctl/htdocs/luci-static/resources/view/strongswan-swanctl/swanctl.js:316
 msgid ""

@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-04-24 04:42+0000\n"
+"PO-Revision-Date: 2026-05-10 15:13+0000\n"
 "Last-Translator: Džiugas Januševičius <dziugas1959@hotmail.com>\n"
 "Language-Team: Lithuanian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsrustdesk-server/lt/>\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "(n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.17.1-dev\n"
+"X-Generator: Weblate 2026.5-dev\n"
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:541
 msgid "ALWAYS_USE_RELAY"
@@ -30,27 +30,31 @@ msgstr "Visus esamus klientus reikės iš naujo sukonfigūruoti."
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:586
 msgid "Bandwidth limit per single connection in MB/s (0 = default)"
-msgstr ""
+msgstr "Pralaidumo riba vienam ryšiui MB/s (0-is = numatytoji)"
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:190
 msgid "Binary"
-msgstr ""
+msgstr "Dvejetainė"
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:219
 msgid "Cannot regenerate: No public key exists yet."
-msgstr ""
+msgstr "Negalima iš naujo sugeneruoti: viešojo rakto dar nėra."
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:315
 msgid ""
 "Cannot start service: Enable the ID Server or Relay Server in the "
 "configuration first."
 msgstr ""
+"Negalima paleisti tarnybos: pirmiausia konfigūracijoje įjunkite ID serverį "
+"arba retransliavimo/perdavimo serverį."
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:315
 msgid ""
 "Check \"Enable ID Server\" or \"Enable Relay Server\" below and click \"Save "
 "& Apply\"."
 msgstr ""
+"Pažymėkite „Įjungti/Įgalinti ID serverį“ arba „Įjungti retransliavimo/"
+"perdavimo serverį“ apačioje ir spustelėkite – „Išsaugoti ir taikyti“."
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:165
 msgid "Client"
@@ -62,27 +66,27 @@ msgstr "Komponentas"
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:493
 msgid "Configuration"
-msgstr ""
+msgstr "Konfigūracija"
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:174
 msgid "Configure in Network → Firewall → Traffic Rules."
-msgstr ""
+msgstr "Konfigūruoti per – Tinklas → Užkarda → Srauto taisyklės."
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:222
 msgid "Continue?"
-msgstr ""
+msgstr "Tęsti?"
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:449
 msgid "Copy"
-msgstr ""
+msgstr "Kopijuoti"
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:598
 msgid "DOWNGRADE_START_CHECK"
-msgstr ""
+msgstr "DOWNGRADE_START_CHECK"
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:594
 msgid "DOWNGRADE_THRESHOLD"
-msgstr ""
+msgstr "DOWNGRADE_THRESHOLD"
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:551
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:575
@@ -98,10 +102,13 @@ msgstr "Numatyta/-s/-ai"
 msgid ""
 "Default relay servers. Add one server per entry (hostname or hostname:port)"
 msgstr ""
+"Numatytieji retransliavimo/perdavimo serveriai. Pridėkite po vieną serverį "
+"kiekvienai įvesčiai (įrenginio (t.y skleidėjo/vedėjo) pavadinimas arba "
+"įrenginio (t.y skleidėjo/vedėjo) pavadinimas:prievadas)"
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:522
 msgid "Determine if the connection comes from LAN. Use CIDR notation."
-msgstr ""
+msgstr "Nustatyti, jei ryšys atsiranda iš „LAN“. Naudoti „CIDR“ užrašą."
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:292
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:485
@@ -122,11 +129,13 @@ msgstr "Įjungti/Įgalinti"
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:312
 msgid "Enable ID Server or Relay Server first"
-msgstr ""
+msgstr "Įjungti/Įgalinti ID serverį arba retransliavimo/perdavimo serverį pirmą"
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:471
 msgid "Enable ID Server or Relay Server in Configuration first"
 msgstr ""
+"Įjungti/Įgalinti ID serverį arba retransliavimo/perdavimo serverį "
+"konfigūracijoje pirmą"
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:191
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:295
@@ -146,19 +155,19 @@ msgstr "Klaida:"
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:349
 msgid "Failed to restart service:"
-msgstr ""
+msgstr "Nepavyko paleisti iš naujo tarnybos:"
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:323
 msgid "Failed to start service:"
-msgstr ""
+msgstr "Nepavyko paleisti tarnybos:"
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:336
 msgid "Failed to stop service:"
-msgstr ""
+msgstr "Nepavyko sustabdyti tarnybos:"
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:283
 msgid "Failed:"
-msgstr ""
+msgstr "Nepavyko/-ę:"
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:172
 msgid "Firewall Configuration Required"
@@ -166,7 +175,7 @@ msgstr "Reikalingas užkardos konfigūravimas"
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:542
 msgid "Force all connections to use relay servers"
-msgstr ""
+msgstr "Priversti visus ryšius naudoti retransliavimo/perdavimo serverius"
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:405
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:430
@@ -179,19 +188,19 @@ msgstr "Bendra/-i/-ai/-s"
 
 #: applications/luci-app-rustdesk-server/root/usr/share/rpcd/acl.d/luci-app-rustdesk-server.json:3
 msgid "Grant access to RustDesk Server configuration"
-msgstr ""
+msgstr "Duoti prieigą prie – „RustDesk“ serverio konfigūracijos"
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:200
 msgid "HBBR (Relay Server)"
-msgstr ""
+msgstr "„HBBR“ (retransliavimo/perdavimo serveris)"
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:194
 msgid "HBBS (ID Server)"
-msgstr ""
+msgstr "„HBBS“ (ID serveris)"
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:497
 msgid "ID Server (hbbs)"
-msgstr ""
+msgstr "ID serveris („hbbs“)"
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:550
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:574
@@ -200,32 +209,32 @@ msgstr "Informacija"
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:80
 msgid "Invalid characters detected"
-msgstr ""
+msgstr "Aptiktos negalimos rašmenys"
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:94
 msgid "Invalid characters."
-msgstr ""
+msgstr "Negalimos rašmenys."
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:509
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:564
 msgid "Key (-k, --key)"
-msgstr ""
+msgstr "Raktas (-k, --key)"
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:237
 msgid "Key regeneration failed:"
-msgstr ""
+msgstr "Rakto sugeneravimas nepavyko:"
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:230
 msgid "Keys deleted. Starting service to generate new keys..."
-msgstr ""
+msgstr "Raktai ištrinti. Pradedama tarnyba naujiems raktams generuoti..."
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:521
 msgid "LAN Mask (--mask)"
-msgstr ""
+msgstr "„LAN“ tinklavimo „kaukė“ – adresų segregatorius (--mask)"
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:579
 msgid "LIMIT_SPEED"
-msgstr ""
+msgstr "„LIMIT_SPEED“"
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:299
 msgid "Loading..."
@@ -237,11 +246,11 @@ msgstr "Žurnalas"
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:546
 msgid "Logging level for the ID server"
-msgstr ""
+msgstr "Žurnalinimo lygis, skirtas ID serveriui"
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:570
 msgid "Logging level for the relay server"
-msgstr ""
+msgstr "Žurnalinimas lygis, skirtas retransliavimo/perdavimo serveriui"
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:411
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:436
@@ -255,25 +264,27 @@ msgstr "Nerasta/-s"
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:451
 msgid "Not generated yet - start the service"
-msgstr ""
+msgstr "Dar nesugeneruota – pradėti tarnyba"
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:510
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:565
 msgid "Only allow clients with the same key. If empty, uses auto-generated key"
 msgstr ""
+"Leisti tik klientus su tuo pačiu raktu. Jei tuščia, naudojamas automatiškai "
+"sugeneruotas raktas"
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:94
 msgid "Only alphanumeric and base64 characters (+/=) allowed."
-msgstr ""
+msgstr "Leidžiamos tik tekstinės ir „base64“ rašmenys (+/=)."
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:504
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:559
 msgid "Port (-p, --port)"
-msgstr ""
+msgstr "Prievadas (-p, --port)"
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:273
 msgid "Processing..."
-msgstr ""
+msgstr "Apdorojama..."
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:209
 msgid "Public Key"
@@ -282,32 +293,32 @@ msgstr "Viešasis raktas"
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:545
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:569
 msgid "RUST_LOG"
-msgstr ""
+msgstr "„RUST_LOG“"
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:254
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:258
 msgid "Regenerate Key"
-msgstr ""
+msgstr "Iš naujo sugeneruoti raktą"
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:216
 msgid "Regenerate the key pair (requires existing key)"
-msgstr ""
+msgstr "Iš naujo sugeneruoti rakto porą (reikalingas egzistuojamas raktas)"
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:461
 msgid "Regenerate the key pair (will restart service)"
-msgstr ""
+msgstr "Iš naujo sugeneruoti raktų porą (tarnyba bus paleista iš naujo)"
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:226
 msgid "Regenerating..."
-msgstr ""
+msgstr "Iš naujo sugeneruojama..."
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:498
 msgid "Relay Server (hbbr)"
-msgstr ""
+msgstr "Retransliavimo/Perdavimo serveris („hbbr“)"
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:513
 msgid "Relay Servers (-r, --relay-servers)"
-msgstr ""
+msgstr "Retransliavimo/Perdavimo serveriai (-r, --relay-servers)"
 
 #: applications/luci-app-rustdesk-server/htdocs/luci-static/resources/view/rustdesk-server/general.js:163
 msgid "Remote Desktop Software Server configuration."
