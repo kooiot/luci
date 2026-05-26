@@ -1309,6 +1309,12 @@ const CBIAbstractSection = CBIAbstractElement.extend(/** @lends LuCI.form.Abstra
 		const sids = this.cfgsections();
 
 		for (let i = 0, sid = sids[0]; (sid = sids[i]) != null; i++) {
+			/*
+			 * do not remove elements that are not rendered yet
+			 */
+			if (!this.map.findElement('data-section-id', sid))
+				continue;
+
 			for (let j = 0, o = this.children[0]; (o = this.children[j]) != null; j++) {
 				let isActive = o.isActive(sid);
 				const isSatisfied = o.checkDepends(sid);
@@ -2761,7 +2767,7 @@ const CBITableSection = CBITypedSection.extend(/** @lends LuCI.form.TableSection
 	 * @param {string} name
 	 * @returns {null}
 	 */
-	handleClone(section_id, put_next, name) {
+	handleClone(section_id, put_next, ev, name) {
 		let config_name = this.uciconfig || this.map.config;
 
 		this.map.data.clone(config_name, this.sectiontype, section_id, put_next, name);
