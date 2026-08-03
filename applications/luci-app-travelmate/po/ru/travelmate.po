@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LuCI: travelmate\n"
 "POT-Creation-Date: 2017-12-07 21:00+0300\n"
-"PO-Revision-Date: 2026-04-25 12:14+0000\n"
+"PO-Revision-Date: 2026-07-28 20:29+0000\n"
 "Last-Translator: SnIPeRSnIPeR <snipersniper@users.noreply.hosted.weblate.org>"
 "\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/openwrt/"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.17.1-dev\n"
+"X-Generator: Weblate 2026.8.dev0\n"
 "Project-Info: Это технический перевод, не дословный. Главное-удобный русский "
 "интерфейс, все проверялось в графическом режиме, совместим с другими apps\n"
 
@@ -42,7 +42,7 @@ msgstr "QR-коды точки доступа..."
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:1072
 msgid "Add Uplink \"%h\""
-msgstr ""
+msgstr "Добавить канал %q"
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:909
 msgid "Add Uplink..."
@@ -152,6 +152,8 @@ msgid ""
 "Detect and skip access points with locally administered (LAA) BSSIDs to "
 "mitigate evil twin attacks."
 msgstr ""
+"Обнаруживать и пропускать точки доступа с локально администрируемыми (LAA) "
+"BSSID для предотвращения атак «злой двойник»."
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:371
 msgid "Device"
@@ -180,6 +182,8 @@ msgstr "Перетащите, чтобы изменить порядок"
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:1135
 msgid "Duplicate wireless entry, the uplink station could not be saved."
 msgstr ""
+"Дублирующаяся запись беспроводной сети, не удалось сохранить точку "
+"подключения."
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:522
 msgid "E-Mail Notification"
@@ -240,15 +244,15 @@ msgstr "Изменить эту сеть"
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:1128
 msgid "Empty Password, the uplink station could not be saved."
-msgstr ""
+msgstr "Пустой пароль, не удалось сохранить точку подключения."
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:1126
 msgid "Empty SSID, the uplink station could not be saved."
-msgstr ""
+msgstr "Пустой SSID, не удалось сохранить точку подключения."
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:915
 msgid "Empty resultset"
-msgstr ""
+msgstr "Результаты отсутствуют"
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:365
 msgid "Enable the travelmate service."
@@ -276,7 +280,7 @@ msgstr "Шифрование"
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:427
 msgid "Evil Twin Protection"
-msgstr ""
+msgstr "Защита от атак «злой двойник»"
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:339
 msgid "Ext. Hooks"
@@ -362,7 +366,7 @@ msgstr "Мастер интерфейсов..."
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:110
 msgid "Interface setup failed: %s"
-msgstr ""
+msgstr "Ошибка настройки интерфейса: %s"
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:453
 msgid "LAN Interface"
@@ -482,7 +486,7 @@ msgstr "Проверка ошибок сети"
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:64
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:207
 msgid "No"
-msgstr ""
+msgstr "Нет"
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/logtemplate.js:31
 msgid "No %s related logs yet!"
@@ -650,6 +654,8 @@ msgstr "Ограничить Travelmate определёнными радиом�
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:474
 msgid "Retry limit to connect to an uplink. Use '0' for unlimited retries."
 msgstr ""
+"Лимит попыток подключения к точке доступа. Используйте «0» для "
+"неограниченного числа попыток."
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:385
 msgid "Reverse Radio Order"
@@ -685,11 +691,11 @@ msgstr "Сохранить и перезапустить"
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:1186
 msgid "Saving the new uplink failed: %s"
-msgstr ""
+msgstr "Не удалось сохранить новую точку подключения: %s"
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:752
 msgid "Scan on %s..."
-msgstr ""
+msgstr "Поиск сетей на %s..."
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:668
 msgid "Script Arguments"
@@ -761,7 +767,7 @@ msgstr ""
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:774
 msgid "Starting wireless scan on '%s'..."
-msgstr ""
+msgstr "Запуск беспроводного сканирования на «%s»..."
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:319
 msgid "Station ID"
@@ -886,7 +892,7 @@ msgstr "Задержка запуска"
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/overview.js:260
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:224
 msgid "Unable to parse the travelmate runtime information!"
-msgstr ""
+msgstr "Не удалось обработать данные о работе travelmate!"
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:531
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:1047
@@ -1021,7 +1027,7 @@ msgstr "Клиенты беспроводной сети"
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:64
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:207
 msgid "Yes"
-msgstr ""
+msgstr "Да"
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:503
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:1024
@@ -1039,7 +1045,7 @@ msgstr "онлайн-документация"
 
 #: applications/luci-app-travelmate/htdocs/luci-static/resources/view/travelmate/stations.js:892
 msgid "unknown"
-msgstr ""
+msgstr "неизвестно"
 
 #~ msgid "Add Uplink %q"
 #~ msgstr "Добавить канал %q"

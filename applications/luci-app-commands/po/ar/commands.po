@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-05-18 21:24+0000\n"
-"Last-Translator: Nowar Hashem <nawar.oji@gmail.com>\n"
+"PO-Revision-Date: 2026-07-07 08:46+0000\n"
+"Last-Translator: gaohaod <gaohaod@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationscommands/ar/>\n"
 "Language: ar\n"
@@ -12,23 +12,23 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 2026.6.dev0\n"
+"X-Generator: Weblate 2026.7.1.dev0\n"
 
-#: applications/luci-app-commands/htdocs/luci-static/resources/view/commands.js:19
+#: applications/luci-app-commands/htdocs/luci-static/resources/view/commands.js:20
 msgid "A short name for the configured command"
 msgstr ""
 
-#: applications/luci-app-commands/htdocs/luci-static/resources/view/commands.js:34
+#: applications/luci-app-commands/htdocs/luci-static/resources/view/commands.js:35
 msgid ""
 "Allow executing the command and downloading its output without prior "
 "authentication"
 msgstr "السماح بتنفيذ الأمر وتنزيل إخراجه دون مصادقة مسبقة"
 
-#: applications/luci-app-commands/htdocs/luci-static/resources/view/commands.js:31
+#: applications/luci-app-commands/htdocs/luci-static/resources/view/commands.js:32
 msgid "Allow the user to provide additional command line arguments"
 msgstr "السماح للمستخدم بتقديم وسيطات سطر أوامر إضافية"
 
-#: applications/luci-app-commands/htdocs/luci-static/resources/view/commands.js:22
+#: applications/luci-app-commands/htdocs/luci-static/resources/view/commands.js:23
 msgid "An optional longer description to display on the execution page"
 msgstr ""
 
@@ -40,7 +40,7 @@ msgstr "الحجج:"
 msgid "Collecting data..."
 msgstr "جاري جمع البيانات..."
 
-#: applications/luci-app-commands/htdocs/luci-static/resources/view/commands.js:25
+#: applications/luci-app-commands/htdocs/luci-static/resources/view/commands.js:26
 msgid "Command"
 msgstr "أمر"
 
@@ -52,7 +52,7 @@ msgstr "تم تنفيذ الأمر بنجاح."
 msgid "Command exited with status code %d"
 msgstr "تم الخروج من الأمر برمز الحالة %d"
 
-#: applications/luci-app-commands/htdocs/luci-static/resources/view/commands.js:25
+#: applications/luci-app-commands/htdocs/luci-static/resources/view/commands.js:26
 msgid "Command line to execute"
 msgstr "سطر الأوامر للتنفيذ"
 
@@ -62,7 +62,7 @@ msgstr "الأمر:"
 
 #: applications/luci-app-commands/root/usr/share/luci/menu.d/luci-app-commands.json:23
 msgid "Configure"
-msgstr "تكوين"
+msgstr "ظبط"
 
 #: applications/luci-app-commands/htdocs/luci-static/resources/view/commands.js:10
 #: applications/luci-app-commands/root/usr/share/luci/menu.d/luci-app-commands.json:3
@@ -70,7 +70,7 @@ msgstr "تكوين"
 msgid "Custom Commands"
 msgstr "أوامر مخصصة"
 
-#: applications/luci-app-commands/htdocs/luci-static/resources/view/commands.js:30
+#: applications/luci-app-commands/htdocs/luci-static/resources/view/commands.js:31
 msgid "Custom arguments"
 msgstr "حجج مخصصة"
 
@@ -78,7 +78,7 @@ msgstr "حجج مخصصة"
 msgid "Dashboard"
 msgstr "لوح القيادة"
 
-#: applications/luci-app-commands/htdocs/luci-static/resources/view/commands.js:21
+#: applications/luci-app-commands/htdocs/luci-static/resources/view/commands.js:22
 msgid "Description"
 msgstr "الوصف"
 
@@ -98,11 +98,11 @@ msgstr "رابط"
 msgid "Loading"
 msgstr "جار التحميل"
 
-#: applications/luci-app-commands/htdocs/luci-static/resources/view/commands.js:18
+#: applications/luci-app-commands/htdocs/luci-static/resources/view/commands.js:19
 msgid "Name"
 msgstr ""
 
-#: applications/luci-app-commands/htdocs/luci-static/resources/view/commands.js:33
+#: applications/luci-app-commands/htdocs/luci-static/resources/view/commands.js:34
 msgid "Public access"
 msgstr "وصول عام"
 
