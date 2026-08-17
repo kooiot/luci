@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2019-07-22 17:43-0300\n"
-"PO-Revision-Date: 2026-07-24 15:14+0000\n"
+"PO-Revision-Date: 2026-08-05 02:02+0000\n"
 "Last-Translator: Franco Castillo <castillofrancodamian@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsattendedsysupgrade/es/>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2026.8.dev0\n"
+"X-Generator: Weblate 2026.8.1.dev0\n"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:318
 msgid ""
@@ -336,6 +336,10 @@ msgstr "Buscando una actualización del sistema disponible de %s - %s"
 msgid "Searching..."
 msgstr "Buscando..."
 
+#: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:627
+msgid "Select firmware version"
+msgstr ""
+
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/configuration.js:15
 msgid "Server"
 msgstr "Servidor"
@@ -421,6 +425,10 @@ msgstr "Cargando firmware desde el navegador al dispositivo"
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:492
 msgid "Uploading..."
 msgstr "Cargando..."
+
+#: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:625
+msgid "Use defaults for the safest update"
+msgstr ""
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:92
 msgid "Validating package selection"

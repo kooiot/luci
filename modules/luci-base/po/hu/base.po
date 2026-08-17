@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2026-05-09 17:06+0000\n"
+"PO-Revision-Date: 2026-08-05 16:34+0000\n"
 "Last-Translator: hmzs <hmzs@1szer1.hu>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/openwrt/luci/"
 "hu/>\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2026.5-dev\n"
+"X-Generator: Weblate 2026.8.1.dev0\n"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:212
 msgid "!known (not known)"
@@ -1464,7 +1464,7 @@ msgstr "Több ügyfél engedélyezése ugyanazzal a tanúsítvánnyal"
 msgid "Allow only one session"
 msgstr "Csak egy munkamenet engedélyezése"
 
-#: modules/luci-mod-system/root/usr/share/rpcd/acl.d/luci-mod-system.json:214
+#: modules/luci-mod-system/root/usr/share/rpcd/acl.d/luci-mod-system.json:215
 msgid "Allow rebooting the device"
 msgstr "Újraindítás engedélyezése"
 
@@ -3008,7 +3008,7 @@ msgstr ""
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:20
 msgid "DHCP Leases"
-msgstr "DHCP bérletek"
+msgstr "DHCP-bérletek"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:594
 msgid "DHCP Options"
@@ -5472,14 +5472,14 @@ msgstr "Globális hálózati beállítások"
 
 #: themes/luci-theme-bootstrap/ucode/template/themes/bootstrap/header.ut:72
 #: themes/luci-theme-material/ucode/template/themes/material/header.ut:95
-#: themes/luci-theme-openwrt-2020/ucode/template/themes/openwrt2020/header.ut:65
+#: themes/luci-theme-openwrt-2020/ucode/template/themes/openwrt2020/header.ut:68
 #: themes/luci-theme-openwrt/ucode/template/themes/openwrt.org/header.ut:83
 msgid "Go to firmware upgrade..."
 msgstr "Ugrás a firmware frissítéshez…"
 
 #: themes/luci-theme-bootstrap/ucode/template/themes/bootstrap/header.ut:62
 #: themes/luci-theme-material/ucode/template/themes/material/header.ut:85
-#: themes/luci-theme-openwrt-2020/ucode/template/themes/openwrt2020/header.ut:55
+#: themes/luci-theme-openwrt-2020/ucode/template/themes/openwrt2020/header.ut:58
 #: themes/luci-theme-openwrt/ucode/template/themes/openwrt.org/header.ut:73
 msgid "Go to password configuration..."
 msgstr "Ugrás a jelszóbeállításhoz…"
@@ -5588,7 +5588,7 @@ msgstr "Jogosultság adása a hálózat-diagnosztikához"
 msgid "Grant access to network status information"
 msgstr "Jogosultság adása a hálózat információkhoz"
 
-#: modules/luci-mod-system/root/usr/share/rpcd/acl.d/luci-mod-system.json:227
+#: modules/luci-mod-system/root/usr/share/rpcd/acl.d/luci-mod-system.json:228
 msgid "Grant access to password policy configuration"
 msgstr ""
 
@@ -8499,7 +8499,7 @@ msgstr ""
 "Az {etc_hosts} mappában nem szereplő nevekre a válasz: {not_found} (nem "
 "található)."
 
-#: themes/luci-theme-openwrt-2020/ucode/template/themes/openwrt2020/header.ut:37
+#: themes/luci-theme-openwrt-2020/ucode/template/themes/openwrt2020/header.ut:40
 #: themes/luci-theme-openwrt/ucode/template/themes/openwrt.org/header.ut:41
 msgid "Navigation"
 msgstr "Navigáció"
@@ -8713,7 +8713,7 @@ msgstr ""
 
 #: themes/luci-theme-bootstrap/ucode/template/themes/bootstrap/header.ut:70
 #: themes/luci-theme-material/ucode/template/themes/material/header.ut:93
-#: themes/luci-theme-openwrt-2020/ucode/template/themes/openwrt2020/header.ut:63
+#: themes/luci-theme-openwrt-2020/ucode/template/themes/openwrt2020/header.ut:66
 #: themes/luci-theme-openwrt/ucode/template/themes/openwrt.org/header.ut:81
 msgid ""
 "No changes to settings will be stored and are lost after rebooting. This "
@@ -8809,7 +8809,7 @@ msgstr "Nincs betöltött nftables szabálykészlet."
 
 #: themes/luci-theme-bootstrap/ucode/template/themes/bootstrap/header.ut:59
 #: themes/luci-theme-material/ucode/template/themes/material/header.ut:82
-#: themes/luci-theme-openwrt-2020/ucode/template/themes/openwrt2020/header.ut:52
+#: themes/luci-theme-openwrt-2020/ucode/template/themes/openwrt2020/header.ut:55
 #: themes/luci-theme-openwrt/ucode/template/themes/openwrt.org/header.ut:70
 msgid "No password set!"
 msgstr "Nincs jelszó beállítva!"
@@ -12094,7 +12094,7 @@ msgid "Short Preamble"
 msgstr "Rövid előszó"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:17
-#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:142
+#: modules/luci-mod-status/htdocs/luci-static/resources/view/status/index.js:143
 msgid "Show"
 msgstr "Mutat"
 
@@ -12178,12 +12178,12 @@ msgstr "Kihagyás"
 msgid "Skip from backup files that are equal to those in /rom"
 msgstr "A '/rom'-ban található fájlok kihagyása"
 
-#: themes/luci-theme-openwrt-2020/ucode/template/themes/openwrt2020/header.ut:33
+#: themes/luci-theme-openwrt-2020/ucode/template/themes/openwrt2020/header.ut:36
 #: themes/luci-theme-openwrt/ucode/template/themes/openwrt.org/header.ut:37
 msgid "Skip to content"
 msgstr "Ugrás a tartalomhoz"
 
-#: themes/luci-theme-openwrt-2020/ucode/template/themes/openwrt2020/header.ut:32
+#: themes/luci-theme-openwrt-2020/ucode/template/themes/openwrt2020/header.ut:35
 #: themes/luci-theme-openwrt/ucode/template/themes/openwrt.org/header.ut:36
 msgid "Skip to navigation"
 msgstr "Ugrás a navigációhoz"
@@ -12835,7 +12835,7 @@ msgstr "Rendszernapló-puffer mérete"
 
 #: themes/luci-theme-bootstrap/ucode/template/themes/bootstrap/header.ut:69
 #: themes/luci-theme-material/ucode/template/themes/material/header.ut:92
-#: themes/luci-theme-openwrt-2020/ucode/template/themes/openwrt2020/header.ut:62
+#: themes/luci-theme-openwrt-2020/ucode/template/themes/openwrt2020/header.ut:65
 #: themes/luci-theme-openwrt/ucode/template/themes/openwrt.org/header.ut:80
 msgid "System running in recovery (initramfs) mode."
 msgstr "A rendszer helyreállítási (<em>initramfs</em>) módban fut."
@@ -13647,7 +13647,7 @@ msgstr "Nincsenek alkalmazandó változtatások."
 
 #: themes/luci-theme-bootstrap/ucode/template/themes/bootstrap/header.ut:60
 #: themes/luci-theme-material/ucode/template/themes/material/header.ut:83
-#: themes/luci-theme-openwrt-2020/ucode/template/themes/openwrt2020/header.ut:53
+#: themes/luci-theme-openwrt-2020/ucode/template/themes/openwrt2020/header.ut:56
 #: themes/luci-theme-openwrt/ucode/template/themes/openwrt.org/header.ut:71
 msgid ""
 "There is no password set on this router. Please configure a root password to "

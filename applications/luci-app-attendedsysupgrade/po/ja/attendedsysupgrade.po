@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-12-07 21:54+0000\n"
+"PO-Revision-Date: 2026-08-05 02:03+0000\n"
 "Last-Translator: Monarch <monarch.scrap-0p@users.noreply.hosted.weblate.org>"
 "\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/openwrt/"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.15-dev\n"
+"X-Generator: Weblate 2026.8.1.dev0\n"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:318
 msgid ""
@@ -327,6 +327,10 @@ msgstr "%s - %s の利用可能な sysupgrade を検索しています"
 msgid "Searching..."
 msgstr "検索中..."
 
+#: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:627
+msgid "Select firmware version"
+msgstr ""
+
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/configuration.js:15
 msgid "Server"
 msgstr "サーバー"
@@ -405,6 +409,10 @@ msgstr "ブラウザーからデバイスにファームウェアをアップロ
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:492
 msgid "Uploading..."
 msgstr "アップロードしています..."
+
+#: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:625
+msgid "Use defaults for the safest update"
+msgstr ""
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:92
 msgid "Validating package selection"
