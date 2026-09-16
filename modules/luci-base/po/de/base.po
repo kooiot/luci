@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-05-26 17:57+0200\n"
-"PO-Revision-Date: 2026-08-17 17:58+0000\n"
-"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
+"PO-Revision-Date: 2026-09-08 16:02+0000\n"
+"Last-Translator: HerbJul <19JulianHerbst95@web.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/openwrt/luci/de/>"
 "\n"
 "Language: de\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2026.9.dev0\n"
+"X-Generator: Weblate 2026.9.1\n"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:212
 msgid "!known (not known)"
@@ -197,6 +197,12 @@ msgid ""
 "selection). Optional labels for ports and VLANs are stored in the LuCI "
 "configuration and are for human reference only."
 msgstr ""
+". Wählen Sie die Ports aus und verwenden Sie dann die Tasten T und U in "
+"jeder VLAN-Zeile, um eine getaggte oder untagged (native) Zugehörigkeit "
+"zuzuweisen oder zu entfernen (leer, teilweise oder vollständig für die "
+"aktuelle Auswahl). Optionale Bezeichnungen für Ports und VLANs werden in der "
+"LuCI-Konfiguration gespeichert und dienen ausschließlich als "
+"Orientierungshilfe für den Benutzer."
 
 #: protocols/luci-proto-sstp/htdocs/luci-static/resources/protocol/sstp.js:59
 msgctxt "sstp log level value"
@@ -936,7 +942,7 @@ msgstr "Abwesend"
 msgid "Absent Interface"
 msgstr "Nicht vorhandene Schnittstelle"
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:240
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:241
 msgctxt "footstrap"
 msgid "Accent"
 msgstr ""
@@ -1299,6 +1305,11 @@ msgid ""
 "it is offered. Enabled by default only in Compatibility Mode on a Wi-Fi 7 "
 "(EHT) radio, disabled otherwise."
 msgstr ""
+"Die GCMP-256-Paarverschlüsselung ankündigen. Für Wi-Fi 7 (EHT) obligatorisch "
+"und ansonsten empfohlen; einige Clients und Chipsätze können jedoch keine "
+"Verbindung herstellen, wenn diese Verschlüsselung angeboten wird. "
+"Standardmäßig nur im Kompatibilitätsmodus eines Wi-Fi 7 (EHT)-Funkmoduls "
+"aktiviert, ansonsten deaktiviert."
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2188
 msgid ""
@@ -1308,6 +1319,12 @@ msgid ""
 "by default only in Compatibility Mode on a Wi-Fi 7 (EHT) radio, disabled "
 "otherwise."
 msgstr ""
+"Den SAE-EXT-KEY AKM (SAE unter Verwendung eines gruppenabhängigen Hashwerts) "
+"ankündigen. Für Wi-Fi 7 (EHT) obligatorisch und ansonsten empfohlen; einige "
+"Clients verhalten sich jedoch fehlerhaft, wenn dieser angeboten wird, "
+"insbesondere in Verbindung mit 802.11r Fast Transition. Standardmäßig nur im "
+"Kompatibilitätsmodus auf einem Wi-Fi 7 (EHT)-Funkmodul aktiviert, ansonsten "
+"deaktiviert."
 
 #: protocols/luci-proto-external/htdocs/luci-static/resources/protocol/external.js:34
 msgid ""
@@ -1697,7 +1714,7 @@ msgstr "ARP-Scan"
 msgid "As DHCP-Options; send unsolicited (dnsmasq only)."
 msgstr "Als DHCP-Optionen; unaufgefordert senden (nur dnsmasq)."
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:363
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:364
 msgctxt "footstrap"
 msgid "As in file"
 msgstr ""
@@ -1796,11 +1813,11 @@ msgstr "Authoritativ"
 
 #: modules/luci-base/ucode/template/sysauth.ut:23
 #: themes/luci-theme-bootstrap/htdocs/luci-static/resources/view/bootstrap/sysauth.js:11
-#: themes/luci-theme-footstrap/ucode/template/themes/footstrap/sysauth.ut:70
+#: themes/luci-theme-footstrap/ucode/template/themes/footstrap/sysauth.ut:115
 msgid "Authorization Required"
 msgstr "Autorisierung benötigt"
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:172
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:174
 msgctxt "footstrap"
 msgid "Auto"
 msgstr ""
@@ -1809,7 +1826,7 @@ msgstr ""
 msgid "Auto negotiation"
 msgstr ""
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:207
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:209
 msgctxt "footstrap"
 msgid "Auto-collapse"
 msgstr ""
@@ -1943,7 +1960,7 @@ msgstr "Zurück zur Konfiguration des Verbindungspartners"
 msgid "Back to settings"
 msgstr "Zurück zu den Einstellungen"
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:658
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:659
 msgctxt "footstrap"
 msgid "Background"
 msgstr ""
@@ -1952,7 +1969,7 @@ msgstr ""
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1248
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:389
 msgid "Backup"
-msgstr "Sichern"
+msgstr "Backup"
 
 #: modules/luci-mod-system/root/usr/share/luci/menu.d/luci-mod-system.json:163
 msgid "Backup / Flash Firmware"
@@ -2038,6 +2055,10 @@ msgid ""
 "device (e.g. a serial or out-of-band connection) and review every change in "
 "\"Unsaved Changes\" before applying."
 msgstr ""
+"Bevor Sie Änderungen vornehmen, stellen Sie sicher, dass Sie über eine "
+"alternative Möglichkeit zum Zugriff auf das Gerät verfügen (z. B. eine "
+"serielle oder eine Out-of-Band-Verbindung), und überprüfen Sie jede Änderung "
+"unter „Nicht gespeicherte Änderungen“, bevor Sie sie übernehmen."
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:354
 msgid ""
@@ -2127,7 +2148,7 @@ msgstr "Bonding-Methode"
 msgid "Bonding/Aggregation device"
 msgstr "Gerät für Bonding/Aggregation"
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:296
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:297
 msgctxt "footstrap"
 msgid "Borders"
 msgstr ""
@@ -2336,7 +2357,7 @@ msgctxt "Chain hook: ingress"
 msgid "Capture packets directly after the NIC received them"
 msgstr "Direkt nach dem Empfang durch die Netzwerkhardware"
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:277
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:278
 msgctxt "footstrap"
 msgid "Cards"
 msgstr ""
@@ -2513,7 +2534,7 @@ msgstr "Archiv wird überprüft…"
 msgid "Checking image…"
 msgstr "Image wird überprüft…"
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:333
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:334
 msgctxt "footstrap"
 msgid "Choose SVG"
 msgstr ""
@@ -2522,7 +2543,7 @@ msgstr ""
 msgid "Choose a unique name."
 msgstr "Wähle einen einmaligen Namen."
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:326
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:327
 msgctxt "footstrap"
 msgid "Choose image"
 msgstr ""
@@ -2666,8 +2687,8 @@ msgstr "Daten werden gesammelt..."
 msgid "Collisions seen"
 msgstr "Kollisionen gesehen"
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:346
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:655
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:347
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:656
 msgctxt "footstrap"
 msgid "Colours"
 msgstr ""
@@ -2694,7 +2715,7 @@ msgid "Common name or numeric ID of the %s in which this route is found"
 msgstr ""
 "Allgemeiner Name oder numerische ID des %s, in dem diese Route gefunden wird"
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:190
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:192
 msgctxt "footstrap"
 msgid "Compact"
 msgstr ""
@@ -2830,7 +2851,7 @@ msgstr "Konfigurieren…"
 msgid "Confirm disconnect"
 msgstr "Verbindungstrennung bestätigen"
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:547
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:548
 msgctxt "footstrap"
 msgid "Confirm reset"
 msgstr ""
@@ -2933,7 +2954,7 @@ msgctxt "footstrap"
 msgid "Contrast %s:1 (WCAG AA wants %s:1 here)"
 msgstr ""
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:283
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:284
 msgctxt "footstrap"
 msgid "Controls"
 msgstr ""
@@ -2971,7 +2992,7 @@ msgstr ""
 "netzwerkbezogene Einstellungen wie die IP-Adresse oder WLAN Passwörter "
 "geändert wurden."
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:523
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:524
 msgctxt "footstrap"
 msgid "Could not save the default. Reload the page and try again."
 msgstr ""
@@ -3267,12 +3288,12 @@ msgstr "DUID/IAIDs"
 msgid "Daemon"
 msgstr "Dämon"
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:258
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:259
 msgctxt "footstrap"
 msgid "Danger"
 msgstr ""
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:174
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:176
 msgctxt "footstrap"
 msgid "Dark"
 msgstr ""
@@ -3333,7 +3354,7 @@ msgstr "Default-Router"
 msgid "Default state"
 msgstr "Ausgangszustand"
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:659
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:660
 msgctxt "footstrap"
 msgid "Defaults"
 msgstr ""
@@ -3434,7 +3455,7 @@ msgstr "Dieses Netzwerk löschen"
 msgid "Delivery Traffic Indication Message Interval"
 msgstr "DTIM (Delivery Traffic Indication) Nachrichtenintervall"
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:189
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:191
 msgctxt "footstrap"
 msgid "Density"
 msgstr ""
@@ -3602,7 +3623,7 @@ msgstr ""
 msgid "Diffie-Hellman parameters"
 msgstr "Diffie-Hellman-Parameter"
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:343
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:344
 msgctxt "footstrap"
 msgid "Dim"
 msgstr ""
@@ -4320,6 +4341,13 @@ msgid ""
 "sure to enable additional wireless client isolation options ('isolate' and "
 "'bridge_isolate') for all associated wireless interfaces on all APs."
 msgstr ""
+"Aktivieren Sie die AP-Isolation, um WLAN-Clients, die über diesen AP mit "
+"diesem Batman-VLAN verbunden sind, von WLAN-Clients zu trennen, die über "
+"andere APs mit diesem Batman-VLAN verbunden sind. Um alle WLAN-Clients, die "
+"über alle APs mit diesem Batman-VLAN verbunden sind, voneinander zu trennen, "
+"müssen Sie diese Option auf allen APs aktivieren und zusätzlich die Optionen "
+"zur Isolierung von WLAN-Clients („isolate“ und „bridge_isolate“) für alle "
+"zugehörigen WLAN-Schnittstellen auf allen APs aktivieren."
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:279
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/connections.js:495
@@ -5041,8 +5069,8 @@ msgstr ""
 msgid "File"
 msgstr "Datei"
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:368
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:453
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:369
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:454
 msgctxt "footstrap"
 msgid "File"
 msgstr ""
@@ -5616,7 +5644,7 @@ msgstr "Zur Passwortkonfiguration..."
 msgid "Go to relevant configuration page"
 msgstr "Gehe zur entsprechenden Konfigurationsseite"
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:246
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:247
 msgctxt "footstrap"
 msgid "Good"
 msgstr ""
@@ -5983,7 +6011,7 @@ msgstr ""
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:117
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/40_dhcp.js:175
 msgid "IAID"
-msgstr ""
+msgstr "IAID"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:180
 msgid "IAID of 1 to 8 hexadecimal characters"
@@ -6687,7 +6715,7 @@ msgstr "Informationen"
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routesj.js:232
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routesj.js:269
 msgid "Ingress"
-msgstr ""
+msgstr "Ingress"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/tools/network.js:585
 msgid "Ingress QoS mapping"
@@ -6811,9 +6839,9 @@ msgstr "Kennung der integrierten Schaltkreiskarte"
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/dropbear.js:23
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/dropbear.js:27
 msgid "Interface"
-msgstr "Schnittstelle"
+msgstr "Interface"
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:654
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:655
 msgctxt "footstrap"
 msgid "Interface"
 msgstr ""
@@ -7027,7 +7055,7 @@ msgstr "Ungültige Server-URL"
 
 #: modules/luci-base/ucode/template/sysauth.ut:12
 #: themes/luci-theme-bootstrap/ucode/template/themes/bootstrap/sysauth.ut:68
-#: themes/luci-theme-footstrap/ucode/template/themes/footstrap/sysauth.ut:60
+#: themes/luci-theme-footstrap/ucode/template/themes/footstrap/sysauth.ut:93
 msgid "Invalid username and/or password! Please try again."
 msgstr ""
 "Ungültiger Benutzername oder ungültiges Passwort! Bitte erneut versuchen."
@@ -7109,7 +7137,7 @@ msgstr ""
 msgid "Keep local IP address on restart"
 msgstr "Lokale IP-Adresse bei Neustarts beibehalten"
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:206
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:208
 msgctxt "footstrap"
 msgid "Keep open"
 msgstr ""
@@ -7276,7 +7304,7 @@ msgstr "Sprache"
 msgid "Language and Style"
 msgstr "Sprache und Aussehen"
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:192
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:194
 msgctxt "footstrap"
 msgid "Large"
 msgstr ""
@@ -7323,7 +7351,7 @@ msgstr "Schicht 2+3"
 msgid "Layer 3+4"
 msgstr "Schicht 3+4"
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:166
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:168
 msgctxt "footstrap"
 msgid "Layout"
 msgstr ""
@@ -7401,7 +7429,7 @@ msgstr "Alte Regeln erkannt"
 msgid "Legend:"
 msgstr "Legende:"
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:173
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:175
 msgctxt "footstrap"
 msgid "Light"
 msgstr ""
@@ -7803,7 +7831,7 @@ msgstr "Log-Einrichtung"
 
 #: modules/luci-base/ucode/template/sysauth.ut:75
 #: themes/luci-theme-bootstrap/ucode/template/themes/bootstrap/sysauth.ut:72
-#: themes/luci-theme-footstrap/ucode/template/themes/footstrap/sysauth.ut:142
+#: themes/luci-theme-footstrap/ucode/template/themes/footstrap/sysauth.ut:187
 msgid "Log in"
 msgstr "Anmelden"
 
@@ -8467,6 +8495,10 @@ msgid ""
 "different VLAN than its untagged egress VLAN — a combination that is allowed "
 "by 802.1Q but very rarely intentional."
 msgstr ""
+"In den meisten Fällen bedeutet dies, dass für einen Port das primäre VLAN "
+"(PVID) auf ein anderes VLAN eingestellt ist als sein untagged Ausgangs-VLAN "
+"– eine Kombination, die zwar gemäß 802.1Q zulässig ist, aber nur sehr selten "
+"beabsichtigt ist."
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:171
 msgid "Mount Point"
@@ -8574,7 +8606,7 @@ msgstr "NAS-ID"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routesj.js:170
 msgid "NAT"
-msgstr ""
+msgstr "NAT"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/nftables.js:658
 msgid "NAT action chain \"%h\""
@@ -8874,6 +8906,12 @@ msgid ""
 "switch ports. Bridges containing wireless, tunnel, VLAN sub-interfaces or "
 "other virtual members are intentionally excluded."
 msgstr ""
+"Es wurde keine Brücke gefunden, die für eine Switch-Konfiguration in Frage "
+"kommt. Diese Ansicht setzt eine Brücke voraus, bei der die VLAN-Filterung "
+"aktiviert ist (explizit oder implizit über „bridge-vlan“-Abschnitte) und "
+"deren Mitgliedsports ausschließlich physische Ethernet- oder DSA-Switch-"
+"Ports sind. Brücken, die WLAN-, Tunnel-, VLAN-Sub-Interfaces oder andere "
+"virtuelle Mitglieder enthalten, werden bewusst ausgeschlossen."
 
 #: themes/luci-theme-bootstrap/ucode/template/themes/bootstrap/header.ut:70
 #: themes/luci-theme-footstrap/ucode/template/themes/footstrap/partials/notices.ut:23
@@ -9077,7 +9115,7 @@ msgstr "Keine"
 msgid "Normal"
 msgstr "Normal"
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:191
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:193
 msgctxt "footstrap"
 msgid "Normal"
 msgstr ""
@@ -9250,10 +9288,10 @@ msgstr "IPv6-Adresse beziehen"
 msgid "Off"
 msgstr "Aus"
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:451
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:452
 msgctxt "footstrap"
 msgid "Off"
-msgstr ""
+msgstr "Aus"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1871
 msgid ""
@@ -9935,7 +9973,7 @@ msgctxt "footstrap"
 msgid "Pages"
 msgstr ""
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:177
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:179
 #: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-widgets.js:226
 msgctxt "footstrap"
 msgid "Palette"
@@ -9976,13 +10014,13 @@ msgstr ""
 #: protocols/luci-proto-vpnc/htdocs/luci-static/resources/protocol/vpnc.js:58
 #: protocols/luci-proto-yggdrasil/htdocs/luci-static/resources/protocol/yggdrasil.js:301
 #: themes/luci-theme-bootstrap/ucode/template/themes/bootstrap/sysauth.ut:19
-#: themes/luci-theme-footstrap/ucode/template/themes/footstrap/sysauth.ut:82
+#: themes/luci-theme-footstrap/ucode/template/themes/footstrap/sysauth.ut:127
 msgid "Password"
 msgstr "Passwort"
 
 #: modules/luci-mod-system/root/usr/share/luci/menu.d/luci-mod-system.json:38
 msgid "Password Policy"
-msgstr ""
+msgstr "Passwortrichtlinie"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/dropbear.js:35
 msgid "Password authentication"
@@ -10074,8 +10112,8 @@ msgstr "Pfad zum inneren Client-Zertifikat"
 msgid "Path to inner Private Key"
 msgstr "Pfad zum inneren, privaten Schlüssel"
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:354
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:452
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:355
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:453
 msgctxt "footstrap"
 msgid "Pattern"
 msgstr ""
@@ -10237,7 +10275,7 @@ msgid "Please enter a VLAN ID between %d and %d."
 msgstr ""
 
 #: modules/luci-base/ucode/template/sysauth.ut:25
-#: themes/luci-theme-footstrap/ucode/template/themes/footstrap/sysauth.ut:72
+#: themes/luci-theme-footstrap/ucode/template/themes/footstrap/sysauth.ut:117
 msgid "Please enter your username and password."
 msgstr "Bitte Benutzernamen und Passwort eingeben."
 
@@ -10312,19 +10350,19 @@ msgstr "Grundregel: <strong>%h</strong> (%h)"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:60
 msgid "Policy: contain digits"
-msgstr "Richtlinie: enthält Zahlen"
+msgstr "Richtlinie: Enthält Ziffern"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:66
 msgid "Policy: contain special characters"
-msgstr "Richtlinie: enthält Sonderzeichen"
+msgstr "Richtlinie: Enthält Sonderzeichen"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:63
 msgid "Policy: contain uppercase/lowercase"
-msgstr "Richtlinie: enthält Groß-/Kleinbuchstaben"
+msgstr "Richtlinie: Enthält Groß- und Kleinbuchstaben"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:57
 msgid "Policy: min. length of %s characters"
-msgstr "Richtlinie: Mindestlänge von %s Zeichen"
+msgstr "Richtlinie: Mindestens %s Zeichen"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dns.js:360
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/dropbear.js:31
@@ -10491,6 +10529,11 @@ msgid ""
 "client communication on the same interface when the WiFi device is in AP "
 "mode."
 msgstr ""
+"Verhindert die Kommunikation ausschließlich mit Zielen an isolierten Bridge-"
+"Ports (während die Kommunikation mit Zielen an nicht isolierten Ports "
+"weiterhin möglich ist). Dies verhindert auch die Kommunikation zwischen "
+"Clients auf derselben Schnittstelle, wenn sich das WLAN-Gerät im AP-Modus "
+"befindet."
 
 #: protocols/luci-proto-batman-adv/htdocs/luci-static/resources/protocol/batadv.js:61
 msgid ""
@@ -11132,8 +11175,8 @@ msgstr "Ping-Timeout für Gegenstellen"
 msgid "Remove"
 msgstr "Entfernen"
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:328
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:335
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:329
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:336
 msgctxt "footstrap"
 msgid "Remove"
 msgstr ""
@@ -11456,8 +11499,8 @@ msgstr "Zähler zurücksetzen"
 msgid "Reset filters"
 msgstr ""
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:485
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:558
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:486
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:559
 msgctxt "footstrap"
 msgid "Reset to default"
 msgstr ""
@@ -11466,8 +11509,8 @@ msgstr ""
 msgid "Reset to defaults"
 msgstr "Auslieferungszustand wiederherstellen"
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:480
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:557
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:481
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:558
 msgctxt "footstrap"
 msgid "Reset to saved"
 msgstr ""
@@ -11668,7 +11711,7 @@ msgstr "Wurzelverzeichnis erzeugen"
 msgid "Round robin"
 msgstr "Ringverteilung"
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:195
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:197
 msgctxt "footstrap"
 msgid "Rounding"
 msgstr ""
@@ -11714,7 +11757,7 @@ msgstr "Routerpasswort"
 msgid "Router Priority"
 msgstr "Router-Priorität"
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:574
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:575
 msgctxt "footstrap"
 msgid "Router default"
 msgstr ""
@@ -11924,9 +11967,9 @@ msgstr "Speichern"
 msgid "Save & Apply"
 msgstr "Speichern & Anwenden"
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:474
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:505
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:512
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:475
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:506
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:513
 msgctxt "footstrap"
 msgid "Save as default"
 msgstr ""
@@ -11943,12 +11986,12 @@ msgstr "Speichere mtdblock"
 msgid "Save mtdblock contents"
 msgstr "Inhalte von mtdblock-Partitionen speichern"
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:512
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:513
 msgctxt "footstrap"
 msgid "Saved as default"
 msgstr ""
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:344
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:345
 msgctxt "footstrap"
 msgid "Scale"
 msgstr ""
@@ -11978,7 +12021,7 @@ msgstr ""
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/dmesg.js:145
 msgctxt "scroll to top (the head) of the log file"
 msgid "Scroll to head"
-msgstr "Zum Kopf scrollen"
+msgstr "Zum Anfang scrollen"
 
 #: modules/luci-base/htdocs/luci-static/resources/tools/views.js:158
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/dmesg.js:135
@@ -12375,12 +12418,12 @@ msgstr "Unformatierte Zähler"
 msgid "Shutdown this interface"
 msgstr "Diese Schnittstelle herunterfahren"
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:167
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:169
 msgctxt "footstrap"
 msgid "Sidebar"
 msgstr ""
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:289
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:290
 msgctxt "footstrap"
 msgid "Sidebar and bar"
 msgstr ""
@@ -12417,6 +12460,10 @@ msgid ""
 "mode for this SSID. The advertised bitmap is derived from the encryption "
 "mode."
 msgstr ""
+"Deaktivierung des Signalübergangs (WPA3-Spezifikation v3.5, Abschnitt 13), "
+"damit ein Client, der einmal eine Verbindung hergestellt hat, für diese SSID "
+"nicht mehr auf einen schwächeren Sicherheitsmodus zurückfällt. Die "
+"übertragene Bitmap leitet sich aus dem Verschlüsselungsmodus ab."
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/wireless.js:262
 msgid "Signal:"
@@ -12958,7 +13005,7 @@ msgstr "Aktualisierungen deaktivieren"
 msgid "Storage"
 msgstr "Speicher"
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:345
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:346
 msgctxt "footstrap"
 msgid "Strength"
 msgstr ""
@@ -12975,7 +13022,7 @@ msgstr "Strikte Reihenfolge"
 msgid "Strong"
 msgstr "Stark"
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:204
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:206
 msgctxt "footstrap"
 msgid "Submenus"
 msgstr ""
@@ -13002,10 +13049,10 @@ msgid "Suppress logging of the routine operation for the DHCP protocol."
 msgstr ""
 "Unterdrücken der Protokollierung des Routinebetriebs für das DHCP-Protokoll."
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:656
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:657
 msgctxt "footstrap"
 msgid "Surfaces"
-msgstr ""
+msgstr "Oberfläche"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dns.js:558
 msgid "Svc Parameters"
@@ -13263,7 +13310,7 @@ msgstr ""
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routesj.js:219
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/routesj.js:256
 msgid "Target"
-msgstr "Zielplattform"
+msgstr "Ziel"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/10_system.js:69
 msgid "Target Platform"
@@ -13485,6 +13532,10 @@ msgid ""
 "experimental. Bugs in this view may result in network misconfiguration that "
 "can leave your device unreachable over the network."
 msgstr ""
+"Die Ansicht „Switch-/VLAN-Konfiguration“ ist neu und gilt noch als "
+"experimentell. Fehler in dieser Ansicht können zu einer fehlerhaften "
+"Netzwerkkonfiguration führen, wodurch Ihr Gerät über das Netzwerk "
+"möglicherweise nicht mehr erreichbar ist."
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/tools/network.js:1492
 msgid "The VLAN ID must be unique"
@@ -13567,6 +13618,10 @@ msgid ""
 "device, used when acting as a DHCP server or client. The client identifier "
 "can be overridden on a per-interface basis."
 msgstr ""
+"Die Standard-<abbr title=\"DHCP Unique Identifier\">DUID</abbr> für dieses "
+"Gerät, die verwendet wird, wenn es als DHCP-Server oder -Client fungiert. "
+"Die Client-Kennung kann für jede Schnittstelle individuell überschrieben "
+"werden."
 
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:5349
 msgid ""
@@ -13812,6 +13867,13 @@ msgid ""
 "Often there is by default one Uplink port for a connection to the next "
 "greater network like the internet and other ports for a local network."
 msgstr ""
+"Die Netzwerkanschlüsse dieses Geräts lassen sich zu mehreren <abbr "
+"title='Virtual Local Area Network'>VLAN</abbr>s zusammenfassen, in denen "
+"Computer direkt miteinander kommunizieren können. <abbr title='Virtual Local "
+"Area Network'>VLAN</abbr>s werden häufig verwendet, um verschiedene "
+"Netzwerksegmente voneinander zu trennen. Oft gibt es standardmäßig einen "
+"Uplink-Anschluss für die Verbindung zum übergeordneten Netzwerk, wie "
+"beispielsweise dem Internet, und weitere Anschlüsse für ein lokales Netzwerk."
 
 #: protocols/luci-proto-openvpn/htdocs/luci-static/resources/protocol/openvpn.js:182
 msgid "The peer key fingerprint"
@@ -13851,6 +13913,10 @@ msgid ""
 "one or more selected ports. No change was made; a port cannot have the same "
 "VLAN as both native and tagged."
 msgstr ""
+"Die angeforderte Änderung steht im Widerspruch zur bestehenden nativen VLAN-"
+"Zuweisung eines oder mehrerer ausgewählter Ports. Es wurde keine Änderung "
+"vorgenommen; ein Port kann nicht gleichzeitig als natives und als getaggtes "
+"VLAN zugewiesen sein."
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:147
 msgid "The restore command failed with code %d"
@@ -13889,6 +13955,10 @@ msgid ""
 "of the <code>DUID</code> or <code>DUID%IAID</code> values listed above. Only "
 "one is expected to be in active use on the network at any given time."
 msgstr ""
+"Dieselben IPv6-Adressen werden jedem <em>beliebigen</em> Host unter "
+"Verwendung eines der oben aufgeführten <code>DUID</code>- oder <code>"
+"DUID%IAID</code>-Werte (erneut) zugewiesen. Es wird davon ausgegangen, dass "
+"zu jedem Zeitpunkt nur einer davon im Netzwerk aktiv genutzt wird."
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1491
 msgid "The selected %s mode is incompatible with %s encryption"
@@ -13999,8 +14069,8 @@ msgstr ""
 "Der Wert gibt den Zeitintervall in Millisekunden an, in dem batman-adv das "
 "Netzwerk mit Protokollinformationen flutet."
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:171
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:362
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:173
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:363
 msgctxt "footstrap"
 msgid "Theme"
 msgstr ""
@@ -14049,13 +14119,17 @@ msgstr ""
 "Dieser Authentifizierungstyp ist nicht mit der ausgewählten EAP-Methode "
 "kombinierbar."
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:506
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:507
 msgctxt "footstrap"
 msgid ""
 "This browser is not storing preferences (site data is blocked), so a change "
 "here lasts until you reload. Saving as default still works and applies to "
 "every browser."
 msgstr ""
+"Dieser Browser speichert keine Einstellungen (Website-Daten werden blockiert)"
+", daher bleibt eine hier vorgenommene Änderung nur so lange bestehen, bis "
+"Sie die Seite neu laden. Das Speichern als Standard funktioniert weiterhin "
+"und gilt für jeden Browser."
 
 #: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:48
 #: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:56
@@ -14304,12 +14378,12 @@ msgstr ""
 msgid "Timezone"
 msgstr "Zeitzone"
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:216
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:218
 msgctxt "footstrap"
 msgid "Tint (router identification)"
 msgstr ""
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:231
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:233
 msgctxt "footstrap"
 msgid "Tint strength"
 msgstr ""
@@ -14357,7 +14431,7 @@ msgctxt "footstrap"
 msgid "Too faint to read %s"
 msgstr ""
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:168
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:170
 msgctxt "footstrap"
 msgid "Top"
 msgstr ""
@@ -14844,8 +14918,8 @@ msgstr "Upload-Anfrage fehlgeschlagen: %s"
 msgid "Uploading file…"
 msgstr "Datei wird hochgeladen…"
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:404
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:434
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:405
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:435
 msgctxt "footstrap"
 msgid "Uploading…"
 msgstr ""
@@ -14952,6 +15026,9 @@ msgid ""
 "in the system setting a lower value, but one that is compatible with the "
 "network interface"
 msgstr ""
+"Verwenden Sie eine mit Ihrem Gerät kompatible Geschwindigkeit. Wenn Sie eine "
+"höhere Geschwindigkeit erzwingen, legt das System einen niedrigeren Wert "
+"fest, der jedoch mit der Netzwerkschnittstelle kompatibel ist."
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:274
 msgid "Use as external overlay (/overlay)"
@@ -15119,7 +15196,7 @@ msgstr "PEM-kodierter Benutzerschlüssel"
 #: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:101
 #: protocols/luci-proto-vpnc/htdocs/luci-static/resources/protocol/vpnc.js:56
 #: themes/luci-theme-bootstrap/ucode/template/themes/bootstrap/sysauth.ut:13
-#: themes/luci-theme-footstrap/ucode/template/themes/footstrap/sysauth.ut:76
+#: themes/luci-theme-footstrap/ucode/template/themes/footstrap/sysauth.ut:121
 msgid "Username"
 msgstr "Benutzername"
 
@@ -15387,7 +15464,7 @@ msgstr "WPS-Status"
 msgid "Waiting for device..."
 msgstr "Warte auf Gerät..."
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:449
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:450
 msgctxt "footstrap"
 msgid "Wallpaper"
 msgstr ""
@@ -15404,7 +15481,7 @@ msgstr "Warn"
 msgid "Warning"
 msgstr "Warnung"
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:252
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:253
 msgctxt "footstrap"
 msgid "Warning"
 msgstr ""
@@ -15999,7 +16076,7 @@ msgstr "hybrider Modus"
 msgid "ignore"
 msgstr "ignorieren"
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:292
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:293
 msgctxt "footstrap"
 msgid "in the sidebar"
 msgstr ""
@@ -16052,7 +16129,7 @@ msgstr ""
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/switch-vlan.js:291
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/switch-vlan.js:468
 msgid "label"
-msgstr ""
+msgstr "Label"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/switch-vlan.js:553
 msgid "label (optional)"
@@ -16151,17 +16228,17 @@ msgstr "odhcpd"
 msgid "off"
 msgstr "aus"
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:243
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:249
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:255
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:261
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:280
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:299
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:244
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:250
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:256
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:262
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:281
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:300
 msgctxt "footstrap"
 msgid "on a card"
 msgstr ""
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:286
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:287
 msgctxt "footstrap"
 msgid "on a control"
 msgstr ""
@@ -16170,7 +16247,7 @@ msgstr ""
 msgid "on available prefix"
 msgstr "bei verfügbarem Präfix"
 
-#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:221
+#: themes/luci-theme-footstrap/htdocs/luci-static/resources/fs-appearance.js:223
 msgctxt "footstrap"
 msgid "on the canvas"
 msgstr ""

@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-08-20 13:31+0000\n"
+"PO-Revision-Date: 2026-09-06 21:00+0000\n"
 "Last-Translator: umut <umvtt4@proton.me>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsadblock/tr/>\n"
@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2026.9.dev0\n"
+"X-Generator: Weblate 2026.9.1.dev0\n"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:469
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:480
@@ -532,7 +532,7 @@ msgstr ""
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:408
 msgid "Enabled"
-msgstr "Etkin"
+msgstr "Etkinleştirildi"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:702
 msgid ""
@@ -672,7 +672,7 @@ msgstr "Tarih, alan, client gibi filtre özellikleri (opsiyonel)"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:766
 msgid "Firewall LAN Devices/VLANs that should be forced locally."
-msgstr ""
+msgstr "Yerel olarak zorlanacak Güvenlik Duvarı LAN Aygıtları/VLAN'ları."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:394
 msgid "Firewall Settings"
@@ -776,7 +776,7 @@ msgstr "Geçersiz giriş, lütfen sadece bir tane geçerli alan adı girin."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:829
 msgid "Jail Mode"
-msgstr ""
+msgstr "Kafes Modu"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/feeds.js:236
 msgid "Large"
@@ -837,7 +837,7 @@ msgstr "Listede yer alan MAC adreslerinin uzak DNS'i atlatmasına izin verilir."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:761
 msgid "Local DNS Enforcement"
-msgstr ""
+msgstr "Yerel DNS Zorlaması"
 
 #: applications/luci-app-adblock/root/usr/share/luci/menu.d/luci-app-adblock.json:59
 msgid "Log View"
@@ -921,11 +921,15 @@ msgid ""
 msgstr ""
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:500
+#, fuzzy
 msgid ""
 "Override the pre-configured download options for the selected download "
 "utility. The output flag, e.g. '-o' for curl or '-O' for wget, must be the "
 "last parameter."
 msgstr ""
+"Seçilen indirme aracı için önceden ayarlanmış indirme seçeneklerini geçersiz "
+"kılın. Çıktı bayrağı (örneğin, curl için ‘-o’ veya wget için ‘-O’) son "
+"parametre olarak belirtilmelidir."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:545
 #: applications/luci-app-adblock/root/usr/share/luci/menu.d/luci-app-adblock.json:19
@@ -1003,7 +1007,6 @@ msgid "Report Directory"
 msgstr "Rapor Dizini"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:865
-#, fuzzy
 msgid "Report Filter"
 msgstr "Filtreyi Şikayet Et"
 
@@ -1032,13 +1035,12 @@ msgid "Resume"
 msgstr "Devam Et"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:575
-#, fuzzy
 msgid ""
 "Routes selected MACs or interfaces to a filtered external DNS resolver, "
 "bypassing local adblock."
 msgstr ""
-"Dahili adblock'u atlayarak seçilmiş MAC ve arayüzleri filtrelenmiş DNS "
-"çözümleyicisine yönlendirir."
+"Dahili adblock'u atlatarak seçilmiş MAC ve arayüzleri harici filtrelenmiş "
+"DNS çözümleyicisine yönlendirir."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:529
 msgid ""
