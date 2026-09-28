@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2026-09-01 13:15+0000\n"
-"Last-Translator: Martin Olmer <m_iv@seznam.cz>\n"
+"PO-Revision-Date: 2026-09-19 14:04+0000\n"
+"Last-Translator: Daniel Nylander <yeagersthlm@gmail.com>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/openwrt/luci/sv/"
 ">\n"
 "Language: sv\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2026.9.dev0\n"
+"X-Generator: Weblate 2026.10.dev0\n"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:1330
 msgid "!known (not known)"
@@ -35,15 +35,15 @@ msgstr "%d ogiltiga fält(en)"
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:26
 msgid "%dh ago"
-msgstr "%dt sedan"
+msgstr "%d t sedan"
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:24
 msgid "%dm ago"
-msgstr "%dm sedan"
+msgstr "%d min sedan"
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:22
 msgid "%ds ago"
-msgstr "%ds sedan"
+msgstr "%d s sedan"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:763
 msgid "%s adds 1.2.3.0/24 for IPv4 requestors and ::/0 for IPv6 requestors."
@@ -998,7 +998,7 @@ msgstr "Administration"
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1044
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:241
 msgid "Advanced Settings"
-msgstr "avancerade inställningar"
+msgstr "Avancerade inställningar"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/tools/network.js:449
 msgid "Advanced device options"
@@ -2566,7 +2566,7 @@ msgstr "DUID"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/syslog.js:20
 msgid "Daemon"
-msgstr "Daemon"
+msgstr "Demon"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/50_dsl.js:29
 msgid "Data Rate"
@@ -2759,7 +2759,7 @@ msgstr "Destinationens zon"
 #: protocols/luci-proto-batman-adv/htdocs/luci-static/resources/protocol/batadv_vlan.js:48
 #: protocols/luci-proto-external/htdocs/luci-static/resources/protocol/external.js:29
 msgid "Device"
-msgstr "Enheté"
+msgstr "Enhet"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:968
 msgid "Device Configuration"
@@ -2780,7 +2780,7 @@ msgstr "Enheten startas om…"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/tools/network.js:563
 msgid "Device name"
-msgstr "Namn på enheten"
+msgstr "Enhetsnamn"
 
 #: protocols/luci-proto-modemmanager/htdocs/luci-static/resources/protocol/modemmanager.js:10
 msgid "Device not managed by ModemManager."
@@ -3095,7 +3095,7 @@ msgstr "Fragmentera inte"
 
 #: modules/luci-compat/luasrc/view/cbi/tblsection.htm:152
 msgid "Down"
-msgstr "Ner"
+msgstr "Nere"
 
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:3294
 msgid "Download"
@@ -5800,7 +5800,7 @@ msgstr "Hoppa till regel"
 
 #: protocols/luci-proto-yggdrasil/htdocs/luci-static/resources/protocol/yggdrasil.js:306
 msgid "Jumper"
-msgstr "Jumper"
+msgstr "Bygel"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:188
 msgid "Jumps to another rule specified by its priority value"
@@ -6056,7 +6056,7 @@ msgstr "Legend:"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:670
 msgid "Limit"
-msgstr "Begränsa"
+msgstr "Gräns"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:713
 msgid ""
@@ -6351,7 +6351,7 @@ msgstr "Lokalisera förfrågningar"
 
 #: protocols/luci-proto-modemmanager/htdocs/luci-static/resources/view/modemmanager/status.js:117
 msgid "Location Area Code"
-msgstr "Location Area Code"
+msgstr "Kod för lokaliseringsområde"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2280
 msgid "Lock to BSSID"
@@ -6822,7 +6822,7 @@ msgstr "Källport för spegling"
 
 #: protocols/luci-proto-modemmanager/htdocs/luci-static/resources/view/modemmanager/status.js:120
 msgid "Mobile Country Code"
-msgstr "Mobile Country Code"
+msgstr "Mobil landskod"
 
 #: modules/luci-compat/luasrc/model/network/proto_modemmanager.lua:9
 msgid "Mobile Data"
@@ -6830,7 +6830,7 @@ msgstr "Mobildata"
 
 #: protocols/luci-proto-modemmanager/htdocs/luci-static/resources/view/modemmanager/status.js:123
 msgid "Mobile Network Code"
-msgstr "Mobile Network Code"
+msgstr "Mobil nätverkskod"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1671
 msgid "Mobility Domain"
@@ -8478,7 +8478,7 @@ msgstr "Policy: <strong>%h</strong> (%h)"
 #: protocols/luci-proto-vxlan/htdocs/luci-static/resources/protocol/vxlan6.js:223
 #: protocols/luci-proto-yggdrasil/htdocs/luci-static/resources/protocol/yggdrasil.js:297
 msgid "Port"
-msgstr "port"
+msgstr "Port"
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:137
 msgctxt "WireGuard listen port"
@@ -8535,7 +8535,7 @@ msgstr "Prefixundertryckning"
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:587
 msgid "Preshared Key"
-msgstr "Fördelad nyckel"
+msgstr "Delad nyckel"
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:558
 msgid "Preshared key in use"
@@ -9683,7 +9683,7 @@ msgstr "Spara"
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:4913
 #: modules/luci-compat/luasrc/view/cbi/footer.htm:22
 msgid "Save & Apply"
-msgstr "Spara och Verkställ"
+msgstr "Spara och tillämpa"
 
 #: modules/luci-base/htdocs/luci-static/resources/form.js:618
 msgid "Save error"
@@ -11556,7 +11556,7 @@ msgstr "Traceroute"
 
 #: protocols/luci-proto-modemmanager/htdocs/luci-static/resources/view/modemmanager/status.js:126
 msgid "Tracking Area Code"
-msgstr "Tracking Area Code"
+msgstr "Kod för spårningsområde"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:54
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:65
@@ -11566,7 +11566,7 @@ msgstr "Trafik"
 #: protocols/luci-proto-gre/htdocs/luci-static/resources/protocol/grev6.js:79
 #: protocols/luci-proto-gre/htdocs/luci-static/resources/protocol/grev6tap.js:84
 msgid "Traffic Class"
-msgstr "Traffic Class"
+msgstr "Trafikklass"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/nftables.js:531
 msgid "Traffic filter chain \"%h\""
@@ -11935,7 +11935,7 @@ msgstr "Namnlös jämlike"
 
 #: modules/luci-compat/luasrc/view/cbi/tblsection.htm:151
 msgid "Up"
-msgstr "Upp"
+msgstr "Uppe"
 
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:4724
 msgid "Upload"
@@ -12915,7 +12915,7 @@ msgstr "hexadecimalt kodat värde"
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2045
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/channel_analysis.js:374
 msgid "hidden"
-msgstr "gömd"
+msgstr "dold"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/nftables.js:74
 msgctxt "nft unit"
@@ -13190,7 +13190,7 @@ msgstr "unikt värde"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:622
 msgid "unknown"
-msgstr "okänt"
+msgstr "okänd"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/10_system.js:28
 msgid "unknown version"
